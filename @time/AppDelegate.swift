@@ -13,10 +13,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
 
-
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-		// Override point for customization after application launch.
+		initializeViews()
 		return true
+	}
+
+	func initializeViews() {
+		window = UIWindow(frame: UIScreen.main.bounds)
+		let clockViewController = ClockViewController()
+		window?.rootViewController = clockViewController
+		window?.makeKeyAndVisible()
 	}
 
 	func applicationWillResignActive(_ application: UIApplication) {
