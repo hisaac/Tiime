@@ -30,6 +30,13 @@ extension Date {
 		return round(beats * 100) / 100
 	}
 
+	var beatTimeForDisplay: String {
+		let numberFormatter = NumberFormatter()
+		numberFormatter.minimumFractionDigits = 2
+		let beatTimeString = numberFormatter.string(for: beatTime) ?? "?"
+		return "@\(beatTimeString)"
+	}
+
 	// Returns the Unix time, rounded to the nearest whole number
 	var unixTime: Int {
 		return Int(round(self.timeIntervalSince1970))

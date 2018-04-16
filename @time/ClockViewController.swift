@@ -22,15 +22,11 @@ class ClockViewController: UIViewController {
 		timer.resume()
 
 		view.backgroundColor = .white
-
-//		print(CFAbsoluteTimeGetCurrent())
-//		let unix = Date(timeIntervalSince1970: 0).timeIntervalSinceReferenceDate
-//		print("Thing: \(unix)")
 	}
 
 	func updateTimers() {
-		beatTimeLabel.text = "@\(Date().beatTime)"
-		unixTimeLabel.text = "\(CFAbsoluteTimeGetCurrent().unixTime)"
+		beatTimeLabel.text = Date().beatTimeForDisplay
+		unixTimeLabel.text = String(CFAbsoluteTimeGetCurrent().unixTime)
 	}
 
 	convenience init() {
