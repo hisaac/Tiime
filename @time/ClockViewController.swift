@@ -12,18 +12,21 @@ class ClockViewController: UIViewController {
 
 	let beatTimeLabel = UILabel()
 	let unixTimeLabel = UILabel()
-//	let timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: Selector("updateTime"), repeats: true)
 	let timer = DispatchSource.makeTimerSource(flags: [], queue: DispatchQueue.main)
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		timer.schedule(deadline: .now(), repeating: .milliseconds(75))
-		timer.setEventHandler {
-			self.beatTimeLabel.text = "@\(Date().beatTime)"
-			self.unixTimeLabel.text = "\(Date().unixTime)"
-		}
+
+		timer.schedule(deadline: .now(), repeating: .nanoseconds(1))
+		timer.setEventHandler { self.updateTimers() }
 		timer.resume()
+
 		view.backgroundColor = .white
+	}
+
+	func updateTimers() {
+		beatTimeLabel.text = "@\(Date().beatTime)"
+		unixTimeLabel.text = "\(Date().unixTime)"
 	}
 
 	convenience init() {
@@ -31,20 +34,15 @@ class ClockViewController: UIViewController {
 		postInit()
 	}
 
-	@objc func updateTime() {
-		beatTimeLabel.text = "@\(Date().beatTime)"
-		unixTimeLabel.text = "\(Date().unixTime)"
-	}
-
 	func postInit() {
 		beatTimeLabel.translatesAutoresizingMaskIntoConstraints = false
 		beatTimeLabel.textAlignment = .center
-		beatTimeLabel.font = UIFont.systemFont(ofSize: 100)
+		beatTimeLabel.font = UIFont(name: "Courier", size: 100)
 		beatTimeLabel.adjustsFontSizeToFitWidth = true
 
 		unixTimeLabel.translatesAutoresizingMaskIntoConstraints = false
 		unixTimeLabel.textAlignment = .center
-		unixTimeLabel.font = UIFont.systemFont(ofSize: 100)
+		unixTimeLabel.font = UIFont(name: "Courier", size: 100)
 		unixTimeLabel.adjustsFontSizeToFitWidth = true
 
 		let stackView = UIStackView(arrangedSubviews: [beatTimeLabel, unixTimeLabel])
@@ -53,8 +51,6 @@ class ClockViewController: UIViewController {
 		stackView.distribution = .fillProportionally
 		view.addSubview(stackView)
 
-//		stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-//		stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
 		stackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 16).isActive = true
 		stackView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 16).isActive = true
 		stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16).isActive = true
