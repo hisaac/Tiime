@@ -22,11 +22,15 @@ class ClockViewController: UIViewController {
 		timer.resume()
 
 		view.backgroundColor = .white
+
+//		print(CFAbsoluteTimeGetCurrent())
+//		let unix = Date(timeIntervalSince1970: 0).timeIntervalSinceReferenceDate
+//		print("Thing: \(unix)")
 	}
 
 	func updateTimers() {
 		beatTimeLabel.text = "@\(Date().beatTime)"
-		unixTimeLabel.text = "\(Date().unixTime)"
+		unixTimeLabel.text = "\(CFAbsoluteTimeGetCurrent().unixTime)"
 	}
 
 	convenience init() {
@@ -55,5 +59,11 @@ class ClockViewController: UIViewController {
 		stackView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 16).isActive = true
 		stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16).isActive = true
 		stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16).isActive = true
+	}
+}
+
+extension CFAbsoluteTime {
+	var unixTime: Int {
+		return Int((self + 978307200).rounded())
 	}
 }
