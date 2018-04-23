@@ -7,26 +7,29 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 class ClockViewController: UIViewController {
 
 	let beatTimeLabel = UILabel()
 	let unixTimeLabel = UILabel()
-	let timer = DispatchSource.makeTimerSource(flags: [], queue: DispatchQueue.main)
+	let timer = Observable<Int>.interval(0.01, scheduler: MainScheduler.instance)
+	let disposeBag = DisposeBag()
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		timer.schedule(deadline: .now(), repeating: .nanoseconds(1))
-		timer.setEventHandler { self.updateTimers() }
-		timer.resume()
+
+		timer.map({ _ in String(format: "@%06.2f", Date().beatTime) })
+			.bind(to: beatTimeLabel.rx.text)
+			.disposed(by: disposeBag)
+
+		timer.map({ _ in String(CFAbsoluteTimeGetCurrent().unixTime) })
+			.bind(to: unixTimeLabel.rx.text)
+			.disposed(by: disposeBag)
 
 		view.backgroundColor = .white
-	}
-
-	func updateTimers() {
-		beatTimeLabel.text = Date().beatTimeForDisplay
-		unixTimeLabel.text = String(CFAbsoluteTimeGetCurrent().unixTime)
 	}
 
 	convenience init() {
@@ -37,12 +40,12 @@ class ClockViewController: UIViewController {
 	func postInit() {
 		beatTimeLabel.translatesAutoresizingMaskIntoConstraints = false
 		beatTimeLabel.textAlignment = .center
-		beatTimeLabel.font = UIFont(name: "Courier", size: 100)
+		beatTimeLabel.font = UIFont(name: "Courier", size: 50)
 		beatTimeLabel.adjustsFontSizeToFitWidth = true
 
 		unixTimeLabel.translatesAutoresizingMaskIntoConstraints = false
 		unixTimeLabel.textAlignment = .center
-		unixTimeLabel.font = UIFont(name: "Courier", size: 100)
+		unixTimeLabel.font = UIFont(name: "Courier", size: 50)
 		unixTimeLabel.adjustsFontSizeToFitWidth = true
 
 		let stackView = UIStackView(arrangedSubviews: [beatTimeLabel, unixTimeLabel])
@@ -51,15 +54,10 @@ class ClockViewController: UIViewController {
 		stackView.distribution = .fillProportionally
 		view.addSubview(stackView)
 
-		stackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 16).isActive = true
-		stackView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 16).isActive = true
-		stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16).isActive = true
-		stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16).isActive = true
-	}
-}
-
-extension CFAbsoluteTime {
-	var unixTime: Int {
-		return Int((self + 978307200).rounded())
+		let guide = view.safeAreaLayoutGuide
+		stackView.topAnchor.constraint(equalTo: guide.topAnchor, constant: 16).isActive = true
+		stackView.bottomAnchor.constraint(equalTo: guide.bottomAnchor, constant: -16).isActive = true
+		stackView.leadingAnchor.constraint(equalTo: guide.leadingAnchor, constant: 16).isActive = true
+		stackView.trailingAnchor.constraint(equalTo: guide.trailingAnchor, constant: -16).isActive = true
 	}
 }

@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d684535-534c-440b-9ada-58a3232c1a65" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/Tiime/BeatTime/Date+BeatTime.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiime/UnixTime/CFAbsoluteTime+UnixTime.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiime/UnixTime/Date+UnixTime.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@time.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/@time.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@time.xcodeproj/project.xcworkspace/xcuserdata/halvisa.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/@time.xcodeproj/project.xcworkspace/xcuserdata/halvisa.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/xcode.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/xcode.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tiime.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Tiime.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tiime.xcodeproj/project.xcworkspace/xcuserdata/halvisa.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/Tiime.xcodeproj/project.xcworkspace/xcuserdata/halvisa.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tiime/ClockViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Tiime/ClockViewController.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tiime/DateExtensions.swift" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,23 +19,32 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_7C14F5EE-3844-4CCF-B6E8-EA32260AA7EC" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_628DA282-AC9C-4F16-83B1-73D6DE59E104" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="DateExtensions.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/@time/DateExtensions.swift">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Cartfile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Cartfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="ClockViewController.swift" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/@time/ClockViewController.swift">
+        <entry file="file://$PROJECT_DIR$/Tiime/ClockViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+            <state relative-caret-position="406">
+              <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Date+BeatTime.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tiime/BeatTime/Date+BeatTime.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -44,6 +59,11 @@
       <list>
         <option value="$PROJECT_DIR$/@time/DateExtensions.swift" />
         <option value="$PROJECT_DIR$/@time/ClockViewController.swift" />
+        <option value="$PROJECT_DIR$/Cartfile" />
+        <option value="$PROJECT_DIR$/Tiime/UnixTime/Date+UnixTime.swift" />
+        <option value="$PROJECT_DIR$/Tiime/UnixTime/CFAbsoluteTime+UnixTime.swift" />
+        <option value="$PROJECT_DIR$/Tiime/BeatTime/Date+BeatTime.swift" />
+        <option value="$PROJECT_DIR$/Tiime/ClockViewController.swift" />
       </list>
     </option>
   </component>
@@ -56,9 +76,9 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="203" />
-    <option name="width" value="1080" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
     <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -69,28 +89,42 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="@time" type="1d218c8b:XcodeProjectNode" />
+              <item name="Tiime" type="1d218c8b:XcodeProjectNode" />
             </path>
             <path>
               <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="@time" type="1d218c8b:XcodeProjectNode" />
-              <item name="@time" type="fcab9f18:XcodeViewNode" />
+              <item name="Tiime" type="1d218c8b:XcodeProjectNode" />
+              <item name="Tiime" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="Tiime" type="1d218c8b:XcodeProjectNode" />
+              <item name="Tiime" type="fcab9f18:XcodeViewNode" />
+              <item name="BeatTime" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="Tiime" type="1d218c8b:XcodeProjectNode" />
+              <item name="Tiime" type="fcab9f18:XcodeViewNode" />
+              <item name="UnixTime" type="fcab9f18:XcodeViewNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Cidr.FilesView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="OBJC.PRESERVED_TARGET_SELECTION" value="Tiime" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -108,7 +142,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="@time" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="@time" TARGET_NAME="@time" CONFIG_NAME="Debug" SCHEME_NAME="@time" IS_LOCATION_SIMULATION_ALLOWED="true" RUN_TARGET_PROJECT_NAME="@time" RUN_TARGET_NAME="@time" MAKE_ACTIVE="TRUE">
+    <configuration name="Tiime" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Tiime" TARGET_NAME="Tiime" CONFIG_NAME="Debug" SCHEME_NAME="Tiime" IS_LOCATION_SIMULATION_ALLOWED="true" RUN_TARGET_PROJECT_NAME="Tiime" RUN_TARGET_NAME="Tiime" MAKE_ACTIVE="TRUE">
       <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
         <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
       </EXTENSION>
@@ -122,36 +156,38 @@
       <option name="presentableId" value="Default" />
       <updated>1523873752256</updated>
       <workItem from="1523873760151" duration="2017000" />
+      <workItem from="1524500096809" duration="936000" />
+      <workItem from="1524509674014" duration="6899000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2017000" />
+    <option name="totallyTimeSpent" value="9852000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" weight="0.32853404" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32435897" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info id="Designer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24206069" />
-      <window_info anchor="bottom" id="Tail" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Designer" order="2" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24171951" />
+      <window_info anchor="bottom" id="Tail" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39790577" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5205128" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,21 +198,72 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/@time/DateExtensions.swift">
+    <entry file="file://$PROJECT_DIR$/Cartfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/@time/ClockViewController.swift">
+    <entry file="file://$PROJECT_DIR$/@time/DateExtensions.swift" />
+    <entry file="file://$PROJECT_DIR$/@time/ClockViewController.swift" />
+    <entry file="file://$PROJECT_DIR$/Cartfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tiime/DateExtensions.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tiime/UnixTime/CFAbsoluteTime+UnixTime.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tiime/UnixTime/Date+UnixTime.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/9E145/4.1/arm64/iphoneos11.3/Foundation/Foundation.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="7369" column="11" selection-start-line="7369" selection-start-column="11" selection-end-line="7369" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/9E145/4.1/arm64/iphoneos11.3/Darwin.C.math/Darwin.C.math.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="261" column="12" selection-start-line="261" selection-start-column="12" selection-end-line="261" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tiime/BeatTime/Date+BeatTime.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tiime/ClockViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
         </state>
       </provider>
     </entry>

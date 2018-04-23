@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05AADA3E208E658E0076C581 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AADA3C208E658D0076C581 /* RxCocoa.framework */; };
+		05AADA3F208E658E0076C581 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AADA3D208E658D0076C581 /* RxSwift.framework */; };
+		29374A69131E009155D296D1 /* CFAbsoluteTime+UnixTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29374FEC260397217C2D8DC1 /* CFAbsoluteTime+UnixTime.swift */; };
+		29374C4E0EBAD4C17752160A /* Date+BeatTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2937414B04D7CA07E13CE103 /* Date+BeatTime.swift */; };
+		29374E809036195F13E9466C /* Date+UnixTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29374D2D0C6E6C7A2509E1DE /* Date+UnixTime.swift */; };
 		4A1947F52084457D00AB490D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1947F42084457D00AB490D /* AppDelegate.swift */; };
 		4A1947FC2084457E00AB490D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A1947FB2084457E00AB490D /* Assets.xcassets */; };
 		4A1947FF2084457E00AB490D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A1947FD2084457E00AB490D /* LaunchScreen.storyboard */; };
 		4A19480A2084457E00AB490D /* TiimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1948092084457E00AB490D /* TiimeTests.swift */; };
 		4A1948152084457E00AB490D /* TiimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1948142084457E00AB490D /* TiimeUITests.swift */; };
-		4A194823208446A900AB490D /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A194822208446A900AB490D /* DateExtensions.swift */; };
 		4A1948252084476C00AB490D /* ClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1948242084476C00AB490D /* ClockViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +39,16 @@
 
 /* Begin PBXFileReference section */
 		054B2B57208E16210030B580 /* Tiime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tiime.entitlements; sourceTree = "<group>"; };
+		05A1944C208E80F100C30B22 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		05A1944D208E810100C30B22 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		05A1944E208E810100C30B22 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		05A1944F208E810100C30B22 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		05A19450208E810100C30B22 /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
+		05AADA3C208E658D0076C581 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		05AADA3D208E658D0076C581 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		2937414B04D7CA07E13CE103 /* Date+BeatTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+BeatTime.swift"; sourceTree = "<group>"; };
+		29374D2D0C6E6C7A2509E1DE /* Date+UnixTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+UnixTime.swift"; sourceTree = "<group>"; };
+		29374FEC260397217C2D8DC1 /* CFAbsoluteTime+UnixTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CFAbsoluteTime+UnixTime.swift"; sourceTree = "<group>"; };
 		4A1947F12084457D00AB490D /* Tiime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tiime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A1947F42084457D00AB490D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A1947FB2084457E00AB490D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -46,7 +60,6 @@
 		4A1948102084457E00AB490D /* TiimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TiimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A1948142084457E00AB490D /* TiimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiimeUITests.swift; sourceTree = "<group>"; };
 		4A1948162084457E00AB490D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A194822208446A900AB490D /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 		4A1948242084476C00AB490D /* ClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05AADA3E208E658E0076C581 /* RxCocoa.framework in Frameworks */,
+				05AADA3F208E658E0076C581 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,13 +90,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05AADA3B208E658D0076C581 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05AADA3C208E658D0076C581 /* RxCocoa.framework */,
+				05AADA3D208E658D0076C581 /* RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2937401180E843C3C576F7B6 /* UnixTime */ = {
+			isa = PBXGroup;
+			children = (
+				29374D2D0C6E6C7A2509E1DE /* Date+UnixTime.swift */,
+				29374FEC260397217C2D8DC1 /* CFAbsoluteTime+UnixTime.swift */,
+			);
+			path = UnixTime;
+			sourceTree = "<group>";
+		};
+		29374907443D2F0597FB79AC /* BeatTime */ = {
+			isa = PBXGroup;
+			children = (
+				2937414B04D7CA07E13CE103 /* Date+BeatTime.swift */,
+			);
+			path = BeatTime;
+			sourceTree = "<group>";
+		};
 		4A1947E82084457D00AB490D = {
 			isa = PBXGroup;
 			children = (
+				05A1944F208E810100C30B22 /* README.md */,
+				05A1944E208E810100C30B22 /* LICENSE */,
 				4A1947F32084457D00AB490D /* Tiime */,
 				4A1948082084457E00AB490D /* TiimeTests */,
 				4A1948132084457E00AB490D /* TiimeUITests */,
 				4A1947F22084457D00AB490D /* Products */,
+				05AADA3B208E658D0076C581 /* Frameworks */,
+				05A1944C208E80F100C30B22 /* .gitignore */,
+				05A19450208E810100C30B22 /* Cartfile.resolved */,
+				05A1944D208E810100C30B22 /* Cartfile */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,7 +151,8 @@
 				4A1947FB2084457E00AB490D /* Assets.xcassets */,
 				4A1947FD2084457E00AB490D /* LaunchScreen.storyboard */,
 				4A1948002084457E00AB490D /* Info.plist */,
-				4A194822208446A900AB490D /* DateExtensions.swift */,
+				29374907443D2F0597FB79AC /* BeatTime */,
+				2937401180E843C3C576F7B6 /* UnixTime */,
 			);
 			path = Tiime;
 			sourceTree = "<group>";
@@ -137,6 +185,7 @@
 				4A1947ED2084457D00AB490D /* Sources */,
 				4A1947EE2084457D00AB490D /* Frameworks */,
 				4A1947EF2084457D00AB490D /* Resources */,
+				05AADA40208E66CC0076C581 /* [Carthage] Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -257,6 +306,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		05AADA40208E66CC0076C581 /* [Carthage] Copy Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+			);
+			name = "[Carthage] Copy Frameworks";
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxSwift.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxCocoa.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4A1947ED2084457D00AB490D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -264,7 +334,9 @@
 			files = (
 				4A1948252084476C00AB490D /* ClockViewController.swift in Sources */,
 				4A1947F52084457D00AB490D /* AppDelegate.swift in Sources */,
-				4A194823208446A900AB490D /* DateExtensions.swift in Sources */,
+				29374C4E0EBAD4C17752160A /* Date+BeatTime.swift in Sources */,
+				29374E809036195F13E9466C /* Date+UnixTime.swift in Sources */,
+				29374A69131E009155D296D1 /* CFAbsoluteTime+UnixTime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,8 +504,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F2J52QJQ9Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Tiime/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,8 +529,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F2J52QJQ9Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Tiime/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
