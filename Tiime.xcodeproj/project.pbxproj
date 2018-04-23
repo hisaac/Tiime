@@ -34,7 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0578D6372084EA45005B1A7B /* @time.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "@time.entitlements"; sourceTree = "<group>"; };
+		054B2B57208E16210030B580 /* Tiime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tiime.entitlements; sourceTree = "<group>"; };
 		4A1947F12084457D00AB490D /* Tiime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tiime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A1947F42084457D00AB490D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A1947FB2084457E00AB490D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,7 +98,7 @@
 		4A1947F32084457D00AB490D /* Tiime */ = {
 			isa = PBXGroup;
 			children = (
-				0578D6372084EA45005B1A7B /* @time.entitlements */,
+				054B2B57208E16210030B580 /* Tiime.entitlements */,
 				4A1947F42084457D00AB490D /* AppDelegate.swift */,
 				4A1948242084476C00AB490D /* ClockViewController.swift */,
 				4A1947FB2084457E00AB490D /* Assets.xcassets */,
