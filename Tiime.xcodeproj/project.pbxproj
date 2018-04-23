@@ -10,8 +10,8 @@
 		4A1947F52084457D00AB490D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1947F42084457D00AB490D /* AppDelegate.swift */; };
 		4A1947FC2084457E00AB490D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A1947FB2084457E00AB490D /* Assets.xcassets */; };
 		4A1947FF2084457E00AB490D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A1947FD2084457E00AB490D /* LaunchScreen.storyboard */; };
-		4A19480A2084457E00AB490D /* _timeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1948092084457E00AB490D /* _timeTests.swift */; };
-		4A1948152084457E00AB490D /* _timeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1948142084457E00AB490D /* _timeUITests.swift */; };
+		4A19480A2084457E00AB490D /* TiimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1948092084457E00AB490D /* TiimeTests.swift */; };
+		4A1948152084457E00AB490D /* TiimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1948142084457E00AB490D /* TiimeUITests.swift */; };
 		4A194823208446A900AB490D /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A194822208446A900AB490D /* DateExtensions.swift */; };
 		4A1948252084476C00AB490D /* ClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1948242084476C00AB490D /* ClockViewController.swift */; };
 /* End PBXBuildFile section */
@@ -34,16 +34,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4A1947F12084457D00AB490D /* @time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "@time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0578D6372084EA45005B1A7B /* @time.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "@time.entitlements"; sourceTree = "<group>"; };
+		4A1947F12084457D00AB490D /* Tiime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tiime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A1947F42084457D00AB490D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A1947FB2084457E00AB490D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A1947FE2084457E00AB490D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A1948002084457E00AB490D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A1948052084457E00AB490D /* @timeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "@timeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A1948092084457E00AB490D /* _timeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _timeTests.swift; sourceTree = "<group>"; };
+		4A1948052084457E00AB490D /* TiimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TiimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A1948092084457E00AB490D /* TiimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiimeTests.swift; sourceTree = "<group>"; };
 		4A19480B2084457E00AB490D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A1948102084457E00AB490D /* @timeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "@timeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A1948142084457E00AB490D /* _timeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _timeUITests.swift; sourceTree = "<group>"; };
+		4A1948102084457E00AB490D /* TiimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TiimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A1948142084457E00AB490D /* TiimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiimeUITests.swift; sourceTree = "<group>"; };
 		4A1948162084457E00AB490D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A194822208446A900AB490D /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 		4A1948242084476C00AB490D /* ClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; };
@@ -77,9 +78,9 @@
 		4A1947E82084457D00AB490D = {
 			isa = PBXGroup;
 			children = (
-				4A1947F32084457D00AB490D /* @time */,
-				4A1948082084457E00AB490D /* @timeTests */,
-				4A1948132084457E00AB490D /* @timeUITests */,
+				4A1947F32084457D00AB490D /* Tiime */,
+				4A1948082084457E00AB490D /* TiimeTests */,
+				4A1948132084457E00AB490D /* TiimeUITests */,
 				4A1947F22084457D00AB490D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,16 +88,17 @@
 		4A1947F22084457D00AB490D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4A1947F12084457D00AB490D /* @time.app */,
-				4A1948052084457E00AB490D /* @timeTests.xctest */,
-				4A1948102084457E00AB490D /* @timeUITests.xctest */,
+				4A1947F12084457D00AB490D /* Tiime.app */,
+				4A1948052084457E00AB490D /* TiimeTests.xctest */,
+				4A1948102084457E00AB490D /* TiimeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4A1947F32084457D00AB490D /* @time */ = {
+		4A1947F32084457D00AB490D /* Tiime */ = {
 			isa = PBXGroup;
 			children = (
+				0578D6372084EA45005B1A7B /* @time.entitlements */,
 				4A1947F42084457D00AB490D /* AppDelegate.swift */,
 				4A1948242084476C00AB490D /* ClockViewController.swift */,
 				4A1947FB2084457E00AB490D /* Assets.xcassets */,
@@ -104,33 +106,33 @@
 				4A1948002084457E00AB490D /* Info.plist */,
 				4A194822208446A900AB490D /* DateExtensions.swift */,
 			);
-			path = "@time";
+			path = Tiime;
 			sourceTree = "<group>";
 		};
-		4A1948082084457E00AB490D /* @timeTests */ = {
+		4A1948082084457E00AB490D /* TiimeTests */ = {
 			isa = PBXGroup;
 			children = (
-				4A1948092084457E00AB490D /* _timeTests.swift */,
+				4A1948092084457E00AB490D /* TiimeTests.swift */,
 				4A19480B2084457E00AB490D /* Info.plist */,
 			);
-			path = "@timeTests";
+			path = TiimeTests;
 			sourceTree = "<group>";
 		};
-		4A1948132084457E00AB490D /* @timeUITests */ = {
+		4A1948132084457E00AB490D /* TiimeUITests */ = {
 			isa = PBXGroup;
 			children = (
-				4A1948142084457E00AB490D /* _timeUITests.swift */,
+				4A1948142084457E00AB490D /* TiimeUITests.swift */,
 				4A1948162084457E00AB490D /* Info.plist */,
 			);
-			path = "@timeUITests";
+			path = TiimeUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4A1947F02084457D00AB490D /* @time */ = {
+		4A1947F02084457D00AB490D /* Tiime */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4A1948192084457E00AB490D /* Build configuration list for PBXNativeTarget "@time" */;
+			buildConfigurationList = 4A1948192084457E00AB490D /* Build configuration list for PBXNativeTarget "Tiime" */;
 			buildPhases = (
 				4A1947ED2084457D00AB490D /* Sources */,
 				4A1947EE2084457D00AB490D /* Frameworks */,
@@ -140,14 +142,14 @@
 			);
 			dependencies = (
 			);
-			name = "@time";
+			name = Tiime;
 			productName = "@time";
-			productReference = 4A1947F12084457D00AB490D /* @time.app */;
+			productReference = 4A1947F12084457D00AB490D /* Tiime.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4A1948042084457E00AB490D /* @timeTests */ = {
+		4A1948042084457E00AB490D /* TiimeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4A19481C2084457E00AB490D /* Build configuration list for PBXNativeTarget "@timeTests" */;
+			buildConfigurationList = 4A19481C2084457E00AB490D /* Build configuration list for PBXNativeTarget "TiimeTests" */;
 			buildPhases = (
 				4A1948012084457E00AB490D /* Sources */,
 				4A1948022084457E00AB490D /* Frameworks */,
@@ -158,14 +160,14 @@
 			dependencies = (
 				4A1948072084457E00AB490D /* PBXTargetDependency */,
 			);
-			name = "@timeTests";
+			name = TiimeTests;
 			productName = "@timeTests";
-			productReference = 4A1948052084457E00AB490D /* @timeTests.xctest */;
+			productReference = 4A1948052084457E00AB490D /* TiimeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		4A19480F2084457E00AB490D /* @timeUITests */ = {
+		4A19480F2084457E00AB490D /* TiimeUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4A19481F2084457E00AB490D /* Build configuration list for PBXNativeTarget "@timeUITests" */;
+			buildConfigurationList = 4A19481F2084457E00AB490D /* Build configuration list for PBXNativeTarget "TiimeUITests" */;
 			buildPhases = (
 				4A19480C2084457E00AB490D /* Sources */,
 				4A19480D2084457E00AB490D /* Frameworks */,
@@ -176,9 +178,9 @@
 			dependencies = (
 				4A1948122084457E00AB490D /* PBXTargetDependency */,
 			);
-			name = "@timeUITests";
+			name = TiimeUITests;
 			productName = "@timeUITests";
-			productReference = 4A1948102084457E00AB490D /* @timeUITests.xctest */;
+			productReference = 4A1948102084457E00AB490D /* TiimeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -193,6 +195,11 @@
 				TargetAttributes = {
 					4A1947F02084457D00AB490D = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 					4A1948042084457E00AB490D = {
 						CreatedOnToolsVersion = 9.3;
@@ -204,7 +211,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4A1947EC2084457D00AB490D /* Build configuration list for PBXProject "@time" */;
+			buildConfigurationList = 4A1947EC2084457D00AB490D /* Build configuration list for PBXProject "Tiime" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -217,9 +224,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4A1947F02084457D00AB490D /* @time */,
-				4A1948042084457E00AB490D /* @timeTests */,
-				4A19480F2084457E00AB490D /* @timeUITests */,
+				4A1947F02084457D00AB490D /* Tiime */,
+				4A1948042084457E00AB490D /* TiimeTests */,
+				4A19480F2084457E00AB490D /* TiimeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -265,7 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A19480A2084457E00AB490D /* _timeTests.swift in Sources */,
+				4A19480A2084457E00AB490D /* TiimeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A1948152084457E00AB490D /* _timeUITests.swift in Sources */,
+				4A1948152084457E00AB490D /* TiimeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,12 +289,12 @@
 /* Begin PBXTargetDependency section */
 		4A1948072084457E00AB490D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4A1947F02084457D00AB490D /* @time */;
+			target = 4A1947F02084457D00AB490D /* Tiime */;
 			targetProxy = 4A1948062084457E00AB490D /* PBXContainerItemProxy */;
 		};
 		4A1948122084457E00AB490D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4A1947F02084457D00AB490D /* @time */;
+			target = 4A1947F02084457D00AB490D /* Tiime */;
 			targetProxy = 4A1948112084457E00AB490D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -422,16 +429,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F2J52QJQ9Y;
-				INFOPLIST_FILE = "@time/Info.plist";
+				INFOPLIST_FILE = Tiime/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "software.level.-time";
+				PRODUCT_BUNDLE_IDENTIFIER = software.level.Tiime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -441,16 +450,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F2J52QJQ9Y;
-				INFOPLIST_FILE = "@time/Info.plist";
+				INFOPLIST_FILE = Tiime/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "software.level.-time";
+				PRODUCT_BUNDLE_IDENTIFIER = software.level.Tiime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -463,17 +474,17 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F2J52QJQ9Y;
-				INFOPLIST_FILE = "@timeTests/Info.plist";
+				INFOPLIST_FILE = TiimeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "software.level.-timeTests";
+				PRODUCT_BUNDLE_IDENTIFIER = software.level.TiimeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/@time.app/@time";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tiime.app/Tiime";
 			};
 			name = Debug;
 		};
@@ -484,17 +495,17 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F2J52QJQ9Y;
-				INFOPLIST_FILE = "@timeTests/Info.plist";
+				INFOPLIST_FILE = TiimeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "software.level.-timeTests";
+				PRODUCT_BUNDLE_IDENTIFIER = software.level.TiimeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/@time.app/@time";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tiime.app/Tiime";
 			};
 			name = Release;
 		};
@@ -504,17 +515,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F2J52QJQ9Y;
-				INFOPLIST_FILE = "@timeUITests/Info.plist";
+				INFOPLIST_FILE = TiimeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "software.level.-timeUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = software.level.TiimeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "@time";
+				TEST_TARGET_NAME = Tiime;
 			};
 			name = Debug;
 		};
@@ -524,24 +535,24 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F2J52QJQ9Y;
-				INFOPLIST_FILE = "@timeUITests/Info.plist";
+				INFOPLIST_FILE = TiimeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "software.level.-timeUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = software.level.TiimeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "@time";
+				TEST_TARGET_NAME = Tiime;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4A1947EC2084457D00AB490D /* Build configuration list for PBXProject "@time" */ = {
+		4A1947EC2084457D00AB490D /* Build configuration list for PBXProject "Tiime" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4A1948172084457E00AB490D /* Debug */,
@@ -550,7 +561,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4A1948192084457E00AB490D /* Build configuration list for PBXNativeTarget "@time" */ = {
+		4A1948192084457E00AB490D /* Build configuration list for PBXNativeTarget "Tiime" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4A19481A2084457E00AB490D /* Debug */,
@@ -559,7 +570,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4A19481C2084457E00AB490D /* Build configuration list for PBXNativeTarget "@timeTests" */ = {
+		4A19481C2084457E00AB490D /* Build configuration list for PBXNativeTarget "TiimeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4A19481D2084457E00AB490D /* Debug */,
@@ -568,7 +579,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4A19481F2084457E00AB490D /* Build configuration list for PBXNativeTarget "@timeUITests" */ = {
+		4A19481F2084457E00AB490D /* Build configuration list for PBXNativeTarget "TiimeUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4A1948202084457E00AB490D /* Debug */,

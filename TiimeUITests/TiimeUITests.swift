@@ -1,6 +1,6 @@
 //
-//  _timeUITests.swift
-//  @timeUITests
+//  TiimeUITests.swift
+//  TiimeUITests
 //
 //  Created by Isaac Halvorson on 4/15/18.
 //  Copyright © 2018 Levelsoft. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class _timeUITests: XCTestCase {
+class TiimeUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()
