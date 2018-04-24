@@ -9,7 +9,7 @@ Tiime is two things:
 
 The idea for Tiime came after listening to an episode of the late *TLDR* podcast (hosted by *Reply All's* [PJ Vogt](https://twitter.com/PJVogt) and [Alex Goldman](https://twitter.com/agoldmund)) titled [*Internet Time*](https://www.wnyc.org/story/15-internet-time/). In it, PJ talks about Swatch's 1998 attempt to reinvent our concept of time by inventing [*Internet Time* (a.k.a. _.beat time_)](https://en.wikipedia.org/wiki/Swatch_Internet_Time). In _.beat time_, the day is divided into 1000 "beats" of equal length (1 beat = 86.4 seconds). The experiment ultimately has fallen by the wayside, but there are still a scant few people in the world that use — or at least appreciate — the concept.
 
-I decided it would be an interesting experiment to try to make a clock that told time in beats. As this is a simple enough idea, I also realized that it would be a great way to easily and quickly learn about iOS development as a whole. I plan to bring the app to as many platforms as possible (iOS, watchOS, tvOS, macOS), use as many features and niceties as I can (iOS "Today extension", CarPlay, Apple Watch complication, macOS "Today extension", macOS screen saver, etc.), and try out various iOS development tools ([AppCode](https://www.jetbrains.com/objc/), [fastlane](https://fastlane.tools), [TestFlight](https://developer.apple.com/testflight/), app localization & translation, [RxSwift](https://github.com/ReactiveX/RxSwift/), [ReSwift](https://github.com/ReSwift/ReSwift), [Carthage](https://github.com/Carthage/Carthage),  etc.).
+I decided it would be an interesting experiment to try to make a clock that told time in beats. As this is a simple enough idea, I also realized that it would be a great way to easily and quickly learn about iOS development as a whole. I plan to bring the app to as many platforms as possible (iOS, watchOS, tvOS, macOS), use as many features and niceties as I can (iOS "Today extension", CarPlay, Apple Watch complication, macOS "Today extension", macOS screen saver, etc.), and try out various iOS development tools ([AppCode](https://www.jetbrains.com/objc/), [fastlane](https://fastlane.tools), [TestFlight](https://developer.apple.com/testflight/), app localization & translation, [RxSwift](https://github.com/ReactiveX/RxSwift/), [ReSwift](https://github.com/ReSwift/ReSwift), [Carthage](https://github.com/Carthage/Carthage), etc.).
 
 ## Participate
 
@@ -19,9 +19,19 @@ Would you like to beta test the app? Send me an email at [tiime@level.software](
 
 ### Development
 
-I'm developing the app in the open because I believe in Open Source, and it would be fun if others wanted to collaborate on the project.
+I'm developing the app in the open because I believe in Open Source, and it would be fun if others wanted to collaborate on the project. I'm new to iOS development, so I am _very_ open to any suggestions you might have. I'd especially love recommendations on how to architect the project. I'd like to make it as modular as reasonably possible.
 
-`bootstrapping instructions forthcoming`
+#### Bootstrapping Instructions
+
+I'm using [Carthage](https://github.com/Carthage/Carthage) for dependency management. So make sure you've installed Carthage on your computer before continuing.
+
+Once you've cloned the repo, in your terminal, from the root directory of the project, run the following command:
+
+```bash
+carthage update --platform iOS
+```
+
+This will download and build all the necessary dependencies (it may take a while). Once that's done, you should be able to build and run the app from within Xcode/AppCode.
 
 ## Acknowledgements
 
