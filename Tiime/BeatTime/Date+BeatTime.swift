@@ -30,7 +30,12 @@ extension Date {
 	      it's not technically the next point in time until it *actually is* the next point in time.
 	*/
 	var beatTimeForDisplay: String {
+		// Create numberFormatter with minimum fraction digits
+		let numberFormatter = NumberFormatter()
+		numberFormatter.minimumFractionDigits = 2
+
 		let floored = floor(beatTime * 100) / 100 // Drops all digits after centibeats
-		return "@\(floored)"
+		let beatTimeString = numberFormatter.string(for: floored) ?? "?"
+		return "@\(beatTimeString)"
 	}
 }
