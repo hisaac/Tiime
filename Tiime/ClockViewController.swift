@@ -17,11 +17,14 @@ class ClockViewController: UIViewController {
 	let timer = Observable<Int>.interval(0.01, scheduler: MainScheduler.instance)
 	let disposeBag = DisposeBag()
 
+	// Add support for upside down orientation
+	override var supportedInterfaceOrientations: UIInterfaceOrientationMask { return .all }
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
 
-		timer.map({ _ in String(format: "@%06.2f", Date().beatTime) })
+		timer.map({ _ in Date().beatTimeForDisplay })
 			.bind(to: beatTimeLabel.rx.text)
 			.disposed(by: disposeBag)
 
