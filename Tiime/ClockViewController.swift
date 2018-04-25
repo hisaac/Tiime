@@ -12,46 +12,53 @@ import RxSwift
 
 class ClockViewController: UIViewController {
 
-	let beatTimeLabel = UILabel()
-	let unixTimeLabel = UILabel()
+	let timeLabel = UILabel()
+	let timeType: TimeRespresentable
 	let timer = Observable<Int>.interval(0.01, scheduler: MainScheduler.instance)
 	let disposeBag = DisposeBag()
 
 	// Add support for upside down orientation
 	override var supportedInterfaceOrientations: UIInterfaceOrientationMask { return .all }
 
+	override init(nibName: String?, bundle: Bundle?) {
+		timeType = BeatTime()
+		super.init(nibName: nibName, bundle: bundle)
+		_init()
+	}
+
+	required init?(coder aDecoder: NSCoder) {
+		timeType = BeatTime()
+		super.init(coder: aDecoder)
+		_init()
+	}
+
+	init(timeType: TimeRespresentable = BeatTime()) {
+		self.timeType = timeType
+		super.init(nibName: nil, bundle: nil)
+		_init()
+	}
+
+	func _init() {
+		buildLayout()
+	}
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-
-		timer.map({ _ in Date().beatTimeForDisplay })
-			.bind(to: beatTimeLabel.rx.text)
+		timer.map({ _ in self.timeType.timeForDisplay })
+			.bind(to: timeLabel.rx.text)
 			.disposed(by: disposeBag)
+	}
 
-		timer.map({ _ in String(CFAbsoluteTimeGetCurrent().unixTime) })
-			.bind(to: unixTimeLabel.rx.text)
-			.disposed(by: disposeBag)
-
+	func buildLayout() {
 		view.backgroundColor = .white
-	}
 
-	convenience init() {
-		self.init(nibName: nil, bundle: nil)
-		postInit()
-	}
+		timeLabel.translatesAutoresizingMaskIntoConstraints = false
+		timeLabel.textAlignment = .center
+		timeLabel.font = UIFont(name: "Courier", size: 50)
+		timeLabel.adjustsFontSizeToFitWidth = true
 
-	func postInit() {
-		beatTimeLabel.translatesAutoresizingMaskIntoConstraints = false
-		beatTimeLabel.textAlignment = .center
-		beatTimeLabel.font = UIFont(name: "Courier", size: 50)
-		beatTimeLabel.adjustsFontSizeToFitWidth = true
-
-		unixTimeLabel.translatesAutoresizingMaskIntoConstraints = false
-		unixTimeLabel.textAlignment = .center
-		unixTimeLabel.font = UIFont(name: "Courier", size: 50)
-		unixTimeLabel.adjustsFontSizeToFitWidth = true
-
-		let stackView = UIStackView(arrangedSubviews: [beatTimeLabel, unixTimeLabel])
+		let stackView = UIStackView(arrangedSubviews: [timeLabel])
 		stackView.translatesAutoresizingMaskIntoConstraints = false
 		stackView.axis = .vertical
 		stackView.distribution = .fillProportionally

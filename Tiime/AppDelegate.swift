@@ -20,8 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func initializeViews() {
 		window = UIWindow(frame: UIScreen.main.bounds)
-		let clockViewController = ClockViewController()
-		window?.rootViewController = clockViewController
+		let mainNavigationController = UINavigationController()
+		mainNavigationController.pushViewController(ClockViewController(timeType: BeatTime()), animated: false)
+		window?.rootViewController = mainNavigationController
 		window?.makeKeyAndVisible()
 	}
 
@@ -46,7 +47,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	func applicationWillTerminate(_ application: UIApplication) {
 		// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 	}
-
-
 }
-
