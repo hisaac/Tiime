@@ -21,7 +21,7 @@
 		05D2548B20925A28004DCA1F /* TiimeUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05D2547520925A28004DCA1F /* TiimeUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		05D2549220925A6E004DCA1F /* ClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1948242084476C00AB490D /* ClockViewController.swift */; };
 		05D2549320925A7D004DCA1F /* ClockTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29374B50DEF45E2A99EBF931 /* ClockTypes.swift */; };
-		05D2549420925A7D004DCA1F /* TimeRespresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29374C927DD5E25D74807B5B /* TimeRespresentable.swift */; };
+		05D2549420925A7D004DCA1F /* TimeRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29374C927DD5E25D74807B5B /* TimeRepresentable.swift */; };
 		05D2549820925B0C004DCA1F /* MainDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D2549720925B0C004DCA1F /* MainDependencyContainer.swift */; };
 		05D2549A20925B1B004DCA1F /* MainDependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D2549920925B1B004DCA1F /* MainDependencyProvider.swift */; };
 		05D2549B20925BBE004DCA1F /* Date+BeatTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2937414B04D7CA07E13CE103 /* Date+BeatTime.swift */; };
@@ -144,7 +144,7 @@
 		2937414B04D7CA07E13CE103 /* Date+BeatTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+BeatTime.swift"; sourceTree = "<group>"; };
 		293745D13632115B8C657D8C /* BeatTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeatTime.swift; sourceTree = "<group>"; };
 		29374B50DEF45E2A99EBF931 /* ClockTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockTypes.swift; sourceTree = "<group>"; };
-		29374C927DD5E25D74807B5B /* TimeRespresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeRespresentable.swift; sourceTree = "<group>"; };
+		29374C927DD5E25D74807B5B /* TimeRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeRepresentable.swift; sourceTree = "<group>"; };
 		29374D2D0C6E6C7A2509E1DE /* Date+UnixTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+UnixTime.swift"; sourceTree = "<group>"; };
 		29374FEC260397217C2D8DC1 /* CFAbsoluteTime+UnixTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CFAbsoluteTime+UnixTime.swift"; sourceTree = "<group>"; };
 		4A1947F12084457D00AB490D /* Tiime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tiime.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -241,7 +241,7 @@
 				29374907443D2F0597FB79AC /* BeatTime */,
 				2937401180E843C3C576F7B6 /* UnixTime */,
 				29374B50DEF45E2A99EBF931 /* ClockTypes.swift */,
-				29374C927DD5E25D74807B5B /* TimeRespresentable.swift */,
+				29374C927DD5E25D74807B5B /* TimeRepresentable.swift */,
 				05D2545420925A17004DCA1F /* TiimeKit.h */,
 				05D2545520925A17004DCA1F /* Info.plist */,
 			);
@@ -679,7 +679,7 @@
 				05D2549320925A7D004DCA1F /* ClockTypes.swift in Sources */,
 				05D2549B20925BBE004DCA1F /* Date+BeatTime.swift in Sources */,
 				05D2549D20925BBE004DCA1F /* Date+UnixTime.swift in Sources */,
-				05D2549420925A7D004DCA1F /* TimeRespresentable.swift in Sources */,
+				05D2549420925A7D004DCA1F /* TimeRepresentable.swift in Sources */,
 				05D2549A20925B1B004DCA1F /* MainDependencyProvider.swift in Sources */,
 				05D2549E20925BBE004DCA1F /* CFAbsoluteTime+UnixTime.swift in Sources */,
 				05D2549C20925BBE004DCA1F /* BeatTime.swift in Sources */,

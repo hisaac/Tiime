@@ -9,5 +9,5 @@
 import Foundation
 
 protocol MainDependencyProvider {
-	func makeTimeRepresentable() -> TimeRespresentable
+	func makeTimeRepresentable() -> TimeRepresentable
 }

@@ -5,6 +5,6 @@
 
 import Foundation
 
-public protocol TimeRespresentable {
+public protocol TimeRepresentable {
 	var timeForDisplay: String { get }
 }

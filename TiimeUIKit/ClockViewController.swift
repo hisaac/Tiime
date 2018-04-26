@@ -14,7 +14,7 @@ import RxSwift
 public class ClockViewController: UIViewController {
 
 	let timeLabel = UILabel()
-	let timeType: TimeRespresentable
+	let timeType: TimeRepresentable
 	let timer = Observable<Int>.interval(0.01, scheduler: MainScheduler.instance)
 	let disposeBag = DisposeBag()
 
@@ -33,7 +33,7 @@ public class ClockViewController: UIViewController {
 		_init()
 	}
 
-	public init(timeType: TimeRespresentable = BeatTime()) {
+	public init(timeType: TimeRepresentable = BeatTime()) {
 		self.timeType = timeType
 		super.init(nibName: nil, bundle: nil)
 		_init()
