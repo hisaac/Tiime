@@ -8,7 +8,8 @@
 
 import Foundation
 
-class MainDependencyContainer: MainDependencyProvider {
+public class MainDependencyContainer: MainDependencyProvider {
+	public init() {}
 	public func makeTimeRepresentable() -> TimeRepresentable {
 		return BeatTime()
 	}

@@ -14,6 +14,7 @@ import TiimeUIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
+	let dependencyContainer = MainDependencyContainer()
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 		initializeViews()
@@ -23,7 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	func initializeViews() {
 		window = UIWindow(frame: UIScreen.main.bounds)
 		let mainNavigationController = UINavigationController()
-		mainNavigationController.pushViewController(ClockViewController(timeType: BeatTime()), animated: false)
+		let initialTimeType = dependencyContainer.makeTimeRepresentable()
+		let initialClockViewController = ClockViewController(timeType: initialTimeType)
+		mainNavigationController.pushViewController(initialClockViewController, animated: false)
 		window?.rootViewController = mainNavigationController
 		window?.makeKeyAndVisible()
 	}
