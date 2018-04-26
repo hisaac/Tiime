@@ -5,8 +5,9 @@
 
 import Foundation
 
-class BeatTime: TimeRespresentable {
-	var timeForDisplay: String {
+public class BeatTime: TimeRespresentable {
+	public init() {}
+	public var timeForDisplay: String {
 		return Date().beatTimeForDisplay
 	}
 }

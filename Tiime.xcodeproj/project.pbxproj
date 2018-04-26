@@ -9,21 +9,82 @@
 /* Begin PBXBuildFile section */
 		05AADA3E208E658E0076C581 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AADA3C208E658D0076C581 /* RxCocoa.framework */; };
 		05AADA3F208E658E0076C581 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AADA3D208E658D0076C581 /* RxSwift.framework */; };
-		293745339143E429A528479C /* BeatTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293745D13632115B8C657D8C /* BeatTime.swift */; };
-		293745AB84E0385D9D4234B7 /* TimeRespresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29374C927DD5E25D74807B5B /* TimeRespresentable.swift */; };
-		2937481E69F609AB66CCDD4C /* ClockTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29374B50DEF45E2A99EBF931 /* ClockTypes.swift */; };
-		29374A69131E009155D296D1 /* CFAbsoluteTime+UnixTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29374FEC260397217C2D8DC1 /* CFAbsoluteTime+UnixTime.swift */; };
-		29374C4E0EBAD4C17752160A /* Date+BeatTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2937414B04D7CA07E13CE103 /* Date+BeatTime.swift */; };
-		29374E809036195F13E9466C /* Date+UnixTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29374D2D0C6E6C7A2509E1DE /* Date+UnixTime.swift */; };
+		05D2545B20925A17004DCA1F /* TiimeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D2545220925A17004DCA1F /* TiimeKit.framework */; };
+		05D2546220925A17004DCA1F /* TiimeKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D2546120925A17004DCA1F /* TiimeKitTests.swift */; };
+		05D2546420925A17004DCA1F /* TiimeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 05D2545420925A17004DCA1F /* TiimeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05D2546720925A17004DCA1F /* TiimeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D2545220925A17004DCA1F /* TiimeKit.framework */; };
+		05D2546820925A17004DCA1F /* TiimeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05D2545220925A17004DCA1F /* TiimeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05D2547E20925A28004DCA1F /* TiimeUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D2547520925A28004DCA1F /* TiimeUIKit.framework */; };
+		05D2548520925A28004DCA1F /* TiimeUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D2548420925A28004DCA1F /* TiimeUIKitTests.swift */; };
+		05D2548720925A28004DCA1F /* TiimeUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 05D2547720925A28004DCA1F /* TiimeUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05D2548A20925A28004DCA1F /* TiimeUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D2547520925A28004DCA1F /* TiimeUIKit.framework */; };
+		05D2548B20925A28004DCA1F /* TiimeUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05D2547520925A28004DCA1F /* TiimeUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05D2549220925A6E004DCA1F /* ClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1948242084476C00AB490D /* ClockViewController.swift */; };
+		05D2549320925A7D004DCA1F /* ClockTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29374B50DEF45E2A99EBF931 /* ClockTypes.swift */; };
+		05D2549420925A7D004DCA1F /* TimeRespresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29374C927DD5E25D74807B5B /* TimeRespresentable.swift */; };
+		05D2549820925B0C004DCA1F /* MainDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D2549720925B0C004DCA1F /* MainDependencyContainer.swift */; };
+		05D2549A20925B1B004DCA1F /* MainDependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D2549920925B1B004DCA1F /* MainDependencyProvider.swift */; };
+		05D2549B20925BBE004DCA1F /* Date+BeatTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2937414B04D7CA07E13CE103 /* Date+BeatTime.swift */; };
+		05D2549C20925BBE004DCA1F /* BeatTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293745D13632115B8C657D8C /* BeatTime.swift */; };
+		05D2549D20925BBE004DCA1F /* Date+UnixTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29374D2D0C6E6C7A2509E1DE /* Date+UnixTime.swift */; };
+		05D2549E20925BBE004DCA1F /* CFAbsoluteTime+UnixTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29374FEC260397217C2D8DC1 /* CFAbsoluteTime+UnixTime.swift */; };
+		05D254A120925C11004DCA1F /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AADA3C208E658D0076C581 /* RxCocoa.framework */; };
+		05D254A220925C11004DCA1F /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AADA3D208E658D0076C581 /* RxSwift.framework */; };
+		05D254A320925C1E004DCA1F /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AADA3C208E658D0076C581 /* RxCocoa.framework */; };
+		05D254A420925C1E004DCA1F /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AADA3D208E658D0076C581 /* RxSwift.framework */; };
+		05D254A520925C70004DCA1F /* TiimeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D2545220925A17004DCA1F /* TiimeKit.framework */; };
+		05D254A820925CB0004DCA1F /* NiblessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D254A720925CB0004DCA1F /* NiblessView.swift */; };
+		05D254AA20925CB7004DCA1F /* NiblessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D254A920925CB7004DCA1F /* NiblessViewController.swift */; };
 		4A1947F52084457D00AB490D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1947F42084457D00AB490D /* AppDelegate.swift */; };
 		4A1947FC2084457E00AB490D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A1947FB2084457E00AB490D /* Assets.xcassets */; };
 		4A1947FF2084457E00AB490D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A1947FD2084457E00AB490D /* LaunchScreen.storyboard */; };
 		4A19480A2084457E00AB490D /* TiimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1948092084457E00AB490D /* TiimeTests.swift */; };
 		4A1948152084457E00AB490D /* TiimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1948142084457E00AB490D /* TiimeUITests.swift */; };
-		4A1948252084476C00AB490D /* ClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1948242084476C00AB490D /* ClockViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		05D2545C20925A17004DCA1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A1947E92084457D00AB490D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05D2545120925A17004DCA1F;
+			remoteInfo = TiimeKit;
+		};
+		05D2545E20925A17004DCA1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A1947E92084457D00AB490D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A1947F02084457D00AB490D;
+			remoteInfo = Tiime;
+		};
+		05D2546520925A17004DCA1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A1947E92084457D00AB490D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05D2545120925A17004DCA1F;
+			remoteInfo = TiimeKit;
+		};
+		05D2547F20925A28004DCA1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A1947E92084457D00AB490D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05D2547420925A28004DCA1F;
+			remoteInfo = TiimeUIKit;
+		};
+		05D2548120925A28004DCA1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A1947E92084457D00AB490D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A1947F02084457D00AB490D;
+			remoteInfo = Tiime;
+		};
+		05D2548820925A28004DCA1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A1947E92084457D00AB490D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05D2547420925A28004DCA1F;
+			remoteInfo = TiimeUIKit;
+		};
 		4A1948062084457E00AB490D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4A1947E92084457D00AB490D /* Project object */;
@@ -40,6 +101,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		05D2546E20925A17004DCA1F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				05D2548B20925A28004DCA1F /* TiimeUIKit.framework in Embed Frameworks */,
+				05D2546820925A17004DCA1F /* TiimeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		054B2B57208E16210030B580 /* Tiime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tiime.entitlements; sourceTree = "<group>"; };
 		05A1944C208E80F100C30B22 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -49,6 +125,22 @@
 		05A19450208E810100C30B22 /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
 		05AADA3C208E658D0076C581 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		05AADA3D208E658D0076C581 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		05D2545220925A17004DCA1F /* TiimeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TiimeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05D2545420925A17004DCA1F /* TiimeKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TiimeKit.h; sourceTree = "<group>"; };
+		05D2545520925A17004DCA1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05D2545A20925A17004DCA1F /* TiimeKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TiimeKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05D2546120925A17004DCA1F /* TiimeKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiimeKitTests.swift; sourceTree = "<group>"; };
+		05D2546320925A17004DCA1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05D2547520925A28004DCA1F /* TiimeUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TiimeUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05D2547720925A28004DCA1F /* TiimeUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TiimeUIKit.h; sourceTree = "<group>"; };
+		05D2547820925A28004DCA1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05D2547D20925A28004DCA1F /* TiimeUIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TiimeUIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05D2548420925A28004DCA1F /* TiimeUIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiimeUIKitTests.swift; sourceTree = "<group>"; };
+		05D2548620925A28004DCA1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05D2549720925B0C004DCA1F /* MainDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDependencyContainer.swift; sourceTree = "<group>"; };
+		05D2549920925B1B004DCA1F /* MainDependencyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDependencyProvider.swift; sourceTree = "<group>"; };
+		05D254A720925CB0004DCA1F /* NiblessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessView.swift; sourceTree = "<group>"; };
+		05D254A920925CB7004DCA1F /* NiblessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessViewController.swift; sourceTree = "<group>"; };
 		2937414B04D7CA07E13CE103 /* Date+BeatTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+BeatTime.swift"; sourceTree = "<group>"; };
 		293745D13632115B8C657D8C /* BeatTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeatTime.swift; sourceTree = "<group>"; };
 		29374B50DEF45E2A99EBF931 /* ClockTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockTypes.swift; sourceTree = "<group>"; };
@@ -70,11 +162,48 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		05D2544E20925A17004DCA1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05D254A120925C11004DCA1F /* RxCocoa.framework in Frameworks */,
+				05D254A220925C11004DCA1F /* RxSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05D2545720925A17004DCA1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05D2545B20925A17004DCA1F /* TiimeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05D2547120925A28004DCA1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05D254A520925C70004DCA1F /* TiimeKit.framework in Frameworks */,
+				05D254A320925C1E004DCA1F /* RxCocoa.framework in Frameworks */,
+				05D254A420925C1E004DCA1F /* RxSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05D2547A20925A28004DCA1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05D2547E20925A28004DCA1F /* TiimeUIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4A1947EE2084457D00AB490D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				05AADA3E208E658E0076C581 /* RxCocoa.framework in Frameworks */,
+				05D2546720925A17004DCA1F /* TiimeKit.framework in Frameworks */,
+				05D2548A20925A28004DCA1F /* TiimeUIKit.framework in Frameworks */,
 				05AADA3F208E658E0076C581 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,6 +234,67 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		05D2545320925A17004DCA1F /* TiimeKit */ = {
+			isa = PBXGroup;
+			children = (
+				05D2549520925AB8004DCA1F /* Dependencies */,
+				29374907443D2F0597FB79AC /* BeatTime */,
+				2937401180E843C3C576F7B6 /* UnixTime */,
+				29374B50DEF45E2A99EBF931 /* ClockTypes.swift */,
+				29374C927DD5E25D74807B5B /* TimeRespresentable.swift */,
+				05D2545420925A17004DCA1F /* TiimeKit.h */,
+				05D2545520925A17004DCA1F /* Info.plist */,
+			);
+			path = TiimeKit;
+			sourceTree = "<group>";
+		};
+		05D2546020925A17004DCA1F /* TiimeKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				05D2546120925A17004DCA1F /* TiimeKitTests.swift */,
+				05D2546320925A17004DCA1F /* Info.plist */,
+			);
+			path = TiimeKitTests;
+			sourceTree = "<group>";
+		};
+		05D2547620925A28004DCA1F /* TiimeUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				05D254A620925CA2004DCA1F /* Helpers */,
+				4A1948242084476C00AB490D /* ClockViewController.swift */,
+				05D2547720925A28004DCA1F /* TiimeUIKit.h */,
+				05D2547820925A28004DCA1F /* Info.plist */,
+			);
+			path = TiimeUIKit;
+			sourceTree = "<group>";
+		};
+		05D2548320925A28004DCA1F /* TiimeUIKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				05D2548420925A28004DCA1F /* TiimeUIKitTests.swift */,
+				05D2548620925A28004DCA1F /* Info.plist */,
+			);
+			path = TiimeUIKitTests;
+			sourceTree = "<group>";
+		};
+		05D2549520925AB8004DCA1F /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				05D2549720925B0C004DCA1F /* MainDependencyContainer.swift */,
+				05D2549920925B1B004DCA1F /* MainDependencyProvider.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		05D254A620925CA2004DCA1F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				05D254A720925CB0004DCA1F /* NiblessView.swift */,
+				05D254A920925CB7004DCA1F /* NiblessViewController.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		2937401180E843C3C576F7B6 /* UnixTime */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,8 +319,12 @@
 				05A1944F208E810100C30B22 /* README.md */,
 				05A1944E208E810100C30B22 /* LICENSE */,
 				4A1947F32084457D00AB490D /* Tiime */,
+				05D2545320925A17004DCA1F /* TiimeKit */,
+				05D2547620925A28004DCA1F /* TiimeUIKit */,
 				4A1948082084457E00AB490D /* TiimeTests */,
 				4A1948132084457E00AB490D /* TiimeUITests */,
+				05D2546020925A17004DCA1F /* TiimeKitTests */,
+				05D2548320925A28004DCA1F /* TiimeUIKitTests */,
 				4A1947F22084457D00AB490D /* Products */,
 				05AADA3B208E658D0076C581 /* Frameworks */,
 				05A1944C208E80F100C30B22 /* .gitignore */,
@@ -145,6 +339,10 @@
 				4A1947F12084457D00AB490D /* Tiime.app */,
 				4A1948052084457E00AB490D /* TiimeTests.xctest */,
 				4A1948102084457E00AB490D /* TiimeUITests.xctest */,
+				05D2545220925A17004DCA1F /* TiimeKit.framework */,
+				05D2545A20925A17004DCA1F /* TiimeKitTests.xctest */,
+				05D2547520925A28004DCA1F /* TiimeUIKit.framework */,
+				05D2547D20925A28004DCA1F /* TiimeUIKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,14 +352,9 @@
 			children = (
 				054B2B57208E16210030B580 /* Tiime.entitlements */,
 				4A1947F42084457D00AB490D /* AppDelegate.swift */,
-				4A1948242084476C00AB490D /* ClockViewController.swift */,
 				4A1947FB2084457E00AB490D /* Assets.xcassets */,
 				4A1947FD2084457E00AB490D /* LaunchScreen.storyboard */,
 				4A1948002084457E00AB490D /* Info.plist */,
-				29374907443D2F0597FB79AC /* BeatTime */,
-				2937401180E843C3C576F7B6 /* UnixTime */,
-				29374B50DEF45E2A99EBF931 /* ClockTypes.swift */,
-				29374C927DD5E25D74807B5B /* TimeRespresentable.swift */,
 			);
 			path = Tiime;
 			sourceTree = "<group>";
@@ -186,7 +379,100 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		05D2544F20925A17004DCA1F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05D2546420925A17004DCA1F /* TiimeKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05D2547220925A28004DCA1F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05D2548720925A28004DCA1F /* TiimeUIKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		05D2545120925A17004DCA1F /* TiimeKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05D2546D20925A17004DCA1F /* Build configuration list for PBXNativeTarget "TiimeKit" */;
+			buildPhases = (
+				05D2544D20925A17004DCA1F /* Sources */,
+				05D2544E20925A17004DCA1F /* Frameworks */,
+				05D2544F20925A17004DCA1F /* Headers */,
+				05D2545020925A17004DCA1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TiimeKit;
+			productName = TiimeKit;
+			productReference = 05D2545220925A17004DCA1F /* TiimeKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		05D2545920925A17004DCA1F /* TiimeKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05D2546F20925A17004DCA1F /* Build configuration list for PBXNativeTarget "TiimeKitTests" */;
+			buildPhases = (
+				05D2545620925A17004DCA1F /* Sources */,
+				05D2545720925A17004DCA1F /* Frameworks */,
+				05D2545820925A17004DCA1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05D2545D20925A17004DCA1F /* PBXTargetDependency */,
+				05D2545F20925A17004DCA1F /* PBXTargetDependency */,
+			);
+			name = TiimeKitTests;
+			productName = TiimeKitTests;
+			productReference = 05D2545A20925A17004DCA1F /* TiimeKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		05D2547420925A28004DCA1F /* TiimeUIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05D2548C20925A28004DCA1F /* Build configuration list for PBXNativeTarget "TiimeUIKit" */;
+			buildPhases = (
+				05D2547020925A28004DCA1F /* Sources */,
+				05D2547120925A28004DCA1F /* Frameworks */,
+				05D2547220925A28004DCA1F /* Headers */,
+				05D2547320925A28004DCA1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TiimeUIKit;
+			productName = TiimeUIKit;
+			productReference = 05D2547520925A28004DCA1F /* TiimeUIKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		05D2547C20925A28004DCA1F /* TiimeUIKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05D2548F20925A28004DCA1F /* Build configuration list for PBXNativeTarget "TiimeUIKitTests" */;
+			buildPhases = (
+				05D2547920925A28004DCA1F /* Sources */,
+				05D2547A20925A28004DCA1F /* Frameworks */,
+				05D2547B20925A28004DCA1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05D2548020925A28004DCA1F /* PBXTargetDependency */,
+				05D2548220925A28004DCA1F /* PBXTargetDependency */,
+			);
+			name = TiimeUIKitTests;
+			productName = TiimeUIKitTests;
+			productReference = 05D2547D20925A28004DCA1F /* TiimeUIKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		4A1947F02084457D00AB490D /* Tiime */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A1948192084457E00AB490D /* Build configuration list for PBXNativeTarget "Tiime" */;
@@ -195,10 +481,13 @@
 				4A1947EE2084457D00AB490D /* Frameworks */,
 				4A1947EF2084457D00AB490D /* Resources */,
 				05AADA40208E66CC0076C581 /* [Carthage] Copy Frameworks */,
+				05D2546E20925A17004DCA1F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				05D2546620925A17004DCA1F /* PBXTargetDependency */,
+				05D2548920925A28004DCA1F /* PBXTargetDependency */,
 			);
 			name = Tiime;
 			productName = "@time";
@@ -251,6 +540,20 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Levelsoft;
 				TargetAttributes = {
+					05D2545120925A17004DCA1F = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					05D2545920925A17004DCA1F = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 4A1947F02084457D00AB490D;
+					};
+					05D2547420925A28004DCA1F = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					05D2547C20925A28004DCA1F = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 4A1947F02084457D00AB490D;
+					};
 					4A1947F02084457D00AB490D = {
 						CreatedOnToolsVersion = 9.3;
 						SystemCapabilities = {
@@ -285,11 +588,43 @@
 				4A1947F02084457D00AB490D /* Tiime */,
 				4A1948042084457E00AB490D /* TiimeTests */,
 				4A19480F2084457E00AB490D /* TiimeUITests */,
+				05D2545120925A17004DCA1F /* TiimeKit */,
+				05D2545920925A17004DCA1F /* TiimeKitTests */,
+				05D2547420925A28004DCA1F /* TiimeUIKit */,
+				05D2547C20925A28004DCA1F /* TiimeUIKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		05D2545020925A17004DCA1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05D2545820925A17004DCA1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05D2547320925A28004DCA1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05D2547B20925A28004DCA1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4A1947EF2084457D00AB490D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -337,18 +672,52 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		05D2544D20925A17004DCA1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05D2549320925A7D004DCA1F /* ClockTypes.swift in Sources */,
+				05D2549B20925BBE004DCA1F /* Date+BeatTime.swift in Sources */,
+				05D2549D20925BBE004DCA1F /* Date+UnixTime.swift in Sources */,
+				05D2549420925A7D004DCA1F /* TimeRespresentable.swift in Sources */,
+				05D2549A20925B1B004DCA1F /* MainDependencyProvider.swift in Sources */,
+				05D2549E20925BBE004DCA1F /* CFAbsoluteTime+UnixTime.swift in Sources */,
+				05D2549C20925BBE004DCA1F /* BeatTime.swift in Sources */,
+				05D2549820925B0C004DCA1F /* MainDependencyContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05D2545620925A17004DCA1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05D2546220925A17004DCA1F /* TiimeKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05D2547020925A28004DCA1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05D2549220925A6E004DCA1F /* ClockViewController.swift in Sources */,
+				05D254AA20925CB7004DCA1F /* NiblessViewController.swift in Sources */,
+				05D254A820925CB0004DCA1F /* NiblessView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05D2547920925A28004DCA1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05D2548520925A28004DCA1F /* TiimeUIKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4A1947ED2084457D00AB490D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A1948252084476C00AB490D /* ClockViewController.swift in Sources */,
 				4A1947F52084457D00AB490D /* AppDelegate.swift in Sources */,
-				29374C4E0EBAD4C17752160A /* Date+BeatTime.swift in Sources */,
-				29374E809036195F13E9466C /* Date+UnixTime.swift in Sources */,
-				29374A69131E009155D296D1 /* CFAbsoluteTime+UnixTime.swift in Sources */,
-				2937481E69F609AB66CCDD4C /* ClockTypes.swift in Sources */,
-				293745AB84E0385D9D4234B7 /* TimeRespresentable.swift in Sources */,
-				293745339143E429A528479C /* BeatTime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +740,36 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		05D2545D20925A17004DCA1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05D2545120925A17004DCA1F /* TiimeKit */;
+			targetProxy = 05D2545C20925A17004DCA1F /* PBXContainerItemProxy */;
+		};
+		05D2545F20925A17004DCA1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A1947F02084457D00AB490D /* Tiime */;
+			targetProxy = 05D2545E20925A17004DCA1F /* PBXContainerItemProxy */;
+		};
+		05D2546620925A17004DCA1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05D2545120925A17004DCA1F /* TiimeKit */;
+			targetProxy = 05D2546520925A17004DCA1F /* PBXContainerItemProxy */;
+		};
+		05D2548020925A28004DCA1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05D2547420925A28004DCA1F /* TiimeUIKit */;
+			targetProxy = 05D2547F20925A28004DCA1F /* PBXContainerItemProxy */;
+		};
+		05D2548220925A28004DCA1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A1947F02084457D00AB490D /* Tiime */;
+			targetProxy = 05D2548120925A28004DCA1F /* PBXContainerItemProxy */;
+		};
+		05D2548920925A28004DCA1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05D2547420925A28004DCA1F /* TiimeUIKit */;
+			targetProxy = 05D2548820925A28004DCA1F /* PBXContainerItemProxy */;
+		};
 		4A1948072084457E00AB490D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4A1947F02084457D00AB490D /* Tiime */;
@@ -395,6 +794,214 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		05D2546920925A17004DCA1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = F2J52QJQ9Y;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = TiimeKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = software.level.TiimeKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		05D2546A20925A17004DCA1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = F2J52QJQ9Y;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = TiimeKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = software.level.TiimeKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		05D2546B20925A17004DCA1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F2J52QJQ9Y;
+				INFOPLIST_FILE = TiimeKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = software.level.TiimeKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tiime.app/Tiime";
+			};
+			name = Debug;
+		};
+		05D2546C20925A17004DCA1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F2J52QJQ9Y;
+				INFOPLIST_FILE = TiimeKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = software.level.TiimeKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tiime.app/Tiime";
+			};
+			name = Release;
+		};
+		05D2548D20925A28004DCA1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = F2J52QJQ9Y;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = TiimeUIKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = software.level.TiimeUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		05D2548E20925A28004DCA1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = F2J52QJQ9Y;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = TiimeUIKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = software.level.TiimeUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		05D2549020925A28004DCA1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F2J52QJQ9Y;
+				INFOPLIST_FILE = TiimeUIKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = software.level.TiimeUIKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tiime.app/Tiime";
+			};
+			name = Debug;
+		};
+		05D2549120925A28004DCA1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F2J52QJQ9Y;
+				INFOPLIST_FILE = TiimeUIKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = software.level.TiimeUIKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tiime.app/Tiime";
+			};
+			name = Release;
+		};
 		4A1948172084457E00AB490D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -512,6 +1119,7 @@
 		4A19481A2084457E00AB490D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -537,6 +1145,7 @@
 		4A19481B2084457E00AB490D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -644,6 +1253,42 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		05D2546D20925A17004DCA1F /* Build configuration list for PBXNativeTarget "TiimeKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05D2546920925A17004DCA1F /* Debug */,
+				05D2546A20925A17004DCA1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05D2546F20925A17004DCA1F /* Build configuration list for PBXNativeTarget "TiimeKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05D2546B20925A17004DCA1F /* Debug */,
+				05D2546C20925A17004DCA1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05D2548C20925A28004DCA1F /* Build configuration list for PBXNativeTarget "TiimeUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05D2548D20925A28004DCA1F /* Debug */,
+				05D2548E20925A28004DCA1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05D2548F20925A28004DCA1F /* Build configuration list for PBXNativeTarget "TiimeUIKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05D2549020925A28004DCA1F /* Debug */,
+				05D2549120925A28004DCA1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4A1947EC2084457D00AB490D /* Build configuration list for PBXProject "Tiime" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

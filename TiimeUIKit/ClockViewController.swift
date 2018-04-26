@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import TiimeKit
 import RxCocoa
 import RxSwift
 
-class ClockViewController: UIViewController {
+public class ClockViewController: UIViewController {
 
 	let timeLabel = UILabel()
 	let timeType: TimeRespresentable
@@ -18,21 +19,21 @@ class ClockViewController: UIViewController {
 	let disposeBag = DisposeBag()
 
 	// Add support for upside down orientation
-	override var supportedInterfaceOrientations: UIInterfaceOrientationMask { return .all }
+	override public var supportedInterfaceOrientations: UIInterfaceOrientationMask { return .all }
 
-	override init(nibName: String?, bundle: Bundle?) {
+	override public init(nibName: String?, bundle: Bundle?) {
 		timeType = BeatTime()
 		super.init(nibName: nibName, bundle: bundle)
 		_init()
 	}
 
-	required init?(coder aDecoder: NSCoder) {
+	required public init?(coder aDecoder: NSCoder) {
 		timeType = BeatTime()
 		super.init(coder: aDecoder)
 		_init()
 	}
 
-	init(timeType: TimeRespresentable = BeatTime()) {
+	public init(timeType: TimeRespresentable = BeatTime()) {
 		self.timeType = timeType
 		super.init(nibName: nil, bundle: nil)
 		_init()
@@ -42,7 +43,7 @@ class ClockViewController: UIViewController {
 		buildLayout()
 	}
 
-	override func viewDidLoad() {
+	override public func viewDidLoad() {
 		super.viewDidLoad()
 
 		timer.map({ _ in self.timeType.timeForDisplay })

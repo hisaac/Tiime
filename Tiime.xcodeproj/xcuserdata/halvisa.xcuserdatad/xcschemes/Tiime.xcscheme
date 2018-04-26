@@ -27,7 +27,56 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4A1948042084457E00AB490D"
+               BuildableName = "TiimeTests.xctest"
+               BlueprintName = "TiimeTests"
+               ReferencedContainer = "container:Tiime.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "05D2545920925A17004DCA1F"
+               BuildableName = "TiimeKitTests.xctest"
+               BlueprintName = "TiimeKitTests"
+               ReferencedContainer = "container:Tiime.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4A19480F2084457E00AB490D"
+               BuildableName = "TiimeUITests.xctest"
+               BlueprintName = "TiimeUITests"
+               ReferencedContainer = "container:Tiime.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "05D2547C20925A28004DCA1F"
+               BuildableName = "TiimeUIKitTests.xctest"
+               BlueprintName = "TiimeUIKitTests"
+               ReferencedContainer = "container:Tiime.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "4A1947F02084457D00AB490D"
+            BuildableName = "Tiime.app"
+            BlueprintName = "Tiime"
+            ReferencedContainer = "container:Tiime.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -60,6 +109,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "4A1947F02084457D00AB490D"
+            BuildableName = "Tiime.app"
+            BlueprintName = "Tiime"
+            ReferencedContainer = "container:Tiime.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
