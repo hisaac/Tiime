@@ -9,5 +9,5 @@
 import Foundation
 
 protocol MainDependencyProvider {
-	func makeTimeRepresentable() -> TimeRepresentable
+	static func makeTimeRepresentable(ofType clockType: ClockType) -> TimeRepresentable
 }

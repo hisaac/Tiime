@@ -9,8 +9,7 @@
 import Foundation
 
 public class MainDependencyContainer: MainDependencyProvider {
-	public init() {}
-	public func makeTimeRepresentable() -> TimeRepresentable {
-		return BeatTime()
+	public static func makeTimeRepresentable(ofType clockType: ClockType = .device) -> TimeRepresentable {
+		return clockType.timeRepresentable
 	}
 }
