@@ -6,8 +6,6 @@
 //  Copyright © 2018 Levelsoft. All rights reserved.
 //
 
-// swiftformat:disable unusedArguments
-
 import UIKit
 import TiimeKit
 import TiimeUIKit
@@ -24,9 +22,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func initializeViews() {
 		let mainNavigationController = UINavigationController()
-		let initialTimeType = MainDependencyContainer.makeTimeRepresentable()
-		let initialClockViewController = ClockViewController(timeType: initialTimeType)
-		mainNavigationController.pushViewController(initialClockViewController, animated: false)
+		let clockListViewController = ClockListViewController()
+		mainNavigationController.pushViewController(clockListViewController, animated: false)
+//		let initialTimeType = MainDependencyContainer.makeTimeRepresentable()
+//		let initialClockViewController = ClockViewController(timeType: initialTimeType)
+//		mainNavigationController.pushViewController(initialClockViewController, animated: false)
 
 		window = UIWindow(frame: UIScreen.main.bounds)
 		window?.rootViewController = mainNavigationController

@@ -1,12 +1,9 @@
 //
-//  NiblessViewController.swift
-//  TiimeUIKit
-//
-//  Created by Isaac Halvorson on 4/26/18.
-//  Copyright © 2018 Levelsoft. All rights reserved.
+// Created by Isaac Halvorson on 5/6/18.
+// Copyright (c) 2018 Levelsoft. All rights reserved.
 //
 
-public class NiblessViewController: UIViewController {
+public class NiblessTableViewController: UITableViewController {
 	public init() {
 		super.init(nibName: nil, bundle: nil)
 	}
@@ -23,3 +20,4 @@ public class NiblessViewController: UIViewController {
 		fatalError("Loading this view controller from a nib is unsupported in favor of initializer dependency injection.")
 	}
 }
+

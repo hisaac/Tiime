@@ -40,6 +40,8 @@
 		4A1947FF2084457E00AB490D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A1947FD2084457E00AB490D /* LaunchScreen.storyboard */; };
 		4A19480A2084457E00AB490D /* TiimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1948092084457E00AB490D /* TiimeTests.swift */; };
 		4A1948152084457E00AB490D /* TiimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1948142084457E00AB490D /* TiimeUITests.swift */; };
+		B775650A16CA84DEDB4C2577 /* ClockListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B775650D25ED6FDB73B4C396 /* ClockListViewController.swift */; };
+		B7756CF5C2D44234BC944C03 /* NiblessTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7756CF69CC096F7CFD162F5 /* NiblessTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,6 +161,8 @@
 		4A1948142084457E00AB490D /* TiimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiimeUITests.swift; sourceTree = "<group>"; };
 		4A1948162084457E00AB490D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A1948242084476C00AB490D /* ClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; };
+		B775650D25ED6FDB73B4C396 /* ClockListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockListViewController.swift; sourceTree = "<group>"; };
+		B7756CF69CC096F7CFD162F5 /* NiblessTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiblessTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +266,7 @@
 			children = (
 				05D254A620925CA2004DCA1F /* Helpers */,
 				4A1948242084476C00AB490D /* ClockViewController.swift */,
+				B775650D25ED6FDB73B4C396 /* ClockListViewController.swift */,
 				05D2547720925A28004DCA1F /* TiimeUIKit.h */,
 				05D2547820925A28004DCA1F /* Info.plist */,
 			);
@@ -291,6 +296,7 @@
 			children = (
 				05D254A720925CB0004DCA1F /* NiblessView.swift */,
 				05D254A920925CB7004DCA1F /* NiblessViewController.swift */,
+				B7756CF69CC096F7CFD162F5 /* NiblessTableViewController.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -702,6 +708,8 @@
 				05D2549220925A6E004DCA1F /* ClockViewController.swift in Sources */,
 				05D254AA20925CB7004DCA1F /* NiblessViewController.swift in Sources */,
 				05D254A820925CB0004DCA1F /* NiblessView.swift in Sources */,
+				B775650A16CA84DEDB4C2577 /* ClockListViewController.swift in Sources */,
+				B7756CF5C2D44234BC944C03 /* NiblessTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
