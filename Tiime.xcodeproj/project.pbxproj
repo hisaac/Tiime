@@ -35,6 +35,7 @@
 		05D254A520925C70004DCA1F /* TiimeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D2545220925A17004DCA1F /* TiimeKit.framework */; };
 		05D254A820925CB0004DCA1F /* NiblessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D254A720925CB0004DCA1F /* NiblessView.swift */; };
 		05D254AA20925CB7004DCA1F /* NiblessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D254A920925CB7004DCA1F /* NiblessViewController.swift */; };
+		29374E20FD8A4DE8143E98F1 /* AutoLayout+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29374FC0F154ACB0434598EE /* AutoLayout+Extensions.swift */; };
 		4A1947F52084457D00AB490D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1947F42084457D00AB490D /* AppDelegate.swift */; };
 		4A1947FC2084457E00AB490D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A1947FB2084457E00AB490D /* Assets.xcassets */; };
 		4A1947FF2084457E00AB490D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A1947FD2084457E00AB490D /* LaunchScreen.storyboard */; };
@@ -148,6 +149,7 @@
 		29374B50DEF45E2A99EBF931 /* ClockType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockType.swift; sourceTree = "<group>"; };
 		29374C927DD5E25D74807B5B /* TimeRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeRepresentable.swift; sourceTree = "<group>"; };
 		29374D2D0C6E6C7A2509E1DE /* Date+UnixTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+UnixTime.swift"; sourceTree = "<group>"; };
+		29374FC0F154ACB0434598EE /* AutoLayout+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AutoLayout+Extensions.swift"; sourceTree = "<group>"; };
 		29374FEC260397217C2D8DC1 /* CFAbsoluteTime+UnixTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CFAbsoluteTime+UnixTime.swift"; sourceTree = "<group>"; };
 		4A1947F12084457D00AB490D /* Tiime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tiime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A1947F42084457D00AB490D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -297,6 +299,7 @@
 				05D254A720925CB0004DCA1F /* NiblessView.swift */,
 				05D254A920925CB7004DCA1F /* NiblessViewController.swift */,
 				B7756CF69CC096F7CFD162F5 /* NiblessTableViewController.swift */,
+				29374FC0F154ACB0434598EE /* AutoLayout+Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -710,6 +713,7 @@
 				05D254A820925CB0004DCA1F /* NiblessView.swift in Sources */,
 				B775650A16CA84DEDB4C2577 /* ClockListViewController.swift in Sources */,
 				B7756CF5C2D44234BC944C03 /* NiblessTableViewController.swift in Sources */,
+				29374E20FD8A4DE8143E98F1 /* AutoLayout+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
