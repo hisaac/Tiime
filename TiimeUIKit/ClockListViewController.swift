@@ -20,9 +20,10 @@ public class ClockListViewController: NiblessTableViewController {
 	}
 
 	public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		let cell = tableView.dequeueReusableCell(withIdentifier: "ClockTypeCell", for: indexPath)
-		let clockName = ClockType.arrayed[indexPath.row].name
-		cell.textLabel?.text = clockName
+//		let cell = tableView.dequeueReusableCell(withIdentifier: "ClockTypeCell", for: indexPath)
+		let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "ClockTypeCell")
+		cell.textLabel?.text = ClockType.arrayed[indexPath.row].name
+		cell.detailTextLabel?.text = ClockType.arrayed[indexPath.row].description
 		return cell
 	}
 
@@ -30,5 +31,13 @@ public class ClockListViewController: NiblessTableViewController {
 		guard let navigationController = navigationController else { return }
 		let clockViewController = ClockViewController(timeType: BeatTime())
 		navigationController.pushViewController(clockViewController, animated: true)
+	}
+
+	public override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+		return "Header"
+	}
+
+	public override func numberOfSections(in tableView: UITableView) -> Int {
+		return 3
 	}
 }

@@ -28,6 +28,27 @@ public enum ClockType {
 		}
 	}
 
+	/// The description of each ClockType
+	public var description: String {
+		switch self {
+		case .beat:
+			return NSLocalizedString(
+					"The day is divided into 1000 \"beats\"",
+					comment: "The description of .beat Time"
+			)
+		case .device:
+			return NSLocalizedString(
+					"The time displayed in the default way for the device's locale",
+					comment: "The description of the device's time"
+			)
+		case .unix:
+			return NSLocalizedString(
+					"The amount of seconds since January 1, 1970",
+					comment: "The description of Unix time"
+			)
+		}
+	}
+
 	/// Returns an array containing each ClockType case
 	public static var arrayed: [ClockType] {
 		return [.beat, .device, .unix]
