@@ -1,6 +1,6 @@
 //
-// Created by Isaac Halvorson on 5/6/18.
-// Copyright (c) 2018 Levelsoft. All rights reserved.
+// NiblessTableViewController.swift
+// Created by Isaac Halvorson on 5/6/18
 //
 
 public class NiblessTableViewController: UITableViewController {
@@ -8,16 +8,14 @@ public class NiblessTableViewController: UITableViewController {
 		super.init(nibName: nil, bundle: nil)
 	}
 
-	// swiftlint:disable:next line_length
-	@available(*, unavailable, message: "Loading this view controller from a nib is unsupported in favor of initializer dependency injection.")
+	@available(*, unavailable, message: "Loading this view controller from a nib is unsupported.")
 	public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
 		super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
 	}
 
-	// swiftlint:disable:next line_length
-	@available(*, unavailable, message: "Loading this view controller from a nib is unsupported in favor of initializer dependency injection.")
+	@available(*, unavailable, message: "Loading this view controller from a nib is unsupported.")
 	public required init?(coder aDecoder: NSCoder) {
-		fatalError("Loading this view controller from a nib is unsupported in favor of initializer dependency injection.")
+		fatalError("Loading this view controller from a nib is unsupported.")
 	}
 }
 

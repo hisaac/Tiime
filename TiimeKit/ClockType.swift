@@ -1,6 +1,6 @@
 //
-// Created by Isaac Halvorson on 4/24/18.
-// Copyright (c) 2018 Levelsoft. All rights reserved.
+// ClockType.swift
+// Created by Isaac Halvorson on 4/24/18
 //
 
 // TODO: Add `CaseIterable` conformance once Swift 4.2 is released

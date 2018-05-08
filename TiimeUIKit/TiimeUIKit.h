@@ -1,9 +1,6 @@
 //
-//  TiimeUIKit.h
-//  TiimeUIKit
-//
-//  Created by Isaac Halvorson on 4/26/18.
-//  Copyright © 2018 Levelsoft. All rights reserved.
+// TiimeUIKit.h
+// Created by Isaac Halvorson on 4/26/18
 //
 
 #import <UIKit/UIKit.h>

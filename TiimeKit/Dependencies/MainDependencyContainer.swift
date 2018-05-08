@@ -1,9 +1,6 @@
 //
-//  MainDependencyContainer.swift
-//  TiimeKit
-//
-//  Created by Isaac Halvorson on 4/26/18.
-//  Copyright © 2018 Levelsoft. All rights reserved.
+// MainDependencyContainer.swift
+// Created by Isaac Halvorson on 4/26/18
 //
 
 import Foundation

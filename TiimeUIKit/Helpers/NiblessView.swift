@@ -1,9 +1,6 @@
 //
-//  NiblessView.swift
-//  TiimeUIKit
-//
-//  Created by Isaac Halvorson on 4/26/18.
-//  Copyright © 2018 Levelsoft. All rights reserved.
+// NiblessView.swift
+// Created by Isaac Halvorson on 4/26/18
 //
 
 public class NiblessView: UIView {
@@ -11,9 +8,8 @@ public class NiblessView: UIView {
 		super.init(frame: frame)
 	}
 
-	// swiftlint:disable:next line_length
-	@available(*, unavailable, message: "Loading this view from a nib is unsupported in favor of initializer dependency injection.")
+	@available(*, unavailable, message: "Loading this view from a nib is unsupported.")
 	public required init?(coder aDecoder: NSCoder) {
-		fatalError("Loading this view from a nib is unsupported in favor of initializer dependency injection.")
+		fatalError("Loading this view from a nib is unsupported.")
 	}
 }

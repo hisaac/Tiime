@@ -1,6 +1,6 @@
 //
-// Created by Isaac Halvorson on 5/6/18.
-// Copyright (c) 2018 Levelsoft. All rights reserved.
+// ClockListViewController.swift
+// Created by Isaac Halvorson on 5/6/18
 //
 
 import UIKit

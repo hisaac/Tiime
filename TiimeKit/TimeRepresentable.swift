@@ -1,6 +1,6 @@
 //
-// Created by Isaac Halvorson on 4/24/18.
-// Copyright (c) 2018 Levelsoft. All rights reserved.
+// TimeRepresentable.swift
+// Created by Isaac Halvorson on 4/24/18
 //
 
 import Foundation

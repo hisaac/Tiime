@@ -1,9 +1,6 @@
 //
-//  AppDelegate.swift
-//  Tiime
-//
-//  Created by Isaac Halvorson on 4/15/18.
-//  Copyright © 2018 Levelsoft. All rights reserved.
+// AppDelegate.swift
+// Created by Isaac Halvorson on 4/15/18
 //
 
 import UIKit
@@ -15,21 +12,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	var window: UIWindow?
 
 	// swiftlint:disable:next line_length
-	func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-		initializeViews()
-		return true
-	}
-
-	func initializeViews() {
+	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 		let mainNavigationController = UINavigationController()
 		let clockListViewController = ClockListViewController()
 		mainNavigationController.pushViewController(clockListViewController, animated: false)
-//		let initialTimeType = MainDependencyContainer.makeTimeRepresentable()
-//		let initialClockViewController = ClockViewController(timeType: initialTimeType)
-//		mainNavigationController.pushViewController(initialClockViewController, animated: false)
+		//		let initialTimeType = MainDependencyContainer.makeTimeRepresentable()
+		//		let initialClockViewController = ClockViewController(timeType: initialTimeType)
+		//		mainNavigationController.pushViewController(initialClockViewController, animated: false)
 
 		window = UIWindow(frame: UIScreen.main.bounds)
-		window?.rootViewController = mainNavigationController
 		window?.makeKeyAndVisible()
+		window?.rootViewController = mainNavigationController
+
+		return true
 	}
 }
