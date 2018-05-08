@@ -6,7 +6,6 @@
 import Foundation
 
 extension Date {
-
 	/// Returns the .beat time representation of the given date
 	var beatTime: Double {
 		// Set the calendar's time zone to BMT (Biel Mean Time = GMT+01)
