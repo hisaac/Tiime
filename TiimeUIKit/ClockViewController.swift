@@ -25,14 +25,14 @@ public class ClockViewController: NiblessViewController {
 
 	override public func viewDidLoad() {
 		super.viewDidLoad()
-		buildLayout()
+		title = timeType.timeTypeTitle
+		view.backgroundColor = .white
 
 		timer.map({ _ in self.timeType.timeForDisplay })
 			.bind(to: timeLabel.rx.text)
 			.disposed(by: disposeBag)
 
-		title = NSLocalizedString(".beat Time", comment: "")
-		view.backgroundColor = .white
+		buildLayout()
 	}
 
 	private func buildLayout() {

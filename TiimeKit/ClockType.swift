@@ -17,7 +17,7 @@ public enum ClockType {
 		switch self {
 		case .beat:   return BeatTime()
 		case .device: return BeatTime()
-		case .unix:   return BeatTime()
+		case .unix:   return UnixTime()
 		}
 	}
 

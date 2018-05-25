@@ -7,4 +7,5 @@ import Foundation
 
 public protocol TimeRepresentable {
 	var timeForDisplay: String { get }
+	var timeTypeTitle: String { get }
 }

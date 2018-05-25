@@ -9,4 +9,8 @@ extension Date {
 	var unixTime: Int {
 		return Int(round(self.timeIntervalSince1970))
 	}
+
+	var unixTimeForDisplay: String {
+		return "\(unixTime)"
+	}
 }
