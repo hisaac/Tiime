@@ -10,6 +10,7 @@ public class ClockListViewController: NiblessTableViewController {
 	public override func viewDidLoad() {
 		super.viewDidLoad()
 		title = NSLocalizedString("Clocks", comment: "Title bar for main clocks list")
+		navigationController?.navigationBar.prefersLargeTitles = true
 
 		tableView.register(UITableViewCell.self, forCellReuseIdentifier: "ClockTypeCell")
 		tableView.allowsSelection = true

@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		05AADA3E208E658E0076C581 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AADA3C208E658D0076C581 /* RxCocoa.framework */; };
 		05AADA3F208E658E0076C581 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AADA3D208E658D0076C581 /* RxSwift.framework */; };
+		05CA3C7320B8AB29000DE2B6 /* iAWriterDuospace-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 05CA3C6F20B8AB29000DE2B6 /* iAWriterDuospace-RegularItalic.otf */; };
+		05CA3C7420B8AB29000DE2B6 /* iAWriterDuospace-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 05CA3C7020B8AB29000DE2B6 /* iAWriterDuospace-Bold.otf */; };
+		05CA3C7520B8AB29000DE2B6 /* iAWriterDuospace-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 05CA3C7120B8AB29000DE2B6 /* iAWriterDuospace-Regular.otf */; };
+		05CA3C7620B8AB29000DE2B6 /* iAWriterDuospace-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 05CA3C7220B8AB29000DE2B6 /* iAWriterDuospace-BoldItalic.otf */; };
 		05D2545B20925A17004DCA1F /* TiimeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D2545220925A17004DCA1F /* TiimeKit.framework */; };
 		05D2546220925A17004DCA1F /* TiimeKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D2546120925A17004DCA1F /* TiimeKitTests.swift */; };
 		05D2546420925A17004DCA1F /* TiimeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 05D2545420925A17004DCA1F /* TiimeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -130,6 +134,10 @@
 		05A19450208E810100C30B22 /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
 		05AADA3C208E658D0076C581 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		05AADA3D208E658D0076C581 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		05CA3C6F20B8AB29000DE2B6 /* iAWriterDuospace-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iAWriterDuospace-RegularItalic.otf"; sourceTree = "<group>"; };
+		05CA3C7020B8AB29000DE2B6 /* iAWriterDuospace-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iAWriterDuospace-Bold.otf"; sourceTree = "<group>"; };
+		05CA3C7120B8AB29000DE2B6 /* iAWriterDuospace-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iAWriterDuospace-Regular.otf"; sourceTree = "<group>"; };
+		05CA3C7220B8AB29000DE2B6 /* iAWriterDuospace-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iAWriterDuospace-BoldItalic.otf"; sourceTree = "<group>"; };
 		05D2545220925A17004DCA1F /* TiimeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TiimeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05D2545420925A17004DCA1F /* TiimeKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TiimeKit.h; sourceTree = "<group>"; };
 		05D2545520925A17004DCA1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -244,6 +252,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		05CA3C7720B8AB35000DE2B6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				05CA3C7020B8AB29000DE2B6 /* iAWriterDuospace-Bold.otf */,
+				05CA3C7220B8AB29000DE2B6 /* iAWriterDuospace-BoldItalic.otf */,
+				05CA3C7120B8AB29000DE2B6 /* iAWriterDuospace-Regular.otf */,
+				05CA3C6F20B8AB29000DE2B6 /* iAWriterDuospace-RegularItalic.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		05D2545320925A17004DCA1F /* TiimeKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -271,6 +290,7 @@
 		05D2547620925A28004DCA1F /* TiimeUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				05CA3C7720B8AB35000DE2B6 /* Fonts */,
 				05D254A620925CA2004DCA1F /* Helpers */,
 				4A1948242084476C00AB490D /* ClockViewController.swift */,
 				B775650D25ED6FDB73B4C396 /* ClockListViewController.swift */,
@@ -638,6 +658,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05CA3C7520B8AB29000DE2B6 /* iAWriterDuospace-Regular.otf in Resources */,
+				05CA3C7620B8AB29000DE2B6 /* iAWriterDuospace-BoldItalic.otf in Resources */,
+				05CA3C7320B8AB29000DE2B6 /* iAWriterDuospace-RegularItalic.otf in Resources */,
+				05CA3C7420B8AB29000DE2B6 /* iAWriterDuospace-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

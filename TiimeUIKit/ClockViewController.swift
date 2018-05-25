@@ -38,7 +38,10 @@ public class ClockViewController: NiblessViewController {
 	private func buildLayout() {
 		timeLabel.translatesAutoresizingMaskIntoConstraints = false
 		timeLabel.textAlignment = .center
-		timeLabel.font = UIFont(name: "Courier", size: 50)
+
+		let font = UIFont(name: "iAWriterDuospace-Regular", size: 50) ?? UIFont.systemFont(ofSize: 50)
+		timeLabel.font = UIFontMetrics.default.scaledFont(for: font)
+		timeLabel.adjustsFontForContentSizeCategory = true
 		timeLabel.adjustsFontSizeToFitWidth = true
 		view.addSubview(timeLabel)
 
