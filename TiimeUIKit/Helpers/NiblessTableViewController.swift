@@ -6,7 +6,6 @@
 public class NiblessTableViewController: UITableViewController {
 	public init() {
 		super.init(nibName: nil, bundle: nil)
-		view.translatesAutoresizingMaskIntoConstraints = false
 	}
 
 	@available(*, unavailable, message: "Loading this view controller from a nib is unsupported.")

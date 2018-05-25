@@ -21,35 +21,33 @@ public class ClockViewController: NiblessViewController {
 	public init(timeType: TimeRepresentable) {
 		self.timeType = timeType
 		super.init()
-		buildLayout()
 	}
 
 	override public func viewDidLoad() {
 		super.viewDidLoad()
+		buildLayout()
 
 		timer.map({ _ in self.timeType.timeForDisplay })
 			.bind(to: timeLabel.rx.text)
 			.disposed(by: disposeBag)
+
+		title = NSLocalizedString(".beat Time", comment: "")
+		view.backgroundColor = .white
 	}
 
 	private func buildLayout() {
-		view.backgroundColor = .white
-
 		timeLabel.translatesAutoresizingMaskIntoConstraints = false
 		timeLabel.textAlignment = .center
 		timeLabel.font = UIFont(name: "Courier", size: 50)
 		timeLabel.adjustsFontSizeToFitWidth = true
-
-		let stackView = UIStackView(arrangedSubviews: [timeLabel])
-		stackView.translatesAutoresizingMaskIntoConstraints = false
-		stackView.axis = .vertical
-		stackView.distribution = .fillProportionally
-		view.addSubview(stackView)
+		view.addSubview(timeLabel)
 
 		let guide = view.safeAreaLayoutGuide
-		stackView.topAnchor.constraint(equalTo: guide.topAnchor, constant: 16).isActive = true
-		stackView.bottomAnchor.constraint(equalTo: guide.bottomAnchor, constant: -16).isActive = true
-		stackView.leadingAnchor.constraint(equalTo: guide.leadingAnchor, constant: 16).isActive = true
-		stackView.trailingAnchor.constraint(equalTo: guide.trailingAnchor, constant: -16).isActive = true
+		timeLabel.topAnchor.constraint(equalTo: guide.topAnchor).isActive = true
+		timeLabel.trailingAnchor.constraint(equalTo: guide.trailingAnchor).isActive = true
+		timeLabel.bottomAnchor.constraint(equalTo: guide.bottomAnchor).isActive = true
+		timeLabel.leadingAnchor.constraint(equalTo: guide.leadingAnchor).isActive = true
+		timeLabel.centerXAnchor.constraint(equalTo: guide.centerXAnchor).isActive = true
+		timeLabel.centerYAnchor.constraint(equalTo: guide.centerYAnchor).isActive = true
 	}
 }

@@ -20,17 +20,20 @@ public class ClockListViewController: NiblessTableViewController {
 	}
 
 	public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//		let cell = tableView.dequeueReusableCell(withIdentifier: "ClockTypeCell", for: indexPath)
 		let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "ClockTypeCell")
+
+		// TODO: Use CaseIterable once Swift 4.2 is released
 		cell.textLabel?.text = ClockType.arrayed[indexPath.row].name
 		cell.detailTextLabel?.text = ClockType.arrayed[indexPath.row].description
 		return cell
 	}
 
 	public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		tableView.deselectRow(at: indexPath, animated: true)
 		guard let navigationController = navigationController else { return }
 		let clockViewController = ClockViewController(timeType: BeatTime())
-		navigationController.pushViewController(clockViewController, animated: true)
+//		navigationController.pushViewController(clockViewController, animated: true)
+		navigationController.show(clockViewController, sender: nil)
 	}
 
 	public override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {

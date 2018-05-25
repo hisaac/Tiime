@@ -3,6 +3,8 @@
 // Created by Isaac Halvorson on 4/24/18
 //
 
+import Foundation
+
 // TODO: Add `CaseIterable` conformance once Swift 4.2 is released
 public enum ClockType {
 	case beat   // Swatch .beat time / Internet Time

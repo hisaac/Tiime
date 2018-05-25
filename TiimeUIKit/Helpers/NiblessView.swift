@@ -6,7 +6,6 @@
 public class NiblessView: UIView {
 	public override init(frame: CGRect) {
 		super.init(frame: frame)
-		translatesAutoresizingMaskIntoConstraints = false
 	}
 
 	@available(*, unavailable, message: "Loading this view from a nib is unsupported.")
