@@ -36,6 +36,7 @@
 		05D254A820925CB0004DCA1F /* NiblessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D254A720925CB0004DCA1F /* NiblessView.swift */; };
 		05D254AA20925CB7004DCA1F /* NiblessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D254A920925CB7004DCA1F /* NiblessViewController.swift */; };
 		293741BBCEE1AC181D6B047A /* UnixTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293747B6D6301FA2C480F22E /* UnixTime.swift */; };
+		293742C9D15E7E32F5DEC903 /* DeviceTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29374A591C59721178F9F4E6 /* DeviceTime.swift */; };
 		29374E20FD8A4DE8143E98F1 /* AutoLayout+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29374FC0F154ACB0434598EE /* AutoLayout+Extensions.swift */; };
 		4A1947F52084457D00AB490D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1947F42084457D00AB490D /* AppDelegate.swift */; };
 		4A1947FC2084457E00AB490D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A1947FB2084457E00AB490D /* Assets.xcassets */; };
@@ -148,6 +149,7 @@
 		2937414B04D7CA07E13CE103 /* Date+BeatTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+BeatTime.swift"; sourceTree = "<group>"; };
 		293745D13632115B8C657D8C /* BeatTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeatTime.swift; sourceTree = "<group>"; };
 		293747B6D6301FA2C480F22E /* UnixTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnixTime.swift; sourceTree = "<group>"; };
+		29374A591C59721178F9F4E6 /* DeviceTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceTime.swift; sourceTree = "<group>"; };
 		29374B50DEF45E2A99EBF931 /* ClockType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockType.swift; sourceTree = "<group>"; };
 		29374C927DD5E25D74807B5B /* TimeRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeRepresentable.swift; sourceTree = "<group>"; };
 		29374D2D0C6E6C7A2509E1DE /* Date+UnixTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+UnixTime.swift"; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 				05D2549520925AB8004DCA1F /* Dependencies */,
 				29374907443D2F0597FB79AC /* BeatTime */,
 				2937401180E843C3C576F7B6 /* UnixTime */,
+				29374318BB82B99E514D3BDA /* DeviceTime */,
 				29374B50DEF45E2A99EBF931 /* ClockType.swift */,
 				29374C927DD5E25D74807B5B /* TimeRepresentable.swift */,
 				05D2545420925A17004DCA1F /* TiimeKit.h */,
@@ -314,6 +317,14 @@
 				293747B6D6301FA2C480F22E /* UnixTime.swift */,
 			);
 			path = UnixTime;
+			sourceTree = "<group>";
+		};
+		29374318BB82B99E514D3BDA /* DeviceTime */ = {
+			isa = PBXGroup;
+			children = (
+				29374A591C59721178F9F4E6 /* DeviceTime.swift */,
+			);
+			path = DeviceTime;
 			sourceTree = "<group>";
 		};
 		29374907443D2F0597FB79AC /* BeatTime */ = {
@@ -697,6 +708,7 @@
 				05D2549C20925BBE004DCA1F /* BeatTime.swift in Sources */,
 				05D2549820925B0C004DCA1F /* MainDependencyContainer.swift in Sources */,
 				293741BBCEE1AC181D6B047A /* UnixTime.swift in Sources */,
+				293742C9D15E7E32F5DEC903 /* DeviceTime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

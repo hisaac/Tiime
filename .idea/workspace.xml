@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d684535-534c-440b-9ada-58a3232c1a65" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/TiimeKit/UnixTime/UnixTime.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TiimeKit/DeviceTime/DeviceTime.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tiime.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Tiime.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TiimeKit/BeatTime/BeatTime.swift" beforeDir="false" afterPath="$PROJECT_DIR$/TiimeKit/BeatTime/BeatTime.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tiime.xcodeproj/project.xcworkspace/xcuserdata/halvisa.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/Tiime.xcodeproj/project.xcworkspace/xcuserdata/halvisa.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TiimeKit/ClockType.swift" beforeDir="false" afterPath="$PROJECT_DIR$/TiimeKit/ClockType.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TiimeKit/TimeRepresentable.swift" beforeDir="false" afterPath="$PROJECT_DIR$/TiimeKit/TimeRepresentable.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TiimeKit/UnixTime/Date+UnixTime.swift" beforeDir="false" afterPath="$PROJECT_DIR$/TiimeKit/UnixTime/Date+UnixTime.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TiimeUIKit/ClockListViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/TiimeUIKit/ClockListViewController.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TiimeUIKit/ClockViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/TiimeUIKit/ClockViewController.swift" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,23 +14,32 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_628DA282-AC9C-4F16-83B1-73D6DE59E104" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TiimeKit/ClockType.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+            <state relative-caret-position="204">
+              <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TiimeUIKit/ClockListViewController.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="33" column="56" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TiimeUIKit/ClockListViewController.swift">
+        <entry file="file://$PROJECT_DIR$/TiimeKit/DeviceTime/DeviceTime.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="34" column="91" selection-start-line="34" selection-start-column="91" selection-end-line="34" selection-end-column="91" />
+            <state relative-caret-position="210">
+              <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -135,8 +140,9 @@
         <option value="$PROJECT_DIR$/TiimeKit/BeatTime/BeatTime.swift" />
         <option value="$PROJECT_DIR$/TiimeKit/UnixTime/Date+UnixTime.swift" />
         <option value="$PROJECT_DIR$/TiimeKit/UnixTime/UnixTime.swift" />
-        <option value="$PROJECT_DIR$/TiimeKit/ClockType.swift" />
         <option value="$PROJECT_DIR$/TiimeUIKit/ClockListViewController.swift" />
+        <option value="$PROJECT_DIR$/TiimeKit/ClockType.swift" />
+        <option value="$PROJECT_DIR$/TiimeKit/DeviceTime/DeviceTime.swift" />
       </list>
     </option>
   </component>
@@ -184,6 +190,12 @@
               <item name="Tiime" type="1d218c8b:XcodeProjectNode" />
               <item name="TiimeKit" type="fcab9f18:XcodeViewNode" />
               <item name="Dependencies" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="Tiime" type="1d218c8b:XcodeProjectNode" />
+              <item name="TiimeKit" type="fcab9f18:XcodeViewNode" />
+              <item name="DeviceTime" type="fcab9f18:XcodeViewNode" />
             </path>
             <path>
               <item name="" type="efc3779f:XcodeRootNode" />
@@ -272,12 +284,12 @@
       <workItem from="1525804597774" duration="1088000" />
       <workItem from="1525880754489" duration="634000" />
       <workItem from="1527268624520" duration="1540000" />
-      <workItem from="1527275995706" duration="1736000" />
+      <workItem from="1527275995706" duration="2441000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36965000" />
+    <option name="totallyTimeSpent" value="37670000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
@@ -290,7 +302,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.396619" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3953186" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -298,7 +310,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50060827" side_tool="true" weight="0.23966065" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info active="true" anchor="bottom" id="Messages" order="11" sideWeight="0.49939173" visible="true" weight="0.36410922" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49939173" weight="0.36410922" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -319,14 +331,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Tiime/UnixTime/Date+UnixTime.swift" />
-    <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/9E145/4.1/arm64/iphoneos11.3/Foundation/Foundation.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="7369" column="11" selection-start-line="7369" selection-start-column="11" selection-end-line="7369" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/9E145/4.1/arm64/iphoneos11.3/Darwin.C.math/Darwin.C.math.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
@@ -560,31 +564,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TiimeKit/TimeRepresentable.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TiimeKit/BeatTime/BeatTime.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TiimeKit/UnixTime/Date+UnixTime.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TiimeKit/ClockType.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -604,8 +587,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TiimeUIKit/ClockListViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="34" column="91" selection-start-line="34" selection-start-column="91" selection-end-line="34" selection-end-column="91" />
+        <state relative-caret-position="275">
+          <caret line="33" column="56" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TiimeKit/BeatTime/BeatTime.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TiimeKit/TimeRepresentable.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TiimeKit/ClockType.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/9E501/4.1/arm64/iphoneos11.3/Foundation.NSDateFormatter/Foundation.NSDateFormatter.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TiimeKit/DeviceTime/DeviceTime.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
         </state>
       </provider>
     </entry>
