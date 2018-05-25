@@ -31,21 +31,23 @@ public class ClockViewController: NiblessViewController {
 		timer.map({ _ in self.timeType.timeForDisplay })
 			.bind(to: timeLabel.rx.text)
 			.disposed(by: disposeBag)
-
-		buildLayout()
 	}
 
-	private func buildLayout() {
+	override public func viewDidLayoutSubviews() {
+		super.viewDidLayoutSubviews()
+
 		timeLabel.translatesAutoresizingMaskIntoConstraints = false
 		timeLabel.textAlignment = .center
-
-		let font = UIFont(name: "iAWriterDuospace-Regular", size: 50) ?? UIFont.systemFont(ofSize: 50)
-		timeLabel.font = UIFontMetrics.default.scaledFont(for: font)
-		timeLabel.adjustsFontForContentSizeCategory = true
+		timeLabel.baselineAdjustment = .alignCenters
+		timeLabel.numberOfLines = 1
+		timeLabel.minimumScaleFactor = 0.1
 		timeLabel.adjustsFontSizeToFitWidth = true
+		let font = UIFont(name: "iAWriterDuospace-Regular", size: 500) ?? UIFont.systemFont(ofSize: 500)
+		timeLabel.font = UIFontMetrics.default.scaledFont(for: font)
+
 		view.addSubview(timeLabel)
 
-		let guide = view.safeAreaLayoutGuide
+		let guide = view.layoutMarginsGuide
 		timeLabel.topAnchor.constraint(equalTo: guide.topAnchor).isActive = true
 		timeLabel.trailingAnchor.constraint(equalTo: guide.trailingAnchor).isActive = true
 		timeLabel.bottomAnchor.constraint(equalTo: guide.bottomAnchor).isActive = true
