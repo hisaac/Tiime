@@ -35,12 +35,4 @@ public class ClockListViewController: NiblessTableViewController {
 		let clockViewController = ClockViewController(timeType: clockType.timeRepresentable)
 		navigationController.show(clockViewController, sender: nil)
 	}
-
-	public override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-		return "Header"
-	}
-
-	public override func numberOfSections(in tableView: UITableView) -> Int {
-		return 3
-	}
 }

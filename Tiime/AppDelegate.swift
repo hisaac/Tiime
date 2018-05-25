@@ -15,11 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 		let mainNavigationController = UINavigationController()
 		mainNavigationController.navigationBar.prefersLargeTitles = true
-		let clockListViewController = ClockListViewController()
+		let clockListViewController = ClockListViewController(style: .grouped)
 		mainNavigationController.pushViewController(clockListViewController, animated: false)
-		//		let initialTimeType = MainDependencyContainer.makeTimeRepresentable()
-		//		let initialClockViewController = ClockViewController(timeType: initialTimeType)
-		//		mainNavigationController.pushViewController(initialClockViewController, animated: false)
 
 		window = UIWindow(frame: UIScreen.main.bounds)
 		window?.makeKeyAndVisible()
