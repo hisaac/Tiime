@@ -13,7 +13,6 @@ public enum ClockType {
 
 	/// The `TimeRepresentable` object associated with each clock type value
 	public var timeRepresentable: TimeRepresentable {
-		// TODO: Update these with their actual values
 		switch self {
 		case .beat:   return BeatTime()
 		case .device: return DeviceTime()
