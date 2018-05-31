@@ -3,6 +3,8 @@
 // Created by Isaac Halvorson on 4/26/18
 //
 
+import UIKit
+
 public class NiblessView: UIView {
 	public override init(frame: CGRect) {
 		super.init(frame: frame)

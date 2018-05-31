@@ -4,8 +4,6 @@
 //
 
 import UIKit
-import TiimeKit
-import TiimeUIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

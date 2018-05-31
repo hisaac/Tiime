@@ -4,7 +4,6 @@
 //
 
 import UIKit
-import TiimeKit
 
 public class ClockListViewController: NiblessTableViewController {
 	public override func viewDidLoad() {

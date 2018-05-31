@@ -3,6 +3,8 @@
 // Created by Isaac Halvorson on 5/6/18
 //
 
+import UIKit
+
 public class NiblessTableViewController: UITableViewController {
 	public init() {
 		super.init(nibName: nil, bundle: nil)
