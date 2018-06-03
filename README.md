@@ -2,7 +2,7 @@
 
 <p align="center">
 	<a href="./meta/screenshots/2018-05-31-tiime-beat-time-view-landscape.jpg">
-		<img src="./meta/screenshots/2018-05-31-tiime-beat-time-view-landscape.jpg" alt="Landscape view as of .beat time as of 2018-06-02" width="75%">
+		<img src="./meta/screenshots/2018-05-31-tiime-beat-time-view-landscape.jpg" alt="Landscape view of .beat time as of 2018-06-02" width="75%">
 	</a><br />
 	<caption><em>Landscape view of .beat time as of 2018-06-02</em></caption>
 </p>
