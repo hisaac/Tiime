@@ -1,9 +1,18 @@
 # Tiime
 
+<p align="center">
+	<a href="./meta/screenshots/2018-05-31-tiime-beat-time-view-landscape.jpg">
+		<img src="./meta/screenshots/2018-05-31-tiime-beat-time-view-landscape.jpg" alt="Landscape view as of .beat time as of 2018-06-02" width="75%">
+	</a><br />
+	<caption><em>Landscape view of .beat time as of 2018-06-02</em></caption>
+</p>
+
 Tiime is two things:
 
 1. A clock that tells time in unconventional ways.
 2. An app I'll be developing to learn about iOS development.
+
+<small>[Click here for more screenshots](./meta/screenshots/)</small>
 
 ## About
 
@@ -41,6 +50,6 @@ This will download and build all the necessary dependencies (it may take a while
 
 ## Resources
 
-All of the resources I used when building Tiime: 
+All of the resources I used when building Tiime:
 
 - [<cite>UIKit init Patterns</cite>](https://theswiftdev.com/2017/10/11/uikit-init-patterns/) - Explains some good practices to use when initializing a UIViewController or UIView from code. I found that overriding the init methods isn't quite as easy as I expected, mainly because UIKit elements can be initialized from code, or from Interface Builder, and there are built-in initializer methods you have to use/override in order to also implement a custom one.
