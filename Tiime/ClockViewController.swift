@@ -41,6 +41,7 @@ public class ClockViewController: NiblessViewController {
 		timeLabel.numberOfLines = 1
 		timeLabel.minimumScaleFactor = 0.1
 		timeLabel.adjustsFontSizeToFitWidth = true
+		timeLabel.adjustsFontForContentSizeCategory = true
 		let font = UIFont(name: "iAWriterDuospace-Regular", size: 500) ?? UIFont.systemFont(ofSize: 500)
 		timeLabel.font = UIFontMetrics.default.scaledFont(for: font)
 

@@ -210,6 +210,8 @@
 				05A1944D208E810100C30B22 /* Cartfile */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
+			wrapsLines = 0;
 		};
 		4A1947F22084457D00AB490D /* Products */ = {
 			isa = PBXGroup;
@@ -556,7 +558,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Tiime/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -582,7 +584,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Tiime/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
