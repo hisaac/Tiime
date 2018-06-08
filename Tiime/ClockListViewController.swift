@@ -5,21 +5,19 @@
 
 import UIKit
 
-public class ClockListViewController: NiblessTableViewController {
-	public override func viewDidLoad() {
+class ClockListViewController: NiblessTableViewController {
+	override func viewDidLoad() {
 		super.viewDidLoad()
 		title = NSLocalizedString("Clocks", comment: "Title bar for main clocks list")
-		navigationController?.navigationBar.prefersLargeTitles = true
-
 		tableView.register(UITableViewCell.self, forCellReuseIdentifier: "ClockTypeCell")
 		tableView.allowsSelection = true
 	}
 
-	public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return ClockType.arrayed.count
 	}
 
-	public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "ClockTypeCell")
 
 		// TODO: Use CaseIterable once Swift 4.2 is released
@@ -28,7 +26,7 @@ public class ClockListViewController: NiblessTableViewController {
 		return cell
 	}
 
-	public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		tableView.deselectRow(at: indexPath, animated: true)
 		guard let navigationController = navigationController else { return }
 		let clockType = ClockType.arrayed[indexPath.row]

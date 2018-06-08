@@ -5,13 +5,12 @@
 
 import Foundation
 
-public struct UnixTime: TimeRepresentable {
-	public init() {}
-	public var timeForDisplay: String {
+struct UnixTime: TimeRepresentable {
+	var timeForDisplay: String {
 		return Date().unixTimeForDisplay
 	}
 
-	public var timeTypeTitle: String {
+	var timeTypeTitle: String {
 		return ClockType.unix.name
 	}
 }

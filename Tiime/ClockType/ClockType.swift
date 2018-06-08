@@ -6,13 +6,13 @@
 import Foundation
 
 // TODO: Add `CaseIterable` conformance once Swift 4.2 is released
-public enum ClockType {
+enum ClockType {
 	case beat   // Swatch .beat time / Internet Time
 	case device // The time displayed based on the device's setting
 	case unix   // Unix time / Epoch time
 
 	/// The `TimeRepresentable` object associated with each clock type value
-	public var timeRepresentable: TimeRepresentable {
+	var timeRepresentable: TimeRepresentable {
 		switch self {
 		case .beat:   return BeatTime()
 		case .device: return DeviceTime()
@@ -21,7 +21,7 @@ public enum ClockType {
 	}
 
 	/// The name of each ClockType
-	public var name: String {
+	var name: String {
 		switch self {
 		case .beat:   return NSLocalizedString(".beat Time", comment: "The name of .beat Time")
 		case .device: return NSLocalizedString("Device Time", comment: "The name of the device's time")
@@ -30,7 +30,7 @@ public enum ClockType {
 	}
 
 	/// The description of each ClockType
-	public var description: String {
+	var description: String {
 		switch self {
 		case .beat:
 			return NSLocalizedString(
@@ -51,7 +51,7 @@ public enum ClockType {
 	}
 
 	/// Returns an array containing each ClockType case
-	public static var arrayed: [ClockType] {
+	static var arrayed: [ClockType] {
 		return [.beat, .device, .unix]
 	}
 }

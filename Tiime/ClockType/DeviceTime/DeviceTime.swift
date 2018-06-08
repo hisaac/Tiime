@@ -5,9 +5,8 @@
 
 import Foundation
 
-public struct DeviceTime: TimeRepresentable {
-	public init() {}
-	public var timeForDisplay: String {
+struct DeviceTime: TimeRepresentable {
+	var timeForDisplay: String {
 		return DateFormatter.localizedString(
 			from: Date(),
 			dateStyle: .none,
@@ -15,7 +14,7 @@ public struct DeviceTime: TimeRepresentable {
 		)
 	}
 
-	public var timeTypeTitle: String {
+	var timeTypeTitle: String {
 		return ClockType.device.name
 	}
 }

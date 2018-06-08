@@ -7,7 +7,7 @@ import UIKit
 import RxCocoa
 import RxSwift
 
-public class ClockViewController: NiblessViewController {
+class ClockViewController: NiblessViewController {
 
 	let timeLabel = UILabel()
 	let timeType: TimeRepresentable
@@ -15,16 +15,17 @@ public class ClockViewController: NiblessViewController {
 	let disposeBag = DisposeBag()
 
 	// Add support for upside down orientation
-	override public var supportedInterfaceOrientations: UIInterfaceOrientationMask { return .all }
+	override var supportedInterfaceOrientations: UIInterfaceOrientationMask { return .all }
 
-	public init(timeType: TimeRepresentable) {
+	init(timeType: TimeRepresentable) {
 		self.timeType = timeType
 		super.init()
 	}
 
-	override public func viewDidLoad() {
+	override func viewDidLoad() {
 		super.viewDidLoad()
 		title = timeType.timeTypeTitle
+		navigationController?.navigationBar.topItem?.largeTitleDisplayMode = .never
 		view.backgroundColor = .white
 
 		timer.map({ _ in self.timeType.timeForDisplay })
@@ -32,7 +33,12 @@ public class ClockViewController: NiblessViewController {
 			.disposed(by: disposeBag)
 	}
 
-	override public func viewDidLayoutSubviews() {
+	override func viewWillDisappear(_ animated: Bool) {
+		super.viewWillDisappear(animated)
+		navigationController?.navigationBar.topItem?.largeTitleDisplayMode = .always
+	}
+
+	override func viewDidLayoutSubviews() {
 		super.viewDidLayoutSubviews()
 
 		timeLabel.translatesAutoresizingMaskIntoConstraints = false

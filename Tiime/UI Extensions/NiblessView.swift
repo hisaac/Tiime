@@ -5,13 +5,13 @@
 
 import UIKit
 
-public class NiblessView: UIView {
-	public override init(frame: CGRect) {
+class NiblessView: UIView {
+	override init(frame: CGRect) {
 		super.init(frame: frame)
 	}
 
 	@available(*, unavailable, message: "Loading this view from a nib is unsupported.")
-	public required init?(coder aDecoder: NSCoder) {
+	required init?(coder aDecoder: NSCoder) {
 		fatalError("Loading this view from a nib is unsupported.")
 	}
 }

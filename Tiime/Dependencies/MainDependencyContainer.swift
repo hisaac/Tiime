@@ -5,8 +5,8 @@
 
 import Foundation
 
-public class MainDependencyContainer: MainDependencyProvider {
-	public static func makeTimeRepresentable(ofType clockType: ClockType = .device) -> TimeRepresentable {
+class MainDependencyContainer: MainDependencyProvider {
+	static func makeTimeRepresentable(ofType clockType: ClockType = .device) -> TimeRepresentable {
 		return clockType.timeRepresentable
 	}
 }

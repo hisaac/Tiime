@@ -5,13 +5,12 @@
 
 import Foundation
 
-public struct BeatTime: TimeRepresentable {
-	public init() {}
-	public var timeForDisplay: String {
+struct BeatTime: TimeRepresentable {
+	var timeForDisplay: String {
 		return Date().beatTimeForDisplay
 	}
 
-	public var timeTypeTitle: String {
+	var timeTypeTitle: String {
 		return ClockType.beat.name
 	}
 }
