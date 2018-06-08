@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0561F69D20CB0FA600B3FEC4 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0561F69C20CB0FA600B3FEC4 /* MainNavigationController.swift */; };
 		0591622420BB1829005D6D47 /* TimeRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29374C927DD5E25D74807B5B /* TimeRepresentable.swift */; };
 		0591622520BB1829005D6D47 /* ClockType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29374B50DEF45E2A99EBF931 /* ClockType.swift */; };
 		0591622620BB1834005D6D47 /* ClockListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B775650D25ED6FDB73B4C396 /* ClockListViewController.swift */; };
@@ -60,6 +61,7 @@
 
 /* Begin PBXFileReference section */
 		054B2B57208E16210030B580 /* Tiime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tiime.entitlements; sourceTree = "<group>"; };
+		0561F69C20CB0FA600B3FEC4 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		05A1944C208E80F100C30B22 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		05A1944D208E810100C30B22 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		05A1944E208E810100C30B22 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 				05D2549520925AB8004DCA1F /* Dependencies */,
 				05CA3C7720B8AB35000DE2B6 /* Fonts */,
 				05D254A620925CA2004DCA1F /* UI Extensions */,
+				0561F69C20CB0FA600B3FEC4 /* MainNavigationController.swift */,
 				4A1948242084476C00AB490D /* ClockViewController.swift */,
 				B775650D25ED6FDB73B4C396 /* ClockListViewController.swift */,
 			);
@@ -381,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0561F69D20CB0FA600B3FEC4 /* MainNavigationController.swift in Sources */,
 				4A1947F52084457D00AB490D /* AppDelegate.swift in Sources */,
 				05D7C89220BB199B00265C47 /* AutoLayout+Extensions.swift in Sources */,
 				0591622420BB1829005D6D47 /* TimeRepresentable.swift in Sources */,

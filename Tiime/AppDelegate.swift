@@ -11,7 +11,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	// swiftlint:disable:next line_length
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-		let mainNavigationController = UINavigationController()
+		let mainNavigationController = MainNavigationController()
 		let clockListViewController = ClockListViewController(style: .grouped)
 		mainNavigationController.pushViewController(clockListViewController, animated: false)
 
