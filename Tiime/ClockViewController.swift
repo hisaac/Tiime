@@ -14,9 +14,6 @@ class ClockViewController: NiblessViewController {
 	let timer = Observable<Int>.interval(0.01, scheduler: MainScheduler.instance)
 	let disposeBag = DisposeBag()
 
-	// Add support for upside down orientation
-	override var supportedInterfaceOrientations: UIInterfaceOrientationMask { return .all }
-
 	init(timeType: TimeRepresentable) {
 		self.timeType = timeType
 		super.init()
