@@ -34,6 +34,7 @@
 		4A1947FC2084457E00AB490D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A1947FB2084457E00AB490D /* Assets.xcassets */; };
 		4A1947FF2084457E00AB490D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A1947FD2084457E00AB490D /* LaunchScreen.storyboard */; };
 		4A19480A2084457E00AB490D /* TiimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1948092084457E00AB490D /* TiimeTests.swift */; };
+		4AD15B6A20CB2F7B00BF18FA /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD15B6920CB2F7B00BF18FA /* SplitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		4A1948092084457E00AB490D /* TiimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiimeTests.swift; sourceTree = "<group>"; };
 		4A19480B2084457E00AB490D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A1948242084476C00AB490D /* ClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; };
+		4AD15B6920CB2F7B00BF18FA /* SplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 		B775650D25ED6FDB73B4C396 /* ClockListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockListViewController.swift; sourceTree = "<group>"; };
 		B7756CF69CC096F7CFD162F5 /* NiblessTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiblessTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -237,6 +239,7 @@
 				05CA3C7720B8AB35000DE2B6 /* Fonts */,
 				05D254A620925CA2004DCA1F /* UI Extensions */,
 				0561F69C20CB0FA600B3FEC4 /* MainNavigationController.swift */,
+				4AD15B6920CB2F7B00BF18FA /* SplitViewController.swift */,
 				4A1948242084476C00AB490D /* ClockViewController.swift */,
 				B775650D25ED6FDB73B4C396 /* ClockListViewController.swift */,
 			);
@@ -401,6 +404,7 @@
 				0591622720BB1834005D6D47 /* ClockViewController.swift in Sources */,
 				05D7C88420BB197D00265C47 /* BeatTime.swift in Sources */,
 				0591622620BB1834005D6D47 /* ClockListViewController.swift in Sources */,
+				4AD15B6A20CB2F7B00BF18FA /* SplitViewController.swift in Sources */,
 				05D7C88920BB198E00265C47 /* MainDependencyContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
