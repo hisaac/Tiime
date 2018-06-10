@@ -31,6 +31,7 @@ class ClockListViewController: NiblessTableViewController {
 		guard let navigationController = navigationController else { return }
 		let clockType = ClockType.arrayed[indexPath.row]
 		let clockViewController = ClockViewController(timeType: clockType.timeRepresentable)
-		navigationController.show(clockViewController, sender: nil)
+//		navigationController.show(clockViewController, sender: nil)
+		showDetailViewController(clockViewController, sender: self)
 	}
 }

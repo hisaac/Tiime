@@ -20,6 +20,19 @@ The idea for Tiime came after listening to an episode of the late <cite>TLDR</ci
 
 I decided it would be an interesting experiment to try to make a clock that told time in beats. As this is a simple enough idea, I also realized that it would be a great way to easily and quickly learn about iOS development as a whole. I plan to bring the app to as many platforms as possible (iOS, watchOS, tvOS, macOS), use as many features and niceties as I can (iOS and macOS Today extensions, Apple Watch complication, CarPlay, macOS screen saver, etc.), and try out various iOS development tools ([AppCode](https://www.jetbrains.com/objc/), [fastlane](https://fastlane.tools), [TestFlight](https://developer.apple.com/testflight/), app localization & translation, [RxSwift](https://github.com/ReactiveX/RxSwift/), [ReSwift](https://github.com/ReSwift/ReSwift), [Carthage](https://github.com/Carthage/Carthage), etc.).
 
+## Time Types
+
+### Currently Implemented
+
+- .beat time (a.k.a. Internet Time)
+- Device Time
+- Unix Time
+
+### Implementation Planned
+
+- Decimal Time
+- [New Earth Time (a.k.a NET)](https://en.wikipedia.org/wiki/New_Earth_Time) (h/t @eli-oat)
+
 ## Participate
 
 ### Test

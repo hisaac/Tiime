@@ -7,10 +7,11 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
-	var window: UIWindow? = UIWindow(frame: UIScreen.main.bounds)
+	var window: UIWindow?
 
 	// swiftlint:disable:next line_length
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+		window = UIWindow(frame: UIScreen.main.bounds)
 		window?.rootViewController = buildInitialUI()
 		window?.tintColor = UIColor.HIGColors.purple
 		window?.makeKeyAndVisible()
@@ -18,24 +19,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 	}
 
 	func buildInitialUI() -> UIViewController {
-		let clockListNavigationController = MasterNavigationController()
-		let settingsViewController = UIViewController()
-
-		let masterTabBarViewController = UITabBarController()
-		masterTabBarViewController.viewControllers = [
-			clockListNavigationController,
-			settingsViewController
-		]
-
-		let detailViewController = UINavigationController()
-
 		let mainSplitViewController = UISplitViewController()
+		let masterNavigationController = MasterNavigationController()
+		let detailNavigationController = DetailNavigationController()
+
 		mainSplitViewController.delegate = self
 		mainSplitViewController.viewControllers = [
-			masterTabBarViewController,
-			detailViewController
+			masterNavigationController,
+			detailNavigationController
 		]
 
 		return mainSplitViewController
+	}
+
+	// swiftlint:disable:next line_length
+	func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool {
+		return true
 	}
 }

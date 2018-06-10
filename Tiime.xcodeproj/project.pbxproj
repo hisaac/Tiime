@@ -33,9 +33,11 @@
 		4A1947FC2084457E00AB490D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A1947FB2084457E00AB490D /* Assets.xcassets */; };
 		4A1947FF2084457E00AB490D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A1947FD2084457E00AB490D /* LaunchScreen.storyboard */; };
 		4A19480A2084457E00AB490D /* TiimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1948092084457E00AB490D /* TiimeTests.swift */; };
+		4A21994520CCA30F0043F4A2 /* DetailNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A21994420CCA30F0043F4A2 /* DetailNavigationController.swift */; };
 		4A4DCBA320CC82560023C56C /* MainSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4DCBA220CC82560023C56C /* MainSplitViewController.swift */; };
 		4A4DCBA520CC84940023C56C /* MasterNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4DCBA420CC84940023C56C /* MasterNavigationController.swift */; };
 		4A4DCBA720CC8A3C0023C56C /* UIColor+HIGColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4DCBA620CC8A3C0023C56C /* UIColor+HIGColors.swift */; };
+		4A4DCBA920CC96F70023C56C /* EmptyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4DCBA820CC96F70023C56C /* EmptyDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,9 +98,11 @@
 		4A1948092084457E00AB490D /* TiimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiimeTests.swift; sourceTree = "<group>"; };
 		4A19480B2084457E00AB490D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A1948242084476C00AB490D /* ClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; };
+		4A21994420CCA30F0043F4A2 /* DetailNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNavigationController.swift; sourceTree = "<group>"; };
 		4A4DCBA220CC82560023C56C /* MainSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSplitViewController.swift; sourceTree = "<group>"; };
 		4A4DCBA420CC84940023C56C /* MasterNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterNavigationController.swift; sourceTree = "<group>"; };
 		4A4DCBA620CC8A3C0023C56C /* UIColor+HIGColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HIGColors.swift"; sourceTree = "<group>"; };
+		4A4DCBA820CC96F70023C56C /* EmptyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyDetailViewController.swift; sourceTree = "<group>"; };
 		B775650D25ED6FDB73B4C396 /* ClockListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockListViewController.swift; sourceTree = "<group>"; };
 		B7756CF69CC096F7CFD162F5 /* NiblessTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiblessTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -243,6 +247,8 @@
 				05D254A620925CA2004DCA1F /* UI Extensions */,
 				4A4DCBA220CC82560023C56C /* MainSplitViewController.swift */,
 				4A4DCBA420CC84940023C56C /* MasterNavigationController.swift */,
+				4A21994420CCA30F0043F4A2 /* DetailNavigationController.swift */,
+				4A4DCBA820CC96F70023C56C /* EmptyDetailViewController.swift */,
 				4A1948242084476C00AB490D /* ClockViewController.swift */,
 				B775650D25ED6FDB73B4C396 /* ClockListViewController.swift */,
 			);
@@ -396,6 +402,7 @@
 				0591622420BB1829005D6D47 /* TimeRepresentable.swift in Sources */,
 				05D7C88720BB198200265C47 /* UnixTime.swift in Sources */,
 				4A4DCBA520CC84940023C56C /* MasterNavigationController.swift in Sources */,
+				4A4DCBA920CC96F70023C56C /* EmptyDetailViewController.swift in Sources */,
 				05D7C88520BB198200265C47 /* Date+UnixTime.swift in Sources */,
 				05D7C89120BB199B00265C47 /* NiblessTableViewController.swift in Sources */,
 				05D7C88A20BB198E00265C47 /* MainDependencyProvider.swift in Sources */,
@@ -405,6 +412,7 @@
 				05D7C88620BB198200265C47 /* CFAbsoluteTime+UnixTime.swift in Sources */,
 				05D7C88320BB197D00265C47 /* Date+BeatTime.swift in Sources */,
 				0591622520BB1829005D6D47 /* ClockType.swift in Sources */,
+				4A21994520CCA30F0043F4A2 /* DetailNavigationController.swift in Sources */,
 				0591622720BB1834005D6D47 /* ClockViewController.swift in Sources */,
 				4A4DCBA720CC8A3C0023C56C /* UIColor+HIGColors.swift in Sources */,
 				05D7C88420BB197D00265C47 /* BeatTime.swift in Sources */,
