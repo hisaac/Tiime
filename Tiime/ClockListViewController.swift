@@ -28,10 +28,8 @@ class ClockListViewController: NiblessTableViewController {
 
 	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		tableView.deselectRow(at: indexPath, animated: true)
-		guard let navigationController = navigationController else { return }
 		let clockType = ClockType.arrayed[indexPath.row]
 		let clockViewController = ClockViewController(timeType: clockType.timeRepresentable)
-//		navigationController.show(clockViewController, sender: nil)
 		showDetailViewController(clockViewController, sender: self)
 	}
 }
