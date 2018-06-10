@@ -2,9 +2,4 @@
 
 import UIKit
 
-class DetailNavigationController: UINavigationController {
-	override func viewDidLoad() {
-		super.viewDidLoad()
-		pushViewController(EmptyDetailViewController(), animated: false)
-	}
-}
+class DetailNavigationController: UINavigationController {}

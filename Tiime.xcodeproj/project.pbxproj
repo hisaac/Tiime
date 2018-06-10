@@ -39,6 +39,7 @@
 		4A4DCBA520CC84940023C56C /* MasterNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4DCBA420CC84940023C56C /* MasterNavigationController.swift */; };
 		4A4DCBA720CC8A3C0023C56C /* UIColor+HIGColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4DCBA620CC8A3C0023C56C /* UIColor+HIGColors.swift */; };
 		4A4DCBA920CC96F70023C56C /* EmptyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4DCBA820CC96F70023C56C /* EmptyDetailViewController.swift */; };
+		4A8077BB20CCCFFB0003767D /* UISplitViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8077BA20CCCFFB0003767D /* UISplitViewController+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		4A4DCBA420CC84940023C56C /* MasterNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterNavigationController.swift; sourceTree = "<group>"; };
 		4A4DCBA620CC8A3C0023C56C /* UIColor+HIGColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HIGColors.swift"; sourceTree = "<group>"; };
 		4A4DCBA820CC96F70023C56C /* EmptyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyDetailViewController.swift; sourceTree = "<group>"; };
+		4A8077BA20CCCFFB0003767D /* UISplitViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISplitViewController+Extensions.swift"; sourceTree = "<group>"; };
 		B775650D25ED6FDB73B4C396 /* ClockListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockListViewController.swift; sourceTree = "<group>"; };
 		B7756CF69CC096F7CFD162F5 /* NiblessTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiblessTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -178,6 +180,7 @@
 				B7756CF69CC096F7CFD162F5 /* NiblessTableViewController.swift */,
 				29374FC0F154ACB0434598EE /* AutoLayout+Extensions.swift */,
 				4A4DCBA620CC8A3C0023C56C /* UIColor+HIGColors.swift */,
+				4A8077BA20CCCFFB0003767D /* UISplitViewController+Extensions.swift */,
 			);
 			path = "UI Extensions";
 			sourceTree = "<group>";
@@ -415,6 +418,7 @@
 				05D7C89020BB199B00265C47 /* NiblessViewController.swift in Sources */,
 				05D7C88620BB198200265C47 /* CFAbsoluteTime+UnixTime.swift in Sources */,
 				05D7C88320BB197D00265C47 /* Date+BeatTime.swift in Sources */,
+				4A8077BB20CCCFFB0003767D /* UISplitViewController+Extensions.swift in Sources */,
 				0591622520BB1829005D6D47 /* ClockType.swift in Sources */,
 				4A21994520CCA30F0043F4A2 /* DetailNavigationController.swift in Sources */,
 				0591622720BB1834005D6D47 /* ClockViewController.swift in Sources */,

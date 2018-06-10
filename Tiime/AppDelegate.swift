@@ -6,7 +6,7 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate {
 	var window: UIWindow?
 
 	// swiftlint:disable:next line_length
@@ -21,19 +21,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 	func buildInitialUI() -> UIViewController {
 		let mainSplitViewController = UISplitViewController()
 		let masterNavigationController = MasterNavigationController()
-		let detailNavigationController = DetailNavigationController()
+		let detailNavigationController = DetailNavigationController(rootViewController: EmptyDetailViewController())
 
-		mainSplitViewController.delegate = self
+		mainSplitViewController.preferredDisplayMode = .allVisible
 		mainSplitViewController.viewControllers = [
 			masterNavigationController,
 			detailNavigationController
 		]
 
 		return mainSplitViewController
-	}
-
-	// swiftlint:disable:next line_length
-	func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool {
-		return true
 	}
 }
