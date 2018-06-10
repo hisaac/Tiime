@@ -34,6 +34,7 @@
 		4A1947FF2084457E00AB490D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A1947FD2084457E00AB490D /* LaunchScreen.storyboard */; };
 		4A19480A2084457E00AB490D /* TiimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1948092084457E00AB490D /* TiimeTests.swift */; };
 		4A21994520CCA30F0043F4A2 /* DetailNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A21994420CCA30F0043F4A2 /* DetailNavigationController.swift */; };
+		4A21994720CCA9EC0043F4A2 /* changelog.md in Resources */ = {isa = PBXBuildFile; fileRef = 4A21994620CCA9EC0043F4A2 /* changelog.md */; };
 		4A4DCBA320CC82560023C56C /* MainSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4DCBA220CC82560023C56C /* MainSplitViewController.swift */; };
 		4A4DCBA520CC84940023C56C /* MasterNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4DCBA420CC84940023C56C /* MasterNavigationController.swift */; };
 		4A4DCBA720CC8A3C0023C56C /* UIColor+HIGColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4DCBA620CC8A3C0023C56C /* UIColor+HIGColors.swift */; };
@@ -67,8 +68,8 @@
 		054B2B57208E16210030B580 /* Tiime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tiime.entitlements; sourceTree = "<group>"; };
 		05A1944C208E80F100C30B22 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		05A1944D208E810100C30B22 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
-		05A1944E208E810100C30B22 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		05A1944F208E810100C30B22 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		05A1944E208E810100C30B22 /* license */ = {isa = PBXFileReference; lastKnownFileType = text; path = license; sourceTree = "<group>"; };
+		05A1944F208E810100C30B22 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 		05A19450208E810100C30B22 /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
 		05AADA3C208E658D0076C581 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		05AADA3D208E658D0076C581 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
@@ -99,6 +100,7 @@
 		4A19480B2084457E00AB490D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A1948242084476C00AB490D /* ClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; };
 		4A21994420CCA30F0043F4A2 /* DetailNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNavigationController.swift; sourceTree = "<group>"; };
+		4A21994620CCA9EC0043F4A2 /* changelog.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = changelog.md; sourceTree = "<group>"; };
 		4A4DCBA220CC82560023C56C /* MainSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSplitViewController.swift; sourceTree = "<group>"; };
 		4A4DCBA420CC84940023C56C /* MasterNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterNavigationController.swift; sourceTree = "<group>"; };
 		4A4DCBA620CC8A3C0023C56C /* UIColor+HIGColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HIGColors.swift"; sourceTree = "<group>"; };
@@ -210,8 +212,9 @@
 		4A1947E82084457D00AB490D = {
 			isa = PBXGroup;
 			children = (
-				05A1944F208E810100C30B22 /* README.md */,
-				05A1944E208E810100C30B22 /* LICENSE */,
+				05A1944F208E810100C30B22 /* readme.md */,
+				4A21994620CCA9EC0043F4A2 /* changelog.md */,
+				05A1944E208E810100C30B22 /* license */,
 				4A1947F32084457D00AB490D /* Tiime */,
 				4A1948082084457E00AB490D /* TiimeTests */,
 				4A1947F22084457D00AB490D /* Products */,
@@ -357,6 +360,7 @@
 				05D7C88D20BB199400265C47 /* iAWriterDuospace-Regular.otf in Resources */,
 				4A1947FC2084457E00AB490D /* Assets.xcassets in Resources */,
 				05D7C88B20BB199400265C47 /* iAWriterDuospace-Bold.otf in Resources */,
+				4A21994720CCA9EC0043F4A2 /* changelog.md in Resources */,
 				05D7C88E20BB199400265C47 /* iAWriterDuospace-RegularItalic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
