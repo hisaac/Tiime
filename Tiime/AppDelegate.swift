@@ -23,11 +23,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		let masterNavigationController = MasterNavigationController()
 		let detailNavigationController = DetailNavigationController(rootViewController: EmptyDetailViewController())
 
-		mainSplitViewController.preferredDisplayMode = .allVisible
 		mainSplitViewController.viewControllers = [
 			masterNavigationController,
 			detailNavigationController
 		]
+		mainSplitViewController.preferredDisplayMode = .allVisible
 
 		return mainSplitViewController
 	}

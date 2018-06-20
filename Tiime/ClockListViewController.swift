@@ -30,7 +30,9 @@ class ClockListViewController: NiblessTableViewController {
 		tableView.deselectRow(at: indexPath, animated: true)
 		let clockType = ClockType.arrayed[indexPath.row]
 		let clockViewController = ClockViewController(timeType: clockType.timeRepresentable)
+
 		let detailNavigationController = DetailNavigationController(rootViewController: clockViewController)
-		showDetailViewController(detailNavigationController, sender: self)
+//		showDetailViewController(detailNavigationController, sender: self)
+		navigationController?.pushViewController(detailNavigationController, animated: true)
 	}
 }

@@ -11,8 +11,6 @@
 		0591622520BB1829005D6D47 /* ClockType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29374B50DEF45E2A99EBF931 /* ClockType.swift */; };
 		0591622620BB1834005D6D47 /* ClockListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B775650D25ED6FDB73B4C396 /* ClockListViewController.swift */; };
 		0591622720BB1834005D6D47 /* ClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1948242084476C00AB490D /* ClockViewController.swift */; };
-		05AADA3E208E658E0076C581 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AADA3C208E658D0076C581 /* RxCocoa.framework */; };
-		05AADA3F208E658E0076C581 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AADA3D208E658D0076C581 /* RxSwift.framework */; };
 		05D7C88320BB197D00265C47 /* Date+BeatTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2937414B04D7CA07E13CE103 /* Date+BeatTime.swift */; };
 		05D7C88420BB197D00265C47 /* BeatTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293745D13632115B8C657D8C /* BeatTime.swift */; };
 		05D7C88520BB198200265C47 /* Date+UnixTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29374D2D0C6E6C7A2509E1DE /* Date+UnixTime.swift */; };
@@ -34,7 +32,6 @@
 		4A1947FF2084457E00AB490D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A1947FD2084457E00AB490D /* LaunchScreen.storyboard */; };
 		4A19480A2084457E00AB490D /* TiimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1948092084457E00AB490D /* TiimeTests.swift */; };
 		4A21994520CCA30F0043F4A2 /* DetailNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A21994420CCA30F0043F4A2 /* DetailNavigationController.swift */; };
-		4A21994720CCA9EC0043F4A2 /* changelog.md in Resources */ = {isa = PBXBuildFile; fileRef = 4A21994620CCA9EC0043F4A2 /* changelog.md */; };
 		4A4DCBA320CC82560023C56C /* MainSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4DCBA220CC82560023C56C /* MainSplitViewController.swift */; };
 		4A4DCBA520CC84940023C56C /* MasterNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4DCBA420CC84940023C56C /* MasterNavigationController.swift */; };
 		4A4DCBA720CC8A3C0023C56C /* UIColor+HIGColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4DCBA620CC8A3C0023C56C /* UIColor+HIGColors.swift */; };
@@ -116,8 +113,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05AADA3E208E658E0076C581 /* RxCocoa.framework in Frameworks */,
-				05AADA3F208E658E0076C581 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +275,6 @@
 				4A1947ED2084457D00AB490D /* Sources */,
 				4A1947EE2084457D00AB490D /* Frameworks */,
 				4A1947EF2084457D00AB490D /* Resources */,
-				05AADA40208E66CC0076C581 /* [Carthage] Copy Frameworks */,
 				05D2546E20925A17004DCA1F /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -358,12 +352,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A1947FC2084457E00AB490D /* Assets.xcassets in Resources */,
 				4A1947FF2084457E00AB490D /* LaunchScreen.storyboard in Resources */,
 				05D7C88C20BB199400265C47 /* iAWriterDuospace-BoldItalic.otf in Resources */,
 				05D7C88D20BB199400265C47 /* iAWriterDuospace-Regular.otf in Resources */,
-				4A1947FC2084457E00AB490D /* Assets.xcassets in Resources */,
 				05D7C88B20BB199400265C47 /* iAWriterDuospace-Bold.otf in Resources */,
-				4A21994720CCA9EC0043F4A2 /* changelog.md in Resources */,
 				05D7C88E20BB199400265C47 /* iAWriterDuospace-RegularItalic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,27 +369,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		05AADA40208E66CC0076C581 /* [Carthage] Copy Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
-			);
-			name = "[Carthage] Copy Frameworks";
-			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxSwift.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxCocoa.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4A1947ED2084457D00AB490D /* Sources */ = {

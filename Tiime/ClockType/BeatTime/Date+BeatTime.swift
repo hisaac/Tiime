@@ -9,7 +9,7 @@ extension Date {
 	/// Returns the .beat time representation of the given date
 	var beatTime: Double {
 		// Set the calendar's time zone to BMT (Biel Mean Time = GMT+01)
-		var calendar = Calendar.current
+		var calendar = Calendar.autoupdatingCurrent
 		guard let bmt = TimeZone(secondsFromGMT: 3600) else { return -1 }
 		calendar.timeZone = bmt
 

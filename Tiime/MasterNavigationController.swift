@@ -6,6 +6,7 @@ class MasterNavigationController: UINavigationController, UISplitViewControllerD
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		navigationBar.prefersLargeTitles = true
+		navigationItem.largeTitleDisplayMode = .always
 		splitViewController?.delegate = self
 
 		let clockListViewController = ClockListViewController(style: .grouped)

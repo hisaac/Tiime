@@ -4,14 +4,10 @@
 //
 
 import UIKit
-import RxCocoa
-import RxSwift
 
 class ClockViewController: NiblessViewController {
 	let timeLabel = UILabel()
 	let timeType: TimeRepresentable
-	let timer = Observable<Int>.interval(0.01, scheduler: MainScheduler.instance)
-	let disposeBag = DisposeBag()
 
 	init(timeType: TimeRepresentable) {
 		self.timeType = timeType
@@ -22,17 +18,19 @@ class ClockViewController: NiblessViewController {
 		super.viewDidLoad()
 		title = timeType.timeTypeTitle
 		view.backgroundColor = .white
-		navigationController?.navigationBar.topItem?.largeTitleDisplayMode = .never
 		navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
 		navigationItem.leftItemsSupplementBackButton = true
 
-		timer.map({ _ in self.timeType.timeForDisplay })
-			.bind(to: timeLabel.rx.text)
-			.disposed(by: disposeBag)
+		createDisplayLink()
 	}
 
-	override func viewWillDisappear(_ animated: Bool) {
-		super.viewWillDisappear(animated)
+	func createDisplayLink() {
+		let displayLink = CADisplayLink(target: self, selector: #selector(updateClockDisplay))
+		displayLink.add(to: .current, forMode: .defaultRunLoopMode)
+	}
+
+	@objc func updateClockDisplay() {
+		timeLabel.text = timeType.timeForDisplay
 	}
 
 	override func viewDidLayoutSubviews() {
