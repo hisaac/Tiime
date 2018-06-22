@@ -64,10 +64,8 @@
 		054B2B57208E16210030B580 /* Tiime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tiime.entitlements; sourceTree = "<group>"; };
 		058DBD9C20DD702F00657F74 /* MetricTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricTime.swift; sourceTree = "<group>"; };
 		05A1944C208E80F100C30B22 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		05A1944D208E810100C30B22 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		05A1944E208E810100C30B22 /* license */ = {isa = PBXFileReference; lastKnownFileType = text; path = license; sourceTree = "<group>"; };
 		05A1944F208E810100C30B22 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
-		05A19450208E810100C30B22 /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
 		05AADA3C208E658D0076C581 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		05AADA3D208E658D0076C581 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		05CA3C6F20B8AB29000DE2B6 /* iAWriterDuospace-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iAWriterDuospace-RegularItalic.otf"; sourceTree = "<group>"; };
@@ -188,8 +186,6 @@
 				4A1947F22084457D00AB490D /* Products */,
 				05AADA3B208E658D0076C581 /* Frameworks */,
 				05A1944C208E80F100C30B22 /* .gitignore */,
-				05A19450208E810100C30B22 /* Cartfile.resolved */,
-				05A1944D208E810100C30B22 /* Cartfile */,
 			);
 			sourceTree = "<group>";
 			usesTabs = 1;

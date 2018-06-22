@@ -27,10 +27,10 @@ I decided it would be an interesting experiment to try to make a clock that told
 - .beat time (a.k.a. Internet Time)
 - Device Time
 - Unix Time
+- Decimal
 
 ### Planned Implementation
 
-- Decimal
 - Dozenal
 - Hex
 - Binary
@@ -52,21 +52,14 @@ I'm developing the app in the open because I believe in Open Source, and it woul
 
 #### Bootstrapping Instructions
 
-I'm using [Carthage](https://github.com/Carthage/Carthage) for dependency management. So make sure you've installed Carthage on your computer before continuing.
-
-Once you've cloned the repo, in your terminal, from the root directory of the project, run the following command:
-
-```bash
-carthage update --platform iOS
-```
-
-This will download and build all the necessary dependencies (it may take a while). Once that's done, you should be able to build and run the app from within Xcode/AppCode.
+The project currently has no external dependencies, so you should be able to build and run it directly after cloning the project locally.
 
 ## Acknowledgements
 
 - [<cite>Internet Time</cite>](https://www.wnyc.org/story/15-internet-time/) - The TLDR episode that planted the initial idea in my brain.
 - [<cite>NetTime</cite>](https://github.com/simonrice/nettime) - An iOS beat time clock app by [Simon Rice](http://simonrice.com) that he has graciously made open source. Looking at his code has made the initial steps of getting the project up and running much easier.
 - [<cite>Geek Clock Tool</cite>](http://spwebgames.com/clockinfo/) - A web app (and [Android app](http://spwebgames.com/clockinfo/android.php)) by [Steve Pugh](http://stevepugh.co.uk) that displays the current time in eight different ways! I'm hoping to implement some of these other methods into Tiime someday.
+- [<cite>Metric Time</cite>](https://zapatopi.net/metrictime/) - A great explainer of Metric time by [Lyle Zapato](https://zapatopi.net/).
 
 ## Resources
 
