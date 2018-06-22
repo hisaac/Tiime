@@ -14,3 +14,19 @@ struct UnixTime: TimeRepresentable {
 		return ClockType.unix.name
 	}
 }
+
+extension Date {
+	var unixTime: Int {
+		return Int(round(self.timeIntervalSince1970))
+	}
+
+	var unixTimeForDisplay: String {
+		return "\(unixTime)"
+	}
+}
+
+extension CFAbsoluteTime {
+	var unixTime: Int {
+		return Int((self + 978307200).rounded())
+	}
+}

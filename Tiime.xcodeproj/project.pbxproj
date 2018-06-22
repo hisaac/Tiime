@@ -7,14 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		058DBD9D20DD702F00657F74 /* MetricTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058DBD9C20DD702F00657F74 /* MetricTime.swift */; };
 		0591622420BB1829005D6D47 /* TimeRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29374C927DD5E25D74807B5B /* TimeRepresentable.swift */; };
 		0591622520BB1829005D6D47 /* ClockType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29374B50DEF45E2A99EBF931 /* ClockType.swift */; };
 		0591622620BB1834005D6D47 /* ClockListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B775650D25ED6FDB73B4C396 /* ClockListViewController.swift */; };
 		0591622720BB1834005D6D47 /* ClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1948242084476C00AB490D /* ClockViewController.swift */; };
-		05D7C88320BB197D00265C47 /* Date+BeatTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2937414B04D7CA07E13CE103 /* Date+BeatTime.swift */; };
 		05D7C88420BB197D00265C47 /* BeatTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293745D13632115B8C657D8C /* BeatTime.swift */; };
-		05D7C88520BB198200265C47 /* Date+UnixTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29374D2D0C6E6C7A2509E1DE /* Date+UnixTime.swift */; };
-		05D7C88620BB198200265C47 /* CFAbsoluteTime+UnixTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29374FEC260397217C2D8DC1 /* CFAbsoluteTime+UnixTime.swift */; };
 		05D7C88720BB198200265C47 /* UnixTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293747B6D6301FA2C480F22E /* UnixTime.swift */; };
 		05D7C88820BB198600265C47 /* DeviceTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29374A591C59721178F9F4E6 /* DeviceTime.swift */; };
 		05D7C88920BB198E00265C47 /* MainDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D2549720925B0C004DCA1F /* MainDependencyContainer.swift */; };
@@ -64,6 +62,7 @@
 
 /* Begin PBXFileReference section */
 		054B2B57208E16210030B580 /* Tiime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tiime.entitlements; sourceTree = "<group>"; };
+		058DBD9C20DD702F00657F74 /* MetricTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricTime.swift; sourceTree = "<group>"; };
 		05A1944C208E80F100C30B22 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		05A1944D208E810100C30B22 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		05A1944E208E810100C30B22 /* license */ = {isa = PBXFileReference; lastKnownFileType = text; path = license; sourceTree = "<group>"; };
@@ -79,15 +78,12 @@
 		05D2549920925B1B004DCA1F /* MainDependencyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDependencyProvider.swift; sourceTree = "<group>"; };
 		05D254A720925CB0004DCA1F /* NiblessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessView.swift; sourceTree = "<group>"; };
 		05D254A920925CB7004DCA1F /* NiblessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessViewController.swift; sourceTree = "<group>"; };
-		2937414B04D7CA07E13CE103 /* Date+BeatTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+BeatTime.swift"; sourceTree = "<group>"; };
 		293745D13632115B8C657D8C /* BeatTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeatTime.swift; sourceTree = "<group>"; };
 		293747B6D6301FA2C480F22E /* UnixTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnixTime.swift; sourceTree = "<group>"; };
 		29374A591C59721178F9F4E6 /* DeviceTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceTime.swift; sourceTree = "<group>"; };
 		29374B50DEF45E2A99EBF931 /* ClockType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockType.swift; sourceTree = "<group>"; };
 		29374C927DD5E25D74807B5B /* TimeRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeRepresentable.swift; sourceTree = "<group>"; };
-		29374D2D0C6E6C7A2509E1DE /* Date+UnixTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+UnixTime.swift"; sourceTree = "<group>"; };
 		29374FC0F154ACB0434598EE /* AutoLayout+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AutoLayout+Extensions.swift"; sourceTree = "<group>"; };
-		29374FEC260397217C2D8DC1 /* CFAbsoluteTime+UnixTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CFAbsoluteTime+UnixTime.swift"; sourceTree = "<group>"; };
 		4A1947F12084457D00AB490D /* Tiime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tiime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A1947F42084457D00AB490D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A1947FB2084457E00AB490D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -126,11 +122,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		058DBD9920DD701700657F74 /* MetricTime */ = {
+			isa = PBXGroup;
+			children = (
+				058DBD9C20DD702F00657F74 /* MetricTime.swift */,
+			);
+			path = MetricTime;
+			sourceTree = "<group>";
+		};
 		0591622820BB1867005D6D47 /* ClockType */ = {
 			isa = PBXGroup;
 			children = (
 				29374907443D2F0597FB79AC /* BeatTime */,
 				2937401180E843C3C576F7B6 /* UnixTime */,
+				058DBD9920DD701700657F74 /* MetricTime */,
 				29374318BB82B99E514D3BDA /* DeviceTime */,
 				29374B50DEF45E2A99EBF931 /* ClockType.swift */,
 				29374C927DD5E25D74807B5B /* TimeRepresentable.swift */,
@@ -183,8 +188,6 @@
 		2937401180E843C3C576F7B6 /* UnixTime */ = {
 			isa = PBXGroup;
 			children = (
-				29374D2D0C6E6C7A2509E1DE /* Date+UnixTime.swift */,
-				29374FEC260397217C2D8DC1 /* CFAbsoluteTime+UnixTime.swift */,
 				293747B6D6301FA2C480F22E /* UnixTime.swift */,
 			);
 			path = UnixTime;
@@ -201,7 +204,6 @@
 		29374907443D2F0597FB79AC /* BeatTime */ = {
 			isa = PBXGroup;
 			children = (
-				2937414B04D7CA07E13CE103 /* Date+BeatTime.swift */,
 				293745D13632115B8C657D8C /* BeatTime.swift */,
 			);
 			path = BeatTime;
@@ -382,16 +384,14 @@
 				05D7C88720BB198200265C47 /* UnixTime.swift in Sources */,
 				4A4DCBA520CC84940023C56C /* MasterNavigationController.swift in Sources */,
 				4A4DCBA920CC96F70023C56C /* EmptyDetailViewController.swift in Sources */,
-				05D7C88520BB198200265C47 /* Date+UnixTime.swift in Sources */,
 				05D7C89120BB199B00265C47 /* NiblessTableViewController.swift in Sources */,
 				05D7C88A20BB198E00265C47 /* MainDependencyProvider.swift in Sources */,
 				05D7C88F20BB199B00265C47 /* NiblessView.swift in Sources */,
 				05D7C88820BB198600265C47 /* DeviceTime.swift in Sources */,
 				05D7C89020BB199B00265C47 /* NiblessViewController.swift in Sources */,
-				05D7C88620BB198200265C47 /* CFAbsoluteTime+UnixTime.swift in Sources */,
-				05D7C88320BB197D00265C47 /* Date+BeatTime.swift in Sources */,
 				4A8077BB20CCCFFB0003767D /* UISplitViewController+Extensions.swift in Sources */,
 				0591622520BB1829005D6D47 /* ClockType.swift in Sources */,
+				058DBD9D20DD702F00657F74 /* MetricTime.swift in Sources */,
 				4A21994520CCA30F0043F4A2 /* DetailNavigationController.swift in Sources */,
 				0591622720BB1834005D6D47 /* ClockViewController.swift in Sources */,
 				4A4DCBA720CC8A3C0023C56C /* UIColor+HIGColors.swift in Sources */,
@@ -553,10 +553,6 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F2J52QJQ9Y;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
 				INFOPLIST_FILE = Tiime/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -579,10 +575,6 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F2J52QJQ9Y;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
 				INFOPLIST_FILE = Tiime/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (

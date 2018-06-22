@@ -10,6 +10,7 @@ enum ClockType {
 	case beat   // Swatch .beat time / Internet Time
 	case device // The time displayed based on the device's setting
 	case unix   // Unix time / Epoch time
+	case metric // Metric Time
 
 	/// The `TimeRepresentable` object associated with each clock type value
 	var timeRepresentable: TimeRepresentable {
@@ -17,6 +18,7 @@ enum ClockType {
 		case .beat:   return BeatTime()
 		case .device: return DeviceTime()
 		case .unix:   return UnixTime()
+		case .metric: return MetricTime()
 		}
 	}
 
@@ -26,6 +28,7 @@ enum ClockType {
 		case .beat:   return NSLocalizedString(".beat Time", comment: "The name of .beat Time")
 		case .device: return NSLocalizedString("Device Time", comment: "The name of the device's time")
 		case .unix:   return NSLocalizedString("Unix Time", comment: "The name of Unix time")
+		case .metric: return NSLocalizedString("Metric Time", comment: "The name of Metric time")
 		}
 	}
 
@@ -47,11 +50,16 @@ enum ClockType {
 					"The amount of seconds since January 1, 1970",
 					comment: "The description of Unix time"
 			)
+		case .metric:
+			return NSLocalizedString(
+				"The day is divided into units of tenths, hundredths, thousands, etc. that are used to keep and tell time.",
+				comment: "The description of Metric time"
+			)
 		}
 	}
 
 	/// Returns an array containing each ClockType case
 	static var arrayed: [ClockType] {
-		return [.beat, .device, .unix]
+		return [.beat, .device, .unix, .metric]
 	}
 }
