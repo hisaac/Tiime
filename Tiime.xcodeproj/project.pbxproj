@@ -122,21 +122,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		058DBD9920DD701700657F74 /* MetricTime */ = {
-			isa = PBXGroup;
-			children = (
-				058DBD9C20DD702F00657F74 /* MetricTime.swift */,
-			);
-			path = MetricTime;
-			sourceTree = "<group>";
-		};
 		0591622820BB1867005D6D47 /* ClockType */ = {
 			isa = PBXGroup;
 			children = (
-				29374907443D2F0597FB79AC /* BeatTime */,
-				2937401180E843C3C576F7B6 /* UnixTime */,
-				058DBD9920DD701700657F74 /* MetricTime */,
-				29374318BB82B99E514D3BDA /* DeviceTime */,
+				293745D13632115B8C657D8C /* BeatTime.swift */,
+				293747B6D6301FA2C480F22E /* UnixTime.swift */,
+				058DBD9C20DD702F00657F74 /* MetricTime.swift */,
+				29374A591C59721178F9F4E6 /* DeviceTime.swift */,
 				29374B50DEF45E2A99EBF931 /* ClockType.swift */,
 				29374C927DD5E25D74807B5B /* TimeRepresentable.swift */,
 			);
@@ -183,30 +175,6 @@
 				4A8077BA20CCCFFB0003767D /* UISplitViewController+Extensions.swift */,
 			);
 			path = "UI Extensions";
-			sourceTree = "<group>";
-		};
-		2937401180E843C3C576F7B6 /* UnixTime */ = {
-			isa = PBXGroup;
-			children = (
-				293747B6D6301FA2C480F22E /* UnixTime.swift */,
-			);
-			path = UnixTime;
-			sourceTree = "<group>";
-		};
-		29374318BB82B99E514D3BDA /* DeviceTime */ = {
-			isa = PBXGroup;
-			children = (
-				29374A591C59721178F9F4E6 /* DeviceTime.swift */,
-			);
-			path = DeviceTime;
-			sourceTree = "<group>";
-		};
-		29374907443D2F0597FB79AC /* BeatTime */ = {
-			isa = PBXGroup;
-			children = (
-				293745D13632115B8C657D8C /* BeatTime.swift */,
-			);
-			path = BeatTime;
 			sourceTree = "<group>";
 		};
 		4A1947E82084457D00AB490D = {
