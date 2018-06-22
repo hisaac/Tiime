@@ -21,6 +21,7 @@ struct MetricTime: TimeRepresentable {
 	}
 }
 
+/// Metric Time information and conversions found at https://zapatopi.net/metrictime/
 extension Date {
 	var universalMetricTime: Double {
 		var calendar = Calendar.autoupdatingCurrent
