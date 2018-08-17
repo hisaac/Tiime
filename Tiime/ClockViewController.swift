@@ -26,7 +26,7 @@ class ClockViewController: NiblessViewController {
 
 	func createDisplayLink() {
 		let displayLink = CADisplayLink(target: self, selector: #selector(updateClockDisplay))
-		displayLink.add(to: .current, forMode: .defaultRunLoopMode)
+		displayLink.add(to: .current, forMode: RunLoop.Mode.default)
 	}
 
 	@objc func updateClockDisplay() {

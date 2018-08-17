@@ -10,7 +10,7 @@ class NiblessTableViewController: UITableViewController {
 		super.init(nibName: nil, bundle: nil)
 	}
 
-	override init(style: UITableViewStyle) {
+	override init(style: UITableView.Style) {
 		super.init(style: style)
 	}
 
@@ -24,4 +24,3 @@ class NiblessTableViewController: UITableViewController {
 		fatalError("Loading this view controller from a nib is unsupported.")
 	}
 }
-

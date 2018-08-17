@@ -13,7 +13,6 @@ class MasterNavigationController: UINavigationController, UISplitViewControllerD
 		pushViewController(clockListViewController, animated: false)
 	}
 
-	// swiftlint:disable:next line_length
 	func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool {
 		return true
 	}

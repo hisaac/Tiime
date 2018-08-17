@@ -27,6 +27,6 @@ extension Date {
 
 extension CFAbsoluteTime {
 	var unixTime: Int {
-		return Int((self + 978307200).rounded())
+		return Int((self + 978_307_200).rounded())
 	}
 }

@@ -238,6 +238,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A1948192084457E00AB490D /* Build configuration list for PBXNativeTarget "Tiime" */;
 			buildPhases = (
+				4A20C936212745BC00D1A934 /* [Swiftlint] */,
 				4A1947ED2084457D00AB490D /* Sources */,
 				4A1947EE2084457D00AB490D /* Frameworks */,
 				4A1947EF2084457D00AB490D /* Resources */,
@@ -282,6 +283,7 @@
 				TargetAttributes = {
 					4A1947F02084457D00AB490D = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1000;
 						SystemCapabilities = {
 							com.apple.Push = {
 								enabled = 0;
@@ -335,6 +337,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A20C936212745BC00D1A934 /* [Swiftlint] */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[Swiftlint]";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4A1947ED2084457D00AB490D /* Sources */ = {
@@ -526,7 +549,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = software.level.Tiime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -548,7 +571,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = software.level.Tiime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

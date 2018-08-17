@@ -14,21 +14,20 @@ class ClockListViewController: NiblessTableViewController {
 	}
 
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return ClockType.arrayed.count
+		return ClockType.allCases.count
 	}
 
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "ClockTypeCell")
 
-		// TODO: Use CaseIterable once Swift 4.2 is released
-		cell.textLabel?.text = ClockType.arrayed[indexPath.row].name
-		cell.detailTextLabel?.text = ClockType.arrayed[indexPath.row].description
+		cell.textLabel?.text = ClockType.allCases[indexPath.row].name
+		cell.detailTextLabel?.text = ClockType.allCases[indexPath.row].description
 		return cell
 	}
 
 	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		tableView.deselectRow(at: indexPath, animated: true)
-		let clockType = ClockType.arrayed[indexPath.row]
+		let clockType = ClockType.allCases[indexPath.row]
 		let clockViewController = ClockViewController(timeType: clockType.timeRepresentable)
 
 		let detailNavigationController = DetailNavigationController(rootViewController: clockViewController)

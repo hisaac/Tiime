@@ -10,7 +10,7 @@ struct MetricTime: TimeRepresentable {
 		let numberFormatter = NumberFormatter()
 		numberFormatter.minimumFractionDigits = 3
 
-		let floored = floor(Date().universalMetricTime) / 1000
+		let floored = floor(Date().universalMetricTime) / 1_000
 		let metricTimeString = numberFormatter.string(for: floored) ?? "?"
 
 		return "\(metricTimeString) UMT"

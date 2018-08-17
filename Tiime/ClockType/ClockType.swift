@@ -5,8 +5,7 @@
 
 import Foundation
 
-// TODO: Add `CaseIterable` conformance once Swift 4.2 is released
-enum ClockType {
+enum ClockType: CaseIterable {
 	case beat   // Swatch .beat time / Internet Time
 	case device // The time displayed based on the device's setting
 	case unix   // Unix time / Epoch time
@@ -56,10 +55,5 @@ enum ClockType {
 				comment: "The description of Metric time"
 			)
 		}
-	}
-
-	/// Returns an array containing each ClockType case
-	static var arrayed: [ClockType] {
-		return [.beat, .device, .unix, .metric]
 	}
 }

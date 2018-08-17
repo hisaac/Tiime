@@ -33,7 +33,7 @@ extension Date {
 	var beatTime: Double {
 		// Set the calendar's time zone to BMT (Biel Mean Time = GMT+01)
 		var calendar = Calendar.autoupdatingCurrent
-		guard let bmt = TimeZone(secondsFromGMT: 3600) else { return -1 }
+		guard let bmt = TimeZone(secondsFromGMT: 3_600) else { return -1 }
 		calendar.timeZone = bmt
 
 		// Get the start of day and calculate how many seconds it has been since then
