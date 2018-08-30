@@ -4,27 +4,20 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+
 	var window: UIWindow?
+	private var applicationCoordinator: ApplicationCoordinator?
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-		window = UIWindow(frame: UIScreen.main.bounds)
-		window?.rootViewController = buildInitialUI()
-		window?.tintColor = UIColor.HIGColors.purple
-		window?.makeKeyAndVisible()
+		let window = UIWindow(frame: UIScreen.main.bounds)
+		let applicationCoordinator = ApplicationCoordinator(window: window)
+
+		self.window = window
+		self.applicationCoordinator = applicationCoordinator
+
+		applicationCoordinator.start()
+
 		return true
 	}
 
-	func buildInitialUI() -> UIViewController {
-		let mainSplitViewController = UISplitViewController()
-		let masterNavigationController = MasterNavigationController()
-		let detailNavigationController = DetailNavigationController(rootViewController: EmptyDetailViewController())
-
-		mainSplitViewController.viewControllers = [
-			masterNavigationController,
-			detailNavigationController
-		]
-		mainSplitViewController.preferredDisplayMode = .allVisible
-
-		return mainSplitViewController
-	}
 }

@@ -22,12 +22,14 @@
 		05D7C88D20BB199400265C47 /* iAWriterDuospace-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 05CA3C7120B8AB29000DE2B6 /* iAWriterDuospace-Regular.otf */; };
 		05D7C88E20BB199400265C47 /* iAWriterDuospace-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 05CA3C6F20B8AB29000DE2B6 /* iAWriterDuospace-RegularItalic.otf */; };
 		05D7C89220BB199B00265C47 /* AutoLayout+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29374FC0F154ACB0434598EE /* AutoLayout+Extensions.swift */; };
+		4A066A9421386ED6005618C1 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A066A9321386ED6005618C1 /* Coordinator.swift */; };
+		4A066A9621386EEB005618C1 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A066A9521386EEB005618C1 /* ApplicationCoordinator.swift */; };
+		4A066A9A21387729005618C1 /* ClockListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A066A9921387729005618C1 /* ClockListCoordinator.swift */; };
 		4A1947F52084457D00AB490D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1947F42084457D00AB490D /* AppDelegate.swift */; };
 		4A1947FC2084457E00AB490D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A1947FB2084457E00AB490D /* Assets.xcassets */; };
 		4A1947FF2084457E00AB490D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A1947FD2084457E00AB490D /* LaunchScreen.storyboard */; };
 		4A19480A2084457E00AB490D /* TiimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1948092084457E00AB490D /* TiimeTests.swift */; };
 		4A21994520CCA30F0043F4A2 /* DetailNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A21994420CCA30F0043F4A2 /* DetailNavigationController.swift */; };
-		4A4DCBA320CC82560023C56C /* MainSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4DCBA220CC82560023C56C /* MainSplitViewController.swift */; };
 		4A4DCBA520CC84940023C56C /* MasterNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4DCBA420CC84940023C56C /* MasterNavigationController.swift */; };
 		4A4DCBA720CC8A3C0023C56C /* UIColor+HIGColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4DCBA620CC8A3C0023C56C /* UIColor+HIGColors.swift */; };
 		4A4DCBA920CC96F70023C56C /* EmptyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4DCBA820CC96F70023C56C /* EmptyDetailViewController.swift */; };
@@ -104,6 +106,9 @@
 		4A066A8D21384531005618C1 /* Appfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Appfile; sourceTree = "<group>"; };
 		4A066A8E21384531005618C1 /* Fastfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Fastfile; sourceTree = "<group>"; };
 		4A066A8F21384531005618C1 /* Matchfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Matchfile; sourceTree = "<group>"; };
+		4A066A9321386ED6005618C1 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		4A066A9521386EEB005618C1 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		4A066A9921387729005618C1 /* ClockListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockListCoordinator.swift; sourceTree = "<group>"; };
 		4A1947F12084457D00AB490D /* Tiime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tiime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A1947F42084457D00AB490D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A1947FB2084457E00AB490D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -115,7 +120,6 @@
 		4A1948242084476C00AB490D /* ClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; };
 		4A21994420CCA30F0043F4A2 /* DetailNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNavigationController.swift; sourceTree = "<group>"; };
 		4A21994620CCA9EC0043F4A2 /* changelog.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = changelog.md; sourceTree = "<group>"; };
-		4A4DCBA220CC82560023C56C /* MainSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSplitViewController.swift; sourceTree = "<group>"; wrapsLines = 1; };
 		4A4DCBA420CC84940023C56C /* MasterNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterNavigationController.swift; sourceTree = "<group>"; };
 		4A4DCBA620CC8A3C0023C56C /* UIColor+HIGColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HIGColors.swift"; sourceTree = "<group>"; };
 		4A4DCBA820CC96F70023C56C /* EmptyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyDetailViewController.swift; sourceTree = "<group>"; };
@@ -267,17 +271,26 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4A066A9121385334005618C1 /* Views */ = {
+		4A066A9121385334005618C1 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				4A4DCBA220CC82560023C56C /* MainSplitViewController.swift */,
 				4A4DCBA420CC84940023C56C /* MasterNavigationController.swift */,
 				4A21994420CCA30F0043F4A2 /* DetailNavigationController.swift */,
 				4A4DCBA820CC96F70023C56C /* EmptyDetailViewController.swift */,
 				4A1948242084476C00AB490D /* ClockViewController.swift */,
 				B775650D25ED6FDB73B4C396 /* ClockListViewController.swift */,
 			);
-			path = Views;
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4A066A9221386EBF005618C1 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				4A066A9321386ED6005618C1 /* Coordinator.swift */,
+				4A066A9521386EEB005618C1 /* ApplicationCoordinator.swift */,
+				4A066A9921387729005618C1 /* ClockListCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 		4A1947E82084457D00AB490D = {
@@ -314,11 +327,12 @@
 			isa = PBXGroup;
 			children = (
 				4A1947F42084457D00AB490D /* AppDelegate.swift */,
+				4A066A9221386EBF005618C1 /* Coordinators */,
 				0591622820BB1867005D6D47 /* ClockType */,
 				05D2549520925AB8004DCA1F /* Dependencies */,
 				05D254A620925CA2004DCA1F /* UI Extensions */,
 				4A066A9021384794005618C1 /* Supporting Files */,
-				4A066A9121385334005618C1 /* Views */,
+				4A066A9121385334005618C1 /* View Controllers */,
 			);
 			path = Tiime;
 			sourceTree = "<group>";
@@ -466,12 +480,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A4DCBA320CC82560023C56C /* MainSplitViewController.swift in Sources */,
 				4A1947F52084457D00AB490D /* AppDelegate.swift in Sources */,
 				05D7C89220BB199B00265C47 /* AutoLayout+Extensions.swift in Sources */,
 				0591622420BB1829005D6D47 /* TimeRepresentable.swift in Sources */,
 				05D7C88720BB198200265C47 /* UnixTime.swift in Sources */,
 				4A4DCBA520CC84940023C56C /* MasterNavigationController.swift in Sources */,
+				4A066A9A21387729005618C1 /* ClockListCoordinator.swift in Sources */,
+				4A066A9421386ED6005618C1 /* Coordinator.swift in Sources */,
 				4A4DCBA920CC96F70023C56C /* EmptyDetailViewController.swift in Sources */,
 				05D7C88A20BB198E00265C47 /* MainDependencyProvider.swift in Sources */,
 				05D7C88820BB198600265C47 /* DeviceTime.swift in Sources */,
@@ -480,6 +495,7 @@
 				058DBD9D20DD702F00657F74 /* MetricTime.swift in Sources */,
 				4A21994520CCA30F0043F4A2 /* DetailNavigationController.swift in Sources */,
 				0591622720BB1834005D6D47 /* ClockViewController.swift in Sources */,
+				4A066A9621386EEB005618C1 /* ApplicationCoordinator.swift in Sources */,
 				4A4DCBA720CC8A3C0023C56C /* UIColor+HIGColors.swift in Sources */,
 				05D7C88420BB197D00265C47 /* BeatTime.swift in Sources */,
 				0591622620BB1834005D6D47 /* ClockListViewController.swift in Sources */,

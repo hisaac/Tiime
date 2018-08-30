@@ -2,7 +2,14 @@
 
 import UIKit
 
+protocol ClockListViewControllerDelegate: class, Coordinator {
+	func clockListViewControllerDidSelectClockType(_ clockType: ClockType)
+}
+
 class ClockListViewController: UITableViewController {
+
+	weak var delegate: ClockListViewControllerDelegate?
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		title = NSLocalizedString("Clocks", comment: "Title bar for main clocks list")
@@ -23,12 +30,9 @@ class ClockListViewController: UITableViewController {
 	}
 
 	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-		tableView.deselectRow(at: indexPath, animated: true)
 		let clockType = ClockType.allCases[indexPath.row]
-		let clockViewController = ClockViewController(timeType: clockType.timeRepresentable)
-
-//		let detailNavigationController = DetailNavigationController(rootViewController: clockViewController)
-		showDetailViewController(clockViewController, sender: self)
-//		navigationController?.pushViewController(clockViewController, animated: true)
+		delegate?.clockListViewControllerDidSelectClockType(clockType)
+		tableView.deselectRow(at: indexPath, animated: true)
 	}
+
 }
