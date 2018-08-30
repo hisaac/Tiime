@@ -267,6 +267,7 @@
 		4A066A9021384794005618C1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				05CA3C7720B8AB35000DE2B6 /* Fonts */,
 				054B2B57208E16210030B580 /* Tiime.entitlements */,
 				4A1947FB2084457E00AB490D /* Assets.xcassets */,
 				4A1947FD2084457E00AB490D /* LaunchScreen.storyboard */,
@@ -324,7 +325,6 @@
 				4A1947F42084457D00AB490D /* AppDelegate.swift */,
 				0591622820BB1867005D6D47 /* ClockType */,
 				05D2549520925AB8004DCA1F /* Dependencies */,
-				05CA3C7720B8AB35000DE2B6 /* Fonts */,
 				05D254A620925CA2004DCA1F /* UI Extensions */,
 				4A066A9021384794005618C1 /* Supporting Files */,
 				4A066A9121385334005618C1 /* Views */,
@@ -579,7 +579,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -633,7 +633,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -650,8 +650,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = F2J52QJQ9Y;
-				INFOPLIST_FILE = Tiime/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				INFOPLIST_FILE = "$(SRCROOT)/Tiime/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -672,8 +671,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = F2J52QJQ9Y;
-				INFOPLIST_FILE = Tiime/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				INFOPLIST_FILE = "$(SRCROOT)/Tiime/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

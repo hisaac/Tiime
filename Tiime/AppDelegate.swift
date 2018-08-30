@@ -1,7 +1,4 @@
-//
-// AppDelegate.swift
 // Created by Isaac Halvorson on 4/15/18
-//
 
 import UIKit
 

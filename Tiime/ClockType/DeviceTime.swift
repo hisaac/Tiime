@@ -1,7 +1,4 @@
-//
-// DeviceTime.swift
 // Created by Isaac Halvorson on 5/25/18
-//
 
 import Foundation
 

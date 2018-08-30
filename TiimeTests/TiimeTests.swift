@@ -1,7 +1,4 @@
-//
-// TiimeTests.swift
 // Created by Isaac Halvorson on 4/15/18
-//
 
 import XCTest
 @testable import Tiime

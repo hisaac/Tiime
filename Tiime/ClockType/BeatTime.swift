@@ -1,18 +1,15 @@
-//
-// BeatTime.swift
 // Created by Isaac Halvorson on 4/24/18
-//
 
 import Foundation
 
 struct BeatTime: TimeRepresentable {
-	/**
-	 Returns a string representation of the Beat Time, including centibeats.
-	 Meant for displaying to the user.
 
-	 Note: This method does *not* round. When dealing with time, we don't want to round up, because
-	 it's not technically the next point in time until it *actually is* the next point in time.
-	*/
+	/// Returns a string representation of the Beat Time, including centibeats.
+	/// Meant for displaying to the user.
+	///
+	/// Note: This method does *not* round. When dealing with time, we don't want to round up, because
+	/// it's not technically the next point in time until it *actually is* the next point in time.
+	///
 	var timeForDisplay: String {
 		// Create numberFormatter with minimum fraction digits
 		let numberFormatter = NumberFormatter()
