@@ -264,6 +264,30 @@
 			path = fastlane;
 			sourceTree = "<group>";
 		};
+		4A066A9021384794005618C1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				054B2B57208E16210030B580 /* Tiime.entitlements */,
+				4A1947FB2084457E00AB490D /* Assets.xcassets */,
+				4A1947FD2084457E00AB490D /* LaunchScreen.storyboard */,
+				4A1948002084457E00AB490D /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4A066A9121385334005618C1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4A4DCBA220CC82560023C56C /* MainSplitViewController.swift */,
+				4A4DCBA420CC84940023C56C /* MasterNavigationController.swift */,
+				4A21994420CCA30F0043F4A2 /* DetailNavigationController.swift */,
+				4A4DCBA820CC96F70023C56C /* EmptyDetailViewController.swift */,
+				4A1948242084476C00AB490D /* ClockViewController.swift */,
+				B775650D25ED6FDB73B4C396 /* ClockListViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		4A1947E82084457D00AB490D = {
 			isa = PBXGroup;
 			children = (
@@ -297,21 +321,13 @@
 		4A1947F32084457D00AB490D /* Tiime */ = {
 			isa = PBXGroup;
 			children = (
-				054B2B57208E16210030B580 /* Tiime.entitlements */,
 				4A1947F42084457D00AB490D /* AppDelegate.swift */,
-				4A1947FB2084457E00AB490D /* Assets.xcassets */,
-				4A1947FD2084457E00AB490D /* LaunchScreen.storyboard */,
-				4A1948002084457E00AB490D /* Info.plist */,
 				0591622820BB1867005D6D47 /* ClockType */,
 				05D2549520925AB8004DCA1F /* Dependencies */,
 				05CA3C7720B8AB35000DE2B6 /* Fonts */,
 				05D254A620925CA2004DCA1F /* UI Extensions */,
-				4A4DCBA220CC82560023C56C /* MainSplitViewController.swift */,
-				4A4DCBA420CC84940023C56C /* MasterNavigationController.swift */,
-				4A21994420CCA30F0043F4A2 /* DetailNavigationController.swift */,
-				4A4DCBA820CC96F70023C56C /* EmptyDetailViewController.swift */,
-				4A1948242084476C00AB490D /* ClockViewController.swift */,
-				B775650D25ED6FDB73B4C396 /* ClockListViewController.swift */,
+				4A066A9021384794005618C1 /* Supporting Files */,
+				4A066A9121385334005618C1 /* Views */,
 			);
 			path = Tiime;
 			sourceTree = "<group>";
