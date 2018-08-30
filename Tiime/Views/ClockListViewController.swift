@@ -2,7 +2,7 @@
 
 import UIKit
 
-class ClockListViewController: NiblessTableViewController {
+class ClockListViewController: UITableViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		title = NSLocalizedString("Clocks", comment: "Title bar for main clocks list")
@@ -27,8 +27,8 @@ class ClockListViewController: NiblessTableViewController {
 		let clockType = ClockType.allCases[indexPath.row]
 		let clockViewController = ClockViewController(timeType: clockType.timeRepresentable)
 
-		let detailNavigationController = DetailNavigationController(rootViewController: clockViewController)
-//		showDetailViewController(detailNavigationController, sender: self)
-		navigationController?.pushViewController(detailNavigationController, animated: true)
+//		let detailNavigationController = DetailNavigationController(rootViewController: clockViewController)
+		showDetailViewController(clockViewController, sender: self)
+//		navigationController?.pushViewController(clockViewController, animated: true)
 	}
 }

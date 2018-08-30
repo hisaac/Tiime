@@ -2,7 +2,7 @@
 
 import UIKit
 
-class EmptyDetailViewController: NiblessViewController {
+class EmptyDetailViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		view.backgroundColor = .white
@@ -12,8 +12,8 @@ class EmptyDetailViewController: NiblessViewController {
 		navigationItem.leftItemsSupplementBackButton = true
 	}
 
-	override func viewDidLayoutSubviews() {
-		super.viewDidLayoutSubviews()
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
 
 		let emptyDetailLabel = UILabel()
 		emptyDetailLabel.translatesAutoresizingMaskIntoConstraints = false

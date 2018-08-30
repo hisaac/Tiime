@@ -1,10 +1,6 @@
-//
-// AutoLayout+Extensions.swift
 // Created by Isaac Halvorson on 5/8/18
-//
 
 // swiftlint:disable line_length
-// swiftlint:disable function_parameter_count
 
 import Foundation
 import UIKit

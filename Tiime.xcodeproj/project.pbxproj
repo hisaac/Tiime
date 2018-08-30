@@ -21,9 +21,6 @@
 		05D7C88C20BB199400265C47 /* iAWriterDuospace-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 05CA3C7220B8AB29000DE2B6 /* iAWriterDuospace-BoldItalic.otf */; };
 		05D7C88D20BB199400265C47 /* iAWriterDuospace-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 05CA3C7120B8AB29000DE2B6 /* iAWriterDuospace-Regular.otf */; };
 		05D7C88E20BB199400265C47 /* iAWriterDuospace-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 05CA3C6F20B8AB29000DE2B6 /* iAWriterDuospace-RegularItalic.otf */; };
-		05D7C88F20BB199B00265C47 /* NiblessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D254A720925CB0004DCA1F /* NiblessView.swift */; };
-		05D7C89020BB199B00265C47 /* NiblessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D254A920925CB7004DCA1F /* NiblessViewController.swift */; };
-		05D7C89120BB199B00265C47 /* NiblessTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7756CF69CC096F7CFD162F5 /* NiblessTableViewController.swift */; };
 		05D7C89220BB199B00265C47 /* AutoLayout+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29374FC0F154ACB0434598EE /* AutoLayout+Extensions.swift */; };
 		4A1947F52084457D00AB490D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1947F42084457D00AB490D /* AppDelegate.swift */; };
 		4A1947FC2084457E00AB490D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A1947FB2084457E00AB490D /* Assets.xcassets */; };
@@ -71,8 +68,6 @@
 		05CA3C7220B8AB29000DE2B6 /* iAWriterDuospace-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iAWriterDuospace-BoldItalic.otf"; sourceTree = "<group>"; };
 		05D2549720925B0C004DCA1F /* MainDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDependencyContainer.swift; sourceTree = "<group>"; };
 		05D2549920925B1B004DCA1F /* MainDependencyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDependencyProvider.swift; sourceTree = "<group>"; };
-		05D254A720925CB0004DCA1F /* NiblessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessView.swift; sourceTree = "<group>"; };
-		05D254A920925CB7004DCA1F /* NiblessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessViewController.swift; sourceTree = "<group>"; };
 		293745D13632115B8C657D8C /* BeatTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeatTime.swift; sourceTree = "<group>"; };
 		293747B6D6301FA2C480F22E /* UnixTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnixTime.swift; sourceTree = "<group>"; };
 		29374A591C59721178F9F4E6 /* DeviceTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceTime.swift; sourceTree = "<group>"; };
@@ -120,13 +115,12 @@
 		4A1948242084476C00AB490D /* ClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; };
 		4A21994420CCA30F0043F4A2 /* DetailNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNavigationController.swift; sourceTree = "<group>"; };
 		4A21994620CCA9EC0043F4A2 /* changelog.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = changelog.md; sourceTree = "<group>"; };
-		4A4DCBA220CC82560023C56C /* MainSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSplitViewController.swift; sourceTree = "<group>"; };
+		4A4DCBA220CC82560023C56C /* MainSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSplitViewController.swift; sourceTree = "<group>"; wrapsLines = 1; };
 		4A4DCBA420CC84940023C56C /* MasterNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterNavigationController.swift; sourceTree = "<group>"; };
 		4A4DCBA620CC8A3C0023C56C /* UIColor+HIGColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HIGColors.swift"; sourceTree = "<group>"; };
 		4A4DCBA820CC96F70023C56C /* EmptyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyDetailViewController.swift; sourceTree = "<group>"; };
 		4A8077BA20CCCFFB0003767D /* UISplitViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISplitViewController+Extensions.swift"; sourceTree = "<group>"; };
 		B775650D25ED6FDB73B4C396 /* ClockListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockListViewController.swift; sourceTree = "<group>"; };
-		B7756CF69CC096F7CFD162F5 /* NiblessTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiblessTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,9 +184,6 @@
 		05D254A620925CA2004DCA1F /* UI Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				05D254A720925CB0004DCA1F /* NiblessView.swift */,
-				05D254A920925CB7004DCA1F /* NiblessViewController.swift */,
-				B7756CF69CC096F7CFD162F5 /* NiblessTableViewController.swift */,
 				29374FC0F154ACB0434598EE /* AutoLayout+Extensions.swift */,
 				4A4DCBA620CC8A3C0023C56C /* UIColor+HIGColors.swift */,
 				4A8077BA20CCCFFB0003767D /* UISplitViewController+Extensions.swift */,
@@ -402,6 +393,7 @@
 					};
 					4A1948042084457E00AB490D = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1000;
 						TestTargetID = 4A1947F02084457D00AB490D;
 					};
 				};
@@ -481,11 +473,8 @@
 				05D7C88720BB198200265C47 /* UnixTime.swift in Sources */,
 				4A4DCBA520CC84940023C56C /* MasterNavigationController.swift in Sources */,
 				4A4DCBA920CC96F70023C56C /* EmptyDetailViewController.swift in Sources */,
-				05D7C89120BB199B00265C47 /* NiblessTableViewController.swift in Sources */,
 				05D7C88A20BB198E00265C47 /* MainDependencyProvider.swift in Sources */,
-				05D7C88F20BB199B00265C47 /* NiblessView.swift in Sources */,
 				05D7C88820BB198600265C47 /* DeviceTime.swift in Sources */,
-				05D7C89020BB199B00265C47 /* NiblessViewController.swift in Sources */,
 				4A8077BB20CCCFFB0003767D /* UISplitViewController+Extensions.swift in Sources */,
 				0591622520BB1829005D6D47 /* ClockType.swift in Sources */,
 				058DBD9D20DD702F00657F74 /* MetricTime.swift in Sources */,
@@ -699,7 +688,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = software.level.TiimeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tiime.app/Tiime";
 			};
@@ -720,7 +709,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = software.level.TiimeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tiime.app/Tiime";
 			};

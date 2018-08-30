@@ -2,13 +2,19 @@
 
 import UIKit
 
-class ClockViewController: NiblessViewController {
+class ClockViewController: UIViewController {
+
 	let timeLabel = UILabel()
 	let timeType: TimeRepresentable
 
 	init(timeType: TimeRepresentable) {
 		self.timeType = timeType
-		super.init()
+		super.init(nibName: nil, bundle: nil)
+	}
+
+	required init?(coder aDecoder: NSCoder) {
+		timeType = ClockType.device.timeRepresentable
+		super.init(nibName: nil, bundle: nil)
 	}
 
 	override func viewDidLoad() {
@@ -30,8 +36,8 @@ class ClockViewController: NiblessViewController {
 		timeLabel.text = timeType.timeForDisplay
 	}
 
-	override func viewDidLayoutSubviews() {
-		super.viewDidLayoutSubviews()
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
 
 		timeLabel.translatesAutoresizingMaskIntoConstraints = false
 		timeLabel.textAlignment = .center
