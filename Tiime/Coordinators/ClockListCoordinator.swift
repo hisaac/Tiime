@@ -13,7 +13,7 @@ class ClockListCoordinator: Coordinator {
 	}
 
 	private func makeClockListViewController() -> ClockListViewController {
-		let clockListViewController = ClockListViewController()
+		let clockListViewController = ClockListViewController(style: .grouped)
 		clockListViewController.delegate = self
 		return clockListViewController
 	}
