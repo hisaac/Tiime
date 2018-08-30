@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -63,11 +63,8 @@
 /* Begin PBXFileReference section */
 		054B2B57208E16210030B580 /* Tiime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tiime.entitlements; sourceTree = "<group>"; };
 		058DBD9C20DD702F00657F74 /* MetricTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricTime.swift; sourceTree = "<group>"; };
-		05A1944C208E80F100C30B22 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		05A1944E208E810100C30B22 /* license */ = {isa = PBXFileReference; lastKnownFileType = text; path = license; sourceTree = "<group>"; };
-		05A1944F208E810100C30B22 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
-		05AADA3C208E658D0076C581 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
-		05AADA3D208E658D0076C581 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		05A1944E208E810100C30B22 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		05A1944F208E810100C30B22 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		05CA3C6F20B8AB29000DE2B6 /* iAWriterDuospace-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iAWriterDuospace-RegularItalic.otf"; sourceTree = "<group>"; };
 		05CA3C7020B8AB29000DE2B6 /* iAWriterDuospace-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iAWriterDuospace-Bold.otf"; sourceTree = "<group>"; };
 		05CA3C7120B8AB29000DE2B6 /* iAWriterDuospace-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iAWriterDuospace-Regular.otf"; sourceTree = "<group>"; };
@@ -82,6 +79,36 @@
 		29374B50DEF45E2A99EBF931 /* ClockType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockType.swift; sourceTree = "<group>"; };
 		29374C927DD5E25D74807B5B /* TimeRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeRepresentable.swift; sourceTree = "<group>"; };
 		29374FC0F154ACB0434598EE /* AutoLayout+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AutoLayout+Extensions.swift"; sourceTree = "<group>"; };
+		4A066A6D213844B5005618C1 /* Gemfile.lock */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Gemfile.lock; sourceTree = "<group>"; };
+		4A066A6E213844B5005618C1 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		4A066A6F213844B6005618C1 /* Gemfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Gemfile; sourceTree = "<group>"; };
+		4A066A70213844B6005618C1 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		4A066A7321384531005618C1 /* 2018-05-31-tiime-main-clock-list-bordered.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2018-05-31-tiime-main-clock-list-bordered.png"; sourceTree = "<group>"; };
+		4A066A7421384531005618C1 /* 2018-05-31-tiime-beat-time-view-landscape-bordered.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "2018-05-31-tiime-beat-time-view-landscape-bordered.jpg"; sourceTree = "<group>"; };
+		4A066A7521384531005618C1 /* 2018-05-31-tiime-beat-time-view-landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2018-05-31-tiime-beat-time-view-landscape.png"; sourceTree = "<group>"; };
+		4A066A7621384531005618C1 /* 2018-05-31-tiime-beat-time-view-bordered.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2018-05-31-tiime-beat-time-view-bordered.png"; sourceTree = "<group>"; };
+		4A066A7721384531005618C1 /* 2018-05-31-tiime-main-clock-list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2018-05-31-tiime-main-clock-list.png"; sourceTree = "<group>"; };
+		4A066A7821384531005618C1 /* 2018-05-31-tiime-beat-time-view.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2018-05-31-tiime-beat-time-view.png"; sourceTree = "<group>"; };
+		4A066A7B21384531005618C1 /* icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-76@2x.png"; sourceTree = "<group>"; };
+		4A066A7C21384531005618C1 /* icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40@2x.png"; sourceTree = "<group>"; };
+		4A066A7D21384531005618C1 /* icon-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40@3x.png"; sourceTree = "<group>"; };
+		4A066A7E21384531005618C1 /* icon-83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-83.5@2x.png"; sourceTree = "<group>"; };
+		4A066A7F21384531005618C1 /* icon-1024@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-1024@1x.png"; sourceTree = "<group>"; };
+		4A066A8021384531005618C1 /* icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-60@3x.png"; sourceTree = "<group>"; };
+		4A066A8121384531005618C1 /* icon-20@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-20@1x.png"; sourceTree = "<group>"; };
+		4A066A8221384531005618C1 /* icon-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-29@2x.png"; sourceTree = "<group>"; };
+		4A066A8321384531005618C1 /* icon.svg */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = icon.svg; sourceTree = "<group>"; };
+		4A066A8421384531005618C1 /* icon-29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-29@3x.png"; sourceTree = "<group>"; };
+		4A066A8521384531005618C1 /* icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-60@2x.png"; sourceTree = "<group>"; };
+		4A066A8621384531005618C1 /* icon-20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-20@3x.png"; sourceTree = "<group>"; };
+		4A066A8721384531005618C1 /* beta-icon.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; path = "beta-icon.sketch"; sourceTree = "<group>"; };
+		4A066A8821384531005618C1 /* icon-29@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-29@1x.png"; sourceTree = "<group>"; };
+		4A066A8921384531005618C1 /* icon-20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-20@2x.png"; sourceTree = "<group>"; };
+		4A066A8A21384531005618C1 /* icon-76@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-76@1x.png"; sourceTree = "<group>"; };
+		4A066A8B21384531005618C1 /* icon-40@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40@1x.png"; sourceTree = "<group>"; };
+		4A066A8D21384531005618C1 /* Appfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Appfile; sourceTree = "<group>"; };
+		4A066A8E21384531005618C1 /* Fastfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Fastfile; sourceTree = "<group>"; };
+		4A066A8F21384531005618C1 /* Matchfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Matchfile; sourceTree = "<group>"; };
 		4A1947F12084457D00AB490D /* Tiime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tiime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A1947F42084457D00AB490D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A1947FB2084457E00AB490D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -136,8 +163,6 @@
 		05AADA3B208E658D0076C581 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				05AADA3C208E658D0076C581 /* RxCocoa.framework */,
-				05AADA3D208E658D0076C581 /* RxSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -175,17 +200,86 @@
 			path = "UI Extensions";
 			sourceTree = "<group>";
 		};
+		4A066A7121384531005618C1 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				4A066A7221384531005618C1 /* screenshots */,
+				4A066A7921384531005618C1 /* app-store-assets */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		4A066A7221384531005618C1 /* screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				4A066A7321384531005618C1 /* 2018-05-31-tiime-main-clock-list-bordered.png */,
+				4A066A7421384531005618C1 /* 2018-05-31-tiime-beat-time-view-landscape-bordered.jpg */,
+				4A066A7521384531005618C1 /* 2018-05-31-tiime-beat-time-view-landscape.png */,
+				4A066A7621384531005618C1 /* 2018-05-31-tiime-beat-time-view-bordered.png */,
+				4A066A7721384531005618C1 /* 2018-05-31-tiime-main-clock-list.png */,
+				4A066A7821384531005618C1 /* 2018-05-31-tiime-beat-time-view.png */,
+			);
+			path = screenshots;
+			sourceTree = "<group>";
+		};
+		4A066A7921384531005618C1 /* app-store-assets */ = {
+			isa = PBXGroup;
+			children = (
+				4A066A7A21384531005618C1 /* app-icons */,
+			);
+			path = "app-store-assets";
+			sourceTree = "<group>";
+		};
+		4A066A7A21384531005618C1 /* app-icons */ = {
+			isa = PBXGroup;
+			children = (
+				4A066A7B21384531005618C1 /* icon-76@2x.png */,
+				4A066A7C21384531005618C1 /* icon-40@2x.png */,
+				4A066A7D21384531005618C1 /* icon-40@3x.png */,
+				4A066A7E21384531005618C1 /* icon-83.5@2x.png */,
+				4A066A7F21384531005618C1 /* icon-1024@1x.png */,
+				4A066A8021384531005618C1 /* icon-60@3x.png */,
+				4A066A8121384531005618C1 /* icon-20@1x.png */,
+				4A066A8221384531005618C1 /* icon-29@2x.png */,
+				4A066A8321384531005618C1 /* icon.svg */,
+				4A066A8421384531005618C1 /* icon-29@3x.png */,
+				4A066A8521384531005618C1 /* icon-60@2x.png */,
+				4A066A8621384531005618C1 /* icon-20@3x.png */,
+				4A066A8721384531005618C1 /* beta-icon.sketch */,
+				4A066A8821384531005618C1 /* icon-29@1x.png */,
+				4A066A8921384531005618C1 /* icon-20@2x.png */,
+				4A066A8A21384531005618C1 /* icon-76@1x.png */,
+				4A066A8B21384531005618C1 /* icon-40@1x.png */,
+			);
+			path = "app-icons";
+			sourceTree = "<group>";
+		};
+		4A066A8C21384531005618C1 /* fastlane */ = {
+			isa = PBXGroup;
+			children = (
+				4A066A8D21384531005618C1 /* Appfile */,
+				4A066A8E21384531005618C1 /* Fastfile */,
+				4A066A8F21384531005618C1 /* Matchfile */,
+			);
+			path = fastlane;
+			sourceTree = "<group>";
+		};
 		4A1947E82084457D00AB490D = {
 			isa = PBXGroup;
 			children = (
-				05A1944F208E810100C30B22 /* readme.md */,
+				05A1944F208E810100C30B22 /* README.md */,
 				4A21994620CCA9EC0043F4A2 /* changelog.md */,
-				05A1944E208E810100C30B22 /* license */,
+				05A1944E208E810100C30B22 /* LICENSE */,
+				4A066A7121384531005618C1 /* assets */,
+				4A066A8C21384531005618C1 /* fastlane */,
 				4A1947F32084457D00AB490D /* Tiime */,
 				4A1948082084457E00AB490D /* TiimeTests */,
 				4A1947F22084457D00AB490D /* Products */,
 				05AADA3B208E658D0076C581 /* Frameworks */,
-				05A1944C208E80F100C30B22 /* .gitignore */,
+				4A066A6F213844B6005618C1 /* Gemfile */,
+				4A066A6D213844B5005618C1 /* Gemfile.lock */,
+				4A066A6E213844B5005618C1 /* .swiftlint.yml */,
+				4A066A70213844B6005618C1 /* .gitignore */,
 			);
 			sourceTree = "<group>";
 			usesTabs = 1;
@@ -238,11 +332,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A1948192084457E00AB490D /* Build configuration list for PBXNativeTarget "Tiime" */;
 			buildPhases = (
-				4A20C936212745BC00D1A934 /* [Swiftlint] */,
 				4A1947ED2084457D00AB490D /* Sources */,
 				4A1947EE2084457D00AB490D /* Frameworks */,
 				4A1947EF2084457D00AB490D /* Resources */,
 				05D2546E20925A17004DCA1F /* Embed Frameworks */,
+				4A20C936212745BC00D1A934 /* [Swiftlint] */,
 			);
 			buildRules = (
 			);
@@ -297,7 +391,7 @@
 				};
 			};
 			buildConfigurationList = 4A1947EC2084457D00AB490D /* Build configuration list for PBXProject "Tiime" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (

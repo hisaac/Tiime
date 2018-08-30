@@ -29,6 +29,9 @@ playground.xcworkspace
 ## Carthage
 Carthage/
 
+## CocoaPods
+Pods/
+
 ## fastlane
 fastlane/report.xml
 fastlane/Preview.html

@@ -24,6 +24,7 @@ disabled_rules:
 
 excluded:
 - Carthage
+- Pods
 
 line_length:
   ignores_comments: true

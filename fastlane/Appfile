@@ -1,2 +1,2 @@
-app_identifier("[ENV["TIME_APP_IDENTIFIER"]]")
-apple_id("[ENV["APPLE_ID"]]")
+app_identifier([ENV["TIME_APP_IDENTIFIER"]])
+apple_id([ENV["APPLE_ID"]])
