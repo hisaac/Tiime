@@ -298,13 +298,13 @@
 			children = (
 				05A1944F208E810100C30B22 /* README.md */,
 				4A21994620CCA9EC0043F4A2 /* changelog.md */,
-				05A1944E208E810100C30B22 /* LICENSE */,
 				4A066A7121384531005618C1 /* assets */,
 				4A066A8C21384531005618C1 /* fastlane */,
 				4A1947F32084457D00AB490D /* Tiime */,
 				4A1948082084457E00AB490D /* TiimeTests */,
 				4A1947F22084457D00AB490D /* Products */,
 				05AADA3B208E658D0076C581 /* Frameworks */,
+				05A1944E208E810100C30B22 /* LICENSE */,
 				4A066A6F213844B6005618C1 /* Gemfile */,
 				4A066A6D213844B5005618C1 /* Gemfile.lock */,
 				4A066A6E213844B5005618C1 /* .swiftlint.yml */,
@@ -331,8 +331,8 @@
 				0591622820BB1867005D6D47 /* ClockType */,
 				05D2549520925AB8004DCA1F /* Dependencies */,
 				05D254A620925CA2004DCA1F /* UI Extensions */,
-				4A066A9021384794005618C1 /* Supporting Files */,
 				4A066A9121385334005618C1 /* View Controllers */,
+				4A066A9021384794005618C1 /* Supporting Files */,
 			);
 			path = Tiime;
 			sourceTree = "<group>";

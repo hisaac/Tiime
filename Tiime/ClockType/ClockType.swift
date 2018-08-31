@@ -3,10 +3,15 @@
 import Foundation
 
 enum ClockType: CaseIterable {
+
 	case beat   // Swatch .beat time / Internet Time
 	case device // The time displayed based on the device's setting
 	case unix   // Unix time / Epoch time
 	case metric // Metric Time
+
+}
+
+extension ClockType {
 
 	/// The `TimeRepresentable` object associated with each clock type value
 	var timeRepresentable: TimeRepresentable {
@@ -33,18 +38,18 @@ enum ClockType: CaseIterable {
 		switch self {
 		case .beat:
 			return NSLocalizedString(
-					"The day is divided into 1000 \"beats\"",
-					comment: "The description of .beat Time"
+				"The day is divided into 1000 \"beats\"",
+				comment: "The description of .beat Time"
 			)
 		case .device:
 			return NSLocalizedString(
-					"The time displayed in the default way for the device's locale",
-					comment: "The description of the device's time"
+				"The time displayed in the default way for the device's locale",
+				comment: "The description of the device's time"
 			)
 		case .unix:
 			return NSLocalizedString(
-					"The amount of seconds since January 1, 1970",
-					comment: "The description of Unix time"
+				"The amount of seconds since January 1, 1970",
+				comment: "The description of Unix time"
 			)
 		case .metric:
 			return NSLocalizedString(
@@ -53,4 +58,5 @@ enum ClockType: CaseIterable {
 			)
 		}
 	}
+
 }
