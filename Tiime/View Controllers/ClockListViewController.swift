@@ -12,7 +12,7 @@ class ClockListViewController: UITableViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		title = NSLocalizedString("Clocks", comment: "Title bar for main clocks list")
+		title = NSLocalizedString("Tiime", comment: "Title bar for main clocks list")
 		tableView.register(UITableViewCell.self, forCellReuseIdentifier: "ClockTypeCell")
 		tableView.allowsSelection = true
 	}
