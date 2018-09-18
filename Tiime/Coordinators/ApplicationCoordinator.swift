@@ -10,21 +10,19 @@ class ApplicationCoordinator: MasterCoordinator {
 
 	let window: UIWindow
 	let rootViewController: UISplitViewController
-	let masterNavigationController: UINavigationController
+	let masterTabBarController: UITabBarController
 	let clockListCoordinator: ClockListCoordinator
 
 	init(window: UIWindow) {
 		self.window = window
 		rootViewController = UISplitViewController()
-		masterNavigationController = UINavigationController()
-		masterNavigationController.navigationBar.prefersLargeTitles = true
-
-		clockListCoordinator = ClockListCoordinator(presenter: masterNavigationController)
+		masterTabBarController = UITabBarController()
+		clockListCoordinator = ClockListCoordinator(presenter: masterTabBarController)
 	}
 
 	func start() {
 		let emptyDetailNavController = EmptyDetailViewController().embedInNavigationController(prefersLargeTitles: false)
-		rootViewController.viewControllers = [masterNavigationController, emptyDetailNavController]
+		rootViewController.viewControllers = [masterTabBarController, emptyDetailNavController]
 
 		rootViewController.delegate = self
 		rootViewController.preferredDisplayMode = .allVisible
@@ -65,13 +63,22 @@ extension ApplicationCoordinator: UISplitViewControllerDelegate {
 	}
 
 	/// Displays the detail view controller differently based on if the view is compact or normal
+	/// via: https://stackoverflow.com/a/46012353/4118208
+	///
 	func splitViewController(_ splitViewController: UISplitViewController, showDetail vc: UIViewController, sender: Any?) -> Bool {
 		if splitViewController.isCollapsed {
-			guard let rootNavigationController = rootViewController.viewControllers.first as? UINavigationController else {
-				return false
+			guard let tabBarController = splitViewController.viewControllers.first as? UITabBarController else { return false }
+
+			// swiftlint:disable:next line_length
+			guard let selectedNavigationController = tabBarController.selectedViewController as? UINavigationController else { return false }
+
+			// Push view controller
+			var detailViewController = vc
+			if let navController = vc as? UINavigationController, let topViewController = navController.topViewController {
+				detailViewController = topViewController
 			}
 
-			rootNavigationController.pushViewController(vc, animated: true)
+			selectedNavigationController.pushViewController(detailViewController, animated: true)
 			return true
 		}
 

@@ -5,10 +5,10 @@ import UIKit
 class ClockListCoordinator: Coordinator {
 
 	weak var delegate: MasterCoordinator?
-	private let presenter: UINavigationController
+	private let presenter: UITabBarController
 	private lazy var clockListViewController = makeClockListViewController()
 
-	init(presenter: UINavigationController) {
+	init(presenter: UITabBarController) {
 		self.presenter = presenter
 	}
 
@@ -19,7 +19,7 @@ class ClockListCoordinator: Coordinator {
 	}
 
 	func start() {
-		presenter.viewControllers = [clockListViewController]
+		presenter.viewControllers = [clockListViewController.embedInNavigationController()]
 	}
 
 }
