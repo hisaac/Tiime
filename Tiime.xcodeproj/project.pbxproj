@@ -34,6 +34,8 @@
 		4A4DCBA720CC8A3C0023C56C /* UIColor+HIGColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4DCBA620CC8A3C0023C56C /* UIColor+HIGColors.swift */; };
 		4A4DCBA920CC96F70023C56C /* EmptyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4DCBA820CC96F70023C56C /* EmptyDetailViewController.swift */; };
 		4A8077BB20CCCFFB0003767D /* UISplitViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8077BA20CCCFFB0003767D /* UISplitViewController+Extensions.swift */; };
+		4AA7C568215143160086C0C1 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7C567215143160086C0C1 /* UIViewController+Extensions.swift */; };
+		4AA7C56A215143D20086C0C1 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7C569215143D20086C0C1 /* SettingsCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +126,8 @@
 		4A4DCBA620CC8A3C0023C56C /* UIColor+HIGColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HIGColors.swift"; sourceTree = "<group>"; };
 		4A4DCBA820CC96F70023C56C /* EmptyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyDetailViewController.swift; sourceTree = "<group>"; };
 		4A8077BA20CCCFFB0003767D /* UISplitViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISplitViewController+Extensions.swift"; sourceTree = "<group>"; };
+		4AA7C567215143160086C0C1 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		4AA7C569215143D20086C0C1 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
 		B775650D25ED6FDB73B4C396 /* ClockListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -191,6 +195,7 @@
 				29374FC0F154ACB0434598EE /* AutoLayout+Extensions.swift */,
 				4A4DCBA620CC8A3C0023C56C /* UIColor+HIGColors.swift */,
 				4A8077BA20CCCFFB0003767D /* UISplitViewController+Extensions.swift */,
+				4AA7C567215143160086C0C1 /* UIViewController+Extensions.swift */,
 			);
 			path = "UI Extensions";
 			sourceTree = "<group>";
@@ -289,6 +294,7 @@
 				4A066A9321386ED6005618C1 /* Coordinator.swift */,
 				4A066A9521386EEB005618C1 /* ApplicationCoordinator.swift */,
 				4A066A9921387729005618C1 /* ClockListCoordinator.swift */,
+				4AA7C569215143D20086C0C1 /* SettingsCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -490,6 +496,7 @@
 				4A4DCBA920CC96F70023C56C /* EmptyDetailViewController.swift in Sources */,
 				05D7C88A20BB198E00265C47 /* MainDependencyProvider.swift in Sources */,
 				05D7C88820BB198600265C47 /* DeviceTime.swift in Sources */,
+				4AA7C568215143160086C0C1 /* UIViewController+Extensions.swift in Sources */,
 				4A8077BB20CCCFFB0003767D /* UISplitViewController+Extensions.swift in Sources */,
 				0591622520BB1829005D6D47 /* ClockType.swift in Sources */,
 				058DBD9D20DD702F00657F74 /* MetricTime.swift in Sources */,
@@ -498,6 +505,7 @@
 				4A066A9621386EEB005618C1 /* ApplicationCoordinator.swift in Sources */,
 				4A4DCBA720CC8A3C0023C56C /* UIColor+HIGColors.swift in Sources */,
 				05D7C88420BB197D00265C47 /* BeatTime.swift in Sources */,
+				4AA7C56A215143D20086C0C1 /* SettingsCoordinator.swift in Sources */,
 				0591622620BB1834005D6D47 /* ClockListViewController.swift in Sources */,
 				05D7C88920BB198E00265C47 /* MainDependencyContainer.swift in Sources */,
 			);

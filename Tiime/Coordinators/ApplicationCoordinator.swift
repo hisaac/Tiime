@@ -12,12 +12,14 @@ class ApplicationCoordinator: MasterCoordinator {
 	let rootViewController: UISplitViewController
 	let masterTabBarController: UITabBarController
 	let clockListCoordinator: ClockListCoordinator
+	let settingsCoordinator: SettingsCoordinator
 
 	init(window: UIWindow) {
 		self.window = window
 		rootViewController = UISplitViewController()
 		masterTabBarController = UITabBarController()
 		clockListCoordinator = ClockListCoordinator(presenter: masterTabBarController)
+		settingsCoordinator = SettingsCoordinator(presenter: masterTabBarController)
 	}
 
 	func start() {
@@ -29,6 +31,9 @@ class ApplicationCoordinator: MasterCoordinator {
 
 		clockListCoordinator.start()
 		clockListCoordinator.delegate = self
+
+		settingsCoordinator.start()
+		settingsCoordinator.delegate = self
 
 		window.rootViewController = rootViewController
 		window.tintColor = UIColor.HIGColors.purple
@@ -43,15 +48,6 @@ class ApplicationCoordinator: MasterCoordinator {
 		}
 
 		rootViewController.showDetailViewController(detailViewController, sender: self)
-	}
-}
-
-extension UIViewController {
-	func embedInNavigationController(prefersLargeTitles: Bool = true) -> UINavigationController {
-		let navigationController = UINavigationController()
-		navigationController.navigationBar.prefersLargeTitles = prefersLargeTitles
-		navigationController.viewControllers = [self]
-		return navigationController
 	}
 }
 
