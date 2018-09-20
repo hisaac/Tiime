@@ -10,6 +10,7 @@ struct SettingsService: UserDefaultsInteracting {
 
 enum Settings: String {
 
+	case appTintColor
 	case clockBackgroundColor
 	case clockFont
 	case clockTextColor

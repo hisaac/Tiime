@@ -5,12 +5,26 @@ import UIKit
 /// The different theme settings for the app
 struct Theme {
 
-	let clockBackgroundColorKey = "clockBackgroundColor"
-	let clockFontKey = "clockFont"
-	let clockTextColorKey = "clockTextColor"
+	private static let clockBackgroundColorKey = "clockBackgroundColor"
+	private static let clockBackgroundColorDefault = Color.white
+
+	private static let clockFontKey = "clockFont"
+	private static let clockFontDefault = UIFont.systemFont(ofSize: UIFont.systemFontSize)
+
+	private static let clockTextColorKey = "clockTextColor"
+	private static let clockTextColorDefault = Color.black
+
+	private static let appTintColorKey = "appTintColor"
+	private static let appTintColorDefault = Color.purple
 
 	/// Colors taken from the Chameleon library:
 	enum Color: String, CaseIterable {
+
+		init?(_ rawValue: String?) {
+			guard let rawValue = rawValue else { return nil }
+			self.init(rawValue: rawValue)
+		}
+
 		case black = "Black"
 		case blue = "Blue"
 		case brown = "Brown"
@@ -61,37 +75,45 @@ struct Theme {
 		case darkYellow = "Dark Yellow"
 	}
 
-	var clockBackgroundColor: Color {
+	static var clockBackgroundColor: Color {
 		get {
-			let rawValue = UserDefaults.standard.string(forKey: clockBackgroundColorKey) ?? "White"
-			return Color(rawValue: rawValue) ?? .white
+			return getColorFromUserDefaults(key: clockBackgroundColorKey) ?? clockBackgroundColorDefault
 		}
 		set {
-			UserDefaults.standard.set(newValue.rawValue, forKey: "backgroundColor")
+			UserDefaults.standard.set(newValue.rawValue, forKey: clockBackgroundColorKey)
 		}
 	}
 
-	var clockTextColor: Color {
+	static var clockTextColor: Color {
 		get {
-			let rawValue = UserDefaults.standard.string(forKey: clockTextColorKey) ?? "Black"
-			return Color(rawValue: rawValue) ?? .black
+			return getColorFromUserDefaults(key: clockTextColorKey) ?? clockTextColorDefault
 		}
 		set {
-			UserDefaults.standard.set(newValue.rawValue, forKey: "textColor")
+			UserDefaults.standard.set(newValue.rawValue, forKey: clockTextColorKey)
 		}
 	}
 
-	var clockFont: UIFont {
+	static var clockFont: UIFont {
 		get {
-			if let font = UserDefaults.standard.object(forKey: clockFontKey) as? UIFont {
-				return font
-			} else {
-				return UIFont.systemFont(ofSize: UIFont.systemFontSize)
-			}
+			return UserDefaults.standard.object(forKey: clockFontKey) as? UIFont ?? clockFontDefault
 		}
 		set {
-			UserDefaults.standard.set(newValue, forKey: "clockFont")
+			UserDefaults.standard.set(newValue, forKey: clockFontKey)
 		}
+	}
+
+	static var appTintColor: Color {
+		get {
+			return getColorFromUserDefaults(key: appTintColorKey) ?? appTintColorDefault
+		}
+		set {
+			UserDefaults.standard.set(newValue.rawValue, forKey: appTintColorKey)
+		}
+	}
+
+	private static func getColorFromUserDefaults(key: String) -> Color? {
+		let rawValue = UserDefaults.standard.string(forKey: key)
+		return Color(rawValue)
 	}
 
 }

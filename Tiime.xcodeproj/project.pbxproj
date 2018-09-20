@@ -365,8 +365,8 @@
 		4AA7C56B215145B20086C0C1 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				4AA7C56C215145C40086C0C1 /* UserDefaultsInteracting.swift */,
 				4AA7C56E2151462E0086C0C1 /* SettingsService.swift */,
+				4AA7C56C215145C40086C0C1 /* UserDefaultsInteracting.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";

@@ -36,7 +36,7 @@ class ApplicationCoordinator: MasterCoordinator {
 		settingsCoordinator.delegate = self
 
 		window.rootViewController = rootViewController
-		window.tintColor = Theme.Color.allCases.randomElement()?.uiColor
+		window.tintColor = Theme.appTintColor.uiColor
 		window.makeKeyAndVisible()
 	}
 
