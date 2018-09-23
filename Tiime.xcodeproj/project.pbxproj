@@ -45,6 +45,26 @@
 		4AA4B40B2157D91F002895B1 /* Hack-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B4042157D91F002895B1 /* Hack-Bold.ttf */; };
 		4AA4B40C2157D91F002895B1 /* SIL Open Font License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B4062157D91F002895B1 /* SIL Open Font License.txt */; };
 		4AA4B40D2157D91F002895B1 /* NixieOne-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B4072157D91F002895B1 /* NixieOne-Regular.otf */; };
+		4AA4B4252157E1B1002895B1 /* LCDMono2-Normal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B4102157E1B1002895B1 /* LCDMono2-Normal.ttf */; };
+		4AA4B4262157E1B1002895B1 /* LCDMono2-Ultra.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B4112157E1B1002895B1 /* LCDMono2-Ultra.ttf */; };
+		4AA4B4272157E1B1002895B1 /* LCDMono2-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B4122157E1B1002895B1 /* LCDMono2-Light.ttf */; };
+		4AA4B4282157E1B1002895B1 /* LCDMono-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B4132157E1B1002895B1 /* LCDMono-Bold.ttf */; };
+		4AA4B4292157E1B1002895B1 /* LCDMono2-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B4142157E1B1002895B1 /* LCDMono2-Bold.ttf */; };
+		4AA4B42A2157E1B1002895B1 /* LCDMono-Normal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B4152157E1B1002895B1 /* LCDMono-Normal.ttf */; };
+		4AA4B42B2157E1B1002895B1 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B4162157E1B1002895B1 /* README.txt */; };
+		4AA4B42C2157E1B1002895B1 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B4172157E1B1002895B1 /* LICENSE.txt */; };
+		4AA4B42D2157E1B1002895B1 /* LCDMono-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B4182157E1B1002895B1 /* LCDMono-Light.ttf */; };
+		4AA4B42E2157E1B1002895B1 /* LCDMono-Ultra.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B4192157E1B1002895B1 /* LCDMono-Ultra.ttf */; };
+		4AA4B42F2157E1B1002895B1 /* LCD-Normal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B41B2157E1B1002895B1 /* LCD-Normal.ttf */; };
+		4AA4B4302157E1B1002895B1 /* LCD2-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B41C2157E1B1002895B1 /* LCD2-Bold.ttf */; };
+		4AA4B4312157E1B1002895B1 /* LCD2-Normal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B41D2157E1B1002895B1 /* LCD2-Normal.ttf */; };
+		4AA4B4322157E1B1002895B1 /* LCD-Ultra.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B41E2157E1B1002895B1 /* LCD-Ultra.ttf */; };
+		4AA4B4332157E1B1002895B1 /* LCD-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B41F2157E1B1002895B1 /* LCD-Light.ttf */; };
+		4AA4B4342157E1B1002895B1 /* LCD-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B4202157E1B1002895B1 /* LCD-Bold.ttf */; };
+		4AA4B4352157E1B1002895B1 /* LCD2-Ultra.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B4212157E1B1002895B1 /* LCD2-Ultra.ttf */; };
+		4AA4B4362157E1B1002895B1 /* LCD2-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B4222157E1B1002895B1 /* LCD2-Light.ttf */; };
+		4AA4B4372157E1B1002895B1 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B4232157E1B1002895B1 /* README.txt */; };
+		4AA4B4382157E1B1002895B1 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B4242157E1B1002895B1 /* LICENSE.txt */; };
 		4AA7C568215143160086C0C1 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7C567215143160086C0C1 /* UIViewController+Extensions.swift */; };
 		4AA7C56A215143D20086C0C1 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7C569215143D20086C0C1 /* SettingsCoordinator.swift */; };
 		4AA7C56D215145C40086C0C1 /* UserDefaultsInteracting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7C56C215145C40086C0C1 /* UserDefaultsInteracting.swift */; };
@@ -154,6 +174,26 @@
 		4AA4B4042157D91F002895B1 /* Hack-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hack-Bold.ttf"; sourceTree = "<group>"; };
 		4AA4B4062157D91F002895B1 /* SIL Open Font License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SIL Open Font License.txt"; sourceTree = "<group>"; };
 		4AA4B4072157D91F002895B1 /* NixieOne-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NixieOne-Regular.otf"; sourceTree = "<group>"; };
+		4AA4B4102157E1B1002895B1 /* LCDMono2-Normal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LCDMono2-Normal.ttf"; sourceTree = "<group>"; };
+		4AA4B4112157E1B1002895B1 /* LCDMono2-Ultra.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LCDMono2-Ultra.ttf"; sourceTree = "<group>"; };
+		4AA4B4122157E1B1002895B1 /* LCDMono2-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LCDMono2-Light.ttf"; sourceTree = "<group>"; };
+		4AA4B4132157E1B1002895B1 /* LCDMono-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LCDMono-Bold.ttf"; sourceTree = "<group>"; };
+		4AA4B4142157E1B1002895B1 /* LCDMono2-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LCDMono2-Bold.ttf"; sourceTree = "<group>"; };
+		4AA4B4152157E1B1002895B1 /* LCDMono-Normal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LCDMono-Normal.ttf"; sourceTree = "<group>"; };
+		4AA4B4162157E1B1002895B1 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		4AA4B4172157E1B1002895B1 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		4AA4B4182157E1B1002895B1 /* LCDMono-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LCDMono-Light.ttf"; sourceTree = "<group>"; };
+		4AA4B4192157E1B1002895B1 /* LCDMono-Ultra.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LCDMono-Ultra.ttf"; sourceTree = "<group>"; };
+		4AA4B41B2157E1B1002895B1 /* LCD-Normal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LCD-Normal.ttf"; sourceTree = "<group>"; };
+		4AA4B41C2157E1B1002895B1 /* LCD2-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LCD2-Bold.ttf"; sourceTree = "<group>"; };
+		4AA4B41D2157E1B1002895B1 /* LCD2-Normal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LCD2-Normal.ttf"; sourceTree = "<group>"; };
+		4AA4B41E2157E1B1002895B1 /* LCD-Ultra.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LCD-Ultra.ttf"; sourceTree = "<group>"; };
+		4AA4B41F2157E1B1002895B1 /* LCD-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LCD-Light.ttf"; sourceTree = "<group>"; };
+		4AA4B4202157E1B1002895B1 /* LCD-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LCD-Bold.ttf"; sourceTree = "<group>"; };
+		4AA4B4212157E1B1002895B1 /* LCD2-Ultra.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LCD2-Ultra.ttf"; sourceTree = "<group>"; };
+		4AA4B4222157E1B1002895B1 /* LCD2-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LCD2-Light.ttf"; sourceTree = "<group>"; };
+		4AA4B4232157E1B1002895B1 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		4AA4B4242157E1B1002895B1 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		4AA7C567215143160086C0C1 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		4AA7C569215143D20086C0C1 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
 		4AA7C56C215145C40086C0C1 /* UserDefaultsInteracting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsInteracting.swift; sourceTree = "<group>"; };
@@ -205,6 +245,7 @@
 			children = (
 				4AA4B4002157D91F002895B1 /* Hack */,
 				4AA4B3F32157D3F9002895B1 /* iA Writer Duospace */,
+				4AA4B40E2157E1B1002895B1 /* LCD */,
 				4AA4B4052157D91F002895B1 /* Nixie One */,
 				4AA4B3E82157D377002895B1 /* Orbitron */,
 			);
@@ -430,6 +471,49 @@
 			path = "Nixie One";
 			sourceTree = "<group>";
 		};
+		4AA4B40E2157E1B1002895B1 /* LCD */ = {
+			isa = PBXGroup;
+			children = (
+				4AA4B40F2157E1B1002895B1 /* LCD Mono */,
+				4AA4B41A2157E1B1002895B1 /* LCD */,
+			);
+			path = LCD;
+			sourceTree = "<group>";
+		};
+		4AA4B40F2157E1B1002895B1 /* LCD Mono */ = {
+			isa = PBXGroup;
+			children = (
+				4AA4B4102157E1B1002895B1 /* LCDMono2-Normal.ttf */,
+				4AA4B4112157E1B1002895B1 /* LCDMono2-Ultra.ttf */,
+				4AA4B4122157E1B1002895B1 /* LCDMono2-Light.ttf */,
+				4AA4B4132157E1B1002895B1 /* LCDMono-Bold.ttf */,
+				4AA4B4142157E1B1002895B1 /* LCDMono2-Bold.ttf */,
+				4AA4B4152157E1B1002895B1 /* LCDMono-Normal.ttf */,
+				4AA4B4162157E1B1002895B1 /* README.txt */,
+				4AA4B4172157E1B1002895B1 /* LICENSE.txt */,
+				4AA4B4182157E1B1002895B1 /* LCDMono-Light.ttf */,
+				4AA4B4192157E1B1002895B1 /* LCDMono-Ultra.ttf */,
+			);
+			path = "LCD Mono";
+			sourceTree = "<group>";
+		};
+		4AA4B41A2157E1B1002895B1 /* LCD */ = {
+			isa = PBXGroup;
+			children = (
+				4AA4B41B2157E1B1002895B1 /* LCD-Normal.ttf */,
+				4AA4B41C2157E1B1002895B1 /* LCD2-Bold.ttf */,
+				4AA4B41D2157E1B1002895B1 /* LCD2-Normal.ttf */,
+				4AA4B41E2157E1B1002895B1 /* LCD-Ultra.ttf */,
+				4AA4B41F2157E1B1002895B1 /* LCD-Light.ttf */,
+				4AA4B4202157E1B1002895B1 /* LCD-Bold.ttf */,
+				4AA4B4212157E1B1002895B1 /* LCD2-Ultra.ttf */,
+				4AA4B4222157E1B1002895B1 /* LCD2-Light.ttf */,
+				4AA4B4232157E1B1002895B1 /* README.txt */,
+				4AA4B4242157E1B1002895B1 /* LICENSE.txt */,
+			);
+			path = LCD;
+			sourceTree = "<group>";
+		};
 		4AA7C56B215145B20086C0C1 /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -531,17 +615,37 @@
 			files = (
 				4A1947FC2084457E00AB490D /* Assets.xcassets in Resources */,
 				4A1947FF2084457E00AB490D /* LaunchScreen.storyboard in Resources */,
+				4AA4B4362157E1B1002895B1 /* LCD2-Light.ttf in Resources */,
+				4AA4B4282157E1B1002895B1 /* LCDMono-Bold.ttf in Resources */,
 				4AA4B3FF2157D3F9002895B1 /* iAWriterDuospace-Regular.otf in Resources */,
 				4AA4B3FB2157D3F9002895B1 /* iAWriterDuospace-RegularItalic.otf in Resources */,
 				4AA4B3FD2157D3F9002895B1 /* iAWriterDuospace-Bold.otf in Resources */,
+				4AA4B42B2157E1B1002895B1 /* README.txt in Resources */,
+				4AA4B4312157E1B1002895B1 /* LCD2-Normal.ttf in Resources */,
+				4AA4B4332157E1B1002895B1 /* LCD-Light.ttf in Resources */,
+				4AA4B4342157E1B1002895B1 /* LCD-Bold.ttf in Resources */,
+				4AA4B4252157E1B1002895B1 /* LCDMono2-Normal.ttf in Resources */,
+				4AA4B4382157E1B1002895B1 /* LICENSE.txt in Resources */,
+				4AA4B4302157E1B1002895B1 /* LCD2-Bold.ttf in Resources */,
+				4AA4B4352157E1B1002895B1 /* LCD2-Ultra.ttf in Resources */,
 				4AA4B3FE2157D3F9002895B1 /* iAWriterDuospace-BoldItalic.otf in Resources */,
+				4AA4B42A2157E1B1002895B1 /* LCDMono-Normal.ttf in Resources */,
 				4AA4B40C2157D91F002895B1 /* SIL Open Font License.txt in Resources */,
 				4AA4B3F02157D377002895B1 /* Orbitron-Regular.ttf in Resources */,
+				4AA4B42E2157E1B1002895B1 /* LCDMono-Ultra.ttf in Resources */,
+				4AA4B4372157E1B1002895B1 /* README.txt in Resources */,
+				4AA4B42C2157E1B1002895B1 /* LICENSE.txt in Resources */,
+				4AA4B4262157E1B1002895B1 /* LCDMono2-Ultra.ttf in Resources */,
 				4AA4B4082157D91F002895B1 /* Hack-Regular.ttf in Resources */,
+				4AA4B42F2157E1B1002895B1 /* LCD-Normal.ttf in Resources */,
+				4AA4B4322157E1B1002895B1 /* LCD-Ultra.ttf in Resources */,
 				4AA4B40D2157D91F002895B1 /* NixieOne-Regular.otf in Resources */,
 				4AA4B40B2157D91F002895B1 /* Hack-Bold.ttf in Resources */,
 				4AA4B3EF2157D377002895B1 /* Orbitron-Medium.ttf in Resources */,
 				4AA4B4092157D91F002895B1 /* Hack-Italic.ttf in Resources */,
+				4AA4B4272157E1B1002895B1 /* LCDMono2-Light.ttf in Resources */,
+				4AA4B42D2157E1B1002895B1 /* LCDMono-Light.ttf in Resources */,
+				4AA4B4292157E1B1002895B1 /* LCDMono2-Bold.ttf in Resources */,
 				4AA4B40A2157D91F002895B1 /* Hack-BoldItalic.ttf in Resources */,
 				4AA4B3F22157D377002895B1 /* Orbitron-Bold.ttf in Resources */,
 				4AA4B3EE2157D377002895B1 /* Orbitron-Black.ttf in Resources */,

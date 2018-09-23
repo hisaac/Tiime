@@ -76,7 +76,12 @@ struct Theme {
 	}
 
 	enum Font: String, CaseIterable {
-		case thing
+		case hack = "Hack"
+		case iAWriterDuospace = "iA Writer Duospace"
+		case lcd = "LCD"
+		case lcdMono = "LCD Mono"
+		case nixieOne = "Nixie One"
+		case orbitron = "Orbitron"
 	}
 
 	static var clockBackgroundColor: Color {
@@ -190,5 +195,5 @@ extension Theme.Color {
 }
 
 extension Theme.Font {
-	
+
 }
