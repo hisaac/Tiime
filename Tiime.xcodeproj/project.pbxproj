@@ -31,8 +31,6 @@
 		4A4DCBA720CC8A3C0023C56C /* HIGColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4DCBA620CC8A3C0023C56C /* HIGColors.swift */; };
 		4A4DCBA920CC96F70023C56C /* EmptyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4DCBA820CC96F70023C56C /* EmptyDetailViewController.swift */; };
 		4A8077BB20CCCFFB0003767D /* UISplitViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8077BA20CCCFFB0003767D /* UISplitViewController+Extensions.swift */; };
-		4AA4B3FF2157D3F9002895B1 /* iAWriterDuospace-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B3F92157D3F9002895B1 /* iAWriterDuospace-Regular.otf */; };
-		4AA4B4082157D91F002895B1 /* Hack-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B4012157D91F002895B1 /* Hack-Regular.ttf */; };
 		4AA7C568215143160086C0C1 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7C567215143160086C0C1 /* UIViewController+Extensions.swift */; };
 		4AA7C56A215143D20086C0C1 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7C569215143D20086C0C1 /* SettingsCoordinator.swift */; };
 		4AA7C56D215145C40086C0C1 /* UserDefaultsInteracting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7C56C215145C40086C0C1 /* UserDefaultsInteracting.swift */; };
@@ -125,12 +123,6 @@
 		4A4DCBA620CC8A3C0023C56C /* HIGColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIGColors.swift; sourceTree = "<group>"; };
 		4A4DCBA820CC96F70023C56C /* EmptyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyDetailViewController.swift; sourceTree = "<group>"; };
 		4A8077BA20CCCFFB0003767D /* UISplitViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISplitViewController+Extensions.swift"; sourceTree = "<group>"; };
-		4AA4B3F42157D3F9002895B1 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
-		4AA4B3F62157D3F9002895B1 /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
-		4AA4B3F92157D3F9002895B1 /* iAWriterDuospace-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iAWriterDuospace-Regular.otf"; sourceTree = "<group>"; };
-		4AA4B4012157D91F002895B1 /* Hack-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hack-Regular.ttf"; sourceTree = "<group>"; };
-		4AA4B4392157F257002895B1 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
-		4AA4B43A2157F282002895B1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4AA7C567215143160086C0C1 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		4AA7C569215143D20086C0C1 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
 		4AA7C56C215145C40086C0C1 /* UserDefaultsInteracting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsInteracting.swift; sourceTree = "<group>"; };
@@ -175,15 +167,6 @@
 				4A1FA8E12153EB0100971C73 /* Chameleon.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		05CA3C7720B8AB35000DE2B6 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				4AA4B4002157D91F002895B1 /* Hack */,
-				4AA4B3F32157D3F9002895B1 /* iA Writer Duospace */,
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 		05D2549520925AB8004DCA1F /* Dependencies */ = {
@@ -274,7 +257,6 @@
 		4A066A9021384794005618C1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				05CA3C7720B8AB35000DE2B6 /* Fonts */,
 				4A1948002084457E00AB490D /* Info.plist */,
 				4A1947FB2084457E00AB490D /* Assets.xcassets */,
 				054B2B57208E16210030B580 /* Tiime.entitlements */,
@@ -358,26 +340,6 @@
 				4A19480B2084457E00AB490D /* Info.plist */,
 			);
 			path = TiimeTests;
-			sourceTree = "<group>";
-		};
-		4AA4B3F32157D3F9002895B1 /* iA Writer Duospace */ = {
-			isa = PBXGroup;
-			children = (
-				4AA4B3F42157D3F9002895B1 /* LICENSE.md */,
-				4AA4B3F62157D3F9002895B1 /* Readme.md */,
-				4AA4B3F92157D3F9002895B1 /* iAWriterDuospace-Regular.otf */,
-			);
-			path = "iA Writer Duospace";
-			sourceTree = "<group>";
-		};
-		4AA4B4002157D91F002895B1 /* Hack */ = {
-			isa = PBXGroup;
-			children = (
-				4AA4B4012157D91F002895B1 /* Hack-Regular.ttf */,
-				4AA4B4392157F257002895B1 /* LICENSE.md */,
-				4AA4B43A2157F282002895B1 /* README.md */,
-			);
-			path = Hack;
 			sourceTree = "<group>";
 		};
 		4AA7C56B215145B20086C0C1 /* Service */ = {
@@ -481,8 +443,6 @@
 			files = (
 				4A1947FC2084457E00AB490D /* Assets.xcassets in Resources */,
 				4A1947FF2084457E00AB490D /* LaunchScreen.storyboard in Resources */,
-				4AA4B3FF2157D3F9002895B1 /* iAWriterDuospace-Regular.otf in Resources */,
-				4AA4B4082157D91F002895B1 /* Hack-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
