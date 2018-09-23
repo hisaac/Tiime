@@ -17,10 +17,6 @@
 		05D7C88820BB198600265C47 /* DeviceTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29374A591C59721178F9F4E6 /* DeviceTime.swift */; };
 		05D7C88920BB198E00265C47 /* MainDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D2549720925B0C004DCA1F /* MainDependencyContainer.swift */; };
 		05D7C88A20BB198E00265C47 /* MainDependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D2549920925B1B004DCA1F /* MainDependencyProvider.swift */; };
-		05D7C88B20BB199400265C47 /* iAWriterDuospace-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 05CA3C7020B8AB29000DE2B6 /* iAWriterDuospace-Bold.otf */; };
-		05D7C88C20BB199400265C47 /* iAWriterDuospace-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 05CA3C7220B8AB29000DE2B6 /* iAWriterDuospace-BoldItalic.otf */; };
-		05D7C88D20BB199400265C47 /* iAWriterDuospace-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 05CA3C7120B8AB29000DE2B6 /* iAWriterDuospace-Regular.otf */; };
-		05D7C88E20BB199400265C47 /* iAWriterDuospace-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 05CA3C6F20B8AB29000DE2B6 /* iAWriterDuospace-RegularItalic.otf */; };
 		05D7C89220BB199B00265C47 /* AutoLayout+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29374FC0F154ACB0434598EE /* AutoLayout+Extensions.swift */; };
 		4A066A9421386ED6005618C1 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A066A9321386ED6005618C1 /* Coordinator.swift */; };
 		4A066A9621386EEB005618C1 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A066A9521386EEB005618C1 /* ApplicationCoordinator.swift */; };
@@ -35,6 +31,20 @@
 		4A4DCBA720CC8A3C0023C56C /* HIGColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4DCBA620CC8A3C0023C56C /* HIGColors.swift */; };
 		4A4DCBA920CC96F70023C56C /* EmptyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4DCBA820CC96F70023C56C /* EmptyDetailViewController.swift */; };
 		4A8077BB20CCCFFB0003767D /* UISplitViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8077BA20CCCFFB0003767D /* UISplitViewController+Extensions.swift */; };
+		4AA4B3EE2157D377002895B1 /* Orbitron-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B3E92157D377002895B1 /* Orbitron-Black.ttf */; };
+		4AA4B3EF2157D377002895B1 /* Orbitron-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B3EA2157D377002895B1 /* Orbitron-Medium.ttf */; };
+		4AA4B3F02157D377002895B1 /* Orbitron-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B3EB2157D377002895B1 /* Orbitron-Regular.ttf */; };
+		4AA4B3F22157D377002895B1 /* Orbitron-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B3ED2157D377002895B1 /* Orbitron-Bold.ttf */; };
+		4AA4B3FB2157D3F9002895B1 /* iAWriterDuospace-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B3F52157D3F9002895B1 /* iAWriterDuospace-RegularItalic.otf */; };
+		4AA4B3FD2157D3F9002895B1 /* iAWriterDuospace-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B3F72157D3F9002895B1 /* iAWriterDuospace-Bold.otf */; };
+		4AA4B3FE2157D3F9002895B1 /* iAWriterDuospace-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B3F82157D3F9002895B1 /* iAWriterDuospace-BoldItalic.otf */; };
+		4AA4B3FF2157D3F9002895B1 /* iAWriterDuospace-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B3F92157D3F9002895B1 /* iAWriterDuospace-Regular.otf */; };
+		4AA4B4082157D91F002895B1 /* Hack-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B4012157D91F002895B1 /* Hack-Regular.ttf */; };
+		4AA4B4092157D91F002895B1 /* Hack-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B4022157D91F002895B1 /* Hack-Italic.ttf */; };
+		4AA4B40A2157D91F002895B1 /* Hack-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B4032157D91F002895B1 /* Hack-BoldItalic.ttf */; };
+		4AA4B40B2157D91F002895B1 /* Hack-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B4042157D91F002895B1 /* Hack-Bold.ttf */; };
+		4AA4B40C2157D91F002895B1 /* SIL Open Font License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B4062157D91F002895B1 /* SIL Open Font License.txt */; };
+		4AA4B40D2157D91F002895B1 /* NixieOne-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA4B4072157D91F002895B1 /* NixieOne-Regular.otf */; };
 		4AA7C568215143160086C0C1 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7C567215143160086C0C1 /* UIViewController+Extensions.swift */; };
 		4AA7C56A215143D20086C0C1 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7C569215143D20086C0C1 /* SettingsCoordinator.swift */; };
 		4AA7C56D215145C40086C0C1 /* UserDefaultsInteracting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7C56C215145C40086C0C1 /* UserDefaultsInteracting.swift */; };
@@ -69,10 +79,6 @@
 		058DBD9C20DD702F00657F74 /* MetricTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricTime.swift; sourceTree = "<group>"; };
 		05A1944E208E810100C30B22 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		05A1944F208E810100C30B22 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		05CA3C6F20B8AB29000DE2B6 /* iAWriterDuospace-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iAWriterDuospace-RegularItalic.otf"; sourceTree = "<group>"; };
-		05CA3C7020B8AB29000DE2B6 /* iAWriterDuospace-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iAWriterDuospace-Bold.otf"; sourceTree = "<group>"; };
-		05CA3C7120B8AB29000DE2B6 /* iAWriterDuospace-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iAWriterDuospace-Regular.otf"; sourceTree = "<group>"; };
-		05CA3C7220B8AB29000DE2B6 /* iAWriterDuospace-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iAWriterDuospace-BoldItalic.otf"; sourceTree = "<group>"; };
 		05D2549720925B0C004DCA1F /* MainDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDependencyContainer.swift; sourceTree = "<group>"; };
 		05D2549920925B1B004DCA1F /* MainDependencyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDependencyProvider.swift; sourceTree = "<group>"; };
 		293745D13632115B8C657D8C /* BeatTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeatTime.swift; sourceTree = "<group>"; };
@@ -131,6 +137,23 @@
 		4A4DCBA620CC8A3C0023C56C /* HIGColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIGColors.swift; sourceTree = "<group>"; };
 		4A4DCBA820CC96F70023C56C /* EmptyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyDetailViewController.swift; sourceTree = "<group>"; };
 		4A8077BA20CCCFFB0003767D /* UISplitViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISplitViewController+Extensions.swift"; sourceTree = "<group>"; };
+		4AA4B3E92157D377002895B1 /* Orbitron-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Orbitron-Black.ttf"; sourceTree = "<group>"; };
+		4AA4B3EA2157D377002895B1 /* Orbitron-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Orbitron-Medium.ttf"; sourceTree = "<group>"; };
+		4AA4B3EB2157D377002895B1 /* Orbitron-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Orbitron-Regular.ttf"; sourceTree = "<group>"; };
+		4AA4B3EC2157D377002895B1 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		4AA4B3ED2157D377002895B1 /* Orbitron-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Orbitron-Bold.ttf"; sourceTree = "<group>"; };
+		4AA4B3F42157D3F9002895B1 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		4AA4B3F52157D3F9002895B1 /* iAWriterDuospace-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iAWriterDuospace-RegularItalic.otf"; sourceTree = "<group>"; };
+		4AA4B3F62157D3F9002895B1 /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		4AA4B3F72157D3F9002895B1 /* iAWriterDuospace-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iAWriterDuospace-Bold.otf"; sourceTree = "<group>"; };
+		4AA4B3F82157D3F9002895B1 /* iAWriterDuospace-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iAWriterDuospace-BoldItalic.otf"; sourceTree = "<group>"; };
+		4AA4B3F92157D3F9002895B1 /* iAWriterDuospace-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iAWriterDuospace-Regular.otf"; sourceTree = "<group>"; };
+		4AA4B4012157D91F002895B1 /* Hack-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hack-Regular.ttf"; sourceTree = "<group>"; };
+		4AA4B4022157D91F002895B1 /* Hack-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hack-Italic.ttf"; sourceTree = "<group>"; };
+		4AA4B4032157D91F002895B1 /* Hack-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hack-BoldItalic.ttf"; sourceTree = "<group>"; };
+		4AA4B4042157D91F002895B1 /* Hack-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hack-Bold.ttf"; sourceTree = "<group>"; };
+		4AA4B4062157D91F002895B1 /* SIL Open Font License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SIL Open Font License.txt"; sourceTree = "<group>"; };
+		4AA4B4072157D91F002895B1 /* NixieOne-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NixieOne-Regular.otf"; sourceTree = "<group>"; };
 		4AA7C567215143160086C0C1 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		4AA7C569215143D20086C0C1 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
 		4AA7C56C215145C40086C0C1 /* UserDefaultsInteracting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsInteracting.swift; sourceTree = "<group>"; };
@@ -180,10 +203,10 @@
 		05CA3C7720B8AB35000DE2B6 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				05CA3C7020B8AB29000DE2B6 /* iAWriterDuospace-Bold.otf */,
-				05CA3C7220B8AB29000DE2B6 /* iAWriterDuospace-BoldItalic.otf */,
-				05CA3C7120B8AB29000DE2B6 /* iAWriterDuospace-Regular.otf */,
-				05CA3C6F20B8AB29000DE2B6 /* iAWriterDuospace-RegularItalic.otf */,
+				4AA4B4002157D91F002895B1 /* Hack */,
+				4AA4B3F32157D3F9002895B1 /* iA Writer Duospace */,
+				4AA4B4052157D91F002895B1 /* Nixie One */,
+				4AA4B3E82157D377002895B1 /* Orbitron */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -277,10 +300,10 @@
 			isa = PBXGroup;
 			children = (
 				05CA3C7720B8AB35000DE2B6 /* Fonts */,
-				054B2B57208E16210030B580 /* Tiime.entitlements */,
-				4A1947FB2084457E00AB490D /* Assets.xcassets */,
-				4A1947FD2084457E00AB490D /* LaunchScreen.storyboard */,
 				4A1948002084457E00AB490D /* Info.plist */,
+				4A1947FB2084457E00AB490D /* Assets.xcassets */,
+				054B2B57208E16210030B580 /* Tiime.entitlements */,
+				4A1947FD2084457E00AB490D /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -360,6 +383,51 @@
 				4A19480B2084457E00AB490D /* Info.plist */,
 			);
 			path = TiimeTests;
+			sourceTree = "<group>";
+		};
+		4AA4B3E82157D377002895B1 /* Orbitron */ = {
+			isa = PBXGroup;
+			children = (
+				4AA4B3EC2157D377002895B1 /* OFL.txt */,
+				4AA4B3E92157D377002895B1 /* Orbitron-Black.ttf */,
+				4AA4B3EA2157D377002895B1 /* Orbitron-Medium.ttf */,
+				4AA4B3EB2157D377002895B1 /* Orbitron-Regular.ttf */,
+				4AA4B3ED2157D377002895B1 /* Orbitron-Bold.ttf */,
+			);
+			path = Orbitron;
+			sourceTree = "<group>";
+		};
+		4AA4B3F32157D3F9002895B1 /* iA Writer Duospace */ = {
+			isa = PBXGroup;
+			children = (
+				4AA4B3F42157D3F9002895B1 /* LICENSE.md */,
+				4AA4B3F62157D3F9002895B1 /* Readme.md */,
+				4AA4B3F92157D3F9002895B1 /* iAWriterDuospace-Regular.otf */,
+				4AA4B3F52157D3F9002895B1 /* iAWriterDuospace-RegularItalic.otf */,
+				4AA4B3F72157D3F9002895B1 /* iAWriterDuospace-Bold.otf */,
+				4AA4B3F82157D3F9002895B1 /* iAWriterDuospace-BoldItalic.otf */,
+			);
+			path = "iA Writer Duospace";
+			sourceTree = "<group>";
+		};
+		4AA4B4002157D91F002895B1 /* Hack */ = {
+			isa = PBXGroup;
+			children = (
+				4AA4B4012157D91F002895B1 /* Hack-Regular.ttf */,
+				4AA4B4022157D91F002895B1 /* Hack-Italic.ttf */,
+				4AA4B4032157D91F002895B1 /* Hack-BoldItalic.ttf */,
+				4AA4B4042157D91F002895B1 /* Hack-Bold.ttf */,
+			);
+			path = Hack;
+			sourceTree = "<group>";
+		};
+		4AA4B4052157D91F002895B1 /* Nixie One */ = {
+			isa = PBXGroup;
+			children = (
+				4AA4B4062157D91F002895B1 /* SIL Open Font License.txt */,
+				4AA4B4072157D91F002895B1 /* NixieOne-Regular.otf */,
+			);
+			path = "Nixie One";
 			sourceTree = "<group>";
 		};
 		4AA7C56B215145B20086C0C1 /* Service */ = {
@@ -463,10 +531,20 @@
 			files = (
 				4A1947FC2084457E00AB490D /* Assets.xcassets in Resources */,
 				4A1947FF2084457E00AB490D /* LaunchScreen.storyboard in Resources */,
-				05D7C88C20BB199400265C47 /* iAWriterDuospace-BoldItalic.otf in Resources */,
-				05D7C88D20BB199400265C47 /* iAWriterDuospace-Regular.otf in Resources */,
-				05D7C88B20BB199400265C47 /* iAWriterDuospace-Bold.otf in Resources */,
-				05D7C88E20BB199400265C47 /* iAWriterDuospace-RegularItalic.otf in Resources */,
+				4AA4B3FF2157D3F9002895B1 /* iAWriterDuospace-Regular.otf in Resources */,
+				4AA4B3FB2157D3F9002895B1 /* iAWriterDuospace-RegularItalic.otf in Resources */,
+				4AA4B3FD2157D3F9002895B1 /* iAWriterDuospace-Bold.otf in Resources */,
+				4AA4B3FE2157D3F9002895B1 /* iAWriterDuospace-BoldItalic.otf in Resources */,
+				4AA4B40C2157D91F002895B1 /* SIL Open Font License.txt in Resources */,
+				4AA4B3F02157D377002895B1 /* Orbitron-Regular.ttf in Resources */,
+				4AA4B4082157D91F002895B1 /* Hack-Regular.ttf in Resources */,
+				4AA4B40D2157D91F002895B1 /* NixieOne-Regular.otf in Resources */,
+				4AA4B40B2157D91F002895B1 /* Hack-Bold.ttf in Resources */,
+				4AA4B3EF2157D377002895B1 /* Orbitron-Medium.ttf in Resources */,
+				4AA4B4092157D91F002895B1 /* Hack-Italic.ttf in Resources */,
+				4AA4B40A2157D91F002895B1 /* Hack-BoldItalic.ttf in Resources */,
+				4AA4B3F22157D377002895B1 /* Orbitron-Bold.ttf in Resources */,
+				4AA4B3EE2157D377002895B1 /* Orbitron-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -75,6 +75,10 @@ struct Theme {
 		case darkYellow = "Dark Yellow"
 	}
 
+	enum Font: String, CaseIterable {
+		case thing
+	}
+
 	static var clockBackgroundColor: Color {
 		get {
 			return getColorFromUserDefaults(key: clockBackgroundColorKey) ?? clockBackgroundColorDefault
@@ -183,4 +187,8 @@ extension Theme.Color {
 		return UIColor(hue: hue / 360, saturation: saturation / 100, brightness: brightness / 100, alpha: 1)
 	}
 
+}
+
+extension Theme.Font {
+	
 }
