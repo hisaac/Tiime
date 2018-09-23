@@ -26,6 +26,7 @@
 	<array>
 		<string>Hack-Regular.ttf</string>
 		<string>iAWriterDuospace-Regular.otf</string>
+		<string>LCD14.otf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>

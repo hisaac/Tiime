@@ -9,7 +9,7 @@ struct Theme {
 	private static let clockBackgroundColorDefault = Color.white
 
 	private static let clockFontKey = "clockFont"
-	private static let clockFontDefault = UIFont.systemFont(ofSize: UIFont.systemFontSize)
+	private static let clockFontDefault = Font.iAWriterDuospace
 
 	private static let clockTextColorKey = "clockTextColor"
 	private static let clockTextColorDefault = Color.black
@@ -76,9 +76,15 @@ struct Theme {
 	}
 
 	enum Font: String, CaseIterable {
+		init?(_ rawValue: String?) {
+			guard let rawValue = rawValue else { return nil }
+			self.init(rawValue: rawValue)
+		}
+
 		case system = "Courier"
 		case hack = "Hack"
 		case iAWriterDuospace = "iA Writer Duospace"
+		case lcd = "LCD"
 	}
 
 	static var clockBackgroundColor: Color {
@@ -99,9 +105,9 @@ struct Theme {
 		}
 	}
 
-	static var clockFont: UIFont {
+	static var clockFont: Font {
 		get {
-			return UserDefaults.standard.object(forKey: clockFontKey) as? UIFont ?? clockFontDefault
+			return getFontFromUserDefaults(key: clockFontKey) ?? clockFontDefault
 		}
 		set {
 			UserDefaults.standard.set(newValue, forKey: clockFontKey)
@@ -120,6 +126,11 @@ struct Theme {
 	private static func getColorFromUserDefaults(key: String) -> Color? {
 		let rawValue = UserDefaults.standard.string(forKey: key)
 		return Color(rawValue)
+	}
+
+	private static func getFontFromUserDefaults(key: String) -> Font? {
+		let rawValue = UserDefaults.standard.string(forKey: key)
+		return Font(rawValue)
 	}
 
 }
@@ -194,22 +205,20 @@ extension Theme.Color {
 extension Theme.Font {
 
 	func uiFont(ofSize size: CGFloat) -> UIFont {
-		var selectedFont = UIFont.monospacedDigitSystemFont(ofSize: size, weight: .regular)
+		var font: UIFont?
 
 		switch self {
 		case .hack:
-			if let font = UIFont(name: "Hack-Regular", size: size) {
-				selectedFont = font
-			}
+			font = UIFont(name: "Hack-Regular", size: size)
 		case .iAWriterDuospace:
-			if let font = UIFont(name: "iAWriterDuospace-Regular", size: size) {
-				selectedFont = font
-			}
+			font = UIFont(name: "iAWriterDuospace-Regular", size: size)
+		case .lcd:
+			font = UIFont(name: "LCD14", size: size)
 		default:
 			break
 		}
 
-		return selectedFont
+		return font ?? UIFont.monospacedDigitSystemFont(ofSize: size, weight: .regular)
 	}
 
 }
