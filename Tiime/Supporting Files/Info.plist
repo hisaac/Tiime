@@ -24,10 +24,8 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>iAWriterDuospace-Bold.otf</string>
-		<string>iAWriterDuospace-BoldItalic.otf</string>
+		<string>Hack-Regular.ttf</string>
 		<string>iAWriterDuospace-Regular.otf</string>
-		<string>iAWriterDuospace-RegularItalic.otf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>

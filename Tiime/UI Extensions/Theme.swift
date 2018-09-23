@@ -76,12 +76,9 @@ struct Theme {
 	}
 
 	enum Font: String, CaseIterable {
+		case system = "Courier"
 		case hack = "Hack"
 		case iAWriterDuospace = "iA Writer Duospace"
-		case lcd = "LCD"
-		case lcdMono = "LCD Mono"
-		case nixieOne = "Nixie One"
-		case orbitron = "Orbitron"
 	}
 
 	static var clockBackgroundColor: Color {
@@ -195,5 +192,24 @@ extension Theme.Color {
 }
 
 extension Theme.Font {
+
+	func uiFont(ofSize size: CGFloat) -> UIFont {
+		var selectedFont = UIFont.monospacedDigitSystemFont(ofSize: size, weight: .regular)
+
+		switch self {
+		case .hack:
+			if let font = UIFont(name: "Hack-Regular", size: size) {
+				selectedFont = font
+			}
+		case .iAWriterDuospace:
+			if let font = UIFont(name: "iAWriterDuospace-Regular", size: size) {
+				selectedFont = font
+			}
+		default:
+			break
+		}
+
+		return selectedFont
+	}
 
 }
