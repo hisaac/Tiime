@@ -37,6 +37,7 @@
 		4ABAF3292157FED9002F106B /* LCD14.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4ABADF042157FE8A002F106B /* LCD14.otf */; };
 		4ABAF32A2157FEE5002F106B /* iAWriterDuospace-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4ABAF3272157FE9D002F106B /* iAWriterDuospace-Regular.otf */; };
 		4AFD9F4321593E86002927A9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFD9F4221593E86002927A9 /* SettingsViewController.swift */; };
+		4AFD9F4521594849002927A9 /* MasterNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFD9F4421594849002927A9 /* MasterNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -11788,6 +11789,7 @@
 		4ABAF3262157FE9D002F106B /* iAWriterDuospace-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iAWriterDuospace-BoldItalic.otf"; sourceTree = "<group>"; };
 		4ABAF3272157FE9D002F106B /* iAWriterDuospace-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iAWriterDuospace-Regular.otf"; sourceTree = "<group>"; };
 		4AFD9F4221593E86002927A9 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		4AFD9F4421594849002927A9 /* MasterNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterNavigationController.swift; sourceTree = "<group>"; };
 		B775650D25ED6FDB73B4C396 /* ClockListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -11934,6 +11936,7 @@
 				B775650D25ED6FDB73B4C396 /* ClockListViewController.swift */,
 				4A1948242084476C00AB490D /* ClockViewController.swift */,
 				4AFD9F4221593E86002927A9 /* SettingsViewController.swift */,
+				4AFD9F4421594849002927A9 /* MasterNavigationController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -24225,6 +24228,7 @@
 				0591622420BB1829005D6D47 /* TimeRepresentable.swift in Sources */,
 				05D7C88720BB198200265C47 /* UnixTime.swift in Sources */,
 				4A066A9A21387729005618C1 /* ClockListCoordinator.swift in Sources */,
+				4AFD9F4521594849002927A9 /* MasterNavigationController.swift in Sources */,
 				4AA7C56D215145C40086C0C1 /* UserDefaultsInteracting.swift in Sources */,
 				4A066A9421386ED6005618C1 /* Coordinator.swift in Sources */,
 				4A4DCBA920CC96F70023C56C /* EmptyDetailViewController.swift in Sources */,

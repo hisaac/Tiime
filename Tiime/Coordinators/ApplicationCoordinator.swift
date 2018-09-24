@@ -11,14 +11,14 @@ class ApplicationCoordinator {
 
 	let window: UIWindow
 	let rootViewController: UISplitViewController
-	let masterNavigationController: UINavigationController
+	let masterNavigationController: MasterNavigationController
 	let clockListCoordinator: ClockListCoordinator
 	let settingsCoordinator: SettingsCoordinator
 
 	init(window: UIWindow) {
 		self.window = window
 		rootViewController = UISplitViewController()
-		masterNavigationController = UINavigationController()
+		masterNavigationController = MasterNavigationController()
 		masterNavigationController.navigationBar.prefersLargeTitles = true
 
 		clockListCoordinator = ClockListCoordinator(presenter: masterNavigationController)
