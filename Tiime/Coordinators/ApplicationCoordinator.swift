@@ -4,27 +4,30 @@ import UIKit
 
 protocol MasterCoordinator: class, Coordinator {
 	func showDetail(_ viewController: UIViewController)
+	func showSettings()
 }
 
-class ApplicationCoordinator: MasterCoordinator {
+class ApplicationCoordinator {
 
 	let window: UIWindow
 	let rootViewController: UISplitViewController
-	let masterTabBarController: UITabBarController
+	let masterNavigationController: UINavigationController
 	let clockListCoordinator: ClockListCoordinator
 	let settingsCoordinator: SettingsCoordinator
 
 	init(window: UIWindow) {
 		self.window = window
 		rootViewController = UISplitViewController()
-		masterTabBarController = UITabBarController()
-		clockListCoordinator = ClockListCoordinator(presenter: masterTabBarController)
-		settingsCoordinator = SettingsCoordinator(presenter: masterTabBarController)
+		masterNavigationController = UINavigationController()
+		masterNavigationController.navigationBar.prefersLargeTitles = true
+
+		clockListCoordinator = ClockListCoordinator(presenter: masterNavigationController)
+		settingsCoordinator = SettingsCoordinator(presenter: masterNavigationController)
 	}
 
 	func start() {
 		let emptyDetailNavController = EmptyDetailViewController().embedInNavigationController(prefersLargeTitles: false)
-		rootViewController.viewControllers = [masterTabBarController, emptyDetailNavController]
+		rootViewController.viewControllers = [masterNavigationController, emptyDetailNavController]
 
 		rootViewController.delegate = self
 		rootViewController.preferredDisplayMode = .allVisible
@@ -32,13 +35,14 @@ class ApplicationCoordinator: MasterCoordinator {
 		clockListCoordinator.start()
 		clockListCoordinator.delegate = self
 
-		settingsCoordinator.start()
-		settingsCoordinator.delegate = self
-
 		window.rootViewController = rootViewController
 		window.tintColor = Theme.appTintColor.uiColor
 		window.makeKeyAndVisible()
 	}
+
+}
+
+extension ApplicationCoordinator: MasterCoordinator {
 
 	func showDetail(_ viewController: UIViewController) {
 		var detailViewController = viewController
@@ -49,6 +53,12 @@ class ApplicationCoordinator: MasterCoordinator {
 
 		rootViewController.showDetailViewController(detailViewController, sender: self)
 	}
+
+	func showSettings() {
+		settingsCoordinator.start()
+		settingsCoordinator.delegate = self
+	}
+
 }
 
 extension ApplicationCoordinator: UISplitViewControllerDelegate {
@@ -59,22 +69,13 @@ extension ApplicationCoordinator: UISplitViewControllerDelegate {
 	}
 
 	/// Displays the detail view controller differently based on if the view is compact or normal
-	/// via: https://stackoverflow.com/a/46012353/4118208
-	///
 	func splitViewController(_ splitViewController: UISplitViewController, showDetail vc: UIViewController, sender: Any?) -> Bool {
 		if splitViewController.isCollapsed {
-			guard let tabBarController = splitViewController.viewControllers.first as? UITabBarController else { return false }
-
-			// swiftlint:disable:next line_length
-			guard let selectedNavigationController = tabBarController.selectedViewController as? UINavigationController else { return false }
-
-			// Push view controller
-			var detailViewController = vc
-			if let navController = vc as? UINavigationController, let topViewController = navController.topViewController {
-				detailViewController = topViewController
+			guard let rootNavigationController = rootViewController.viewControllers.first as? UINavigationController else {
+				return false
 			}
 
-			selectedNavigationController.pushViewController(detailViewController, animated: true)
+			rootNavigationController.pushViewController(vc, animated: true)
 			return true
 		}
 

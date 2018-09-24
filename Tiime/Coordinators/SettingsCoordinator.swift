@@ -5,18 +5,19 @@ import UIKit
 class SettingsCoordinator: Coordinator {
 
 	weak var delegate: MasterCoordinator?
-	private let presenter: UITabBarController
+	private let presenter: UINavigationController
 	private lazy var settingsViewController = makeSettingsViewController()
 
-	init(presenter: UITabBarController) {
+	init(presenter: UINavigationController) {
 		self.presenter = presenter
 	}
 
 	func makeSettingsViewController() -> UITableViewController {
-		return UITableViewController(style: .grouped)
+		return SettingsViewController(style: .grouped)
 	}
 
 	func start() {
-		presenter.viewControllers?.append(settingsViewController.embedInNavigationController())
+		presenter.present(settingsViewController.embedInNavigationController(), animated: true, completion: nil)
 	}
+
 }
