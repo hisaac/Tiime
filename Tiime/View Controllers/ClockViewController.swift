@@ -27,6 +27,11 @@ class ClockViewController: UIViewController {
 		createDisplayLink()
 	}
 
+	override func viewDidAppear(_ animated: Bool) {
+		super.viewDidAppear(animated)
+		navigationController?.hidesBarsOnTap = true
+	}
+
 	func createDisplayLink() {
 		let displayLink = CADisplayLink(target: self, selector: #selector(updateClockDisplay))
 		displayLink.add(to: .current, forMode: RunLoop.Mode.default)

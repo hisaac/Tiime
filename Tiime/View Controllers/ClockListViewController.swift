@@ -30,6 +30,11 @@ class ClockListViewController: UITableViewController {
 		)
 	}
 
+	override func viewDidAppear(_ animated: Bool) {
+		super.viewDidAppear(animated)
+		navigationController?.hidesBarsOnTap = false
+	}
+
 	@objc func showSettings() {
 		delegate?.showSettings()
 	}
