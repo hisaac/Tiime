@@ -32,6 +32,7 @@ class ClockListViewController: UITableViewController {
 
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
+		navigationController?.setNavigationBarHidden(false, animated: true)
 		navigationController?.hidesBarsOnTap = false
 	}
 
