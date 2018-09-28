@@ -1,8 +1,8 @@
 # Tiime
 
 <p align="center">
-	<a href="./meta/screenshots/2018-05-31-tiime-beat-time-view-landscape-bordered.jpg">
-		<img src="./meta/screenshots/2018-05-31-tiime-beat-time-view-landscape-bordered.jpg" alt="Landscape view of .beat time as of 2018-05-31" width="75%">
+	<a href="./assets/screenshots/2018-05-31-tiime-beat-time-view-landscape-bordered.jpg">
+		<img src="./assets/screenshots/2018-05-31-tiime-beat-time-view-landscape-bordered.jpg" alt="Landscape view of .beat time as of 2018-05-31" width="75%">
 	</a><br />
 	<caption><em>Landscape view of .beat time as of 2018-05-31</em></caption>
 </p>
@@ -12,7 +12,7 @@ Tiime is two things:
 1. A clock that tells time in unconventional ways.
 2. An app I'll be developing to learn about iOS development.
 
-<small>[Click here for more screenshots](./meta/screenshots/)</small>
+<small>[Click here for more screenshots](./assets/screenshots/)</small>
 
 ## About
 
