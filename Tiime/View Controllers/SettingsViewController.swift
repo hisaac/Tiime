@@ -10,7 +10,7 @@ class SettingsViewController: UITableViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		title = NSLocalizedString("Settings", comment: "Title bar for settings screen")
+		title = L10n.settings
 
 		navigationItem.largeTitleDisplayMode = .always
 		navigationItem.leftBarButtonItem = UIBarButtonItem(

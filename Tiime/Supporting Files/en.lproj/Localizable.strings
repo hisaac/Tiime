@@ -1,0 +1,16 @@
+// Created by Isaac Halvorson on 10/1/18
+
+"Application Name" = "Tiime";
+"Settings" = "Settings";
+"Dismiss" = "Dismiss";
+
+// Time Types
+"TimeType.beat.title" = ".beat Time";
+"TimeType.Device.title" = "Device Time";
+"TimeType.Unix.title" = "Unix Time";
+"TimeType.Metric.title" = "Metric Time";
+
+"TimeType.beat.description" = "The day is divided into 1000 \"beats\"";
+"TimeType.Device.description" = "The time displayed in the default way for the device's locale";
+"TimeType.Unix.description" = "The amount of seconds since January 1, 1970";
+"TimeType.Metric.description" = "The day is divided into units of tenths, hundredths, thousands, etc.";

@@ -17,13 +17,13 @@ class ClockListViewController: UITableViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		title = NSLocalizedString("Tiime", comment: "Title bar for main clocks list")
+		title = L10n.applicationName
 		tableView.register(UITableViewCell.self, forCellReuseIdentifier: "ClockTypeCell")
 		tableView.allowsSelection = true
 
 		navigationItem.largeTitleDisplayMode = .always
 		navigationItem.rightBarButtonItem = UIBarButtonItem(
-			title: NSLocalizedString("Settings", comment: "Title text for button that opens the Settings screen"),
+			title: L10n.settings,
 			style: .plain,
 			target: self,
 			action: #selector(showSettings)
@@ -65,7 +65,7 @@ class ClockListViewController: UITableViewController {
 		)
 
 		let dismissAction = UIAlertAction(
-			title: NSLocalizedString("Dismiss", comment: "Dismiss button on alert"),
+			title: L10n.dismiss,
 			style: .cancel,
 			handler: nil
 		)

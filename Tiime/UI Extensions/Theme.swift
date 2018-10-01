@@ -209,11 +209,11 @@ extension Theme.Font {
 
 		switch self {
 		case .hack:
-			font = UIFont(name: "Hack-Regular", size: size)
+			font = FontFamily.Hack.regular.font(size: size)
 		case .iAWriterDuospace:
-			font = UIFont(name: "iAWriterDuospace-Regular", size: size)
+			font = FontFamily.IAWriterDuospace.regular.font(size: size)
 		case .lcd:
-			font = UIFont(name: "LCD14", size: size)
+			font = FontFamily.Lcd._14.font(size: size)
 		default:
 			break
 		}

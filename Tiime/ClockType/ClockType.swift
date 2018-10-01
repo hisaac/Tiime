@@ -26,36 +26,20 @@ extension ClockType {
 	/// The name of each ClockType
 	var name: String {
 		switch self {
-		case .beat:   return NSLocalizedString(".beat Time", comment: "The name of .beat Time")
-		case .device: return NSLocalizedString("Device Time", comment: "The name of the device's time")
-		case .unix:   return NSLocalizedString("Unix Time", comment: "The name of Unix time")
-		case .metric: return NSLocalizedString("Metric Time", comment: "The name of Metric time")
+		case .beat:   return L10n.TimeType.Beat.title
+		case .device: return L10n.TimeType.Device.title
+		case .unix:   return L10n.TimeType.Unix.title
+		case .metric: return L10n.TimeType.Metric.title
 		}
 	}
 
 	/// The description of each ClockType
 	var description: String {
 		switch self {
-		case .beat:
-			return NSLocalizedString(
-				"The day is divided into 1000 \"beats\"",
-				comment: "The description of .beat Time"
-			)
-		case .device:
-			return NSLocalizedString(
-				"The time displayed in the default way for the device's locale",
-				comment: "The description of the device's time"
-			)
-		case .unix:
-			return NSLocalizedString(
-				"The amount of seconds since January 1, 1970",
-				comment: "The description of Unix time"
-			)
-		case .metric:
-			return NSLocalizedString(
-				"The day is divided into units of tenths, hundredths, thousands, etc. that are used to keep and tell time.",
-				comment: "The description of Metric time"
-			)
+		case .beat:   return L10n.TimeType.Beat.description
+		case .device: return L10n.TimeType.Device.description
+		case .unix:   return L10n.TimeType.Unix.description
+		case .metric: return L10n.TimeType.Metric.description
 		}
 	}
 

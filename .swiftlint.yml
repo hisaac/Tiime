@@ -17,11 +17,22 @@ disabled_rules:
 - closure_end_indentation
 - function_parameter_count
 - identifier_name
-- no_fallthrough_only # https://github.com/realm/SwiftLint/issues/2276
 - redundant_string_enum_value
 - superfluous_disable_comman
 - unused_closure_parameter
 
+excluded:
+- Carthage
+- Pods
+
+line_length:
+  ignores_comments: true
+  ignores_function_declarations: true
+
+file_length:
+  ignore_comment_only_lines: true
+
+# via: https://github.com/SwiftGen/SwiftGen/blob/master/Documentation/Articles/SwiftLint-Integration.md
 custom_rules:
   swiftgen_assets:
     name: "SwiftGen Assets"
@@ -38,19 +49,13 @@ custom_rules:
     regex: 'UIFont(\.init)?\(name: ?"?.+"?, ?size:.+?\)'
     message: "Use FontFamily.<family>.<variant>.size(<size>) instead"
     severity: error
+  swiftgen_storyboards:
+    name: "SwiftGen Storyboard Scenes"
+    regex: '(UIStoryboard\(name: ?"?.+"?, ?bundle:.+\))|(instantiateViewController\(withIdentifier:.+?\))|(instantiateInitialViewController\(\))'
+    message: "Use StoryboardScene.<storyboad>.<scene>.instantiate() instead"
+    severity: error
   swiftgen_strings:
     name: "SwiftGen Strings"
     regex: 'NSLocalizedString'
     message: "Use L10n.key instead"
     severity: error
-
-excluded:
-- Carthage
-- Pods
-
-line_length:
-  ignores_comments: true
-  ignores_function_declarations: true
-
-file_length:
-  ignore_comment_only_lines: true

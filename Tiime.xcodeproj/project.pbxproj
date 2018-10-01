@@ -23,7 +23,6 @@
 		4A066A9A21387729005618C1 /* ClockListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A066A9921387729005618C1 /* ClockListCoordinator.swift */; };
 		4A1947F52084457D00AB490D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1947F42084457D00AB490D /* AppDelegate.swift */; };
 		4A1947FC2084457E00AB490D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A1947FB2084457E00AB490D /* Assets.xcassets */; };
-		4A1947FF2084457E00AB490D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A1947FD2084457E00AB490D /* LaunchScreen.storyboard */; };
 		4A19480A2084457E00AB490D /* TiimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1948092084457E00AB490D /* TiimeTests.swift */; };
 		4A1FA8E62153F34C00971C73 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1FA8E52153F34C00971C73 /* Theme.swift */; };
 		4A4DCBA720CC8A3C0023C56C /* HIGColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4DCBA620CC8A3C0023C56C /* HIGColors.swift */; };
@@ -35,6 +34,9 @@
 		4AA7C56F2151462E0086C0C1 /* SettingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7C56E2151462E0086C0C1 /* SettingsService.swift */; };
 		4AB48AFA216289530010B2A9 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB48AF8216289530010B2A9 /* Fonts.swift */; };
 		4AB48AFB216289530010B2A9 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB48AF9216289530010B2A9 /* Colors.swift */; };
+		4AB48B0D21628FA70010B2A9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4AB48B0F21628FA70010B2A9 /* Localizable.strings */; };
+		4AB48B12216290100010B2A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AB48B112162900F0010B2A9 /* LaunchScreen.storyboard */; };
+		4AB48B14216292AD0010B2A9 /* LocalizableStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB48B13216292AC0010B2A9 /* LocalizableStrings.swift */; };
 		4ABAF3282157FED0002F106B /* Hack-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4ABADEEA2157FE8A002F106B /* Hack-Regular.ttf */; };
 		4ABAF3292157FED9002F106B /* LCD14.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4ABADF042157FE8A002F106B /* LCD14.otf */; };
 		4ABAF32A2157FEE5002F106B /* iAWriterDuospace-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4ABAF3272157FE9D002F106B /* iAWriterDuospace-Regular.otf */; };
@@ -114,7 +116,6 @@
 		4A1947F12084457D00AB490D /* Tiime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tiime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A1947F42084457D00AB490D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A1947FB2084457E00AB490D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4A1947FE2084457E00AB490D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A1948002084457E00AB490D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A1948052084457E00AB490D /* TiimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TiimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A1948092084457E00AB490D /* TiimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiimeTests.swift; sourceTree = "<group>"; };
@@ -133,6 +134,10 @@
 		4AB48AF62162886D0010B2A9 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = swiftgen.yml; sourceTree = "<group>"; };
 		4AB48AF8216289530010B2A9 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		4AB48AF9216289530010B2A9 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		4AB48B0A21628F730010B2A9 /* colors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = colors.json; sourceTree = "<group>"; };
+		4AB48B0E21628FA70010B2A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4AB48B112162900F0010B2A9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4AB48B13216292AC0010B2A9 /* LocalizableStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizableStrings.swift; sourceTree = "<group>"; };
 		4ABAC56A2157FE65002F106B /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		4ABAC56E2157FE65002F106B /* ttfautohint-build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "ttfautohint-build.sh"; sourceTree = "<group>"; };
 		4ABAC5702157FE65002F106B /* css-build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "css-build.sh"; sourceTree = "<group>"; };
@@ -11926,10 +11931,12 @@
 			isa = PBXGroup;
 			children = (
 				4ABAC5682157FE65002F106B /* Fonts */,
-				4A1948002084457E00AB490D /* Info.plist */,
 				4A1947FB2084457E00AB490D /* Assets.xcassets */,
+				4A1948002084457E00AB490D /* Info.plist */,
+				4AB48B0A21628F730010B2A9 /* colors.json */,
 				054B2B57208E16210030B580 /* Tiime.entitlements */,
-				4A1947FD2084457E00AB490D /* LaunchScreen.storyboard */,
+				4AB48B112162900F0010B2A9 /* LaunchScreen.storyboard */,
+				4AB48B0F21628FA70010B2A9 /* Localizable.strings */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -12025,8 +12032,9 @@
 		4AB48AF7216289530010B2A9 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
-				4AB48AF8216289530010B2A9 /* Fonts.swift */,
 				4AB48AF9216289530010B2A9 /* Colors.swift */,
+				4AB48AF8216289530010B2A9 /* Fonts.swift */,
+				4AB48B13216292AC0010B2A9 /* LocalizableStrings.swift */,
 			);
 			path = Generated;
 			sourceTree = "<group>";
@@ -24179,7 +24187,6 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
 			mainGroup = 4A1947E82084457D00AB490D;
 			productRefGroup = 4A1947F22084457D00AB490D /* Products */;
@@ -24198,8 +24205,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A1947FC2084457E00AB490D /* Assets.xcassets in Resources */,
-				4A1947FF2084457E00AB490D /* LaunchScreen.storyboard in Resources */,
+				4AB48B0D21628FA70010B2A9 /* Localizable.strings in Resources */,
 				4ABAF3282157FED0002F106B /* Hack-Regular.ttf in Resources */,
+				4AB48B12216290100010B2A9 /* LaunchScreen.storyboard in Resources */,
 				4ABAF32A2157FEE5002F106B /* iAWriterDuospace-Regular.otf in Resources */,
 				4ABAF3292157FED9002F106B /* LCD14.otf in Resources */,
 			);
@@ -24281,6 +24289,7 @@
 				4AA7C56F2151462E0086C0C1 /* SettingsService.swift in Sources */,
 				4A4DCBA720CC8A3C0023C56C /* HIGColors.swift in Sources */,
 				05D7C88420BB197D00265C47 /* BeatTime.swift in Sources */,
+				4AB48B14216292AD0010B2A9 /* LocalizableStrings.swift in Sources */,
 				4AA7C56A215143D20086C0C1 /* SettingsCoordinator.swift in Sources */,
 				0591622620BB1834005D6D47 /* ClockListViewController.swift in Sources */,
 				05D7C88920BB198E00265C47 /* MainDependencyContainer.swift in Sources */,
@@ -24307,12 +24316,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4A1947FD2084457E00AB490D /* LaunchScreen.storyboard */ = {
+		4AB48B0F21628FA70010B2A9 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4A1947FE2084457E00AB490D /* Base */,
+				4AB48B0E21628FA70010B2A9 /* en */,
 			);
-			name = LaunchScreen.storyboard;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

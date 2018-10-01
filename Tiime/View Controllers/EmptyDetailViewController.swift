@@ -6,8 +6,7 @@ class EmptyDetailViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		view.backgroundColor = .white
-		title = NSLocalizedString("Tiime", comment: "The name of the application")
-
+		title = L10n.applicationName
 		navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
 		navigationItem.leftItemsSupplementBackButton = true
 	}

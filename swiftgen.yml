@@ -10,3 +10,8 @@ fonts:
   outputs:
   - templateName: swift4
     output: Fonts.swift
+strings:
+  inputs: en.lproj/Localizable.strings
+  outputs:
+  - templateName: structured-swift4
+    output: LocalizableStrings.swift
