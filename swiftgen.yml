@@ -1,0 +1,12 @@
+input_dir: ./Tiime/Supporting Files/
+output_dir: ./Tiime/Generated/
+colors:
+  inputs: colors.json
+  outputs:
+  - templateName: literals-swift4
+    output: Colors.swift
+fonts:
+  inputs: Fonts/
+  outputs:
+  - templateName: swift4
+    output: Fonts.swift

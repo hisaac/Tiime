@@ -33,6 +33,8 @@
 		4AA7C56A215143D20086C0C1 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7C569215143D20086C0C1 /* SettingsCoordinator.swift */; };
 		4AA7C56D215145C40086C0C1 /* UserDefaultsInteracting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7C56C215145C40086C0C1 /* UserDefaultsInteracting.swift */; };
 		4AA7C56F2151462E0086C0C1 /* SettingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7C56E2151462E0086C0C1 /* SettingsService.swift */; };
+		4AB48AFA216289530010B2A9 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB48AF8216289530010B2A9 /* Fonts.swift */; };
+		4AB48AFB216289530010B2A9 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB48AF9216289530010B2A9 /* Colors.swift */; };
 		4ABAF3282157FED0002F106B /* Hack-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4ABADEEA2157FE8A002F106B /* Hack-Regular.ttf */; };
 		4ABAF3292157FED9002F106B /* LCD14.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4ABADF042157FE8A002F106B /* LCD14.otf */; };
 		4ABAF32A2157FEE5002F106B /* iAWriterDuospace-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4ABAF3272157FE9D002F106B /* iAWriterDuospace-Regular.otf */; };
@@ -128,6 +130,9 @@
 		4AA7C569215143D20086C0C1 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
 		4AA7C56C215145C40086C0C1 /* UserDefaultsInteracting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsInteracting.swift; sourceTree = "<group>"; };
 		4AA7C56E2151462E0086C0C1 /* SettingsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsService.swift; sourceTree = "<group>"; };
+		4AB48AF62162886D0010B2A9 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = swiftgen.yml; sourceTree = "<group>"; };
+		4AB48AF8216289530010B2A9 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		4AB48AF9216289530010B2A9 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		4ABAC56A2157FE65002F106B /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		4ABAC56E2157FE65002F106B /* ttfautohint-build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "ttfautohint-build.sh"; sourceTree = "<group>"; };
 		4ABAC5702157FE65002F106B /* css-build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "css-build.sh"; sourceTree = "<group>"; };
@@ -11966,6 +11971,7 @@
 				05A1944E208E810100C30B22 /* LICENSE */,
 				4A066A6F213844B6005618C1 /* Gemfile */,
 				4A066A6D213844B5005618C1 /* Gemfile.lock */,
+				4AB48AF62162886D0010B2A9 /* swiftgen.yml */,
 				4A066A6E213844B5005618C1 /* .swiftlint.yml */,
 				4A066A70213844B6005618C1 /* .gitignore */,
 			);
@@ -11992,6 +11998,7 @@
 				05D254A620925CA2004DCA1F /* UI Extensions */,
 				4A066A9121385334005618C1 /* View Controllers */,
 				4AA7C56B215145B20086C0C1 /* Service */,
+				4AB48AF7216289530010B2A9 /* Generated */,
 				4A066A9021384794005618C1 /* Supporting Files */,
 			);
 			path = Tiime;
@@ -12013,6 +12020,15 @@
 				4AA7C56C215145C40086C0C1 /* UserDefaultsInteracting.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		4AB48AF7216289530010B2A9 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				4AB48AF8216289530010B2A9 /* Fonts.swift */,
+				4AB48AF9216289530010B2A9 /* Colors.swift */,
+			);
+			path = Generated;
 			sourceTree = "<group>";
 		};
 		4ABAC5682157FE65002F106B /* Fonts */ = {
@@ -24097,6 +24113,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A1948192084457E00AB490D /* Build configuration list for PBXNativeTarget "Tiime" */;
 			buildPhases = (
+				4AB48AFC21628C3D0010B2A9 /* [SwiftGen] */,
 				4A1947ED2084457D00AB490D /* Sources */,
 				4A1947EE2084457D00AB490D /* Frameworks */,
 				4A1947EF2084457D00AB490D /* Resources */,
@@ -24214,7 +24231,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		4AB48AFC21628C3D0010B2A9 /* [SwiftGen] */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[SwiftGen]";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftgen >/dev/null; then\n  swiftgen\nelse\n  echo \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -24225,6 +24260,7 @@
 			files = (
 				4A1947F52084457D00AB490D /* AppDelegate.swift in Sources */,
 				05D7C89220BB199B00265C47 /* AutoLayout+Extensions.swift in Sources */,
+				4AB48AFA216289530010B2A9 /* Fonts.swift in Sources */,
 				0591622420BB1829005D6D47 /* TimeRepresentable.swift in Sources */,
 				05D7C88720BB198200265C47 /* UnixTime.swift in Sources */,
 				4A066A9A21387729005618C1 /* ClockListCoordinator.swift in Sources */,
@@ -24232,6 +24268,7 @@
 				4AA7C56D215145C40086C0C1 /* UserDefaultsInteracting.swift in Sources */,
 				4A066A9421386ED6005618C1 /* Coordinator.swift in Sources */,
 				4A4DCBA920CC96F70023C56C /* EmptyDetailViewController.swift in Sources */,
+				4AB48AFB216289530010B2A9 /* Colors.swift in Sources */,
 				05D7C88A20BB198E00265C47 /* MainDependencyProvider.swift in Sources */,
 				05D7C88820BB198600265C47 /* DeviceTime.swift in Sources */,
 				4AA7C568215143160086C0C1 /* UIViewController+Extensions.swift in Sources */,
