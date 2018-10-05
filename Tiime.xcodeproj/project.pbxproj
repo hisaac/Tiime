@@ -27,6 +27,7 @@
 		4A1FA8E62153F34C00971C73 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1FA8E52153F34C00971C73 /* Theme.swift */; };
 		4A4DCBA720CC8A3C0023C56C /* HIGColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4DCBA620CC8A3C0023C56C /* HIGColors.swift */; };
 		4A4DCBA920CC96F70023C56C /* EmptyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4DCBA820CC96F70023C56C /* EmptyDetailViewController.swift */; };
+		4A7A226D2167F49800FEA383 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7A226C2167F49800FEA383 /* SettingsViewController.swift */; };
 		4A8077BB20CCCFFB0003767D /* UISplitViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8077BA20CCCFFB0003767D /* UISplitViewController+Extensions.swift */; };
 		4AA7C568215143160086C0C1 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7C567215143160086C0C1 /* UIViewController+Extensions.swift */; };
 		4AA7C56A215143D20086C0C1 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7C569215143D20086C0C1 /* SettingsCoordinator.swift */; };
@@ -40,7 +41,7 @@
 		4ABAF3282157FED0002F106B /* Hack-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4ABADEEA2157FE8A002F106B /* Hack-Regular.ttf */; };
 		4ABAF3292157FED9002F106B /* LCD14.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4ABADF042157FE8A002F106B /* LCD14.otf */; };
 		4ABAF32A2157FEE5002F106B /* iAWriterDuospace-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4ABAF3272157FE9D002F106B /* iAWriterDuospace-Regular.otf */; };
-		4AFD9F4321593E86002927A9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFD9F4221593E86002927A9 /* SettingsViewController.swift */; };
+		4AFD9F4321593E86002927A9 /* SettingsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFD9F4221593E86002927A9 /* SettingsListViewController.swift */; };
 		4AFD9F4521594849002927A9 /* MasterNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFD9F4421594849002927A9 /* MasterNavigationController.swift */; };
 /* End PBXBuildFile section */
 
@@ -126,6 +127,7 @@
 		4A21994620CCA9EC0043F4A2 /* changelog.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = changelog.md; sourceTree = "<group>"; };
 		4A4DCBA620CC8A3C0023C56C /* HIGColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIGColors.swift; sourceTree = "<group>"; };
 		4A4DCBA820CC96F70023C56C /* EmptyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyDetailViewController.swift; sourceTree = "<group>"; };
+		4A7A226C2167F49800FEA383 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		4A8077BA20CCCFFB0003767D /* UISplitViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISplitViewController+Extensions.swift"; sourceTree = "<group>"; };
 		4AA7C567215143160086C0C1 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		4AA7C569215143D20086C0C1 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
@@ -11798,7 +11800,7 @@
 		4ABAF3252157FE9D002F106B /* iAWriterDuospace-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iAWriterDuospace-Bold.otf"; sourceTree = "<group>"; };
 		4ABAF3262157FE9D002F106B /* iAWriterDuospace-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iAWriterDuospace-BoldItalic.otf"; sourceTree = "<group>"; };
 		4ABAF3272157FE9D002F106B /* iAWriterDuospace-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iAWriterDuospace-Regular.otf"; sourceTree = "<group>"; };
-		4AFD9F4221593E86002927A9 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		4AFD9F4221593E86002927A9 /* SettingsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsListViewController.swift; sourceTree = "<group>"; };
 		4AFD9F4421594849002927A9 /* MasterNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterNavigationController.swift; sourceTree = "<group>"; };
 		B775650D25ED6FDB73B4C396 /* ClockListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -11944,10 +11946,11 @@
 		4A066A9121385334005618C1 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4A7A226C2167F49800FEA383 /* SettingsViewController.swift */,
 				4A4DCBA820CC96F70023C56C /* EmptyDetailViewController.swift */,
 				B775650D25ED6FDB73B4C396 /* ClockListViewController.swift */,
 				4A1948242084476C00AB490D /* ClockViewController.swift */,
-				4AFD9F4221593E86002927A9 /* SettingsViewController.swift */,
+				4AFD9F4221593E86002927A9 /* SettingsListViewController.swift */,
 				4AFD9F4421594849002927A9 /* MasterNavigationController.swift */,
 			);
 			path = "View Controllers";
@@ -24292,8 +24295,9 @@
 				4AB48B14216292AD0010B2A9 /* LocalizableStrings.swift in Sources */,
 				4AA7C56A215143D20086C0C1 /* SettingsCoordinator.swift in Sources */,
 				0591622620BB1834005D6D47 /* ClockListViewController.swift in Sources */,
+				4A7A226D2167F49800FEA383 /* SettingsViewController.swift in Sources */,
 				05D7C88920BB198E00265C47 /* MainDependencyContainer.swift in Sources */,
-				4AFD9F4321593E86002927A9 /* SettingsViewController.swift in Sources */,
+				4AFD9F4321593E86002927A9 /* SettingsListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

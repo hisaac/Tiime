@@ -13,7 +13,7 @@ class SettingsCoordinator: Coordinator {
 	}
 
 	func makeSettingsViewController() -> UITableViewController {
-		return SettingsViewController(style: .grouped)
+		return SettingsListViewController()
 	}
 
 	func start() {
