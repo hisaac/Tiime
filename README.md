@@ -1,11 +1,11 @@
 # Tiime
 
-<p align="center">
+<figure align="center">
 	<a href="./assets/screenshots/2018-05-31-tiime-beat-time-view-landscape-bordered.jpg">
 		<img src="./assets/screenshots/2018-05-31-tiime-beat-time-view-landscape-bordered.jpg" alt="Landscape view of .beat time as of 2018-05-31" width="75%">
-	</a><br />
-	<caption><em>Landscape view of .beat time as of 2018-05-31</em></caption>
-</p>
+	</a>
+	<figcaption>Landscape view of .beat time as of 2018-05-31</figcaption>
+</figure>
 
 Tiime is two things:
 
