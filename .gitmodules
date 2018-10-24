@@ -1,9 +1,12 @@
 [submodule "Tiime/Supporting Files/Fonts/LCD"]
 	path = Tiime/Supporting Files/Fonts/LCD
 	url = https://github.com/ctrlcctrlv/lcd-font.git
+	branch = master
 [submodule "Tiime/Supporting Files/Fonts/Hack"]
 	path = Tiime/Supporting Files/Fonts/Hack
 	url = https://github.com/source-foundry/Hack.git
+	branch = master
 [submodule "Tiime/Supporting Files/Fonts/iA Fonts"]
 	path = Tiime/Supporting Files/Fonts/iA Fonts
 	url = https://github.com/iaolo/iA-Fonts.git
+	branch = master
