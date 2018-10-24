@@ -13,6 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		let applicationCoordinator = ApplicationCoordinator(window: window)
 
 		self.window = window
+		Theme.dark.apply()
 		self.applicationCoordinator = applicationCoordinator
 
 		applicationCoordinator.start()

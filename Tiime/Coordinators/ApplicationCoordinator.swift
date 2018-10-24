@@ -36,7 +36,7 @@ class ApplicationCoordinator {
 		clockListCoordinator.delegate = self
 
 		window.rootViewController = rootViewController
-		window.tintColor = Theme.appTintColor.uiColor
+//		window.tintColor = Theme.appTintColor.uiColor
 		window.makeKeyAndVisible()
 	}
 

@@ -33,9 +33,9 @@ internal enum FontFamily {
   internal enum IAWriterDuospace {
     internal static let bold = FontConvertible(name: "iAWriterDuospace-Bold", family: "iA Writer Duospace", path: "iAWriterDuospace-Bold.ttf")
     internal static let boldItalic = FontConvertible(name: "iAWriterDuospace-BoldItalic", family: "iA Writer Duospace", path: "iAWriterDuospace-BoldItalic.ttf")
+    internal static let italic = FontConvertible(name: "iAWriterDuospace-Italic", family: "iA Writer Duospace", path: "iAWriterDuospace-Italic.ttf")
     internal static let regular = FontConvertible(name: "iAWriterDuospace-Regular", family: "iA Writer Duospace", path: "iAWriterDuospace-Regular.ttf")
-    internal static let regularItalic = FontConvertible(name: "iAWriterDuospace-RegularItalic", family: "iA Writer Duospace", path: "iAWriterDuospace-RegularItalic.ttf")
-    internal static let all: [FontConvertible] = [bold, boldItalic, regular, regularItalic]
+    internal static let all: [FontConvertible] = [bold, boldItalic, italic, regular]
   }
   internal static let allCustomFonts: [FontConvertible] = [Hack.all, Lcd.all, IAWriterDuospace.all].flatMap { $0 }
   internal static func registerAllCustomFonts() {
