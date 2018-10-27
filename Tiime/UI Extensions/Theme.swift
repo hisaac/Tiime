@@ -37,7 +37,7 @@ enum Theme: Int, CaseIterable {
 		case .light:
 			return UIColor.purple
 		case .dark:
-			return UIColor.yellow
+			return UIColor.higOrange
 		}
 	}
 
@@ -53,9 +53,27 @@ enum Theme: Int, CaseIterable {
 	var backgroundColor: UIColor {
 		switch self {
 		case .light:
-			return UIColor.white
+			return UIColor.groupTableViewBackground
 		case .dark:
 			return UIColor.black
+		}
+	}
+
+	var tableViewCellBackgroundColor: UIColor {
+		switch self {
+		case .light:
+			return UIColor.white
+		case .dark:
+			return UIColor.higOrange
+		}
+	}
+
+	var tableViewTextColor: UIColor {
+		switch self {
+		case .light:
+			return UIColor.darkText
+		default:
+			return UIColor.lightText
 		}
 	}
 
@@ -64,7 +82,7 @@ enum Theme: Int, CaseIterable {
 		UINavigationBar.appearance().barStyle = barStyle
 		UITabBar.appearance().barStyle = barStyle
 
-		UITableViewCell.appearance().backgroundColor = backgroundColor
+		UITableViewCell.appearance().backgroundColor = tableViewCellBackgroundColor
 		UITableView.appearance().backgroundColor = backgroundColor
 
 		UILabel.appearance().textColor = appTintColor
