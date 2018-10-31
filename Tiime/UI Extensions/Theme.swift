@@ -111,7 +111,6 @@ extension Theme.Font {
 
 }
 
-
 /// The different theme settings for the app
 //struct Themee {
 //

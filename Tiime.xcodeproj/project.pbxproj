@@ -27,6 +27,7 @@
 		4A1FA8E62153F34C00971C73 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1FA8E52153F34C00971C73 /* Theme.swift */; };
 		4A4DCBA720CC8A3C0023C56C /* HIGColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4DCBA620CC8A3C0023C56C /* HIGColors.swift */; };
 		4A4DCBA920CC96F70023C56C /* EmptyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4DCBA820CC96F70023C56C /* EmptyDetailViewController.swift */; };
+		4A5D46B6218A5FD700830B14 /* QuickTableViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5D46B5218A5FD700830B14 /* QuickTableViewController.framework */; };
 		4A7A226D2167F49800FEA383 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7A226C2167F49800FEA383 /* SettingsViewController.swift */; };
 		4A8077BB20CCCFFB0003767D /* UISplitViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8077BA20CCCFFB0003767D /* UISplitViewController+Extensions.swift */; };
 		4AA7C568215143160086C0C1 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7C567215143160086C0C1 /* UIViewController+Extensions.swift */; };
@@ -127,6 +128,7 @@
 		4A21994620CCA9EC0043F4A2 /* changelog.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = changelog.md; sourceTree = "<group>"; };
 		4A4DCBA620CC8A3C0023C56C /* HIGColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIGColors.swift; sourceTree = "<group>"; };
 		4A4DCBA820CC96F70023C56C /* EmptyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyDetailViewController.swift; sourceTree = "<group>"; };
+		4A5D46B5218A5FD700830B14 /* QuickTableViewController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTableViewController.framework; path = Carthage/Build/iOS/QuickTableViewController.framework; sourceTree = "<group>"; };
 		4A7A226C2167F49800FEA383 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		4A8077BA20CCCFFB0003767D /* UISplitViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISplitViewController+Extensions.swift"; sourceTree = "<group>"; };
 		4AA7C567215143160086C0C1 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
@@ -11810,6 +11812,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A5D46B6218A5FD700830B14 /* QuickTableViewController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -11839,6 +11842,7 @@
 		05AADA3B208E658D0076C581 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4A5D46B5218A5FD700830B14 /* QuickTableViewController.framework */,
 				4A1FA8E12153EB0100971C73 /* Chameleon.framework */,
 			);
 			name = Frameworks;
@@ -24130,6 +24134,7 @@
 				4A1947EF2084457D00AB490D /* Resources */,
 				05D2546E20925A17004DCA1F /* Embed Frameworks */,
 				4A20C936212745BC00D1A934 /* [Swiftlint] */,
+				ZPGUGLL6U4067VIBDQTC9AGJ /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -24147,6 +24152,7 @@
 				4A1948012084457E00AB490D /* Sources */,
 				4A1948022084457E00AB490D /* Frameworks */,
 				4A1948032084457E00AB490D /* Resources */,
+				S4UEX9J5HIX3NM1SE3LOXH0D /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -24261,6 +24267,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftgen >/dev/null; then\n  swiftgen\nelse\n  echo \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi\n";
+		};
+		S4UEX9J5HIX3NM1SE3LOXH0D /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"$(SRCROOT)/Carthage/xcfilelists/TiimeTests-inputPaths.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = Carthage;
+			outputFileListPaths = (
+				"$(SRCROOT)/Carthage/xcfilelists/TiimeTests-outputPaths.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			showEnvVarsInLog = 0;
+		};
+		ZPGUGLL6U4067VIBDQTC9AGJ /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"$(SRCROOT)/Carthage/xcfilelists/Tiime-inputPaths.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = Carthage;
+			outputFileListPaths = (
+				"$(SRCROOT)/Carthage/xcfilelists/Tiime-outputPaths.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -24453,6 +24501,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = F2J52QJQ9Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Tiime/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -24474,6 +24526,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = F2J52QJQ9Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Tiime/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

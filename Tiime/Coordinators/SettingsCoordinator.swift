@@ -12,8 +12,8 @@ class SettingsCoordinator: Coordinator {
 		self.presenter = presenter
 	}
 
-	func makeSettingsViewController() -> UITableViewController {
-		return SettingsListViewController()
+	func makeSettingsViewController() -> UIViewController {
+		return SettingsViewController()
 	}
 
 	func start() {
