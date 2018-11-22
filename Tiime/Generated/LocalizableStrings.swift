@@ -15,6 +15,8 @@ internal enum L10n {
   internal static let applicationName = L10n.tr("Localizable", "Application Name")
   /// Dismiss
   internal static let dismiss = L10n.tr("Localizable", "Dismiss")
+  /// Done
+  internal static let done = L10n.tr("Localizable", "Done")
   /// Settings
   internal static let settings = L10n.tr("Localizable", "Settings")
 

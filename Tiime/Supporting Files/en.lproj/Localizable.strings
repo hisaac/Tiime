@@ -3,6 +3,7 @@
 "Application Name" = "Tiime";
 "Settings" = "Settings";
 "Dismiss" = "Dismiss";
+"Done" = "Done";
 
 // Time Types
 "TimeType.beat.title" = ".beat Time";

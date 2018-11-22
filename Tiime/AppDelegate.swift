@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		let applicationCoordinator = ApplicationCoordinator(window: window)
 
 		self.window = window
-		Theme.light.apply()
+		Theme.current.apply()
 		self.applicationCoordinator = applicationCoordinator
 
 		applicationCoordinator.start()

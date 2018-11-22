@@ -25,7 +25,6 @@
 		4A1947FC2084457E00AB490D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A1947FB2084457E00AB490D /* Assets.xcassets */; };
 		4A19480A2084457E00AB490D /* TiimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1948092084457E00AB490D /* TiimeTests.swift */; };
 		4A1FA8E62153F34C00971C73 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1FA8E52153F34C00971C73 /* Theme.swift */; };
-		4A4DCBA720CC8A3C0023C56C /* HIGColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4DCBA620CC8A3C0023C56C /* HIGColors.swift */; };
 		4A4DCBA920CC96F70023C56C /* EmptyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4DCBA820CC96F70023C56C /* EmptyDetailViewController.swift */; };
 		4A5D46B6218A5FD700830B14 /* QuickTableViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5D46B5218A5FD700830B14 /* QuickTableViewController.framework */; };
 		4A7A226D2167F49800FEA383 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7A226C2167F49800FEA383 /* SettingsViewController.swift */; };
@@ -126,7 +125,6 @@
 		4A1FA8E12153EB0100971C73 /* Chameleon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chameleon.framework; path = Carthage/Build/iOS/Chameleon.framework; sourceTree = "<group>"; };
 		4A1FA8E52153F34C00971C73 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		4A21994620CCA9EC0043F4A2 /* changelog.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = changelog.md; sourceTree = "<group>"; };
-		4A4DCBA620CC8A3C0023C56C /* HIGColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIGColors.swift; sourceTree = "<group>"; };
 		4A4DCBA820CC96F70023C56C /* EmptyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyDetailViewController.swift; sourceTree = "<group>"; };
 		4A5D46B5218A5FD700830B14 /* QuickTableViewController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTableViewController.framework; path = Carthage/Build/iOS/QuickTableViewController.framework; sourceTree = "<group>"; };
 		4A7A226C2167F49800FEA383 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -11861,7 +11859,6 @@
 			isa = PBXGroup;
 			children = (
 				29374FC0F154ACB0434598EE /* AutoLayout+Extensions.swift */,
-				4A4DCBA620CC8A3C0023C56C /* HIGColors.swift */,
 				4A8077BA20CCCFFB0003767D /* UISplitViewController+Extensions.swift */,
 				4AA7C567215143160086C0C1 /* UIViewController+Extensions.swift */,
 				4A1FA8E52153F34C00971C73 /* Theme.swift */,
@@ -24134,7 +24131,7 @@
 				4A1947EF2084457D00AB490D /* Resources */,
 				05D2546E20925A17004DCA1F /* Embed Frameworks */,
 				4A20C936212745BC00D1A934 /* [Swiftlint] */,
-				ZPGUGLL6U4067VIBDQTC9AGJ /* Carthage */,
+				SIZQLIG7SKLSX2O75Q7JJYBA /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -24289,7 +24286,7 @@
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
 			showEnvVarsInLog = 0;
 		};
-		ZPGUGLL6U4067VIBDQTC9AGJ /* Carthage */ = {
+		SIZQLIG7SKLSX2O75Q7JJYBA /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -24338,7 +24335,6 @@
 				0591622720BB1834005D6D47 /* ClockViewController.swift in Sources */,
 				4A066A9621386EEB005618C1 /* ApplicationCoordinator.swift in Sources */,
 				4AA7C56F2151462E0086C0C1 /* SettingsService.swift in Sources */,
-				4A4DCBA720CC8A3C0023C56C /* HIGColors.swift in Sources */,
 				05D7C88420BB197D00265C47 /* BeatTime.swift in Sources */,
 				4AB48B14216292AD0010B2A9 /* LocalizableStrings.swift in Sources */,
 				4AA7C56A215143D20086C0C1 /* SettingsCoordinator.swift in Sources */,

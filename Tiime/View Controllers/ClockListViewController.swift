@@ -48,6 +48,7 @@ class ClockListViewController: UITableViewController {
 		let cell = UITableViewCell(style: .default, reuseIdentifier: "ClockTypeCell")
 		cell.accessoryType = .detailDisclosureButton
 		cell.textLabel?.text = ClockType.allCases[indexPath.row].name
+		cell.textLabel?.textColor = Theme.current.tableViewTextColor
 		return cell
 	}
 
