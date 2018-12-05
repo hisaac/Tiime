@@ -31,6 +31,7 @@ enum Theme: Int, CaseIterable, UserDefaultsInteracting {
 		case purple
 		case pink
 		case white
+		case darkGray
 		case black
 	}
 }
@@ -109,7 +110,6 @@ extension Theme {
 		case .light:
 			return UIColor.groupTableViewBackground
 		case .dark:
-//			return UIColor(white: 0.05, alpha: 1)
 			return UIColor.black
 		}
 	}
@@ -119,7 +119,7 @@ extension Theme {
 		case .light:
 			return UIColor.white
 		case .dark:
-			return UIColor(white: 0.1, alpha: 1)
+			return Color.darkGray.uiColor
 		}
 	}
 
@@ -186,6 +186,7 @@ extension Theme.Color {
 		case .purple: return UIColor(red: 88, green: 86, blue: 214)
 		case .pink:   return UIColor(red: 255, green: 45, blue: 85)
 		case .white:  return UIColor.white
+		case .darkGray: return UIColor(white: 0.11, alpha: 0.73)
 		case .black:  return UIColor.black
 		}
 	}

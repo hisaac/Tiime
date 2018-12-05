@@ -20,6 +20,7 @@ disabled_rules:
 - redundant_string_enum_value
 - superfluous_disable_comman
 - unused_closure_parameter
+- trailing_comma
 
 excluded:
 - Carthage
