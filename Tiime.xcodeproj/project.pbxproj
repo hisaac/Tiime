@@ -24167,7 +24167,8 @@
 		4A1947E92084457D00AB490D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
+				DefaultBuildSystemTypeForWorkspace = Latest;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Levelsoft;
 				TargetAttributes = {
@@ -24193,6 +24194,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 4A1947E82084457D00AB490D;
 			productRefGroup = 4A1947F22084457D00AB490D /* Products */;

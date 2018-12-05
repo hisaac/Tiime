@@ -20,6 +20,7 @@ class ClockListViewController: UITableViewController {
 		title = L10n.applicationName
 		tableView.register(UITableViewCell.self, forCellReuseIdentifier: "ClockTypeCell")
 		tableView.allowsSelection = true
+		tableView.separatorColor = Theme.Color.lightGray.uiColor
 
 		navigationItem.largeTitleDisplayMode = .always
 		navigationItem.rightBarButtonItem = UIBarButtonItem(

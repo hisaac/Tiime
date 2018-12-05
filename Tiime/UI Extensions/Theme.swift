@@ -31,6 +31,7 @@ enum Theme: Int, CaseIterable, UserDefaultsInteracting {
 		case purple
 		case pink
 		case white
+		case lightGray
 		case darkGray
 		case black
 	}
@@ -92,7 +93,7 @@ extension Theme {
 		case .light:
 			return Color.purple.uiColor
 		case .dark:
-			return Color.yellow.uiColor
+			return Color.orange.uiColor
 		}
 	}
 
@@ -110,7 +111,7 @@ extension Theme {
 		case .light:
 			return UIColor.groupTableViewBackground
 		case .dark:
-			return UIColor.black
+			return UIColor(white: 0.09, alpha: 1)
 		}
 	}
 
@@ -127,7 +128,7 @@ extension Theme {
 		switch self {
 		case .light:
 			return UIColor.darkText
-		default:
+		case .dark:
 			return UIColor.lightText
 		}
 	}
@@ -177,25 +178,31 @@ extension Theme.Color {
 
 	var uiColor: UIColor {
 		switch self {
-		case .red:    return UIColor(red: 255, green: 59, blue: 48)
-		case .orange: return UIColor(red: 255, green: 149, blue: 0)
-		case .yellow: return UIColor(red: 255, green: 204, blue: 0)
-		case .green:  return UIColor(red: 76, green: 217, blue: 100)
-		case .teal:   return UIColor(red: 90, green: 200, blue: 250)
-		case .blue:   return UIColor(red: 0, green: 122, blue: 255)
-		case .purple: return UIColor(red: 88, green: 86, blue: 214)
-		case .pink:   return UIColor(red: 255, green: 45, blue: 85)
-		case .white:  return UIColor.white
-		case .darkGray: return UIColor(white: 0.11, alpha: 0.73)
-		case .black:  return UIColor.black
+		case .red:       return UIColor(red: 255, green: 59, blue: 48)
+		case .orange:    return UIColor(red: 255, green: 149, blue: 0)
+		case .yellow:    return UIColor(red: 255, green: 204, blue: 0)
+		case .green:     return UIColor(red: 76, green: 217, blue: 100)
+		case .teal:      return UIColor(red: 90, green: 200, blue: 250)
+		case .blue:      return UIColor(red: 0, green: 122, blue: 255)
+		case .purple:    return UIColor(red: 88, green: 86, blue: 214)
+		case .pink:      return UIColor(red: 255, green: 45, blue: 85)
+		case .white:     return UIColor.white
+		case .lightGray: return UIColor(whitePercentage: 25)
+		case .darkGray:  return UIColor(white: 0.11, alpha: 0.73)
+		case .black:     return UIColor.black
 		}
 	}
 
 }
 
 extension UIColor {
-	/// Convenience initializer for creating a UIColor more easily
+	/// Convenience initializer for creating an opaque UIColor
 	convenience init(red: CGFloat, green: CGFloat, blue: CGFloat) {
-		self.init(red: red / 255, green: green / 355, blue: blue / 255, alpha: 1)
+		self.init(red: red / 255, green: green / 255, blue: blue / 255, alpha: 1)
+	}
+
+	/// Convenience initializer for creating an opaque grayscale UIColor
+	convenience init(whitePercentage: CGFloat) {
+		self.init(white: whitePercentage / 100, alpha: 1)
 	}
 }
