@@ -20,7 +20,7 @@ class ClockViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		title = timeType.timeTypeTitle
-		view.backgroundColor = .white
+		view.backgroundColor = Theme.clockBackgroundColor.uiColor
 		navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
 		navigationItem.leftItemsSupplementBackButton = true
 

@@ -2,7 +2,7 @@
 
 import UIKit
 
-enum Theme: Int, CaseIterable, UserDefaultsInteracting {
+enum Theme: Int, CaseIterable {
 
 	case light = 0
 	case dark = 1
@@ -30,6 +30,8 @@ enum Theme: Int, CaseIterable, UserDefaultsInteracting {
 		case blue
 		case purple
 		case pink
+
+		// Grayscale
 		case white
 		case lightGray
 		case darkGray
@@ -39,45 +41,63 @@ enum Theme: Int, CaseIterable, UserDefaultsInteracting {
 
 // MARK: - UserDefaults Getters and Setters
 
-extension Theme {
+extension Theme: UserDefaultsInteracting {
 
 	private enum UserDefaultsKey {
-		static let currentTheme = "currentTheme"
-		static let clockFont = "clockFont"
-		static let clockBackgroundColor = "clockBackgroundColor"
-		static let clockTextColor = "clockTextColor"
 		static let appTintColor = "appTintColor"
+		static let clockBackgroundColor = "clockBackgroundColor"
+		static let clockFont = "clockFont"
+		static let clockTextColor = "clockTextColor"
+		static let currentTheme = "currentTheme"
+	}
+
+	private enum Defaults {
+		static let appTintColor = Color.purple
+		static let clockBackgroundColor = Color.white
+		static let clockFont = Font.iAWriterDuospace
+		static let clockTextColor = Color.black
 	}
 
 	static var current: Theme {
 		get {
-			let storedTheme = UserDefaults.standard.integer(forKey: UserDefaultsKey.currentTheme)
+			let storedTheme = standardDefaults.integer(forKey: UserDefaultsKey.currentTheme)
 			return Theme(rawValue: storedTheme) ?? .light
 		}
 		set {
-			UserDefaults.standard.set(newValue.rawValue, forKey: UserDefaultsKey.currentTheme)
+			standardDefaults.set(newValue.rawValue, forKey: UserDefaultsKey.currentTheme)
 			Theme.current.apply()
 		}
 	}
 
-	static var clockTextColor: Color {
+	static var clockTextColor: Theme.Color {
 		get {
-			let storedColorValue = UserDefaults.standard.string(forKey: UserDefaultsKey.clockTextColor) ?? Color.black.rawValue
-			return Color(rawValue: storedColorValue) ?? Color.black
+			let storedColorValue = standardDefaults.string(forKey: UserDefaultsKey.clockTextColor) ?? Defaults.clockTextColor.rawValue
+			return Color(rawValue: storedColorValue) ?? Defaults.clockTextColor
 		}
 		set {
-			UserDefaults.standard.set(newValue, forKey: UserDefaultsKey.clockTextColor)
+			standardDefaults.set(newValue.rawValue, forKey: UserDefaultsKey.clockTextColor)
 			Theme.current.apply()
 		}
 	}
 
-	static var clockBackgroundColor: Color {
+	static var clockBackgroundColor: Theme.Color {
 		get {
-			let storedColorValue = UserDefaults.standard.string(forKey: UserDefaultsKey.clockTextColor) ?? Color.white.rawValue
-			return Color(rawValue: storedColorValue) ?? Color.white
+			let storedColorValue = standardDefaults.string(forKey: UserDefaultsKey.clockBackgroundColor) ?? Defaults.clockBackgroundColor.rawValue
+			return Color(rawValue: storedColorValue) ?? Defaults.clockBackgroundColor
 		}
 		set {
-			UserDefaults.standard.set(newValue, forKey: UserDefaultsKey.clockTextColor)
+			standardDefaults.set(newValue.rawValue, forKey: UserDefaultsKey.clockBackgroundColor)
+			Theme.current.apply()
+		}
+	}
+
+	static var clockFont: Theme.Font {
+		get {
+			let storedFont = standardDefaults.string(forKey: UserDefaultsKey.clockFont) ?? Defaults.clockFont.rawValue
+			return Theme.Font(rawValue: storedFont) ?? Defaults.clockFont
+		}
+		set {
+			standardDefaults.set(newValue.rawValue, forKey: UserDefaultsKey.clockFont)
 			Theme.current.apply()
 		}
 	}
@@ -125,6 +145,24 @@ extension Theme {
 	}
 
 	var tableViewTextColor: UIColor {
+		switch self {
+		case .light:
+			return UIColor.darkText
+		case .dark:
+			return UIColor.lightText
+		}
+	}
+
+	var defaultClockBackgroundColor: UIColor {
+		switch self {
+		case .light:
+			return Color.lightGray.uiColor
+		case .dark:
+			return Color.darkGray.uiColor
+		}
+	}
+
+	var defaultClockTextColor: UIColor {
 		switch self {
 		case .light:
 			return UIColor.darkText
