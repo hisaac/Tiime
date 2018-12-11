@@ -20,7 +20,6 @@ class ClockListViewController: UITableViewController {
 		title = L10n.applicationName
 		tableView.register(UITableViewCell.self, forCellReuseIdentifier: "ClockTypeCell")
 		tableView.allowsSelection = true
-		tableView.separatorColor = Theme.Color.lightGray.uiColor
 
 		navigationItem.largeTitleDisplayMode = .always
 		navigationItem.rightBarButtonItem = UIBarButtonItem(
@@ -35,6 +34,12 @@ class ClockListViewController: UITableViewController {
 		super.viewDidAppear(animated)
 		navigationController?.setNavigationBarHidden(false, animated: true)
 		navigationController?.hidesBarsOnTap = false
+	}
+
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		// Reload data to update the label text color
+		tableView.reloadData()
 	}
 
 	@objc func showSettings() {

@@ -138,7 +138,7 @@ extension Theme {
 	var tableViewCellBackgroundColor: UIColor {
 		switch self {
 		case .light:
-			return UIColor.white
+			return Color.white.uiColor
 		case .dark:
 			return Color.darkGray.uiColor
 		}
@@ -150,6 +150,15 @@ extension Theme {
 			return UIColor.darkText
 		case .dark:
 			return UIColor.lightText
+		}
+	}
+
+	var tableViewSeparatorColor: UIColor? {
+		switch self {
+		case .light:
+			return nil // resets to default value
+		case .dark:
+			return Color.lightGray.uiColor
 		}
 	}
 
@@ -174,10 +183,10 @@ extension Theme {
 	func apply() {
 		UIApplication.shared.delegate?.window??.tintColor = appTintColor
 		UINavigationBar.appearance().barStyle = barStyle
-		UITabBar.appearance().barStyle = barStyle
 
 		UITableViewCell.appearance().backgroundColor = tableViewCellBackgroundColor
 		UITableView.appearance().backgroundColor = backgroundColor
+		UITableView.appearance().separatorColor = tableViewSeparatorColor
 
 		UILabel.appearance().textColor = appTintColor
 
