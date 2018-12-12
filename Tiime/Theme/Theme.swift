@@ -26,7 +26,7 @@ extension Theme: UserDefaultsInteracting {
 		static let currentTheme = "currentTheme"
 	}
 
-	enum Defaults {
+	enum DefaultValues {
 		static let appTintColor = ThemeColor.purple
 		static let clockFont = ThemeFont.iAWriterDuospace
 
@@ -58,7 +58,7 @@ extension Theme: UserDefaultsInteracting {
 
 //	var clockTextColor: Theme.Color {
 //		get {
-//			return Defaults.clockTextColor
+//			return DefaultValues.clockTextColor
 ////			guard let storedColorValue = standardDefaults.string(forKey: UserDefaultsKey.clockTextColor) else {
 ////				return Defaults.clockTextColor
 ////			}
@@ -73,7 +73,7 @@ extension Theme: UserDefaultsInteracting {
 //
 //	var clockBackgroundColor: Theme.Color {
 //		get {
-//			return Defaults.clockBackgroundColor
+//			return DefaultValues.clockBackgroundColor
 ////			guard let storedColorValue = standardDefaults.string(forKey: UserDefaultsKey.clockBackgroundColor) else {
 ////				return Defaults.clockBackgroundColor
 ////			}
@@ -88,8 +88,8 @@ extension Theme: UserDefaultsInteracting {
 //
 //	static var clockFont: Theme.Font {
 //		get {
-//			let storedFont = standardDefaults.string(forKey: UserDefaultsKey.clockFont) ?? Defaults.clockFont.rawValue
-//			return Theme.Font(rawValue: storedFont) ?? Defaults.clockFont
+//			let storedFont = standardDefaults.string(forKey: UserDefaultsKey.clockFont) ?? DefaultValues.clockFont.rawValue
+//			return Theme.Font(rawValue: storedFont) ?? DefaultValues.clockFont
 //		}
 //		set {
 //			standardDefaults.set(newValue.rawValue, forKey: UserDefaultsKey.clockFont)
