@@ -13,7 +13,7 @@ class SettingsCoordinator: Coordinator {
 	}
 
 	func makeSettingsViewController() -> UIViewController {
-		return SettingsViewController()
+		return SettingsListViewController()
 	}
 
 	func start() {

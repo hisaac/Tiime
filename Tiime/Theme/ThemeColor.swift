@@ -38,7 +38,7 @@ extension ThemeColor: RawRepresentable {
 		case #colorLiteral(red: 1, green: 0.1764705882, blue: 0.3333333333, alpha: 1): self = .pink
 		case #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1): self = .white
 		case #colorLiteral(red: 0.3179988265, green: 0.3179988265, blue: 0.3179988265, alpha: 1): self = .lightGray
-		case #colorLiteral(red: 0.1465101838, green: 0.1465101838, blue: 0.1465101838, alpha: 0.73): self = .darkGray
+		case #colorLiteral(red: 0.1465101838, green: 0.1465101838, blue: 0.1465101838, alpha: 1): self = .darkGray
 		case #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1): self = .black
 		default: return nil
 		}
@@ -56,7 +56,7 @@ extension ThemeColor: RawRepresentable {
 		case .pink:      return #colorLiteral(red: 1, green: 0.1764705882, blue: 0.3333333333, alpha: 1)
 		case .white:     return #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
 		case .lightGray: return #colorLiteral(red: 0.3179988265, green: 0.3179988265, blue: 0.3179988265, alpha: 1)
-		case .darkGray:  return #colorLiteral(red: 0.1465101838, green: 0.1465101838, blue: 0.1465101838, alpha: 0.73)
+		case .darkGray:  return #colorLiteral(red: 0.1465101838, green: 0.1465101838, blue: 0.1465101838, alpha: 1)
 		case .black:     return #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
 		}
 	}
