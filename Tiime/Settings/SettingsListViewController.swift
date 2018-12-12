@@ -96,4 +96,19 @@ class SettingsListViewController: UITableViewController {
 		return cell
 	}
 
+	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		tableView.deselectRow(at: indexPath, animated: true)
+
+		let cell = sections[indexPath.section].cells[indexPath.row]
+		if cell == viewModel.clockBackgroundColorCell {
+			let colorPickerView = ThemeColorPickerView()
+			colorPickerView.title = "Clock Background Color"
+			navigationController?.pushViewController(colorPickerView, animated: true)
+		} else if cell == viewModel.clockTextColorCell {
+			let colorPickerView = ThemeColorPickerView()
+			colorPickerView.title = "Clock Text Color"
+			navigationController?.pushViewController(colorPickerView, animated: true)
+		}
+	}
+
 }

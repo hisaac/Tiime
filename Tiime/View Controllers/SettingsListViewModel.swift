@@ -47,6 +47,7 @@ class SettingsListViewModel {
 		)
 
 		cell.accessoryView = themeSwitch
+		cell.selectionStyle = .none
 		return cell
 	}()
 

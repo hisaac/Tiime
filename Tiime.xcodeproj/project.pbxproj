@@ -31,6 +31,7 @@
 		4A19480A2084457E00AB490D /* TiimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1948092084457E00AB490D /* TiimeTests.swift */; };
 		4A1FA8E62153F34C00971C73 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1FA8E52153F34C00971C73 /* Theme.swift */; };
 		4A4DCBA920CC96F70023C56C /* EmptyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4DCBA820CC96F70023C56C /* EmptyDetailViewController.swift */; };
+		4A61760021C1AD1800E57C01 /* ThemeColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6175FF21C1AD1800E57C01 /* ThemeColorPickerView.swift */; };
 		4A8077BB20CCCFFB0003767D /* UISplitViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8077BA20CCCFFB0003767D /* UISplitViewController+Extensions.swift */; };
 		4AA7C568215143160086C0C1 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7C567215143160086C0C1 /* UIViewController+Extensions.swift */; };
 		4AA7C56A215143D20086C0C1 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7C569215143D20086C0C1 /* SettingsCoordinator.swift */; };
@@ -135,6 +136,7 @@
 		4A21994620CCA9EC0043F4A2 /* changelog.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = changelog.md; sourceTree = "<group>"; };
 		4A4DCBA820CC96F70023C56C /* EmptyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyDetailViewController.swift; sourceTree = "<group>"; };
 		4A5D46B5218A5FD700830B14 /* QuickTableViewController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTableViewController.framework; path = Carthage/Build/iOS/QuickTableViewController.framework; sourceTree = "<group>"; };
+		4A6175FF21C1AD1800E57C01 /* ThemeColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColorPickerView.swift; sourceTree = "<group>"; };
 		4A8077BA20CCCFFB0003767D /* UISplitViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISplitViewController+Extensions.swift"; sourceTree = "<group>"; };
 		4AA7C567215143160086C0C1 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		4AA7C569215143D20086C0C1 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
@@ -11983,6 +11985,7 @@
 				4AA7C56C215145C40086C0C1 /* UserDefaultsInteracting.swift */,
 				4AF89CCE21C1817000B87E11 /* SettingsToggleTableViewCell.swift */,
 				4AFD9F4221593E86002927A9 /* SettingsListViewController.swift */,
+				4A6175FF21C1AD1800E57C01 /* ThemeColorPickerView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -24279,6 +24282,7 @@
 				0591622420BB1829005D6D47 /* TimeRepresentable.swift in Sources */,
 				05D7C88720BB198200265C47 /* UnixTime.swift in Sources */,
 				4A066A9A21387729005618C1 /* ClockListCoordinator.swift in Sources */,
+				4A61760021C1AD1800E57C01 /* ThemeColorPickerView.swift in Sources */,
 				4AFD9F4521594849002927A9 /* MasterNavigationController.swift in Sources */,
 				4AA7C56D215145C40086C0C1 /* UserDefaultsInteracting.swift in Sources */,
 				4AF89CCF21C1817000B87E11 /* SettingsToggleTableViewCell.swift in Sources */,

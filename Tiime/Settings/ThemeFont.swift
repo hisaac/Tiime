@@ -2,25 +2,15 @@
 
 import UIKit
 
-enum ThemeFont: CaseIterable {
-	case hack
-	case iAWriterDuospace
-	case lcd
+enum ThemeFont: String, CaseIterable {
+	case hack = "Hack"
+	case iAWriterDuospace = "iA Writer Duospace"
+	case lcd = "LCD"
 }
 
-extension ThemeFont: RawRepresentable {
-	typealias RawValue = UIFont
+extension ThemeFont {
 
-	init?(rawValue: UIFont) {
-		return nil
-	}
-
-	var rawValue: UIFont {
-		return
-			UIFont(name: fontName, size: UIFont.systemFontSize) ??
-			UIFont.monospacedDigitSystemFont(ofSize: UIFont.systemFontSize, weight: .regular)
-	}
-
+	/// The fully specified name of the font
 	var fontName: String {
 		switch self {
 		case .hack: return "Hack-Regular"
@@ -29,11 +19,9 @@ extension ThemeFont: RawRepresentable {
 		}
 	}
 
-	var fontNameForDisplay: String {
-		switch self {
-		case .hack: return "Hack"
-		case .iAWriterDuospace: return "iA Writer Duospace"
-		case .lcd: return "LCD"
-		}
+	var uiFont: UIFont {
+		return
+			UIFont(name: fontName, size: UIFont.systemFontSize) ??
+			UIFont.monospacedDigitSystemFont(ofSize: UIFont.systemFontSize, weight: .regular)
 	}
 }

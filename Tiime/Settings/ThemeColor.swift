@@ -60,4 +60,21 @@ extension ThemeColor: RawRepresentable {
 		case .black:     return #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
 		}
 	}
+
+	var name: String {
+		switch self {
+		case .red:       return "Red"
+		case .orange:    return "Orange"
+		case .yellow:    return "Yellow"
+		case .green:     return "Green"
+		case .teal:      return "Teal"
+		case .blue:      return "Blue"
+		case .purple:    return "Purple"
+		case .pink:      return "Pink"
+		case .white:     return "White"
+		case .lightGray: return "Light Gray"
+		case .darkGray:  return "Dark Gray"
+		case .black:     return "Black"
+		}
+	}
 }

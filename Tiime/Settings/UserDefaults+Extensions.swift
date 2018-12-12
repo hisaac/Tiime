@@ -8,13 +8,13 @@ import UIKit
 extension UserDefaults {
 
 	/// Returns the UIColor value associated with the specified key
-	func colorForKey(key: String) -> UIColor? {
-		guard let colorData = data(forKey: key) else { return nil }
+	func color(forKey: String) -> UIColor? {
+		guard let colorData = data(forKey: forKey) else { return nil }
 		return NSKeyedUnarchiver.unarchiveObject(with: colorData) as? UIColor
 	}
 
 	/// Sets the value of the specified default key to the specified UIColor value
-	func setColor(color: UIColor?, forKey key: String) {
+	func set(color: UIColor?, forKey key: String) {
 		guard let color = color else {
 			setNilValueForKey(key)
 			return

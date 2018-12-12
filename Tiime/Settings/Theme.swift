@@ -66,46 +66,33 @@ extension Theme: UserDefaultsInteracting {
 		}
 	}
 
-//	var clockTextColor: Theme.Color {
-//		get {
-//			return DefaultValues.clockTextColor
-////			guard let storedColorValue = standardDefaults.string(forKey: UserDefaultsKey.clockTextColor) else {
-////				return Defaults.clockTextColor
-////			}
-////
-////			return Color(rawValue: storedColorValue) ?? Defaults.clockTextColor
-//		}
-//		set {
-//			standardDefaults.set(newValue.rawValue, forKey: UserDefaultsKey.clockTextColor)
-//			Theme.current.apply()
-//		}
-//	}
-//
-//	var clockBackgroundColor: Theme.Color {
-//		get {
-//			return DefaultValues.clockBackgroundColor
-////			guard let storedColorValue = standardDefaults.string(forKey: UserDefaultsKey.clockBackgroundColor) else {
-////				return Defaults.clockBackgroundColor
-////			}
-////
-////			return Color(rawValue: storedColorValue) ?? Defaults.clockBackgroundColor
-//		}
-//		set {
-//			standardDefaults.set(newValue.rawValue, forKey: UserDefaultsKey.clockBackgroundColor)
-//			Theme.current.apply()
-//		}
-//	}
-//
-//	static var clockFont: Theme.Font {
-//		get {
-//			let storedFont = standardDefaults.string(forKey: UserDefaultsKey.clockFont) ?? DefaultValues.clockFont.rawValue
-//			return Theme.Font(rawValue: storedFont) ?? DefaultValues.clockFont
-//		}
-//		set {
-//			standardDefaults.set(newValue.rawValue, forKey: UserDefaultsKey.clockFont)
-//			Theme.current.apply()
-//		}
-//	}
+	static var clockBackgroundColor: UIColor {
+		get {
+			return standardDefaults.color(forKey: UserDefaultsKey.clockBackgroundColor) ?? DefaultValues.clockBackgroundColor
+		}
+		set {
+			standardDefaults.set(color: newValue, forKey: UserDefaultsKey.clockBackgroundColor)
+		}
+	}
+
+	static var clockTextColor: UIColor {
+		get {
+			return standardDefaults.color(forKey: UserDefaultsKey.clockTextColor) ?? DefaultValues.clockTextColor
+		}
+		set {
+			standardDefaults.set(color: newValue, forKey: UserDefaultsKey.clockTextColor)
+		}
+	}
+
+	static var clockFont: ThemeFont {
+		get {
+			let storedFontName = standardDefaults.string(forKey: UserDefaultsKey.clockFont) ?? DefaultValues.clockFont.rawValue
+			return ThemeFont(rawValue: storedFontName) ?? DefaultValues.clockFont
+		}
+		set {
+			standardDefaults.set(newValue.rawValue, forKey: UserDefaultsKey.clockFont)
+		}
+	}
 
 }
 
