@@ -4,9 +4,8 @@ import UIKit
 
 class SettingsListViewController: UITableViewController {
 
-	typealias TableViewSection = (title: String, cells: [String])
-
 	var sections: [TableViewSection] = []
+	let viewModel = SettingsListViewModel()
 
 	convenience init() {
 		self.init(style: .grouped)
@@ -15,6 +14,8 @@ class SettingsListViewController: UITableViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		title = NSLocalizedString("Settings", comment: "Title for the Settings screen")
+
+		viewModel.delegate = self
 
 		navigationItem.largeTitleDisplayMode = .always
 
@@ -30,28 +31,28 @@ class SettingsListViewController: UITableViewController {
 
 	func setupSections() {
 		let clockStyleSection = TableViewSection(
-			title: "Clock Style",
+			header: "⏰ Clock Style",
 			cells: [
-				"Background Color",
-				"Text Color",
-				"Font"
+				viewModel.clockBackgroundColorCell,
+				viewModel.clockTextColorCell,
+				viewModel.clockFontCell
 			]
 		)
 
 		let appStyleSection = TableViewSection(
-			title: "App Style",
+			header: "📱 App Style",
 			cells: [
-				"Icon",
-				"Dark Theme"
+				viewModel.appIconCell,
+				viewModel.appThemeCell
 			]
 		)
 
 		let moreInfoSection = TableViewSection(
-			title: "More Info",
+			header: "ℹ️ More Info",
 			cells: [
-				"Credits",
-				"App Info",
-				"Code"
+				viewModel.creditsCell,
+				viewModel.appInfoCell,
+				viewModel.codeCell
 			]
 		)
 
@@ -60,6 +61,11 @@ class SettingsListViewController: UITableViewController {
 
 	@objc func dismissSettings() {
 		dismiss(animated: true, completion: nil)
+	}
+
+	@objc func toggleTheme() {
+		Theme.toggleCurrentTheme()
+		tableView.reloadData()
 	}
 
 	override func numberOfSections(in tableView: UITableView) -> Int {
@@ -71,22 +77,22 @@ class SettingsListViewController: UITableViewController {
 	}
 
 	override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-		return sections[section].title
+		return sections[section].header
 	}
 
 	override func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
 		if section == sections.count - 1 {
 			let versionNumber = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? ""
 			let buildNumber = Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? ""
-			return "App Version: \(versionNumber) (\(buildNumber))"
+			return "Version \(versionNumber) (build \(buildNumber))"
 		} else {
-			return nil
+			return sections[section].footer
 		}
 	}
 
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
-		cell.textLabel?.text = sections[indexPath.section].cells[indexPath.row]
+		let cell = sections[indexPath.section].cells[indexPath.row]
+		cell.textLabel?.textColor = Theme.current.tableViewTextColor
 		return cell
 	}
 

@@ -3,7 +3,6 @@
 import UIKit
 
 enum ThemeFont: CaseIterable {
-	case system
 	case hack
 	case iAWriterDuospace
 	case lcd
@@ -24,10 +23,17 @@ extension ThemeFont: RawRepresentable {
 
 	var fontName: String {
 		switch self {
-		case .system: return "System"
 		case .hack: return "Hack-Regular"
 		case .iAWriterDuospace: return "iAWriterDuospace-Regular"
 		case .lcd: return "LCD14"
+		}
+	}
+
+	var fontNameForDisplay: String {
+		switch self {
+		case .hack: return "Hack"
+		case .iAWriterDuospace: return "iA Writer Duospace"
+		case .lcd: return "LCD"
 		}
 	}
 }

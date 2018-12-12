@@ -12,6 +12,16 @@ enum Theme: Int, CaseIterable {
 		self = darkMode ? .dark : .light
 	}
 
+	static func toggleCurrentTheme() {
+		if Theme.current == .light {
+			Theme.current = .dark
+		} else {
+			Theme.current = .light
+		}
+
+		Theme.current.apply()
+	}
+
 }
 
 // MARK: - UserDefaults Getters and Setters
@@ -32,7 +42,7 @@ extension Theme: UserDefaultsInteracting {
 
 		static var clockBackgroundColor: UIColor {
 			switch Theme.current {
-			case .light: return ThemeColor.lightGray.rawValue
+			case .light: return ThemeColor.white.rawValue
 			case .dark: return ThemeColor.darkGray.rawValue
 			}
 		}
