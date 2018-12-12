@@ -14,9 +14,10 @@ class SettingsListViewController: UITableViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		title = L10n.settings
+		title = NSLocalizedString("Settings", comment: "Title for the Settings screen")
 
 		navigationItem.largeTitleDisplayMode = .always
+
 		navigationItem.leftBarButtonItem = UIBarButtonItem(
 			barButtonSystemItem: .done,
 			target: self,

@@ -20,7 +20,7 @@ class ClockViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		title = timeType.timeTypeTitle
-		view.backgroundColor = Theme.clockBackgroundColor.uiColor
+		view.backgroundColor = Theme.Defaults.clockBackgroundColor
 		navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
 		navigationItem.leftItemsSupplementBackButton = true
 
@@ -50,10 +50,12 @@ class ClockViewController: UIViewController {
 		timeLabel.numberOfLines = 1
 		timeLabel.adjustsFontSizeToFitWidth = true
 		timeLabel.adjustsFontForContentSizeCategory = true
-		timeLabel.font = UIFontMetrics.default.scaledFont(for: Theme.clockFont.uiFont(ofSize: 500))
+		timeLabel.font = UIFontMetrics.default.scaledFont(for: Theme.Defaults.clockFont.rawValue)
+		timeLabel.font = timeLabel.font.withSize(500)
+		timeLabel.textColor = Theme.Defaults.clockTextColor
 		view.addSubview(timeLabel)
 
-		let guide = view.layoutMarginsGuide
+		let guide = view.safeAreaLayoutGuide
 		NSLayoutConstraint.activate([
 			timeLabel.trailingAnchor.constraint(equalTo: guide.trailingAnchor),
 			timeLabel.leadingAnchor.constraint(equalTo: guide.leadingAnchor),

@@ -21,23 +21,24 @@
 		4A066A9421386ED6005618C1 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A066A9321386ED6005618C1 /* Coordinator.swift */; };
 		4A066A9621386EEB005618C1 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A066A9521386EEB005618C1 /* ApplicationCoordinator.swift */; };
 		4A066A9A21387729005618C1 /* ClockListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A066A9921387729005618C1 /* ClockListCoordinator.swift */; };
+		4A0BDF2821C06275004E4A90 /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BDF2721C06275004E4A90 /* UserDefaults+Extensions.swift */; };
+		4A0BDF2A21C14D8E004E4A90 /* ThemeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BDF2921C14D8E004E4A90 /* ThemeModel.swift */; };
+		4A0BDF2C21C14DDE004E4A90 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BDF2B21C14DDE004E4A90 /* UIColor+Extensions.swift */; };
+		4A0BDF2F21C14EDC004E4A90 /* ThemeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BDF2E21C14EDC004E4A90 /* ThemeColor.swift */; };
+		4A0BDF3221C15A9F004E4A90 /* ThemeFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BDF3121C15A9F004E4A90 /* ThemeFont.swift */; };
 		4A1947F52084457D00AB490D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1947F42084457D00AB490D /* AppDelegate.swift */; };
 		4A1947FC2084457E00AB490D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A1947FB2084457E00AB490D /* Assets.xcassets */; };
 		4A19480A2084457E00AB490D /* TiimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1948092084457E00AB490D /* TiimeTests.swift */; };
 		4A1FA8E62153F34C00971C73 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1FA8E52153F34C00971C73 /* Theme.swift */; };
 		4A4DCBA920CC96F70023C56C /* EmptyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4DCBA820CC96F70023C56C /* EmptyDetailViewController.swift */; };
-		4A5D46B6218A5FD700830B14 /* QuickTableViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5D46B5218A5FD700830B14 /* QuickTableViewController.framework */; };
 		4A7A226D2167F49800FEA383 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7A226C2167F49800FEA383 /* SettingsViewController.swift */; };
 		4A8077BB20CCCFFB0003767D /* UISplitViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8077BA20CCCFFB0003767D /* UISplitViewController+Extensions.swift */; };
 		4AA7C568215143160086C0C1 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7C567215143160086C0C1 /* UIViewController+Extensions.swift */; };
 		4AA7C56A215143D20086C0C1 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7C569215143D20086C0C1 /* SettingsCoordinator.swift */; };
 		4AA7C56D215145C40086C0C1 /* UserDefaultsInteracting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7C56C215145C40086C0C1 /* UserDefaultsInteracting.swift */; };
 		4AA7C56F2151462E0086C0C1 /* SettingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7C56E2151462E0086C0C1 /* SettingsService.swift */; };
-		4AB48AFA216289530010B2A9 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB48AF8216289530010B2A9 /* Fonts.swift */; };
-		4AB48AFB216289530010B2A9 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB48AF9216289530010B2A9 /* Colors.swift */; };
 		4AB48B0D21628FA70010B2A9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4AB48B0F21628FA70010B2A9 /* Localizable.strings */; };
 		4AB48B12216290100010B2A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AB48B112162900F0010B2A9 /* LaunchScreen.storyboard */; };
-		4AB48B14216292AD0010B2A9 /* LocalizableStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB48B13216292AC0010B2A9 /* LocalizableStrings.swift */; };
 		4ABAF3282157FED0002F106B /* Hack-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4ABADEEA2157FE8A002F106B /* Hack-Regular.ttf */; };
 		4ABAF3292157FED9002F106B /* LCD14.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4ABADF042157FE8A002F106B /* LCD14.otf */; };
 		4ABAF32A2157FEE5002F106B /* iAWriterDuospace-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4ABAF3272157FE9D002F106B /* iAWriterDuospace-Regular.otf */; };
@@ -114,6 +115,11 @@
 		4A066A9321386ED6005618C1 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		4A066A9521386EEB005618C1 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		4A066A9921387729005618C1 /* ClockListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockListCoordinator.swift; sourceTree = "<group>"; };
+		4A0BDF2721C06275004E4A90 /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
+		4A0BDF2921C14D8E004E4A90 /* ThemeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeModel.swift; sourceTree = "<group>"; };
+		4A0BDF2B21C14DDE004E4A90 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		4A0BDF2E21C14EDC004E4A90 /* ThemeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColor.swift; sourceTree = "<group>"; };
+		4A0BDF3121C15A9F004E4A90 /* ThemeFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeFont.swift; sourceTree = "<group>"; };
 		4A1947F12084457D00AB490D /* Tiime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tiime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A1947F42084457D00AB490D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A1947FB2084457E00AB490D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -133,13 +139,8 @@
 		4AA7C569215143D20086C0C1 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
 		4AA7C56C215145C40086C0C1 /* UserDefaultsInteracting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsInteracting.swift; sourceTree = "<group>"; };
 		4AA7C56E2151462E0086C0C1 /* SettingsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsService.swift; sourceTree = "<group>"; };
-		4AB48AF62162886D0010B2A9 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = swiftgen.yml; sourceTree = "<group>"; };
-		4AB48AF8216289530010B2A9 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
-		4AB48AF9216289530010B2A9 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		4AB48B0A21628F730010B2A9 /* colors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = colors.json; sourceTree = "<group>"; };
 		4AB48B0E21628FA70010B2A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4AB48B112162900F0010B2A9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		4AB48B13216292AC0010B2A9 /* LocalizableStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizableStrings.swift; sourceTree = "<group>"; };
 		4ABAC56A2157FE65002F106B /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		4ABAC56E2157FE65002F106B /* ttfautohint-build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "ttfautohint-build.sh"; sourceTree = "<group>"; };
 		4ABAC5702157FE65002F106B /* css-build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "css-build.sh"; sourceTree = "<group>"; };
@@ -11810,7 +11811,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A5D46B6218A5FD700830B14 /* QuickTableViewController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -11861,7 +11861,6 @@
 				29374FC0F154ACB0434598EE /* AutoLayout+Extensions.swift */,
 				4A8077BA20CCCFFB0003767D /* UISplitViewController+Extensions.swift */,
 				4AA7C567215143160086C0C1 /* UIViewController+Extensions.swift */,
-				4A1FA8E52153F34C00971C73 /* Theme.swift */,
 			);
 			path = "UI Extensions";
 			sourceTree = "<group>";
@@ -11936,7 +11935,6 @@
 				4ABAC5682157FE65002F106B /* Fonts */,
 				4A1947FB2084457E00AB490D /* Assets.xcassets */,
 				4A1948002084457E00AB490D /* Info.plist */,
-				4AB48B0A21628F730010B2A9 /* colors.json */,
 				054B2B57208E16210030B580 /* Tiime.entitlements */,
 				4AB48B112162900F0010B2A9 /* LaunchScreen.storyboard */,
 				4AB48B0F21628FA70010B2A9 /* Localizable.strings */,
@@ -11968,6 +11966,21 @@
 			path = Coordinators;
 			sourceTree = "<group>";
 		};
+		4A0BDF2D21C14EA7004E4A90 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				4A1FA8E52153F34C00971C73 /* Theme.swift */,
+				4A0BDF2E21C14EDC004E4A90 /* ThemeColor.swift */,
+				4A0BDF3121C15A9F004E4A90 /* ThemeFont.swift */,
+				4A0BDF2921C14D8E004E4A90 /* ThemeModel.swift */,
+				4A0BDF2721C06275004E4A90 /* UserDefaults+Extensions.swift */,
+				4A0BDF2B21C14DDE004E4A90 /* UIColor+Extensions.swift */,
+				4AA7C56E2151462E0086C0C1 /* SettingsService.swift */,
+				4AA7C56C215145C40086C0C1 /* UserDefaultsInteracting.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
 		4A1947E82084457D00AB490D = {
 			isa = PBXGroup;
 			children = (
@@ -11982,7 +11995,6 @@
 				05A1944E208E810100C30B22 /* LICENSE */,
 				4A066A6F213844B6005618C1 /* Gemfile */,
 				4A066A6D213844B5005618C1 /* Gemfile.lock */,
-				4AB48AF62162886D0010B2A9 /* swiftgen.yml */,
 				4A066A6E213844B5005618C1 /* .swiftlint.yml */,
 				4A066A70213844B6005618C1 /* .gitignore */,
 			);
@@ -12006,10 +12018,9 @@
 				4A066A9221386EBF005618C1 /* Coordinators */,
 				0591622820BB1867005D6D47 /* ClockType */,
 				05D2549520925AB8004DCA1F /* Dependencies */,
+				4A0BDF2D21C14EA7004E4A90 /* Theme */,
 				05D254A620925CA2004DCA1F /* UI Extensions */,
 				4A066A9121385334005618C1 /* View Controllers */,
-				4AA7C56B215145B20086C0C1 /* Service */,
-				4AB48AF7216289530010B2A9 /* Generated */,
 				4A066A9021384794005618C1 /* Supporting Files */,
 			);
 			path = Tiime;
@@ -12022,25 +12033,6 @@
 				4A19480B2084457E00AB490D /* Info.plist */,
 			);
 			path = TiimeTests;
-			sourceTree = "<group>";
-		};
-		4AA7C56B215145B20086C0C1 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				4AA7C56E2151462E0086C0C1 /* SettingsService.swift */,
-				4AA7C56C215145C40086C0C1 /* UserDefaultsInteracting.swift */,
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		4AB48AF7216289530010B2A9 /* Generated */ = {
-			isa = PBXGroup;
-			children = (
-				4AB48AF9216289530010B2A9 /* Colors.swift */,
-				4AB48AF8216289530010B2A9 /* Fonts.swift */,
-				4AB48B13216292AC0010B2A9 /* LocalizableStrings.swift */,
-			);
-			path = Generated;
 			sourceTree = "<group>";
 		};
 		4ABAC5682157FE65002F106B /* Fonts */ = {
@@ -12056,23 +12048,23 @@
 		4ABAC5692157FE65002F106B /* Hack */ = {
 			isa = PBXGroup;
 			children = (
-				4ABAC56A2157FE65002F106B /* LICENSE.md */,
 				4ABAC56B2157FE65002F106B /* tools */,
-				4ABAC5752157FE65002F106B /* build-ttf.sh */,
-				4ABAC5762157FE65002F106B /* CHANGELOG.md */,
 				4ABAC5772157FE65002F106B /* config */,
-				4ABAC57A2157FE65002F106B /* Makefile */,
 				4ABAC57B2157FE65002F106B /* postbuild_processing */,
 				4ABAC5862157FE65002F106B /* source */,
-				4ABADEC52157FE8A002F106B /* FAQ.md */,
 				4ABADEC62157FE8A002F106B /* docs */,
+				4ABADECC2157FE8A002F106B /* img */,
+				4ABADED22157FE8A002F106B /* build */,
+				4ABAC56A2157FE65002F106B /* LICENSE.md */,
+				4ABAC5752157FE65002F106B /* build-ttf.sh */,
+				4ABAC5762157FE65002F106B /* CHANGELOG.md */,
+				4ABAC57A2157FE65002F106B /* Makefile */,
+				4ABADEC52157FE8A002F106B /* FAQ.md */,
 				4ABADECA2157FE8A002F106B /* build-subsets.sh */,
 				4ABADECB2157FE8A002F106B /* README.md */,
-				4ABADECC2157FE8A002F106B /* img */,
 				4ABADECF2157FE8A002F106B /* .gitignore */,
 				4ABADED02157FE8A002F106B /* package.json */,
 				4ABADED12157FE8A002F106B /* CONTRIBUTING.md */,
-				4ABADED22157FE8A002F106B /* build */,
 				4ABADEEE2157FE8A002F106B /* build-woff.sh */,
 				4ABADEEF2157FE8A002F106B /* build-woff2.sh */,
 			);
@@ -24125,13 +24117,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A1948192084457E00AB490D /* Build configuration list for PBXNativeTarget "Tiime" */;
 			buildPhases = (
-				4AB48AFC21628C3D0010B2A9 /* [SwiftGen] */,
+				4A20C936212745BC00D1A934 /* Swiftlint */,
 				4A1947ED2084457D00AB490D /* Sources */,
 				4A1947EE2084457D00AB490D /* Frameworks */,
 				4A1947EF2084457D00AB490D /* Resources */,
 				05D2546E20925A17004DCA1F /* Embed Frameworks */,
-				4A20C936212745BC00D1A934 /* [Swiftlint] */,
-				SIZQLIG7SKLSX2O75Q7JJYBA /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -24231,7 +24221,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4A20C936212745BC00D1A934 /* [Swiftlint] */ = {
+		4A20C936212745BC00D1A934 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -24240,7 +24230,7 @@
 			);
 			inputPaths = (
 			);
-			name = "[Swiftlint]";
+			name = Swiftlint;
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -24248,24 +24238,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-		4AB48AFC21628C3D0010B2A9 /* [SwiftGen] */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[SwiftGen]";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftgen >/dev/null; then\n  swiftgen\nelse\n  echo \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi\n";
 		};
 		S4UEX9J5HIX3NM1SE3LOXH0D /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -24288,27 +24260,6 @@
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
 			showEnvVarsInLog = 0;
 		};
-		SIZQLIG7SKLSX2O75Q7JJYBA /* Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"$(SRCROOT)/Carthage/xcfilelists/Tiime-inputPaths.xcfilelist",
-			);
-			inputPaths = (
-			);
-			name = Carthage;
-			outputFileListPaths = (
-				"$(SRCROOT)/Carthage/xcfilelists/Tiime-outputPaths.xcfilelist",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -24316,9 +24267,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A0BDF3221C15A9F004E4A90 /* ThemeFont.swift in Sources */,
 				4A1947F52084457D00AB490D /* AppDelegate.swift in Sources */,
 				05D7C89220BB199B00265C47 /* AutoLayout+Extensions.swift in Sources */,
-				4AB48AFA216289530010B2A9 /* Fonts.swift in Sources */,
 				0591622420BB1829005D6D47 /* TimeRepresentable.swift in Sources */,
 				05D7C88720BB198200265C47 /* UnixTime.swift in Sources */,
 				4A066A9A21387729005618C1 /* ClockListCoordinator.swift in Sources */,
@@ -24326,22 +24277,24 @@
 				4AA7C56D215145C40086C0C1 /* UserDefaultsInteracting.swift in Sources */,
 				4A066A9421386ED6005618C1 /* Coordinator.swift in Sources */,
 				4A4DCBA920CC96F70023C56C /* EmptyDetailViewController.swift in Sources */,
-				4AB48AFB216289530010B2A9 /* Colors.swift in Sources */,
 				05D7C88A20BB198E00265C47 /* MainDependencyProvider.swift in Sources */,
+				4A0BDF2C21C14DDE004E4A90 /* UIColor+Extensions.swift in Sources */,
 				05D7C88820BB198600265C47 /* DeviceTime.swift in Sources */,
 				4AA7C568215143160086C0C1 /* UIViewController+Extensions.swift in Sources */,
 				4A1FA8E62153F34C00971C73 /* Theme.swift in Sources */,
 				4A8077BB20CCCFFB0003767D /* UISplitViewController+Extensions.swift in Sources */,
+				4A0BDF2821C06275004E4A90 /* UserDefaults+Extensions.swift in Sources */,
 				0591622520BB1829005D6D47 /* ClockType.swift in Sources */,
 				058DBD9D20DD702F00657F74 /* MetricTime.swift in Sources */,
 				0591622720BB1834005D6D47 /* ClockViewController.swift in Sources */,
 				4A066A9621386EEB005618C1 /* ApplicationCoordinator.swift in Sources */,
 				4AA7C56F2151462E0086C0C1 /* SettingsService.swift in Sources */,
 				05D7C88420BB197D00265C47 /* BeatTime.swift in Sources */,
-				4AB48B14216292AD0010B2A9 /* LocalizableStrings.swift in Sources */,
 				4AA7C56A215143D20086C0C1 /* SettingsCoordinator.swift in Sources */,
 				0591622620BB1834005D6D47 /* ClockListViewController.swift in Sources */,
 				4A7A226D2167F49800FEA383 /* SettingsViewController.swift in Sources */,
+				4A0BDF2A21C14D8E004E4A90 /* ThemeModel.swift in Sources */,
+				4A0BDF2F21C14EDC004E4A90 /* ThemeColor.swift in Sources */,
 				05D7C88920BB198E00265C47 /* MainDependencyContainer.swift in Sources */,
 				4AFD9F4321593E86002927A9 /* SettingsListViewController.swift in Sources */,
 			);
@@ -24499,10 +24452,6 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = F2J52QJQ9Y;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
 				INFOPLIST_FILE = "$(SRCROOT)/Tiime/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -24524,10 +24473,6 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = F2J52QJQ9Y;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
 				INFOPLIST_FILE = "$(SRCROOT)/Tiime/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
