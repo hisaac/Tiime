@@ -29,6 +29,7 @@ class ThemeFontPickerView: UITableViewController {
 	}
 
 	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		tableView.deselectRow(at: indexPath, animated: true)
 		Theme.clockFont = ThemeFont.allCases[indexPath.row]
 		tableView.reloadData()
 		navigationController?.popViewController(animated: true)

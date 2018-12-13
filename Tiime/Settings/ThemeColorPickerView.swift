@@ -27,7 +27,7 @@ class ThemeColorPickerView: UITableViewController {
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let color = ThemeColor.allCases[indexPath.row]
 		let cell = UITableViewCell(style: .default, reuseIdentifier: color.name)
-		
+
 		cell.textLabel?.text = color.name
 		cell.textLabel?.textColor = Theme.current.tableViewTextColor
 
@@ -45,6 +45,7 @@ class ThemeColorPickerView: UITableViewController {
 	}
 
 	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		tableView.deselectRow(at: indexPath, animated: true)
 		let color = ThemeColor.allCases[indexPath.row]
 
 		switch colorToSet {
