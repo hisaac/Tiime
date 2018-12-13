@@ -42,8 +42,8 @@ class SettingsListViewController: UITableViewController {
 		let appStyleSection = TableViewSection(
 			header: "📱 App Style",
 			cells: [
-				viewModel.appIconCell,
-				viewModel.appThemeCell
+				viewModel.appThemeCell,
+				viewModel.appIconCell
 			]
 		)
 
@@ -100,14 +100,20 @@ class SettingsListViewController: UITableViewController {
 		tableView.deselectRow(at: indexPath, animated: true)
 
 		let cell = sections[indexPath.section].cells[indexPath.row]
-		if cell == viewModel.clockBackgroundColorCell {
+
+		switch cell {
+		case viewModel.clockBackgroundColorCell:
 			let colorPickerView = ThemeColorPickerView(colorToSet: .backgroundColor)
 			colorPickerView.title = "Clock Background Color"
 			navigationController?.pushViewController(colorPickerView, animated: true)
-		} else if cell == viewModel.clockTextColorCell {
+		case viewModel.clockTextColorCell:
 			let colorPickerView = ThemeColorPickerView(colorToSet: .textColor)
 			colorPickerView.title = "Clock Text Color"
 			navigationController?.pushViewController(colorPickerView, animated: true)
+		case viewModel.clockFontCell:
+			navigationController?.pushViewController(ThemeFontPickerView(), animated: true)
+		default:
+			return
 		}
 	}
 

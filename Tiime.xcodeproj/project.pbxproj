@@ -45,6 +45,7 @@
 		4AF89CCF21C1817000B87E11 /* SettingsToggleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF89CCE21C1817000B87E11 /* SettingsToggleTableViewCell.swift */; };
 		4AF89CD321C1857F00B87E11 /* TableViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF89CD221C1857F00B87E11 /* TableViewSection.swift */; };
 		4AF89CD521C1871C00B87E11 /* SettingsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF89CD421C1871C00B87E11 /* SettingsListViewModel.swift */; };
+		4AFBB9F221C31C9900239261 /* ThemeFontPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFBB9F121C31C9900239261 /* ThemeFontPickerView.swift */; };
 		4AFD9F4321593E86002927A9 /* SettingsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFD9F4221593E86002927A9 /* SettingsListViewController.swift */; };
 		4AFD9F4521594849002927A9 /* MasterNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFD9F4421594849002927A9 /* MasterNavigationController.swift */; };
 /* End PBXBuildFile section */
@@ -11807,6 +11808,7 @@
 		4AF89CCE21C1817000B87E11 /* SettingsToggleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsToggleTableViewCell.swift; sourceTree = "<group>"; };
 		4AF89CD221C1857F00B87E11 /* TableViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSection.swift; sourceTree = "<group>"; };
 		4AF89CD421C1871C00B87E11 /* SettingsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsListViewModel.swift; sourceTree = "<group>"; };
+		4AFBB9F121C31C9900239261 /* ThemeFontPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeFontPickerView.swift; sourceTree = "<group>"; };
 		4AFD9F4221593E86002927A9 /* SettingsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsListViewController.swift; sourceTree = "<group>"; };
 		4AFD9F4421594849002927A9 /* MasterNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterNavigationController.swift; sourceTree = "<group>"; };
 		B775650D25ED6FDB73B4C396 /* ClockListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockListViewController.swift; sourceTree = "<group>"; };
@@ -11986,6 +11988,7 @@
 				4AF89CCE21C1817000B87E11 /* SettingsToggleTableViewCell.swift */,
 				4AFD9F4221593E86002927A9 /* SettingsListViewController.swift */,
 				4A6175FF21C1AD1800E57C01 /* ThemeColorPickerView.swift */,
+				4AFBB9F121C31C9900239261 /* ThemeFontPickerView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -24277,6 +24280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A0BDF3221C15A9F004E4A90 /* ThemeFont.swift in Sources */,
+				4AFBB9F221C31C9900239261 /* ThemeFontPickerView.swift in Sources */,
 				4A1947F52084457D00AB490D /* AppDelegate.swift in Sources */,
 				05D7C89220BB199B00265C47 /* AutoLayout+Extensions.swift in Sources */,
 				0591622420BB1829005D6D47 /* TimeRepresentable.swift in Sources */,

@@ -28,12 +28,6 @@ class SettingsListViewModel {
 
 	// MARK: - App Settings Cells
 
-	let appIconCell: UITableViewCell = {
-		let cell = UITableViewCell(style: .default, reuseIdentifier: #function)
-		cell.textLabel?.text = "Icon"
-		return cell
-	}()
-
 	let appThemeCell: UITableViewCell = {
 		let cell = UITableViewCell(style: .default, reuseIdentifier: #function)
 		cell.textLabel?.text = "Dark Theme"
@@ -48,6 +42,12 @@ class SettingsListViewModel {
 
 		cell.accessoryView = themeSwitch
 		cell.selectionStyle = .none
+		return cell
+	}()
+
+	let appIconCell: UITableViewCell = {
+		let cell = UITableViewCell(style: .default, reuseIdentifier: #function)
+		cell.textLabel?.text = "App Icon"
 		return cell
 	}()
 

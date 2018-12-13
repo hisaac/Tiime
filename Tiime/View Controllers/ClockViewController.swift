@@ -51,8 +51,7 @@ class ClockViewController: UIViewController {
 		timeLabel.numberOfLines = 1
 		timeLabel.adjustsFontSizeToFitWidth = true
 		timeLabel.adjustsFontForContentSizeCategory = true
-		timeLabel.font = UIFontMetrics.default.scaledFont(for: Theme.DefaultValues.clockFont.uiFont)
-		timeLabel.font = timeLabel.font.withSize(500)
+		timeLabel.font = UIFontMetrics.default.scaledFont(for: Theme.clockFont.uiFont.withSize(500))
 		timeLabel.textColor = Theme.clockTextColor
 		view.addSubview(timeLabel)
 
