@@ -5,7 +5,6 @@ import UIKit
 class EmptyDetailViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		view.backgroundColor = .white
 		title = NSLocalizedString("Tiime", comment: "The name of the app")
 		navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
 		navigationItem.leftItemsSupplementBackButton = true
@@ -13,6 +12,8 @@ class EmptyDetailViewController: UIViewController {
 
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
+
+		view.backgroundColor = Theme.DefaultValues.clockBackgroundColor
 
 		let emptyDetailLabel = UILabel()
 		emptyDetailLabel.translatesAutoresizingMaskIntoConstraints = false
