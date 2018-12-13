@@ -101,11 +101,11 @@ class SettingsListViewController: UITableViewController {
 
 		let cell = sections[indexPath.section].cells[indexPath.row]
 		if cell == viewModel.clockBackgroundColorCell {
-			let colorPickerView = ThemeColorPickerView()
+			let colorPickerView = ThemeColorPickerView(colorToSet: .backgroundColor)
 			colorPickerView.title = "Clock Background Color"
 			navigationController?.pushViewController(colorPickerView, animated: true)
 		} else if cell == viewModel.clockTextColorCell {
-			let colorPickerView = ThemeColorPickerView()
+			let colorPickerView = ThemeColorPickerView(colorToSet: .textColor)
 			colorPickerView.title = "Clock Text Color"
 			navigationController?.pushViewController(colorPickerView, animated: true)
 		}

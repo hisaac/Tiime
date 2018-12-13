@@ -2,10 +2,22 @@
 
 import UIKit
 
+enum ThemeColorValue {
+	case backgroundColor
+	case textColor
+}
+
 class ThemeColorPickerView: UITableViewController {
 
-	convenience init() {
-		self.init(style: .grouped)
+	let colorToSet: ThemeColorValue
+
+	init(colorToSet: ThemeColorValue) {
+		self.colorToSet = colorToSet
+		super.init(style: .grouped)
+	}
+
+	required init?(coder aDecoder: NSCoder) {
+		fatalError("init(coder:) has not been implemented")
 	}
 
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -17,11 +29,31 @@ class ThemeColorPickerView: UITableViewController {
 		let cell = UITableViewCell(style: .default, reuseIdentifier: color.name)
 		cell.textLabel?.text = color.name
 		cell.textLabel?.textColor = Theme.current.tableViewTextColor
-		cell.accessoryType = .checkmark
 
 		let imageViewSize = CGSize(width: 30, height: 30)
 		cell.imageView?.image = color.rawValue.image(imageViewSize)
 
+		switch colorToSet {
+		case .backgroundColor:
+			cell.accessoryType = color.rawValue == Theme.clockBackgroundColor ? .checkmark : .none
+		case .textColor:
+			cell.accessoryType = color.rawValue == Theme.clockTextColor ? .checkmark : .none
+		}
+
 		return cell
+	}
+
+	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		let color = ThemeColor.allCases[indexPath.row]
+
+		switch colorToSet {
+		case .backgroundColor:
+			Theme.clockBackgroundColor = color.rawValue
+		case .textColor:
+			Theme.clockTextColor = color.rawValue
+		}
+
+		tableView.reloadData()
+		navigationController?.popViewController(animated: true)
 	}
 }

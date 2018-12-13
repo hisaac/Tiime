@@ -43,7 +43,7 @@ class ClockViewController: UIViewController {
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
 
-		view.backgroundColor = Theme.DefaultValues.clockBackgroundColor
+		view.backgroundColor = Theme.clockBackgroundColor
 
 		timeLabel.translatesAutoresizingMaskIntoConstraints = false
 		timeLabel.textAlignment = .center
@@ -53,7 +53,7 @@ class ClockViewController: UIViewController {
 		timeLabel.adjustsFontForContentSizeCategory = true
 		timeLabel.font = UIFontMetrics.default.scaledFont(for: Theme.DefaultValues.clockFont.uiFont)
 		timeLabel.font = timeLabel.font.withSize(500)
-		timeLabel.textColor = Theme.DefaultValues.clockTextColor
+		timeLabel.textColor = Theme.clockTextColor
 		view.addSubview(timeLabel)
 
 		let guide = view.safeAreaLayoutGuide
