@@ -1,5 +1,6 @@
 // Created by Isaac Halvorson on 10/1/18
 
+// Generics
 "Tiime" = "Tiime";
 "Settings" = "Settings";
 "Dismiss" = "Dismiss";
@@ -11,7 +12,28 @@
 "Unix Time" = "Unix Time";
 "Metric Time" = "Metric Time";
 
+// Time Descriptions
 "The day is divided into 1000 \"beats\"" = "The day is divided into 1000 \"beats\"";
 "The time displayed in the default way for the device's locale" = "The time displayed in the default way for the device's locale";
 "The amount of seconds since January 1, 1970" = "The amount of seconds since January 1, 1970";
 "The day is divided into units of tenths, hundredths, thousands, etc." = "The day is divided into units of tenths, hundredths, thousands, etc.";
+
+// Settings Section Headers
+"⏰ Clock Style" = "⏰ Clock Style";
+"📱 App Style" = "📱 App Style";
+"ℹ️ More Info" = "ℹ️ More Info";
+
+// Settings Cell Labels
+"Background Color" = "Background Color";
+"Text Color" = "Text Color";
+"Font" = "Font";
+"Dark Theme" = "Dark Theme";
+"App Icon" = "App Icon";
+"Credits" = "Credits";
+"App Info" = "App Info";
+"Code" = "Code";
+
+// Settings Picker Titles
+"Clock Background Color" = "Clock Background Color";
+"Clock Text Color" = "Clock Text Color";
+"Clock Font" = "Clock Font";

@@ -10,7 +10,10 @@ class SettingsListViewModel {
 
 	@objc var clockBackgroundColorCell: UITableViewCell {
 		let cell = UITableViewCell(style: .default, reuseIdentifier: #function)
-		cell.textLabel?.text = "Background Color"
+		cell.textLabel?.text = NSLocalizedString(
+			"Background Color",
+			comment: "The label for the Background Color cell in Settings"
+		)
 
 		let imageViewSize = CGSize(width: 30, height: 30)
 		let colorImage = Theme.clockBackgroundColor.image(imageViewSize)
@@ -21,7 +24,10 @@ class SettingsListViewModel {
 
 	@objc var clockTextColorCell: UITableViewCell {
 		let cell = UITableViewCell(style: .default, reuseIdentifier: #function)
-		cell.textLabel?.text = "Text Color"
+		cell.textLabel?.text = NSLocalizedString(
+			"Text Color",
+			comment: "The label for the Text Color cell in Settings"
+		)
 
 		let imageViewSize = CGSize(width: 30, height: 30)
 		let colorImage = Theme.clockTextColor.image(imageViewSize)
@@ -32,7 +38,10 @@ class SettingsListViewModel {
 
 	@objc var clockFontCell: UITableViewCell {
 		let cell = UITableViewCell(style: .value1, reuseIdentifier: #function)
-		cell.textLabel?.text = "Font"
+		cell.textLabel?.text = NSLocalizedString(
+			"Font",
+			comment: "The label for the Font cell in Settings"
+		)
 
 		cell.detailTextLabel?.attributedText = NSAttributedString(
 			string: Theme.clockFont.rawValue,
@@ -46,7 +55,10 @@ class SettingsListViewModel {
 
 	var appThemeCell: UITableViewCell {
 		let cell = UITableViewCell(style: .default, reuseIdentifier: #function)
-		cell.textLabel?.text = "Dark Theme"
+		cell.textLabel?.text = NSLocalizedString(
+			"Dark Theme",
+			comment: "The label for the Dark Theme cell in Settings"
+		)
 
 		let themeSwitch = UISwitch()
 		themeSwitch.isOn = Theme.current == .dark
@@ -63,7 +75,11 @@ class SettingsListViewModel {
 
 	var appIconCell: UITableViewCell {
 		let cell = UITableViewCell(style: .default, reuseIdentifier: #function)
-		cell.textLabel?.text = "App Icon"
+		cell.textLabel?.text = NSLocalizedString(
+			"App Icon",
+			comment: "The label for the App Icon cell in Settings"
+		)
+
 		return cell
 	}
 
@@ -71,19 +87,31 @@ class SettingsListViewModel {
 
 	var creditsCell: UITableViewCell {
 		let cell = UITableViewCell(style: .default, reuseIdentifier: #function)
-		cell.textLabel?.text = "Credits"
+		cell.textLabel?.text = NSLocalizedString(
+			"Credits",
+			comment: "The label for the Credits cell in Settings"
+		)
+
 		return cell
 	}
 
 	var appInfoCell: UITableViewCell {
 		let cell = UITableViewCell(style: .default, reuseIdentifier: #function)
-		cell.textLabel?.text = "App Info"
+		cell.textLabel?.text = NSLocalizedString(
+			"App Info",
+			comment: "The label for the App Info cell in Settings"
+		)
+
 		return cell
 	}
 
 	var codeCell: UITableViewCell {
 		let cell = UITableViewCell(style: .default, reuseIdentifier: #function)
-		cell.textLabel?.text = "Code"
+		cell.textLabel?.text = NSLocalizedString(
+			"Code",
+			comment: "The label for the Code cell in Settings"
+		)
+
 		return cell
 	}
 

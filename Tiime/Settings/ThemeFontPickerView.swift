@@ -6,7 +6,7 @@ class ThemeFontPickerView: UITableViewController {
 
 	convenience init() {
 		self.init(style: .grouped)
-		title = "Clock Font"
+		title = NSLocalizedString("Clock Font", comment: "Title for the Clock Font picker screen")
 	}
 
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

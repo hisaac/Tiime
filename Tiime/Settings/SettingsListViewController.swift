@@ -37,7 +37,10 @@ class SettingsListViewController: UITableViewController {
 
 	func setupSections() {
 		let clockStyleSection = TableViewSection(
-			header: "⏰ Clock Style",
+			header: NSLocalizedString(
+				"⏰ Clock Style",
+				comment: "The header title for the Clock Style section in Settings"
+			),
 			cells: [
 				viewModel.clockBackgroundColorCell,
 				viewModel.clockTextColorCell,
@@ -46,7 +49,10 @@ class SettingsListViewController: UITableViewController {
 		)
 
 		let appStyleSection = TableViewSection(
-			header: "📱 App Style",
+			header: NSLocalizedString(
+				"📱 App Style",
+				comment: "The header title for the App Style section in Settings"
+			),
 			cells: [
 				viewModel.appThemeCell,
 				viewModel.appIconCell
@@ -54,7 +60,10 @@ class SettingsListViewController: UITableViewController {
 		)
 
 		let moreInfoSection = TableViewSection(
-			header: "ℹ️ More Info",
+			header: NSLocalizedString(
+				"ℹ️ More Info",
+				comment: "The header title for the More Info section in Settings"
+			),
 			cells: [
 				viewModel.creditsCell,
 				viewModel.appInfoCell,
@@ -110,11 +119,21 @@ class SettingsListViewController: UITableViewController {
 		switch cell.reuseIdentifier {
 		case #keyPath(SettingsListViewModel.clockBackgroundColorCell):
 			let colorPickerView = ThemeColorPickerView(colorToSet: .backgroundColor)
-			colorPickerView.title = "Clock Background Color"
+
+			colorPickerView.title = NSLocalizedString(
+				"Clock Background Color",
+				comment: "Title for the Clock Background Color picker screen"
+			)
+
 			navigationController?.pushViewController(colorPickerView, animated: true)
 		case #keyPath(SettingsListViewModel.clockTextColorCell):
 			let colorPickerView = ThemeColorPickerView(colorToSet: .textColor)
-			colorPickerView.title = "Clock Text Color"
+
+			colorPickerView.title = NSLocalizedString(
+				"Clock Text Color",
+				comment: "Title for the Clock Text Color picker screen"
+			)
+
 			navigationController?.pushViewController(colorPickerView, animated: true)
 		case #keyPath(SettingsListViewModel.clockFontCell):
 			navigationController?.pushViewController(ThemeFontPickerView(), animated: true)
