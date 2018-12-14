@@ -8,27 +8,43 @@ class SettingsListViewModel {
 
 	// MARK: - Clock Settings Cells
 
-	let clockBackgroundColorCell: UITableViewCell = {
+	@objc var clockBackgroundColorCell: UITableViewCell {
 		let cell = UITableViewCell(style: .default, reuseIdentifier: #function)
 		cell.textLabel?.text = "Background Color"
-		return cell
-	}()
 
-	let clockTextColorCell: UITableViewCell = {
+		let imageViewSize = CGSize(width: 30, height: 30)
+		let colorImage = Theme.clockBackgroundColor.image(imageViewSize)
+		cell.accessoryView = UIImageView(image: colorImage)
+
+		return cell
+	}
+
+	@objc var clockTextColorCell: UITableViewCell {
 		let cell = UITableViewCell(style: .default, reuseIdentifier: #function)
 		cell.textLabel?.text = "Text Color"
-		return cell
-	}()
 
-	let clockFontCell: UITableViewCell = {
-		let cell = UITableViewCell(style: .default, reuseIdentifier: #function)
-		cell.textLabel?.text = "Font"
+		let imageViewSize = CGSize(width: 30, height: 30)
+		let colorImage = Theme.clockTextColor.image(imageViewSize)
+		cell.accessoryView = UIImageView(image: colorImage)
+
 		return cell
-	}()
+	}
+
+	@objc var clockFontCell: UITableViewCell {
+		let cell = UITableViewCell(style: .value1, reuseIdentifier: #function)
+		cell.textLabel?.text = "Font"
+
+		cell.detailTextLabel?.attributedText = NSAttributedString(
+			string: Theme.clockFont.rawValue,
+			attributes: [.font: Theme.clockFont.uiFont.withSize(UIFont.systemFontSize * 1.5)]
+		)
+
+		return cell
+	}
 
 	// MARK: - App Settings Cells
 
-	let appThemeCell: UITableViewCell = {
+	var appThemeCell: UITableViewCell {
 		let cell = UITableViewCell(style: .default, reuseIdentifier: #function)
 		cell.textLabel?.text = "Dark Theme"
 
@@ -43,32 +59,32 @@ class SettingsListViewModel {
 		cell.accessoryView = themeSwitch
 		cell.selectionStyle = .none
 		return cell
-	}()
+	}
 
-	let appIconCell: UITableViewCell = {
+	var appIconCell: UITableViewCell {
 		let cell = UITableViewCell(style: .default, reuseIdentifier: #function)
 		cell.textLabel?.text = "App Icon"
 		return cell
-	}()
+	}
 
 	// MARK: - More Info Cells
 
-	let creditsCell: UITableViewCell = {
+	var creditsCell: UITableViewCell {
 		let cell = UITableViewCell(style: .default, reuseIdentifier: #function)
 		cell.textLabel?.text = "Credits"
 		return cell
-	}()
+	}
 
-	let appInfoCell: UITableViewCell = {
+	var appInfoCell: UITableViewCell {
 		let cell = UITableViewCell(style: .default, reuseIdentifier: #function)
 		cell.textLabel?.text = "App Info"
 		return cell
-	}()
+	}
 
-	let codeCell: UITableViewCell = {
+	var codeCell: UITableViewCell {
 		let cell = UITableViewCell(style: .default, reuseIdentifier: #function)
 		cell.textLabel?.text = "Code"
 		return cell
-	}()
+	}
 
 }

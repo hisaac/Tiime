@@ -29,6 +29,12 @@ class SettingsListViewController: UITableViewController {
 		setupSections()
 	}
 
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		setupSections()
+		tableView.reloadData()
+	}
+
 	func setupSections() {
 		let clockStyleSection = TableViewSection(
 			header: "⏰ Clock Style",
@@ -101,16 +107,16 @@ class SettingsListViewController: UITableViewController {
 
 		let cell = sections[indexPath.section].cells[indexPath.row]
 
-		switch cell {
-		case viewModel.clockBackgroundColorCell:
+		switch cell.reuseIdentifier {
+		case #keyPath(SettingsListViewModel.clockBackgroundColorCell):
 			let colorPickerView = ThemeColorPickerView(colorToSet: .backgroundColor)
 			colorPickerView.title = "Clock Background Color"
 			navigationController?.pushViewController(colorPickerView, animated: true)
-		case viewModel.clockTextColorCell:
+		case #keyPath(SettingsListViewModel.clockTextColorCell):
 			let colorPickerView = ThemeColorPickerView(colorToSet: .textColor)
 			colorPickerView.title = "Clock Text Color"
 			navigationController?.pushViewController(colorPickerView, animated: true)
-		case viewModel.clockFontCell:
+		case #keyPath(SettingsListViewModel.clockFontCell):
 			navigationController?.pushViewController(ThemeFontPickerView(), animated: true)
 		default:
 			return
