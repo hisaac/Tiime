@@ -15,8 +15,6 @@ class SettingsListViewController: UITableViewController {
 		super.viewDidLoad()
 		title = NSLocalizedString("Settings", comment: "Title for the Settings screen")
 
-		viewModel.delegate = self
-
 		navigationItem.largeTitleDisplayMode = .always
 
 		navigationItem.leftBarButtonItem = UIBarButtonItem(
@@ -65,9 +63,7 @@ class SettingsListViewController: UITableViewController {
 				comment: "The header title for the More Info section in Settings"
 			),
 			cells: [
-				viewModel.creditsCell,
-				viewModel.appInfoCell,
-				viewModel.codeCell
+				viewModel.aboutCell
 			]
 		)
 
@@ -127,6 +123,8 @@ class SettingsListViewController: UITableViewController {
 			navigationController?.pushViewController(ThemeFontPickerView(), animated: true)
 		case #keyPath(SettingsListViewModel.appIconCell):
 			navigationController?.pushViewController(ThemeIconPickerView(), animated: true)
+		case #keyPath(SettingsListViewModel.aboutCell):
+			navigationController?.pushViewController(AboutViewController(), animated: true)
 		default:
 			return
 		}

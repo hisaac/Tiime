@@ -4,8 +4,6 @@ import UIKit
 
 class SettingsListViewModel {
 
-	weak var delegate: UITableViewController?
-
 	// MARK: - Clock Settings Cells
 
 	@objc var clockBackgroundColorCell: UITableViewCell {
@@ -90,31 +88,12 @@ class SettingsListViewModel {
 
 	// MARK: - More Info Cells
 
-	@objc var creditsCell: UITableViewCell {
+	@objc var aboutCell: UITableViewCell {
 		let cell = UITableViewCell(style: .default, reuseIdentifier: #function)
+		cell.accessoryType = .disclosureIndicator
 		cell.textLabel?.text = NSLocalizedString(
-			"Credits",
-			comment: "The label for the Credits cell in Settings"
-		)
-
-		return cell
-	}
-
-	@objc var appInfoCell: UITableViewCell {
-		let cell = UITableViewCell(style: .default, reuseIdentifier: #function)
-		cell.textLabel?.text = NSLocalizedString(
-			"App Info",
-			comment: "The label for the App Info cell in Settings"
-		)
-
-		return cell
-	}
-
-	@objc var codeCell: UITableViewCell {
-		let cell = UITableViewCell(style: .default, reuseIdentifier: #function)
-		cell.textLabel?.text = NSLocalizedString(
-			"Code",
-			comment: "The label for the Code cell in Settings"
+			"About",
+			comment: "The label for the About cell in Settings"
 		)
 
 		return cell

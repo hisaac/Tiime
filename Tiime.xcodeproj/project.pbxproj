@@ -65,6 +65,9 @@
 		4A9CEA8721C49FCD0055C846 /* ThemeIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9CEA8621C49FCD0055C846 /* ThemeIcon.swift */; };
 		4A9CEA8A21C53CD20055C846 /* ThemeIconPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9CEA8921C53CD20055C846 /* ThemeIconPickerView.swift */; };
 		4A9CEA8C21C562EE0055C846 /* MasterSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9CEA8B21C562EE0055C846 /* MasterSplitViewController.swift */; };
+		4A9CEA8E21C5B60F0055C846 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9CEA8D21C5B60F0055C846 /* AboutViewController.swift */; };
+		4A9CEA9021C5B88A0055C846 /* AboutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9CEA8F21C5B88A0055C846 /* AboutViewModel.swift */; };
+		4A9CEA9221C5BCA40055C846 /* about.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4A9CEA9121C5BCA40055C846 /* about.txt */; };
 		4AA7C568215143160086C0C1 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7C567215143160086C0C1 /* UIViewController+Extensions.swift */; };
 		4AA7C56A215143D20086C0C1 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7C569215143D20086C0C1 /* SettingsCoordinator.swift */; };
 		4AA7C56D215145C40086C0C1 /* UserDefaultsInteracting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7C56C215145C40086C0C1 /* UserDefaultsInteracting.swift */; };
@@ -180,6 +183,9 @@
 		4A9CEA8621C49FCD0055C846 /* ThemeIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeIcon.swift; sourceTree = "<group>"; };
 		4A9CEA8921C53CD20055C846 /* ThemeIconPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeIconPickerView.swift; sourceTree = "<group>"; };
 		4A9CEA8B21C562EE0055C846 /* MasterSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterSplitViewController.swift; sourceTree = "<group>"; };
+		4A9CEA8D21C5B60F0055C846 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		4A9CEA8F21C5B88A0055C846 /* AboutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewModel.swift; sourceTree = "<group>"; };
+		4A9CEA9121C5BCA40055C846 /* about.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = about.txt; sourceTree = "<group>"; };
 		4AA7C567215143160086C0C1 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		4AA7C569215143D20086C0C1 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
 		4AA7C56C215145C40086C0C1 /* UserDefaultsInteracting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsInteracting.swift; sourceTree = "<group>"; };
@@ -11929,6 +11935,7 @@
 			children = (
 				4A9CEA3F21C49D100055C846 /* App Icons */,
 				4ABAC5682157FE65002F106B /* Fonts */,
+				4A9CEA9121C5BCA40055C846 /* about.txt */,
 				4A1947FB2084457E00AB490D /* Assets.xcassets */,
 				4A1948002084457E00AB490D /* Info.plist */,
 				054B2B57208E16210030B580 /* Tiime.entitlements */,
@@ -11947,6 +11954,8 @@
 				4AF89CD221C1857F00B87E11 /* TableViewSection.swift */,
 				4AFD9F4421594849002927A9 /* MasterNavigationController.swift */,
 				4A9CEA8B21C562EE0055C846 /* MasterSplitViewController.swift */,
+				4A9CEA8D21C5B60F0055C846 /* AboutViewController.swift */,
+				4A9CEA8F21C5B88A0055C846 /* AboutViewModel.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -24321,6 +24330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A9CEA8121C49E690055C846 /* dusk@3x.png in Resources */,
+				4A9CEA9221C5BCA40055C846 /* about.txt in Resources */,
 				4A9CEA8421C49E690055C846 /* evening@3x.png in Resources */,
 				4A9CEA8521C49E690055C846 /* evening.png in Resources */,
 				4A9CEA7521C49E690055C846 /* morning.png in Resources */,
@@ -24417,6 +24427,7 @@
 			files = (
 				4A0BDF3221C15A9F004E4A90 /* ThemeFont.swift in Sources */,
 				4AFBB9F221C31C9900239261 /* ThemeFontPickerView.swift in Sources */,
+				4A9CEA9021C5B88A0055C846 /* AboutViewModel.swift in Sources */,
 				4A1947F52084457D00AB490D /* AppDelegate.swift in Sources */,
 				05D7C89220BB199B00265C47 /* AutoLayout+Extensions.swift in Sources */,
 				0591622420BB1829005D6D47 /* TimeRepresentable.swift in Sources */,
@@ -24449,6 +24460,7 @@
 				4AA7C56A215143D20086C0C1 /* SettingsCoordinator.swift in Sources */,
 				0591622620BB1834005D6D47 /* ClockListViewController.swift in Sources */,
 				4A0BDF2F21C14EDC004E4A90 /* ThemeColor.swift in Sources */,
+				4A9CEA8E21C5B60F0055C846 /* AboutViewController.swift in Sources */,
 				05D7C88920BB198E00265C47 /* MainDependencyContainer.swift in Sources */,
 				4AFD9F4321593E86002927A9 /* SettingsListViewController.swift in Sources */,
 			);
