@@ -29,16 +29,17 @@ enum Theme: Int, CaseIterable {
 extension Theme: UserDefaultsInteracting {
 
 	private enum UserDefaultsKey {
-		static let appTintColor = "appTintColor"
 		static let clockBackgroundColor = "clockBackgroundColor"
 		static let clockFont = "clockFont"
 		static let clockTextColor = "clockTextColor"
 		static let currentTheme = "currentTheme"
+		static let appIcon = "appIcon"
 	}
 
 	enum DefaultValues {
 		static let appTintColor = ThemeColor.purple
 		static let clockFont = ThemeFont.iAWriterDuospace
+		static let appIcon = ThemeIcon.afternoon
 
 		static var clockBackgroundColor: UIColor {
 			switch Theme.current {
@@ -94,6 +95,16 @@ extension Theme: UserDefaultsInteracting {
 		}
 	}
 
+	static var appIcon: ThemeIcon {
+		get {
+			let storedIconName = standardDefaults.string(forKey: UserDefaultsKey.appIcon) ?? DefaultValues.appIcon.rawValue
+			return ThemeIcon(rawValue: storedIconName) ?? DefaultValues.appIcon
+		}
+		set {
+			standardDefaults.set(newValue.rawValue, forKey: UserDefaultsKey.appIcon)
+		}
+	}
+
 }
 
 // MARK: - Defined values by theme type
@@ -139,6 +150,13 @@ extension Theme {
 		switch self {
 		case .light: return nil // resets to default value
 		case .dark: return ThemeColor.lightGray.rawValue
+		}
+	}
+
+	var preferredStatusBarStyle: UIStatusBarStyle {
+		switch self {
+		case .light: return .default
+		case .dark: return .lightContent
 		}
 	}
 

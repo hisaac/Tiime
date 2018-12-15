@@ -20,6 +20,23 @@ class ThemeColorPickerView: UITableViewController {
 		fatalError("init(coder:) has not been implemented")
 	}
 
+	override func viewDidLoad() {
+		super.viewDidLoad()
+
+		switch colorToSet {
+		case .backgroundColor:
+			title = NSLocalizedString(
+				"Clock Background Color",
+				comment: "Title for the Clock Background Color picker screen"
+			)
+		case .textColor:
+			title = NSLocalizedString(
+				"Clock Text Color",
+				comment: "Title for the Clock Text Color picker screen"
+			)
+		}
+	}
+
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return ThemeColor.allCases.count
 	}

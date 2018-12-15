@@ -39,7 +39,6 @@ class ClockListViewController: UITableViewController {
 
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
-		// Reload data to update the label text color
 		tableView.reloadData()
 	}
 

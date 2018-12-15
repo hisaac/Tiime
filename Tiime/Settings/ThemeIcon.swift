@@ -3,8 +3,8 @@
 import UIKit
 
 /// An enum for holding reference to the alternate app icons
-enum ThemeIcon: Int, CaseIterable {
-	case dawn = 0
+enum ThemeIcon: String, CaseIterable {
+	case dawn
 	case sunrise
 	case morning
 	case midmorning

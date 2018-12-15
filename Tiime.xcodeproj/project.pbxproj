@@ -63,6 +63,8 @@
 		4A9CEA8421C49E690055C846 /* evening@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A9CEA6621C49E680055C846 /* evening@3x.png */; };
 		4A9CEA8521C49E690055C846 /* evening.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A9CEA6721C49E680055C846 /* evening.png */; };
 		4A9CEA8721C49FCD0055C846 /* ThemeIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9CEA8621C49FCD0055C846 /* ThemeIcon.swift */; };
+		4A9CEA8A21C53CD20055C846 /* ThemeIconPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9CEA8921C53CD20055C846 /* ThemeIconPickerView.swift */; };
+		4A9CEA8C21C562EE0055C846 /* MasterSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9CEA8B21C562EE0055C846 /* MasterSplitViewController.swift */; };
 		4AA7C568215143160086C0C1 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7C567215143160086C0C1 /* UIViewController+Extensions.swift */; };
 		4AA7C56A215143D20086C0C1 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7C569215143D20086C0C1 /* SettingsCoordinator.swift */; };
 		4AA7C56D215145C40086C0C1 /* UserDefaultsInteracting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7C56C215145C40086C0C1 /* UserDefaultsInteracting.swift */; };
@@ -176,6 +178,8 @@
 		4A9CEA6621C49E680055C846 /* evening@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "evening@3x.png"; sourceTree = "<group>"; };
 		4A9CEA6721C49E680055C846 /* evening.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = evening.png; sourceTree = "<group>"; };
 		4A9CEA8621C49FCD0055C846 /* ThemeIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeIcon.swift; sourceTree = "<group>"; };
+		4A9CEA8921C53CD20055C846 /* ThemeIconPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeIconPickerView.swift; sourceTree = "<group>"; };
+		4A9CEA8B21C562EE0055C846 /* MasterSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterSplitViewController.swift; sourceTree = "<group>"; };
 		4AA7C567215143160086C0C1 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		4AA7C569215143D20086C0C1 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
 		4AA7C56C215145C40086C0C1 /* UserDefaultsInteracting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsInteracting.swift; sourceTree = "<group>"; };
@@ -11940,9 +11944,9 @@
 				4A4DCBA820CC96F70023C56C /* EmptyDetailViewController.swift */,
 				B775650D25ED6FDB73B4C396 /* ClockListViewController.swift */,
 				4A1948242084476C00AB490D /* ClockViewController.swift */,
-				4AF89CD421C1871C00B87E11 /* SettingsListViewModel.swift */,
 				4AF89CD221C1857F00B87E11 /* TableViewSection.swift */,
 				4AFD9F4421594849002927A9 /* MasterNavigationController.swift */,
+				4A9CEA8B21C562EE0055C846 /* MasterSplitViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -11971,8 +11975,10 @@
 				4AA7C56C215145C40086C0C1 /* UserDefaultsInteracting.swift */,
 				4AF89CCE21C1817000B87E11 /* SettingsToggleTableViewCell.swift */,
 				4AFD9F4221593E86002927A9 /* SettingsListViewController.swift */,
+				4AF89CD421C1871C00B87E11 /* SettingsListViewModel.swift */,
 				4A6175FF21C1AD1800E57C01 /* ThemeColorPickerView.swift */,
 				4AFBB9F121C31C9900239261 /* ThemeFontPickerView.swift */,
+				4A9CEA8921C53CD20055C846 /* ThemeIconPickerView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -24414,7 +24420,9 @@
 				4A1947F52084457D00AB490D /* AppDelegate.swift in Sources */,
 				05D7C89220BB199B00265C47 /* AutoLayout+Extensions.swift in Sources */,
 				0591622420BB1829005D6D47 /* TimeRepresentable.swift in Sources */,
+				4A9CEA8C21C562EE0055C846 /* MasterSplitViewController.swift in Sources */,
 				05D7C88720BB198200265C47 /* UnixTime.swift in Sources */,
+				4A9CEA8A21C53CD20055C846 /* ThemeIconPickerView.swift in Sources */,
 				4A066A9A21387729005618C1 /* ClockListCoordinator.swift in Sources */,
 				4A61760021C1AD1800E57C01 /* ThemeColorPickerView.swift in Sources */,
 				4AFD9F4521594849002927A9 /* MasterNavigationController.swift in Sources */,

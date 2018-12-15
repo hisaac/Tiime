@@ -57,8 +57,8 @@ class ClockViewController: UIViewController {
 
 		let guide = view.safeAreaLayoutGuide
 		NSLayoutConstraint.activate([
-			timeLabel.trailingAnchor.constraint(equalTo: guide.trailingAnchor),
-			timeLabel.leadingAnchor.constraint(equalTo: guide.leadingAnchor),
+			timeLabel.trailingAnchor.constraint(equalTo: guide.trailingAnchor, constant: -20),
+			timeLabel.leadingAnchor.constraint(equalTo: guide.leadingAnchor, constant: 20),
 			timeLabel.centerXAnchor.constraint(equalTo: guide.centerXAnchor),
 			timeLabel.centerYAnchor.constraint(equalTo: guide.centerYAnchor)
 		])

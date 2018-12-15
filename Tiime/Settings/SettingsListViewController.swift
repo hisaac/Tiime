@@ -119,24 +119,14 @@ class SettingsListViewController: UITableViewController {
 		switch cell.reuseIdentifier {
 		case #keyPath(SettingsListViewModel.clockBackgroundColorCell):
 			let colorPickerView = ThemeColorPickerView(colorToSet: .backgroundColor)
-
-			colorPickerView.title = NSLocalizedString(
-				"Clock Background Color",
-				comment: "Title for the Clock Background Color picker screen"
-			)
-
 			navigationController?.pushViewController(colorPickerView, animated: true)
 		case #keyPath(SettingsListViewModel.clockTextColorCell):
 			let colorPickerView = ThemeColorPickerView(colorToSet: .textColor)
-
-			colorPickerView.title = NSLocalizedString(
-				"Clock Text Color",
-				comment: "Title for the Clock Text Color picker screen"
-			)
-
 			navigationController?.pushViewController(colorPickerView, animated: true)
 		case #keyPath(SettingsListViewModel.clockFontCell):
 			navigationController?.pushViewController(ThemeFontPickerView(), animated: true)
+		case #keyPath(SettingsListViewModel.appIconCell):
+			navigationController?.pushViewController(ThemeIconPickerView(), animated: true)
 		default:
 			return
 		}

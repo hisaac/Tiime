@@ -10,14 +10,14 @@ protocol MasterCoordinator: class, Coordinator {
 class ApplicationCoordinator {
 
 	let window: UIWindow
-	let rootViewController: UISplitViewController
+	let rootViewController: MasterSplitViewController
 	let masterNavigationController: MasterNavigationController
 	let clockListCoordinator: ClockListCoordinator
 	let settingsCoordinator: SettingsCoordinator
 
 	init(window: UIWindow) {
 		self.window = window
-		rootViewController = UISplitViewController()
+		rootViewController = MasterSplitViewController()
 		masterNavigationController = MasterNavigationController()
 		masterNavigationController.navigationBar.prefersLargeTitles = true
 
@@ -36,7 +36,6 @@ class ApplicationCoordinator {
 		clockListCoordinator.delegate = self
 
 		window.rootViewController = rootViewController
-//		window.tintColor = Theme.appTintColor.uiColor
 		window.makeKeyAndVisible()
 	}
 

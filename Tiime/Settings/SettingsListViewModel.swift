@@ -73,19 +73,24 @@ class SettingsListViewModel {
 		return cell
 	}
 
-	var appIconCell: UITableViewCell {
-		let cell = UITableViewCell(style: .default, reuseIdentifier: #function)
+	@objc var appIconCell: UITableViewCell {
+		let cell = UITableViewCell(style: .value1, reuseIdentifier: #function)
 		cell.textLabel?.text = NSLocalizedString(
 			"App Icon",
 			comment: "The label for the App Icon cell in Settings"
 		)
+
+		cell.accessoryView = UIImageView(image: Theme.appIcon.image)
+		cell.accessoryView?.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+		cell.accessoryView?.layer.cornerRadius = 6
+		cell.accessoryView?.clipsToBounds = true
 
 		return cell
 	}
 
 	// MARK: - More Info Cells
 
-	var creditsCell: UITableViewCell {
+	@objc var creditsCell: UITableViewCell {
 		let cell = UITableViewCell(style: .default, reuseIdentifier: #function)
 		cell.textLabel?.text = NSLocalizedString(
 			"Credits",
@@ -95,7 +100,7 @@ class SettingsListViewModel {
 		return cell
 	}
 
-	var appInfoCell: UITableViewCell {
+	@objc var appInfoCell: UITableViewCell {
 		let cell = UITableViewCell(style: .default, reuseIdentifier: #function)
 		cell.textLabel?.text = NSLocalizedString(
 			"App Info",
@@ -105,7 +110,7 @@ class SettingsListViewModel {
 		return cell
 	}
 
-	var codeCell: UITableViewCell {
+	@objc var codeCell: UITableViewCell {
 		let cell = UITableViewCell(style: .default, reuseIdentifier: #function)
 		cell.textLabel?.text = NSLocalizedString(
 			"Code",

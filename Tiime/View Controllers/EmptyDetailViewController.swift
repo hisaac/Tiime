@@ -17,9 +17,15 @@ class EmptyDetailViewController: UIViewController {
 
 		let emptyDetailLabel = UILabel()
 		emptyDetailLabel.translatesAutoresizingMaskIntoConstraints = false
-		emptyDetailLabel.text = "⏰"
+		emptyDetailLabel.text = """
+			No clock selected
+			Please select one from the list
+			👈
+			"""
+		emptyDetailLabel.textColor = ThemeColor.lightGray.rawValue
+		emptyDetailLabel.numberOfLines = 0
 		emptyDetailLabel.textAlignment = .center
-		emptyDetailLabel.font = UIFont.systemFont(ofSize: 48)
+		emptyDetailLabel.font = UIFont.systemFont(ofSize: UIFont.systemFontSize * 1.5)
 		emptyDetailLabel.adjustsFontForContentSizeCategory = true
 		view.addSubview(emptyDetailLabel)
 
