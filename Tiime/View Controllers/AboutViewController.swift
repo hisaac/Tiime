@@ -13,7 +13,7 @@ class AboutViewController: UITableViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		title = NSLocalizedString("About", comment: "Title for the About screen")
+		title = NSLocalizedString("It's About Tiime", comment: "Title for the About screen")
 		tableView.allowsSelection = true
 		setupSections()
 	}
