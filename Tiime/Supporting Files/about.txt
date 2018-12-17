@@ -1,3 +1,0 @@
-Thanks for checking out Tiime!
-
-Tiime was born out of a fun programming challenge: To try to compute the current time in non-standard ways. After figuring that part out, I realized this would also be a great way to learn iOS development. A simple programming challenge wrapped in a UI.

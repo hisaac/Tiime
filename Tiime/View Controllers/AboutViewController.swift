@@ -70,25 +70,27 @@ class AboutViewController: UITableViewController {
 		tableView.deselectRow(at: indexPath, animated: true)
 
 		let cell = sections[indexPath.section].cells[indexPath.row]
+		var url: URL?
 
 		switch cell.reuseIdentifier {
+		case #keyPath(AboutViewModel.codeCell):
+			url = URL(staticString: "https://github.com/hisaac/tiime/")
 		case #keyPath(AboutViewModel.hisaacTwitterCell):
-			let hisaacTwitterURL = URL(staticString: "https://twitter.com/hisaac/")
-			UIApplication.shared.open(hisaacTwitterURL, options: [:])
+			url = URL(staticString: "https://twitter.com/hisaac/")
 		case #keyPath(AboutViewModel.isaacWebsiteCell):
-			let isaacWebsiteURL = URL(staticString: "https://hisaac.net/")
-			UIApplication.shared.open(isaacWebsiteURL, options: [:])
+			url = URL(staticString: "https://hisaac.net/")
 		case #keyPath(AboutViewModel.isaacEmailCell):
-			let isaacEmailURL = URL(staticString: "mailto:tiime@level.software")
-			UIApplication.shared.open(isaacEmailURL, options: [:])
+			url = URL(staticString: "mailto:tiime@level.software")
 		case #keyPath(AboutViewModel.thanksRyanCell):
-			let ryanTwitterURL = URL(staticString: "https://twitter.com/beautyislikeyea/")
-			UIApplication.shared.open(ryanTwitterURL, options: [:])
+			url = URL(staticString: "https://twitter.com/beautyislikeyea/")
 		case #keyPath(AboutViewModel.thanksEliCell):
-			let eliWebsiteURL = URL(staticString: "https://eli.li/")
-			UIApplication.shared.open(eliWebsiteURL, options: [:])
+			url = URL(staticString: "https://eli.li/")
 		default:
 			return
+		}
+
+		if let url = url {
+			UIApplication.shared.open(url, options: [:])
 		}
 	}
 

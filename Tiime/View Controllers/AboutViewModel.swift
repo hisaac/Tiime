@@ -1,20 +1,27 @@
 // Created by Isaac Halvorson on 12/15/18
 
+// swiftlint:disable line_length
+
 import os.log
 import UIKit
 
 class AboutViewModel {
 
-	@objc let aboutCell: UITableViewCell = {
+	@objc var aboutCell: UITableViewCell {
 		let cell = UITableViewCell(style: .default, reuseIdentifier: #function)
 
-		cell.textLabel?.text = aboutText
+		cell.textLabel?.text = """
+			Thanks for checking out Tiime!
+
+			Tiime was born out of a fun programming challenge: To try to compute the current time in non-standard ways. After figuring that part out, I realized this would also be a great way to learn iOS development. A simple programming challenge wrapped in a UI.
+			"""
+
 		cell.textLabel?.textColor = Theme.current.tableViewTextColor
 		cell.textLabel?.lineBreakMode = .byWordWrapping
 		cell.textLabel?.numberOfLines = 0
 
 		return cell
-	}()
+	}
 
 	@objc var codeCell: UITableViewCell {
 		let cell = UITableViewCell(style: .subtitle, reuseIdentifier: #function)
@@ -101,24 +108,5 @@ class AboutViewModel {
 
 		return cell
 	}
-
-	static let aboutText: String = {
-		guard let aboutTextFilePath = Bundle.main.path(forResource: "about", ofType: "txt") else {
-			return ""
-		}
-
-		do {
-			let aboutText = try String(contentsOfFile: aboutTextFilePath)
-			return String(aboutText.dropLast()) // Drop the last newline character
-		} catch {
-			if #available(iOS 12.0, *) {
-				os_log(.error, "Error looking up about.txt file: %@", error.localizedDescription)
-			} else {
-				os_log("Error looking up about.txt file: %@", log: .default, type: .error, error.localizedDescription)
-			}
-
-			return ""
-		}
-	}()
 
 }
