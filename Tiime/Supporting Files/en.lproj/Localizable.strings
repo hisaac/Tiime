@@ -8,15 +8,15 @@
 
 // Time Types
 ".beat Time" = ".beat Time";
-"Device Time" = "Device Time";
 "Unix Time" = "Unix Time";
 "Metric Time" = "Metric Time";
+"Device Time" = "Device Time";
 
 // Time Descriptions
 "The day is divided into 1000 \"beats\"" = "The day is divided into 1000 \"beats\"";
-"The time displayed in the default way for the device's locale" = "The time displayed in the default way for the device's locale";
 "The amount of seconds since January 1, 1970" = "The amount of seconds since January 1, 1970";
 "The day is divided into units of tenths, hundredths, thousands, etc." = "The day is divided into units of tenths, hundredths, thousands, etc.";
+"The time displayed in the default way for the device's locale" = "The time displayed in the default way for the device's locale";
 
 // Settings Section Headers
 "⏰ Clock Style" = "⏰ Clock Style";
