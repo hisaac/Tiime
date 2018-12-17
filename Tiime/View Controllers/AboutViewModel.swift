@@ -13,7 +13,7 @@ class AboutViewModel {
 		cell.textLabel?.text = """
 			Thanks for checking out Tiime!
 
-			Tiime was born out of a fun programming challenge: To try to compute the current time in non-standard ways. After figuring that part out, I realized this would also be a great way to learn iOS development. A simple programming challenge wrapped in a UI.
+			Tiime was born out of a fun programming challenge: To try to compute the current time in non-standard ways. After figuring that part out, I realized this would also be a great way to learn more about iOS development. I was especially interested in learning how to better develop user interfaces within Apple's guidelines and style.
 			"""
 
 		cell.textLabel?.textColor = Theme.current.tableViewTextColor
@@ -29,7 +29,7 @@ class AboutViewModel {
 		cell.textLabel?.text = "Tiime on GitHub"
 		cell.textLabel?.textColor = Theme.current.appTintColor
 
-		cell.detailTextLabel?.text = "Visit Tiime's GitHub project for more technical information and implementation details, and to see the code"
+		cell.detailTextLabel?.text = "Visit Tiime's GitHub project for more information, including technical information and implementation details. All the code is open source!"
 		cell.detailTextLabel?.lineBreakMode = .byWordWrapping
 		cell.detailTextLabel?.numberOfLines = 0
 		cell.detailTextLabel?.textColor = Theme.current.tableViewTextColor
