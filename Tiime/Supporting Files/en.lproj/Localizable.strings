@@ -40,3 +40,13 @@
 "App Icon" = "App Icon";
 "About" = "About";
 "It's About Tiime" = "It's About Tiime";
+
+// About Page
+"aboutScreenDescription" = "Thanks for checking out Tiime!\n\nTiime was born out of a fun programming challenge: To try to compute the current time in non-standard ways. After figuring that part out, I realized this would also be a great way to learn more about iOS development. I was especially interested in learning how to better develop user interfaces within Apple's guidelines and style.";
+"Tiime on GitHub" = "Tiime on GitHub";
+"aboutScreenGitHubLinkDescription" = "Visit Tiime's GitHub project for more information, including technical information and implementation details. All the code is open source!";
+"Follow the developer on Twitter" = "Follow the developer on Twitter";
+"Visit the developer's website" = "Visit the developer's website";
+"Send feedback or ideas about the app" = "Send feedback or ideas about the app";
+"Designed the app's beautiful icons" = "Designed the app's beautiful icons";
+"QA testing and wicked helpful app feedback" = "QA testing and wicked helpful app feedback";
