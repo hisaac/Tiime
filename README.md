@@ -50,9 +50,44 @@ Would you like to beta test the app? Send me an email at [tiime@level.software](
 
 I'm developing the app in the open because I believe in Open Source, and it would be fun if others wanted to collaborate on the project. I'm new to iOS development, so I am _very_ open to any suggestions you might have. I'd especially love recommendations on how to architect the project. I'd like to make it as modular as reasonably possible.
 
+#### Architecture
+
+I've architected the app using the Coordinator pattern, originally conceived of by Soroush Khanlou in a blog post titled [<cite>The Coordinator</cite>](http://khanlou.com/2015/01/the-coordinator/). He wrote a followup titled [<cite>Coordinators Redux</cite>](http://khanlou.com/2015/10/coordinators-redux/) which is also a great read. Since Khanlou's initial idea, the topic has been written about extensively, so it shouldn't be difficult to find information on it online.
+
+Essentially, the flow of the application is handled by a "Coordinator", a special type of class whose purpose is to coordinate movement and communication between view controllers. Tiime's coordinators are relatively simple (as the app itself is relatively simple). There is an `ApplicationCoordinator` that coordinates things at the highest level, and then a `ClockListCooordinator` and a `SettingsListCoordinator` below that. Most of the interesting bits are in the `ApplicationCoordinator`.
+
+#### UI Design
+
+I tried to follow Apple's general design guidelines throughout the app, and rely on native APIs where I could. I also chose to do all UI work in code rather than through Storbyoards, both as a way to challenge myself, and to learn about interacting with UIKit through code.
+
+At the highest level there is a `UISplitViewController` which handles switching between the primary and secondary views on compact width devices (most iPhones), and displaying both the primary and secondary views at once on normal width devices (all iPads, and some iPhones when in landscape mode).
+
 #### Bootstrapping Instructions
 
-The project currently has no external dependencies, so you should be able to build and run it directly after cloning the project locally.
+The project's only external dependencies are its fonts, which are setup as git submodules. To clone the project and also the submodules, include the `--recurse-submodules` flag in your `git clone` command. Like so:
+
+```shell
+git clone --recurse-submodules https://github.com/hisaac/Tiime.git
+```
+
+Then, to update the submodules in the future, use the following command:
+
+```shell
+git submodule update --recursive
+```
+
+Alternately, you can add the following entry to your `.gitconfig` so that doing a `git pull` will also update any submodules in the project:
+
+```plain
+[submodule]
+	recurse = true
+```
+
+## Thanks
+
+- [Ryan Lower](https://twitter.com/beautyislikeyea) designed the app's beautiful icons.
+- [Eli Mellen](https://eli.li/) ([@eli-oat](https://github.com/eli-oat/)) was wicked helpful with QA and general app feedback.
+- [Katie Holmes](https://krholmes.com) gave me some valuable UX feedback, and helped me with some Adobe Illustrator and Sketch questions.
 
 ## Acknowledgements
 
@@ -65,4 +100,5 @@ The project currently has no external dependencies, so you should be able to bui
 
 All of the resources I used when building Tiime:
 
+- Countless [StackOverflow](https://stackoverflow.com) posts.
 - [<cite>UIKit init Patterns</cite>](https://theswiftdev.com/2017/10/11/uikit-init-patterns/) - Explains some good practices to use when initializing a UIViewController or UIView from code. I found that overriding the init methods isn't quite as easy as I expected, mainly because UIKit elements can be initialized from code, or from Interface Builder, and there are built-in initializer methods you have to use/override in order to also implement a custom one.
