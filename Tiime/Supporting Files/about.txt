@@ -1,5 +1,3 @@
-Thanks for downloading my app!
+Thanks for checking out Tiime!
 
 Tiime was born out of a fun programming challenge: To try to compute the current time in non-standard ways. After figuring that part out, I realized this would also be a great way to learn iOS development. A simple programming challenge wrapped in a UI.
-
-If you'd like to read more about the technical aspects of the project, or take a look at the code (it's open source), you can visit the readme or the GitHub page by tapping the links below.

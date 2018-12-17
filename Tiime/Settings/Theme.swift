@@ -168,8 +168,6 @@ extension Theme {
 		UITableView.appearance().backgroundColor = backgroundColor
 		UITableView.appearance().separatorColor = tableViewSeparatorColor
 
-		UILabel.appearance().textColor = appTintColor
-
 		UIApplication.shared.windows.forEach { window in
 			window.subviews.forEach { subview in
 				subview.removeFromSuperview()

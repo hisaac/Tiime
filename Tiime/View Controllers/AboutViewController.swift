@@ -19,17 +19,31 @@ class AboutViewController: UITableViewController {
 	}
 
 	func setupSections() {
-		let aboutSection = TableViewSection(cells: [viewModel.aboutCell])
+		let aboutSection = TableViewSection(
+			cells: [
+				viewModel.aboutCell,
+				viewModel.codeCell
+			]
+		)
+
+		let developerSection = TableViewSection(
+			header: "👨🏻‍💻 Developer",
+			cells: [
+				viewModel.hisaacTwitterCell,
+				viewModel.isaacWebsiteCell,
+				viewModel.isaacEmailCell
+			]
+		)
 
 		let thanksSection = TableViewSection(
 			header: "🙏 Thanks",
 			cells: [
-				viewModel.thanksRyanCell
-			],
-			footer: "Thanks also to Katie Holmes for helping me with Adobe Illustrator and Sketch"
+				viewModel.thanksRyanCell,
+				viewModel.thanksEliCell
+			]
 		)
 
-		sections = [aboutSection, thanksSection]
+		sections = [aboutSection, developerSection, thanksSection]
 	}
 
 	override func numberOfSections(in tableView: UITableView) -> Int {
@@ -49,9 +63,7 @@ class AboutViewController: UITableViewController {
 	}
 
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		let cell = sections[indexPath.section].cells[indexPath.row]
-		cell.textLabel?.textColor = Theme.current.tableViewTextColor
-		return cell
+		return sections[indexPath.section].cells[indexPath.row]
 	}
 
 	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -60,12 +72,34 @@ class AboutViewController: UITableViewController {
 		let cell = sections[indexPath.section].cells[indexPath.row]
 
 		switch cell.reuseIdentifier {
+		case #keyPath(AboutViewModel.hisaacTwitterCell):
+			let hisaacTwitterURL = URL(staticString: "https://twitter.com/hisaac/")
+			UIApplication.shared.open(hisaacTwitterURL, options: [:])
+		case #keyPath(AboutViewModel.isaacWebsiteCell):
+			let isaacWebsiteURL = URL(staticString: "https://hisaac.net/")
+			UIApplication.shared.open(isaacWebsiteURL, options: [:])
+		case #keyPath(AboutViewModel.isaacEmailCell):
+			let isaacEmailURL = URL(staticString: "mailto:tiime@level.software")
+			UIApplication.shared.open(isaacEmailURL, options: [:])
 		case #keyPath(AboutViewModel.thanksRyanCell):
-			guard let ryanTwitterURL = URL(string: "https://twitter.com/beautyislikeyea") else { return }
+			let ryanTwitterURL = URL(staticString: "https://twitter.com/beautyislikeyea/")
 			UIApplication.shared.open(ryanTwitterURL, options: [:])
+		case #keyPath(AboutViewModel.thanksEliCell):
+			let eliWebsiteURL = URL(staticString: "https://eli.li/")
+			UIApplication.shared.open(eliWebsiteURL, options: [:])
 		default:
 			return
 		}
 	}
 
+}
+
+extension URL {
+	init(staticString string: StaticString) {
+		guard let url = URL(string: "\(string)") else {
+			preconditionFailure("Invalid static URL string: \(string)")
+		}
+
+		self = url
+	}
 }
