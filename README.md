@@ -1,12 +1,18 @@
-# Tiime
-
 <figure align="center">
 	<a href="./assets/app-icon/06 - afternoon/afternoon-83.5@2x.png">
-		<img src="./assets/app-icon/06 - afternoon/afternoon-1024@1x.png" alt="Tiime's app icon, designed by Ryan Lower" width="50%">
+		<img src="./assets/app-icon/06 - afternoon/afternoon-1024@1x.png" alt="Tiime's app icon, designed by Ryan Lower" title="Tiime's app icon, designed by Ryan Lower" width="50%">
 	</a>
 	<figcaption>
 		Tiime's app icon, designed by <a href="https://twitter.com/beautyislikeyea">Ryan Lower</a>
 	</figcaption>
+</figure>
+
+# Tiime
+
+<figure>
+	<a href="https://itunes.apple.com/us/app/tiime-alternative-time-clock/id1396505395?ls=1&mt=8">
+		<img src="./assets/app-store-assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download Tiime on the iOS App Store">
+	</a>
 </figure>
 
 Tiime is two things:
@@ -16,7 +22,7 @@ Tiime is two things:
 
 ## About Tiime
 
-The idea for Tiime came after listening to an episode of the late <cite>TLDR</cite> podcast (hosted by <cite>Reply All's</cite> [PJ Vogt](https://twitter.com/PJVogt) and [Alex Goldman](https://twitter.com/agoldmund)) titled [<cite>Internet Time</cite>](https://www.wnyc.org/story/15-internet-time/). In it, PJ talks about Swatch's 1998 attempt to reinvent our concept of time by inventing [Internet Time (or _.beat time_)](https://en.wikipedia.org/wiki/Swatch_Internet_Time). In _.beat time_, the day is divided into 1000 "beats" of equal length (1 beat = 86.4 seconds). The experiment ultimately has fallen by the wayside, but there are still a scant few people in the world that use — or at least appreciate — the concept.
+The idea for Tiime came after listening to an episode of the late <cite>TLDR</cite> podcast (hosted by [<cite>Reply All's</cite>](https://www.gimletmedia.com/reply-all/) [PJ Vogt](https://twitter.com/PJVogt) and [Alex Goldman](https://twitter.com/agoldmund)) titled [<cite>Internet Time</cite>](https://www.wnyc.org/story/15-internet-time/). In it, PJ talks about Swatch's 1998 attempt to reinvent our concept of time by inventing [Internet Time (or _.beat time_)](https://en.wikipedia.org/wiki/Swatch_Internet_Time). In _.beat time_, the day is divided into 1000 "beats" of equal length (1 beat = 86.4 seconds). The experiment ultimately has fallen by the wayside, but there are still a scant few people in the world that use — or at least appreciate — the concept.
 
 I decided it would be an interesting experiment to try to make a clock that told time in beats. As this is a simple enough idea, I also realized that it would be a great way to easily and quickly learn about iOS development as a whole. I plan to bring the app to as many platforms as possible (iOS, watchOS, tvOS, macOS), use as many features and niceties as I can (iOS and macOS Today extensions, Apple Watch complication, CarPlay, macOS screen saver, etc.), and try out various iOS development tools ([AppCode](https://www.jetbrains.com/objc/), [fastlane](https://fastlane.tools), [TestFlight](https://developer.apple.com/testflight/), app localization & translation, [RxSwift](https://github.com/ReactiveX/RxSwift/), [ReSwift](https://github.com/ReSwift/ReSwift), [Carthage](https://github.com/Carthage/Carthage), etc.).
 
