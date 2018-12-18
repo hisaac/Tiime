@@ -1,21 +1,19 @@
-<figure align="center">
+<p align="center">
 	<a href="./assets/app-icon/06 - afternoon/afternoon-83.5@2x.png">
 		<img src="./assets/app-icon/06 - afternoon/afternoon-1024@1x.png" alt="Tiime's app icon, designed by Ryan Lower" title="Tiime's app icon, designed by Ryan Lower" width="50%">
-	</a>
-	<figcaption>
-		<p>
-			Tiime's app icon, designed by <a href="https://twitter.com/beautyislikeyea">Ryan Lower</a>
-		</p>
-	</figcaption>
-</figure>
+	</a><br />
+	<caption>
+		Tiime's app icon, designed by <a href="https://twitter.com/beautyislikeyea">Ryan Lower</a>
+	</caption>
+</p>
 
 # Tiime
 
-<figure>
+<p>
 	<a href="https://itunes.apple.com/us/app/tiime-alternative-time-clock/id1396505395?ls=1&mt=8">
 		<img src="./assets/app-store-assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download Tiime on the iOS App Store" title="Download Tiime on the iOS App Store">
 	</a>
-</figure>
+</p>
 
 Tiime is two things:
 
@@ -28,17 +26,15 @@ The idea for Tiime came after listening to an episode of the late <cite>TLDR</ci
 
 I decided it would be an interesting experiment to try to make a clock that told time in beats. As this is a simple enough idea, I also realized that it would be a great way to easily and quickly learn about iOS development as a whole. I plan to bring the app to as many platforms as possible (iOS, watchOS, tvOS, macOS), use as many features and niceties as I can (iOS and macOS Today extensions, Apple Watch complication, CarPlay, macOS screen saver, etc.), and try out various iOS development tools ([AppCode](https://www.jetbrains.com/objc/), [fastlane](https://fastlane.tools), [TestFlight](https://developer.apple.com/testflight/), app localization & translation, [RxSwift](https://github.com/ReactiveX/RxSwift/), [ReSwift](https://github.com/ReSwift/ReSwift), [Carthage](https://github.com/Carthage/Carthage), etc.).
 
-<figure align="center">
+<p align="center">
 	<a href="./assets/screenshots/1.0.0/iPhone/6.5-inch/06-clock-fullscreen.png">
 		<img src="./assets/screenshots/1.0.0/iPhone/6.5-inch/06-clock-fullscreen.png" alt="Landscape view of .beat time in version 1.0.0" title="Landscape view of .beat time in version 1.0.0" width="75%">
-	</a>
-	<figcaption>
-		<p>
-			Landscape view of .beat time in version 1.0.0<br />
-			<small><a href="./assets/screenshots/">Click here for more screenshots</a></small>
-		</p>
-	</figcaption>
-</figure>
+	</a><br />
+	<caption>
+		Landscape view of .beat time in version 1.0.0<br />
+		<small><a href="./assets/screenshots/">Click here for more screenshots</a></small>
+	</caption>
+</p>
 
 ### Architecture
 
