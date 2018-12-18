@@ -3,7 +3,9 @@
 		<img src="./assets/app-icon/06 - afternoon/afternoon-1024@1x.png" alt="Tiime's app icon, designed by Ryan Lower" title="Tiime's app icon, designed by Ryan Lower" width="50%">
 	</a>
 	<figcaption>
-		Tiime's app icon, designed by <a href="https://twitter.com/beautyislikeyea">Ryan Lower</a>
+		<p>
+			Tiime's app icon, designed by <a href="https://twitter.com/beautyislikeyea">Ryan Lower</a>
+		</p>
 	</figcaption>
 </figure>
 
@@ -11,7 +13,7 @@
 
 <figure>
 	<a href="https://itunes.apple.com/us/app/tiime-alternative-time-clock/id1396505395?ls=1&mt=8">
-		<img src="./assets/app-store-assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download Tiime on the iOS App Store">
+		<img src="./assets/app-store-assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download Tiime on the iOS App Store" title="Download Tiime on the iOS App Store">
 	</a>
 </figure>
 
@@ -28,11 +30,13 @@ I decided it would be an interesting experiment to try to make a clock that told
 
 <figure align="center">
 	<a href="./assets/screenshots/1.0.0/iPhone/6.5-inch/06-clock-fullscreen.png">
-		<img src="./assets/screenshots/1.0.0/iPhone/6.5-inch/06-clock-fullscreen.png" alt="Landscape view of .beat time in version 1.0.0" width="75%">
+		<img src="./assets/screenshots/1.0.0/iPhone/6.5-inch/06-clock-fullscreen.png" alt="Landscape view of .beat time in version 1.0.0" title="Landscape view of .beat time in version 1.0.0" width="75%">
 	</a>
 	<figcaption>
-		Landscape view of .beat time in version 1.0.0<br />
-		<small><a href="./assets/screenshots/">Click here for more screenshots</a></small>
+		<p>
+			Landscape view of .beat time in version 1.0.0<br />
+			<small><a href="./assets/screenshots/">Click here for more screenshots</a></small>
+		</p>
 	</figcaption>
 </figure>
 
