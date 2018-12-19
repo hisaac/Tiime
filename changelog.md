@@ -15,5 +15,5 @@ App Store link: <https://itunes.apple.com/us/app/tiime-alternative-time-clock/id
 
 - Initial release!
 
-[Unreleased]: https://github.com/hisaac/tiime/compare/master...head
+[Unreleased]: https://github.com/hisaac/tiime/compare/master...development
 [1.0.0]: https://github.com/hisaac/tiime/compare/f456065f95fddbf01029df8334e12ca5a3e44459...1.0.0
