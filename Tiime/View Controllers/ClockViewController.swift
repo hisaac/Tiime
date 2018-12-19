@@ -19,7 +19,7 @@ class ClockViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		title = timeType.timeTypeTitle
+		title = timeType.name
 		navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
 		navigationItem.leftItemsSupplementBackButton = true
 

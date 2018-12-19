@@ -7,8 +7,15 @@ struct UnixTime: TimeRepresentable {
 		return Date().unixTimeForDisplay
 	}
 
-	var timeTypeTitle: String {
-		return ClockType.unix.name
+	var name: String {
+		return NSLocalizedString("Unix Time", comment: "Name of Unix Time")
+	}
+
+	var description: String {
+		return NSLocalizedString(
+			"The amount of seconds since January 1, 1970",
+			comment: "Description for Unix Time"
+		)
 	}
 }
 

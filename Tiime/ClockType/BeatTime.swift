@@ -20,8 +20,15 @@ struct BeatTime: TimeRepresentable {
 		return "@\(beatTimeString)"
 	}
 
-	var timeTypeTitle: String {
-		return ClockType.beat.name
+	var name: String {
+		return NSLocalizedString(".beat Time", comment: "Name of .beat Time")
+	}
+
+	var description: String {
+		return NSLocalizedString(
+			"The day is divided into 1000 \"beats\"",
+			comment: "Description for .beat Time"
+		)
 	}
 }
 

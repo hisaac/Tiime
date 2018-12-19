@@ -11,7 +11,14 @@ struct DeviceTime: TimeRepresentable {
 		)
 	}
 
-	var timeTypeTitle: String {
-		return ClockType.device.name
+	var name: String {
+		return NSLocalizedString("Device Time", comment: "Name of Device Time")
+	}
+
+	var description: String {
+		return NSLocalizedString(
+			"The time displayed in the default way for the device's locale",
+			comment: "Description for Device Time"
+		)
 	}
 }

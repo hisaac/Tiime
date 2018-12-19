@@ -23,40 +23,4 @@ extension ClockType {
 		}
 	}
 
-	/// The name of each ClockType
-	var name: String {
-		switch self {
-		case .beat:   return NSLocalizedString(".beat Time", comment: "Name of .beat Time")
-		case .unix:   return NSLocalizedString("Unix Time", comment: "Name of Unix Time")
-		case .metric: return NSLocalizedString("Metric Time", comment: "Name of Metric Time")
-		case .device: return NSLocalizedString("Device Time", comment: "Name of Device Time")
-		}
-	}
-
-	/// The description of each ClockType
-	var description: String {
-		switch self {
-		case .beat:
-			return NSLocalizedString(
-				"The day is divided into 1000 \"beats\"",
-				comment: "Description for .beat Time"
-			)
-		case .unix:
-			return NSLocalizedString(
-				"The amount of seconds since January 1, 1970",
-				comment: "Description for Unix Time"
-			)
-		case .metric:
-			return NSLocalizedString(
-				"The day is divided into units of tenths, hundredths, thousands, etc.",
-				comment: "Description for Metric Time"
-			)
-		case .device:
-			return NSLocalizedString(
-				"The time displayed in the default way for the device's locale",
-				comment: "Description for Device Time"
-			)
-		}
-	}
-
 }

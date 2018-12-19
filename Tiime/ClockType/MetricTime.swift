@@ -13,8 +13,15 @@ struct MetricTime: TimeRepresentable {
 		return "\(metricTimeString) UMT"
 	}
 
-	var timeTypeTitle: String {
-		return ClockType.metric.name
+	var name: String {
+		return NSLocalizedString("Metric Time", comment: "Name of Metric Time")
+	}
+
+	var description: String {
+		return NSLocalizedString(
+			"The day is divided into units of tenths, hundredths, thousands, etc.",
+			comment: "Description for Metric Time"
+		)
 	}
 }
 

@@ -4,5 +4,6 @@ import Foundation
 
 protocol TimeRepresentable {
 	var timeForDisplay: String { get }
-	var timeTypeTitle: String { get }
+	var name: String { get }
+	var description: String { get }
 }
