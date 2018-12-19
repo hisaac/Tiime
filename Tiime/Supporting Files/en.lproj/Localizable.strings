@@ -10,13 +10,15 @@
 ".beat Time" = ".beat Time";
 "Unix Time" = "Unix Time";
 "Metric Time" = "Metric Time";
+"Hexidecimal Time" = "Hexidecimal Time";
 "Device Time" = "Device Time";
 
 // Time Descriptions
-"The day is divided into 1000 \"beats\"" = "The day is divided into 1000 \"beats\"";
-"The amount of seconds since January 1, 1970" = "The amount of seconds since January 1, 1970";
-"The day is divided into units of tenths, hundredths, thousands, etc." = "The day is divided into units of tenths, hundredths, thousands, etc.";
-"The time displayed in the default way for the device's locale" = "The time displayed in the default way for the device's locale";
+".beatTimeDescription" = "The day is divided into 1000 \"beats\"";
+"UnixTimeDescription" = "The amount of seconds since January 1, 1970";
+"MetricTimeDescription" = "The day is divided into units of tenths, hundredths, thousands, etc.";
+"DeviceTimeDescription" = "The time displayed in the default way for the device's locale";
+"HexidecimalTimeDescription" = "HexidecimalTimeDescription";
 
 // Settings Section Headers
 "⏰ Clock Style" = "⏰ Clock Style";

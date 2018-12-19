@@ -26,13 +26,14 @@ struct BeatTime: TimeRepresentable {
 
 	var description: String {
 		return NSLocalizedString(
-			"The day is divided into 1000 \"beats\"",
+			".beatTimeDescription",
 			comment: "Description for .beat Time"
 		)
 	}
 }
 
 extension Date {
+
 	/// Returns the .beat time representation of the given date
 	var beatTime: Double {
 		// Set the calendar's time zone to BMT (Biel Mean Time = GMT+01)
@@ -44,7 +45,8 @@ extension Date {
 		let startOfDay = calendar.startOfDay(for: self)
 		let seconds = timeIntervalSince(startOfDay)
 
-		// There are 86.4 seconds in a beat
-		return seconds / 86.4
+		let secondsInABeat = 86.4
+
+		return seconds / secondsInABeat
 	}
 }

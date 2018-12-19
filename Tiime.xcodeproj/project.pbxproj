@@ -76,6 +76,7 @@
 		4ABAF3282157FED0002F106B /* Hack-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4ABADEEA2157FE8A002F106B /* Hack-Regular.ttf */; };
 		4ABAF3292157FED9002F106B /* LCD14.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4ABADF042157FE8A002F106B /* LCD14.otf */; };
 		4ABAF32A2157FEE5002F106B /* iAWriterDuospace-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4ABAF3272157FE9D002F106B /* iAWriterDuospace-Regular.otf */; };
+		4AF2F94821CAADE0009AC824 /* HexidecimalTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF2F94721CAADE0009AC824 /* HexidecimalTime.swift */; };
 		4AF89CCF21C1817000B87E11 /* SettingsToggleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF89CCE21C1817000B87E11 /* SettingsToggleTableViewCell.swift */; };
 		4AF89CD321C1857F00B87E11 /* TableViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF89CD221C1857F00B87E11 /* TableViewSection.swift */; };
 		4AF89CD521C1871C00B87E11 /* SettingsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF89CD421C1871C00B87E11 /* SettingsListViewModel.swift */; };
@@ -188,7 +189,7 @@
 		4AA7C569215143D20086C0C1 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
 		4AA7C56C215145C40086C0C1 /* UserDefaultsInteracting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsInteracting.swift; sourceTree = "<group>"; };
 		4AA7C56E2151462E0086C0C1 /* SettingsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsService.swift; sourceTree = "<group>"; };
-		4AB48B0E21628FA70010B2A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4AB48B0E21628FA70010B2A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; wrapsLines = 1; };
 		4AB48B112162900F0010B2A9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4ABAC56A2157FE65002F106B /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		4ABAC56E2157FE65002F106B /* ttfautohint-build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "ttfautohint-build.sh"; sourceTree = "<group>"; };
@@ -11850,6 +11851,7 @@
 		4ABAF3252157FE9D002F106B /* iAWriterDuospace-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iAWriterDuospace-Bold.otf"; sourceTree = "<group>"; };
 		4ABAF3262157FE9D002F106B /* iAWriterDuospace-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iAWriterDuospace-BoldItalic.otf"; sourceTree = "<group>"; };
 		4ABAF3272157FE9D002F106B /* iAWriterDuospace-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iAWriterDuospace-Regular.otf"; sourceTree = "<group>"; };
+		4AF2F94721CAADE0009AC824 /* HexidecimalTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexidecimalTime.swift; sourceTree = "<group>"; };
 		4AF89CCE21C1817000B87E11 /* SettingsToggleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsToggleTableViewCell.swift; sourceTree = "<group>"; };
 		4AF89CD221C1857F00B87E11 /* TableViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSection.swift; sourceTree = "<group>"; };
 		4AF89CD421C1871C00B87E11 /* SettingsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsListViewModel.swift; sourceTree = "<group>"; };
@@ -11883,6 +11885,7 @@
 				293745D13632115B8C657D8C /* BeatTime.swift */,
 				293747B6D6301FA2C480F22E /* UnixTime.swift */,
 				058DBD9C20DD702F00657F74 /* MetricTime.swift */,
+				4AF2F94721CAADE0009AC824 /* HexidecimalTime.swift */,
 				29374A591C59721178F9F4E6 /* DeviceTime.swift */,
 				29374B50DEF45E2A99EBF931 /* ClockType.swift */,
 				29374C927DD5E25D74807B5B /* TimeRepresentable.swift */,
@@ -24433,6 +24436,7 @@
 				4A066A9A21387729005618C1 /* ClockListCoordinator.swift in Sources */,
 				4A61760021C1AD1800E57C01 /* ThemeColorPickerView.swift in Sources */,
 				4AFD9F4521594849002927A9 /* MasterNavigationController.swift in Sources */,
+				4AF2F94821CAADE0009AC824 /* HexidecimalTime.swift in Sources */,
 				4AA7C56D215145C40086C0C1 /* UserDefaultsInteracting.swift in Sources */,
 				4AF89CCF21C1817000B87E11 /* SettingsToggleTableViewCell.swift in Sources */,
 				4A066A9421386ED6005618C1 /* Coordinator.swift in Sources */,

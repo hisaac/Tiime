@@ -19,7 +19,7 @@ struct MetricTime: TimeRepresentable {
 
 	var description: String {
 		return NSLocalizedString(
-			"The day is divided into units of tenths, hundredths, thousands, etc.",
+			"MetricTimeDescription",
 			comment: "Description for Metric Time"
 		)
 	}

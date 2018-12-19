@@ -13,7 +13,7 @@ struct UnixTime: TimeRepresentable {
 
 	var description: String {
 		return NSLocalizedString(
-			"The amount of seconds since January 1, 1970",
+			"UnixTimeDescription",
 			comment: "Description for Unix Time"
 		)
 	}
