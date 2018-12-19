@@ -104,7 +104,7 @@ Alternately, you can add the following entry to your `.gitconfig` so that doing 
 - [Eli Mellen](https://eli.li/) ([@eli-oat](https://github.com/eli-oat/)) was wicked helpful with QA and general app feedback.
 	- Eli even built a [web version of Tiime](https://tiime.eli.li) in JavaScript! Check out the code here: <https://github.com/eli-oat/tiime-web>
 - [Katie Holmes](https://krholmes.com) gave me some valuable UX feedback, and helped me with some Adobe Illustrator and Sketch questions.
-- My friend Sai for QA testing and general app feedback.
+- My friend Ryan Terrell for additional QA testing and general app feedback.
 
 ## Acknowledgements/Resources
 
