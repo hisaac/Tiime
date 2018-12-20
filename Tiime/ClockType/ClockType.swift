@@ -7,7 +7,7 @@ enum ClockType: CaseIterable {
 	case beat   // Swatch .beat time / Internet Time
 	case unix   // Unix time / Epoch time
 	case metric // Metric Time
-	case hexidecimal
+	case hexadecimal
 	case device // The time displayed based on the device's setting
 
 }
@@ -20,7 +20,7 @@ extension ClockType {
 		case .beat:   return BeatTime()
 		case .unix:   return UnixTime()
 		case .metric: return MetricTime()
-		case .hexidecimal: return HexidecimalTime()
+		case .hexadecimal: return HexadecimalTime()
 		case .device: return DeviceTime()
 		}
 	}
