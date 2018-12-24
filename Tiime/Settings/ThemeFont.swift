@@ -4,7 +4,7 @@ import UIKit
 
 enum ThemeFont: String, CaseIterable {
 	case hack = "Hack"
-	case iAWriterDuospace = "iA Writer Duospace"
+	case iAWriterDuo = "iA Writer Duo"
 	case lcd = "LCD"
 }
 
@@ -14,7 +14,7 @@ extension ThemeFont {
 	var fontName: String {
 		switch self {
 		case .hack: return "Hack-Regular"
-		case .iAWriterDuospace: return "iAWriterDuospace-Regular"
+		case .iAWriterDuo: return "iAWriterDuoV-Regular"
 		case .lcd: return "LCD14"
 		}
 	}

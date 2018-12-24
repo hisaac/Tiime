@@ -38,7 +38,7 @@ extension Theme: UserDefaultsInteracting {
 
 	enum DefaultValues {
 		static let appTintColor = ThemeColor.purple
-		static let clockFont = ThemeFont.iAWriterDuospace
+		static let clockFont = ThemeFont.iAWriterDuo
 		static let appIcon = ThemeIcon.afternoon
 
 		static var clockBackgroundColor: UIColor {

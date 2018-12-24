@@ -235,7 +235,7 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>Hack-Regular.ttf</string>
-		<string>iAWriterDuospace-Regular.otf</string>
+		<string>iAWriterDuoV.ttf</string>
 		<string>LCD14.otf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
