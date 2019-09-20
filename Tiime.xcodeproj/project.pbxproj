@@ -110,13 +110,8 @@
 		29374B50DEF45E2A99EBF931 /* ClockType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockType.swift; sourceTree = "<group>"; };
 		29374C927DD5E25D74807B5B /* TimeRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeRepresentable.swift; sourceTree = "<group>"; };
 		29374FC0F154ACB0434598EE /* AutoLayout+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AutoLayout+Extensions.swift"; sourceTree = "<group>"; };
-		4A066A6D213844B5005618C1 /* Gemfile.lock */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Gemfile.lock; sourceTree = "<group>"; };
 		4A066A6E213844B5005618C1 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
-		4A066A6F213844B6005618C1 /* Gemfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Gemfile; sourceTree = "<group>"; };
 		4A066A70213844B6005618C1 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		4A066A8D21384531005618C1 /* Appfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Appfile; sourceTree = "<group>"; };
-		4A066A8E21384531005618C1 /* Fastfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Fastfile; sourceTree = "<group>"; };
-		4A066A8F21384531005618C1 /* Matchfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Matchfile; sourceTree = "<group>"; };
 		4A066A9321386ED6005618C1 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		4A066A9521386EEB005618C1 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		4A066A9921387729005618C1 /* ClockListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockListCoordinator.swift; sourceTree = "<group>"; };
@@ -11575,16 +11570,6 @@
 			path = "UI Extensions";
 			sourceTree = "<group>";
 		};
-		4A066A8C21384531005618C1 /* fastlane */ = {
-			isa = PBXGroup;
-			children = (
-				4A066A8D21384531005618C1 /* Appfile */,
-				4A066A8E21384531005618C1 /* Fastfile */,
-				4A066A8F21384531005618C1 /* Matchfile */,
-			);
-			path = fastlane;
-			sourceTree = "<group>";
-		};
 		4A066A9021384794005618C1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -11651,13 +11636,10 @@
 			children = (
 				05A1944F208E810100C30B22 /* README.md */,
 				4A21994620CCA9EC0043F4A2 /* changelog.md */,
-				4A066A8C21384531005618C1 /* fastlane */,
 				4A1947F32084457D00AB490D /* Tiime */,
 				4A1947F22084457D00AB490D /* Products */,
 				05AADA3B208E658D0076C581 /* Frameworks */,
 				05A1944E208E810100C30B22 /* LICENSE */,
-				4A066A6F213844B6005618C1 /* Gemfile */,
-				4A066A6D213844B5005618C1 /* Gemfile.lock */,
 				4A066A6E213844B5005618C1 /* .swiftlint.yml */,
 				4A066A70213844B6005618C1 /* .gitignore */,
 			);
