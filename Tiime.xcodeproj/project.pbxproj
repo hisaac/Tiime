@@ -23654,7 +23654,7 @@
 				TargetAttributes = {
 					4A1947F02084457D00AB490D = {
 						CreatedOnToolsVersion = 9.3;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1100;
 						SystemCapabilities = {
 							com.apple.Push = {
 								enabled = 0;
@@ -23940,7 +23940,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = software.level.Tiime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -23962,7 +23962,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = software.level.Tiime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
