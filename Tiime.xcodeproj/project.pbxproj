@@ -27,7 +27,6 @@
 		4A0BDF3221C15A9F004E4A90 /* ThemeFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BDF3121C15A9F004E4A90 /* ThemeFont.swift */; };
 		4A1947F52084457D00AB490D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1947F42084457D00AB490D /* AppDelegate.swift */; };
 		4A1947FC2084457E00AB490D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A1947FB2084457E00AB490D /* Assets.xcassets */; };
-		4A19480A2084457E00AB490D /* TiimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1948092084457E00AB490D /* TiimeTests.swift */; };
 		4A1FA8E62153F34C00971C73 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1FA8E52153F34C00971C73 /* Theme.swift */; };
 		4A4DCBA920CC96F70023C56C /* EmptyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4DCBA820CC96F70023C56C /* EmptyDetailViewController.swift */; };
 		4A61760021C1AD1800E57C01 /* ThemeColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6175FF21C1AD1800E57C01 /* ThemeColorPickerView.swift */; };
@@ -85,16 +84,6 @@
 		4AFD9F4521594849002927A9 /* MasterNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFD9F4421594849002927A9 /* MasterNavigationController.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		4A1948062084457E00AB490D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4A1947E92084457D00AB490D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4A1947F02084457D00AB490D;
-			remoteInfo = "@time";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		05D2546E20925A17004DCA1F /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -139,9 +128,6 @@
 		4A1947F42084457D00AB490D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A1947FB2084457E00AB490D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A1948002084457E00AB490D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A1948052084457E00AB490D /* TiimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TiimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A1948092084457E00AB490D /* TiimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiimeTests.swift; sourceTree = "<group>"; };
-		4A19480B2084457E00AB490D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A1948242084476C00AB490D /* ClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; };
 		4A1FA8E12153EB0100971C73 /* Chameleon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chameleon.framework; path = Carthage/Build/iOS/Chameleon.framework; sourceTree = "<group>"; };
 		4A1FA8E52153F34C00971C73 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
@@ -11544,13 +11530,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4A1948022084457E00AB490D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -11674,7 +11653,6 @@
 				4A21994620CCA9EC0043F4A2 /* changelog.md */,
 				4A066A8C21384531005618C1 /* fastlane */,
 				4A1947F32084457D00AB490D /* Tiime */,
-				4A1948082084457E00AB490D /* TiimeTests */,
 				4A1947F22084457D00AB490D /* Products */,
 				05AADA3B208E658D0076C581 /* Frameworks */,
 				05A1944E208E810100C30B22 /* LICENSE */,
@@ -11691,7 +11669,6 @@
 			isa = PBXGroup;
 			children = (
 				4A1947F12084457D00AB490D /* Tiime.app */,
-				4A1948052084457E00AB490D /* TiimeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -11709,15 +11686,6 @@
 				4A066A9021384794005618C1 /* Supporting Files */,
 			);
 			path = Tiime;
-			sourceTree = "<group>";
-		};
-		4A1948082084457E00AB490D /* TiimeTests */ = {
-			isa = PBXGroup;
-			children = (
-				4A1948092084457E00AB490D /* TiimeTests.swift */,
-				4A19480B2084457E00AB490D /* Info.plist */,
-			);
-			path = TiimeTests;
 			sourceTree = "<group>";
 		};
 		4A425B9521D1333A0089B32A /* Fonts */ = {
@@ -23673,25 +23641,6 @@
 			productReference = 4A1947F12084457D00AB490D /* Tiime.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4A1948042084457E00AB490D /* TiimeTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4A19481C2084457E00AB490D /* Build configuration list for PBXNativeTarget "TiimeTests" */;
-			buildPhases = (
-				4A1948012084457E00AB490D /* Sources */,
-				4A1948022084457E00AB490D /* Frameworks */,
-				4A1948032084457E00AB490D /* Resources */,
-				S4UEX9J5HIX3NM1SE3LOXH0D /* Carthage */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4A1948072084457E00AB490D /* PBXTargetDependency */,
-			);
-			name = TiimeTests;
-			productName = "@timeTests";
-			productReference = 4A1948052084457E00AB490D /* TiimeTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -23712,11 +23661,6 @@
 							};
 						};
 					};
-					4A1948042084457E00AB490D = {
-						CreatedOnToolsVersion = 9.3;
-						LastSwiftMigration = 1000;
-						TestTargetID = 4A1947F02084457D00AB490D;
-					};
 				};
 			};
 			buildConfigurationList = 4A1947EC2084457D00AB490D /* Build configuration list for PBXProject "Tiime" */;
@@ -23733,7 +23677,6 @@
 			projectRoot = "";
 			targets = (
 				4A1947F02084457D00AB490D /* Tiime */,
-				4A1948042084457E00AB490D /* TiimeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -23782,13 +23725,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4A1948032084457E00AB490D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -23809,27 +23745,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-		S4UEX9J5HIX3NM1SE3LOXH0D /* Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"$(SRCROOT)/Carthage/xcfilelists/TiimeTests-inputPaths.xcfilelist",
-			);
-			inputPaths = (
-			);
-			name = Carthage;
-			outputFileListPaths = (
-				"$(SRCROOT)/Carthage/xcfilelists/TiimeTests-outputPaths.xcfilelist",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -23880,23 +23795,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4A1948012084457E00AB490D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4A19480A2084457E00AB490D /* TiimeTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		4A1948072084457E00AB490D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4A1947F02084457D00AB490D /* Tiime */;
-			targetProxy = 4A1948062084457E00AB490D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4AB48B0F21628FA70010B2A9 /* Localizable.strings */ = {
@@ -24068,48 +23967,6 @@
 			};
 			name = Release;
 		};
-		4A19481D2084457E00AB490D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F2J52QJQ9Y;
-				INFOPLIST_FILE = TiimeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = software.level.TiimeTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tiime.app/Tiime";
-			};
-			name = Debug;
-		};
-		4A19481E2084457E00AB490D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F2J52QJQ9Y;
-				INFOPLIST_FILE = TiimeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = software.level.TiimeTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tiime.app/Tiime";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -24127,15 +23984,6 @@
 			buildConfigurations = (
 				4A19481A2084457E00AB490D /* Debug */,
 				4A19481B2084457E00AB490D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4A19481C2084457E00AB490D /* Build configuration list for PBXNativeTarget "TiimeTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4A19481D2084457E00AB490D /* Debug */,
-				4A19481E2084457E00AB490D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
