@@ -124,7 +124,6 @@
 		4A1947FB2084457E00AB490D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A1948002084457E00AB490D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A1948242084476C00AB490D /* ClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; };
-		4A1FA8E12153EB0100971C73 /* Chameleon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chameleon.framework; path = Carthage/Build/iOS/Chameleon.framework; sourceTree = "<group>"; };
 		4A1FA8E52153F34C00971C73 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		4A21994620CCA9EC0043F4A2 /* changelog.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = changelog.md; sourceTree = "<group>"; };
 		4A425B9721D1333A0089B32A /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
@@ -11463,7 +11462,6 @@
 		4A42881621D133730089B32A /* iAWriterDuospace-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iAWriterDuospace-BoldItalic.otf"; sourceTree = "<group>"; };
 		4A42881721D133730089B32A /* iAWriterDuospace-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iAWriterDuospace-Regular.otf"; sourceTree = "<group>"; };
 		4A4DCBA820CC96F70023C56C /* EmptyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyDetailViewController.swift; sourceTree = "<group>"; };
-		4A5D46B5218A5FD700830B14 /* QuickTableViewController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTableViewController.framework; path = Carthage/Build/iOS/QuickTableViewController.framework; sourceTree = "<group>"; };
 		4A6175FF21C1AD1800E57C01 /* ThemeColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColorPickerView.swift; sourceTree = "<group>"; };
 		4A8077BA20CCCFFB0003767D /* UISplitViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISplitViewController+Extensions.swift"; sourceTree = "<group>"; };
 		4A9CEA4121C49E670055C846 /* noon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noon.png; sourceTree = "<group>"; };
@@ -11531,13 +11529,13 @@
 		0591622820BB1867005D6D47 /* ClockType */ = {
 			isa = PBXGroup;
 			children = (
+				29374C927DD5E25D74807B5B /* TimeRepresentable.swift */,
+				29374B50DEF45E2A99EBF931 /* ClockType.swift */,
 				293745D13632115B8C657D8C /* BeatTime.swift */,
 				293747B6D6301FA2C480F22E /* UnixTime.swift */,
 				058DBD9C20DD702F00657F74 /* MetricTime.swift */,
 				4AF2F94721CAADE0009AC824 /* HexadecimalTime.swift */,
 				29374A591C59721178F9F4E6 /* DeviceTime.swift */,
-				29374B50DEF45E2A99EBF931 /* ClockType.swift */,
-				29374C927DD5E25D74807B5B /* TimeRepresentable.swift */,
 			);
 			path = ClockType;
 			sourceTree = "<group>";
@@ -11545,8 +11543,6 @@
 		05AADA3B208E658D0076C581 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4A5D46B5218A5FD700830B14 /* QuickTableViewController.framework */,
-				4A1FA8E12153EB0100971C73 /* Chameleon.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
