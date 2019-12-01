@@ -11,7 +11,6 @@ struct HexadecimalTime: TimeRepresentable {
 		return NSLocalizedString("Hexadecimal Time", comment: "Name of Hexadecimal Time")
 	}
 
-	#warning("TODO: Add Hexadecimal Description")
 	var description: String {
 		return NSLocalizedString(
 			"HexadecimalTimeDescription",
