@@ -18,7 +18,7 @@ disabled_rules:
 - function_parameter_count
 - identifier_name
 - redundant_string_enum_value
-- superfluous_disable_comman
+- superfluous_disable_command
 - unused_closure_parameter
 - trailing_comma
 
