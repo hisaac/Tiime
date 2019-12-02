@@ -4,12 +4,20 @@ import Foundation
 
 enum ClockType: CaseIterable {
 
-	case beat   // Swatch .beat time / Internet Time
-	case unix   // Unix time / Epoch time
-	case metric // Metric Time
-	case hexadecimal
-	case device // The time displayed based on the device's setting
+	/// Swatch .beat time / Internet Time
+	case beat
 
+	/// Unix time / Epoch time
+	case unix
+
+	/// Metric time
+	case metric
+
+	/// Hexadecimal time
+	case hexadecimal
+
+	/// The time displayed based on the device's setting
+	case device
 }
 
 extension ClockType {
@@ -17,11 +25,16 @@ extension ClockType {
 	/// The `TimeRepresentable` object associated with each clock type value
 	var timeRepresentable: TimeRepresentable {
 		switch self {
-		case .beat:   return BeatTime()
-		case .unix:   return UnixTime()
-		case .metric: return MetricTime()
-		case .hexadecimal: return HexadecimalTime()
-		case .device: return DeviceTime()
+		case .beat:
+			return BeatTime()
+		case .unix:
+			return UnixTime()
+		case .metric:
+			return MetricTime()
+		case .hexadecimal:
+			return HexadecimalTime()
+		case .device:
+			return DeviceTime()
 		}
 	}
 
