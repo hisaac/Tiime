@@ -3,9 +3,10 @@
 import os.log
 import UIKit
 
+@objcMembers
 class AboutViewModel {
 
-	@objc var aboutCell: UITableViewCell {
+	var aboutCell: UITableViewCell {
 		let cell = UITableViewCell(style: .default, reuseIdentifier: #function)
 
 		cell.textLabel?.text = NSLocalizedString(
@@ -20,7 +21,7 @@ class AboutViewModel {
 		return cell
 	}
 
-	@objc var codeCell: UITableViewCell {
+	var codeCell: UITableViewCell {
 		let cell = UITableViewCell(style: .subtitle, reuseIdentifier: #function)
 
 		cell.textLabel?.text = NSLocalizedString(
@@ -44,7 +45,7 @@ class AboutViewModel {
 		return cell
 	}
 
-	@objc var hisaacTwitterCell: UITableViewCell {
+	var hisaacTwitterCell: UITableViewCell {
 		let cell = UITableViewCell(style: .subtitle, reuseIdentifier: #function)
 
 		cell.textLabel?.text = "@hisaac"
@@ -61,7 +62,7 @@ class AboutViewModel {
 		return cell
 	}
 
-	@objc var isaacWebsiteCell: UITableViewCell {
+	var isaacWebsiteCell: UITableViewCell {
 		let cell = UITableViewCell(style: .subtitle, reuseIdentifier: #function)
 
 		cell.textLabel?.text = "hisaac.net"
@@ -78,7 +79,7 @@ class AboutViewModel {
 		return cell
 	}
 
-	@objc var isaacEmailCell: UITableViewCell {
+	var isaacEmailCell: UITableViewCell {
 		let cell = UITableViewCell(style: .subtitle, reuseIdentifier: #function)
 
 		cell.textLabel?.text = "tiime@level.software"
@@ -95,7 +96,7 @@ class AboutViewModel {
 		return cell
 	}
 
-	@objc var thanksRyanCell: UITableViewCell {
+	var thanksRyanCell: UITableViewCell {
 		let cell = UITableViewCell(style: .subtitle, reuseIdentifier: #function)
 
 		cell.textLabel?.text = "Ryan Lower"
@@ -112,7 +113,7 @@ class AboutViewModel {
 		return cell
 	}
 
-	@objc var thanksEliCell: UITableViewCell {
+	var thanksEliCell: UITableViewCell {
 		let cell = UITableViewCell(style: .subtitle, reuseIdentifier: #function)
 
 		cell.textLabel?.text = "Eli Mellen"
