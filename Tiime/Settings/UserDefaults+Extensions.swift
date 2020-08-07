@@ -8,9 +8,9 @@ import UIKit
 extension UserDefaults {
 
 	/// Returns the UIColor value associated with the specified key
-	func color(forKey: String) -> UIColor? {
+	func color(forKey: String) throws -> UIColor? {
 		guard let colorData = data(forKey: forKey) else { return nil }
-		return NSKeyedUnarchiver.unarchiveObject(with: colorData) as? UIColor
+		return try NSKeyedUnarchiver.unarchivedObject(ofClass: UIColor.self, from: colorData)
 	}
 
 	/// Sets the value of the specified default key to the specified UIColor value
@@ -20,7 +20,8 @@ extension UserDefaults {
 			return
 		}
 
-		let colorData = NSKeyedArchiver.archivedData(withRootObject: color)
+		let archivedColorData = try? NSKeyedArchiver.archivedData(withRootObject: color, requiringSecureCoding: true)
+		guard let colorData = archivedColorData else { return }
 		set(colorData, forKey: key)
 	}
 

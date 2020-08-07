@@ -30,7 +30,7 @@ class ApplicationCoordinator {
 		rootViewController.viewControllers = [masterNavigationController, emptyDetailNavController]
 
 		rootViewController.delegate = self
-		rootViewController.preferredDisplayMode = .allVisible
+		rootViewController.preferredDisplayMode = .oneBesideSecondary
 
 		clockListCoordinator.start()
 		clockListCoordinator.delegate = self

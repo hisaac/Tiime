@@ -69,7 +69,8 @@ extension Theme: UserDefaultsInteracting {
 
 	static var clockBackgroundColor: UIColor {
 		get {
-			return standardDefaults.color(forKey: UserDefaultsKey.clockBackgroundColor) ?? DefaultValues.clockBackgroundColor
+			let clockBackgroundColor = try? standardDefaults.color(forKey: UserDefaultsKey.clockBackgroundColor)
+			return clockBackgroundColor ?? DefaultValues.clockBackgroundColor
 		}
 		set {
 			standardDefaults.set(color: newValue, forKey: UserDefaultsKey.clockBackgroundColor)
@@ -78,7 +79,8 @@ extension Theme: UserDefaultsInteracting {
 
 	static var clockTextColor: UIColor {
 		get {
-			return standardDefaults.color(forKey: UserDefaultsKey.clockTextColor) ?? DefaultValues.clockTextColor
+			let clockTextColor = try? standardDefaults.color(forKey: UserDefaultsKey.clockTextColor)
+			return clockTextColor ?? DefaultValues.clockTextColor
 		}
 		set {
 			standardDefaults.set(color: newValue, forKey: UserDefaultsKey.clockTextColor)
@@ -127,7 +129,7 @@ extension Theme {
 
 	var backgroundColor: UIColor {
 		switch self {
-		case .light: return UIColor.groupTableViewBackground
+		case .light: return .systemGroupedBackground
 		case .dark: return UIColor(white: 0.09, alpha: 1)
 		}
 	}
@@ -141,8 +143,8 @@ extension Theme {
 
 	var tableViewTextColor: UIColor {
 		switch self {
-		case .light: return UIColor.darkText
-		case .dark: return UIColor.lightText
+		case .light: return .darkText
+		case .dark: return .lightText
 		}
 	}
 
