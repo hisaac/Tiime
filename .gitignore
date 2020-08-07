@@ -32,6 +32,10 @@ Carthage/
 ## CocoaPods
 Pods/
 
+## Swift Package Manager
+Packages/
+.build/
+
 ## fastlane
 fastlane/report.xml
 fastlane/Preview.html

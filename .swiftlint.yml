@@ -1,30 +1,30 @@
 opt_in_rules:
-- closure_end_indentation
-- closure_spacing
-- empty_count
-- explicit_init
-- fatal_error_message
-- file_header
-- first_where
-- implicitly_unwrapped_optional
-- no_extension_access_modifier
-- number_separator
-- operator_usage_whitespace
-- redundant_nil_coalescing
-- unneeded_parentheses_in_closure_argument
+  - closure_end_indentation
+  - closure_spacing
+  - empty_count
+  - explicit_init
+  - fatal_error_message
+  - file_header
+  - first_where
+  - implicitly_unwrapped_optional
+  - no_extension_access_modifier
+  - number_separator
+  - operator_usage_whitespace
+  - redundant_nil_coalescing
+  - trailing_whitespace
+  - unneeded_parentheses_in_closure_argument
 
 disabled_rules:
-- closure_end_indentation
-- function_parameter_count
-- identifier_name
-- redundant_string_enum_value
-- superfluous_disable_command
-- unused_closure_parameter
-- trailing_comma
+  - closure_end_indentation
+  - function_parameter_count
+  - identifier_name
+  - redundant_string_enum_value
+  - superfluous_disable_command
+  - unused_closure_parameter
 
 excluded:
-- Carthage
-- Pods
+  - Carthage
+  - Pods
 
 line_length:
   ignores_comments: true
