@@ -20,10 +20,28 @@ enum ClockType: CaseIterable {
 	case device
 }
 
-extension ClockType {
+extension ClockType: RawRepresentable {
 
-	/// The `TimeRepresentable` object associated with each clock type value
-	var timeRepresentable: TimeRepresentable {
+	typealias RawValue = TimeRepresentable
+
+	init?(rawValue: RawValue) {
+		switch rawValue {
+		case is BeatTime:
+			self = .beat
+		case is UnixTime:
+			self = .unix
+		case is MetricTime:
+			self = .metric
+		case is HexadecimalTime:
+			self = .hexadecimal
+		case is DeviceTime:
+			self = .device
+		default:
+			self = .device
+		}
+	}
+
+	var rawValue: RawValue {
 		switch self {
 		case .beat:
 			return BeatTime()

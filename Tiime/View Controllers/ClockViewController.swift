@@ -13,7 +13,7 @@ class ClockViewController: UIViewController {
 	}
 
 	required init?(coder aDecoder: NSCoder) {
-		timeType = ClockType.device.timeRepresentable
+		timeType = ClockType.device.rawValue
 		super.init(nibName: nil, bundle: nil)
 	}
 

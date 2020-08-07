@@ -27,7 +27,7 @@ class ClockListCoordinator: Coordinator {
 extension ClockListCoordinator: ClockListViewControllerDelegate {
 
 	func clockListViewControllerDidSelectClockType(_ clockType: ClockType) {
-		let clockDetailViewController = ClockViewController(timeType: clockType.timeRepresentable)
+		let clockDetailViewController = ClockViewController(timeType: clockType.rawValue)
 		delegate?.showDetail(clockDetailViewController)
 	}
 

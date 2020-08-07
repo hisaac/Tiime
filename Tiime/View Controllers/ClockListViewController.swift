@@ -53,7 +53,7 @@ class ClockListViewController: UITableViewController {
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = UITableViewCell(style: .default, reuseIdentifier: "ClockTypeCell")
 		cell.accessoryType = .detailDisclosureButton
-		cell.textLabel?.text = ClockType.allCases[indexPath.row].timeRepresentable.name
+		cell.textLabel?.text = ClockType.allCases[indexPath.row].rawValue.name
 		cell.textLabel?.textColor = Theme.current.tableViewTextColor
 		return cell
 	}
@@ -66,8 +66,8 @@ class ClockListViewController: UITableViewController {
 
 	override func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
 		let alert = UIAlertController(
-			title: ClockType.allCases[indexPath.row].timeRepresentable.name,
-			message: ClockType.allCases[indexPath.row].timeRepresentable.description,
+			title: ClockType.allCases[indexPath.row].rawValue.name,
+			message: ClockType.allCases[indexPath.row].rawValue.description,
 			preferredStyle: .alert
 		)
 

@@ -4,6 +4,6 @@ import Foundation
 
 class MainDependencyContainer: MainDependencyProvider {
 	static func makeTimeRepresentable(ofType clockType: ClockType = .device) -> TimeRepresentable {
-		return clockType.timeRepresentable
+		return clockType.rawValue
 	}
 }
