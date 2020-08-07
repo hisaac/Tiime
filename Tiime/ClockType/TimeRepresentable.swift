@@ -3,7 +3,7 @@
 import Foundation
 
 protocol TimeRepresentable {
-	var timeForDisplay: String { get }
-	var name: String { get }
-	var description: String { get }
+	static var timeForDisplay: String { get }
+	static var name: String { get }
+	static var description: String { get }
 }

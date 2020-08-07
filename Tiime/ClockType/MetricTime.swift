@@ -2,8 +2,8 @@
 
 import Foundation
 
-struct MetricTime: TimeRepresentable {
-	var timeForDisplay: String {
+enum MetricTime: TimeRepresentable {
+	static var timeForDisplay: String {
 		let numberFormatter = NumberFormatter()
 		numberFormatter.minimumFractionDigits = 3
 
@@ -13,11 +13,11 @@ struct MetricTime: TimeRepresentable {
 		return "\(metricTimeString) UMT"
 	}
 
-	var name: String {
+	static var name: String {
 		return NSLocalizedString("Metric Time", comment: "Name of Metric Time")
 	}
 
-	var description: String {
+	static var description: String {
 		return NSLocalizedString(
 			"MetricTimeDescription",
 			comment: "Description for Metric Time"

@@ -22,19 +22,19 @@ enum ClockType: CaseIterable {
 
 extension ClockType: RawRepresentable {
 
-	typealias RawValue = TimeRepresentable
+	typealias RawValue = TimeRepresentable.Type
 
 	init?(rawValue: RawValue) {
 		switch rawValue {
-		case is BeatTime:
+		case is BeatTime.Type:
 			self = .beat
-		case is UnixTime:
+		case is UnixTime.Type:
 			self = .unix
-		case is MetricTime:
+		case is MetricTime.Type:
 			self = .metric
-		case is HexadecimalTime:
+		case is HexadecimalTime.Type:
 			self = .hexadecimal
-		case is DeviceTime:
+		case is DeviceTime.Type:
 			self = .device
 		default:
 			self = .device
@@ -44,15 +44,15 @@ extension ClockType: RawRepresentable {
 	var rawValue: RawValue {
 		switch self {
 		case .beat:
-			return BeatTime()
+			return BeatTime.self
 		case .unix:
-			return UnixTime()
+			return UnixTime.self
 		case .metric:
-			return MetricTime()
+			return MetricTime.self
 		case .hexadecimal:
-			return HexadecimalTime()
+			return HexadecimalTime.self
 		case .device:
-			return DeviceTime()
+			return DeviceTime.self
 		}
 	}
 

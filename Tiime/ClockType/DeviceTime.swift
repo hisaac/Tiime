@@ -2,8 +2,8 @@
 
 import Foundation
 
-struct DeviceTime: TimeRepresentable {
-	var timeForDisplay: String {
+enum DeviceTime: TimeRepresentable {
+	static var timeForDisplay: String {
 		return DateFormatter.localizedString(
 			from: Date(),
 			dateStyle: .none,
@@ -11,11 +11,11 @@ struct DeviceTime: TimeRepresentable {
 		)
 	}
 
-	var name: String {
+	static var name: String {
 		return NSLocalizedString("Device Time", comment: "Name of Device Time")
 	}
 
-	var description: String {
+	static var description: String {
 		return NSLocalizedString(
 			"The time displayed in the default way for the device's locale",
 			comment: "Description for Device Time"

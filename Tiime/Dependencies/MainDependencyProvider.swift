@@ -3,5 +3,5 @@
 import Foundation
 
 protocol MainDependencyProvider {
-	static func makeTimeRepresentable(ofType clockType: ClockType) -> TimeRepresentable
+	static func makeTimeRepresentable(ofType clockType: ClockType) -> TimeRepresentable.Type
 }

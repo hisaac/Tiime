@@ -2,16 +2,16 @@
 
 import Foundation
 
-struct UnixTime: TimeRepresentable {
-	var timeForDisplay: String {
+enum UnixTime: TimeRepresentable {
+	static var timeForDisplay: String {
 		return Date().unixTimeForDisplay
 	}
 
-	var name: String {
+	static var name: String {
 		return NSLocalizedString("Unix Time", comment: "Name of Unix Time")
 	}
 
-	var description: String {
+	static var description: String {
 		return NSLocalizedString(
 			"UnixTimeDescription",
 			comment: "Description for Unix Time"

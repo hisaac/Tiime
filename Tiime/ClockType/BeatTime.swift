@@ -2,7 +2,7 @@
 
 import Foundation
 
-struct BeatTime: TimeRepresentable {
+enum BeatTime: TimeRepresentable {
 
 	/// Returns a string representation of the Beat Time, including centibeats.
 	/// Meant for displaying to the user.
@@ -10,7 +10,7 @@ struct BeatTime: TimeRepresentable {
 	/// Note: This method does *not* round. When dealing with time, we don't want to round up, because
 	/// it's not technically the next point in time until it *actually is* the next point in time.
 	///
-	var timeForDisplay: String {
+	static var timeForDisplay: String {
 		// Create numberFormatter with minimum fraction digits
 		let numberFormatter = NumberFormatter()
 		numberFormatter.minimumFractionDigits = 2
@@ -20,11 +20,11 @@ struct BeatTime: TimeRepresentable {
 		return "@\(beatTimeString)"
 	}
 
-	var name: String {
+	static var name: String {
 		return NSLocalizedString(".beat Time", comment: "Name of .beat Time")
 	}
 
-	var description: String {
+	static var description: String {
 		return NSLocalizedString(
 			".beatTimeDescription",
 			comment: "Description for .beat Time"

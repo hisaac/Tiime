@@ -3,7 +3,7 @@
 import Foundation
 
 class MainDependencyContainer: MainDependencyProvider {
-	static func makeTimeRepresentable(ofType clockType: ClockType = .device) -> TimeRepresentable {
+	static func makeTimeRepresentable(ofType clockType: ClockType = .device) -> TimeRepresentable.Type {
 		return clockType.rawValue
 	}
 }

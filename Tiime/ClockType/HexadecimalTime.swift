@@ -2,16 +2,16 @@
 
 import Foundation
 
-struct HexadecimalTime: TimeRepresentable {
-	var timeForDisplay: String {
+enum HexadecimalTime: TimeRepresentable {
+	static var timeForDisplay: String {
 		return ".\(Date().hexadecimalTime)"
 	}
 
-	var name: String {
+	static var name: String {
 		return NSLocalizedString("Hexadecimal Time", comment: "Name of Hexadecimal Time")
 	}
 
-	var description: String {
+	static var description: String {
 		return NSLocalizedString(
 			"HexadecimalTimeDescription",
 			comment: "Description for Hexadecimal Time"

@@ -5,9 +5,9 @@ import UIKit
 class ClockViewController: UIViewController {
 
 	let timeLabel = UILabel()
-	let timeType: TimeRepresentable
+	let timeType: TimeRepresentable.Type
 
-	init(timeType: TimeRepresentable) {
+	init(timeType: TimeRepresentable.Type) {
 		self.timeType = timeType
 		super.init(nibName: nil, bundle: nil)
 	}
