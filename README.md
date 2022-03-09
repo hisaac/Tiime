@@ -9,16 +9,16 @@
 
 # Tiime
 
-<p>
-	<a href="https://itunes.apple.com/us/app/tiime-alternative-time-clock/id1396505395?ls=1&mt=8">
-		<img src="./assets/app-store-assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download Tiime on the iOS App Store" title="Download Tiime on the iOS App Store">
-	</a>
-</p>
+Tiime was two things:
 
-Tiime is two things:
-
-1. A clock that tells time in unconventional ways
+1. A clock that told time in unconventional ways
 2. An app I developed to learn more about iOS development
+
+## ⚠️ Tiime is no longer under active development ⚠️
+
+This was a really fun project to work on — it was my first iOS app built from scratch! — but I will no longer be actively developing on the project. I'm leaving it here in case there is any code that could still be useful to others.
+
+Tiime will also be removed from the App Store.
 
 ## About Tiime
 
